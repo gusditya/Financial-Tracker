@@ -1,4 +1,4 @@
-import './style.css';
+import '../css/style.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { initNavbar } from './navbar.js';
