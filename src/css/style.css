@@ -60,6 +60,10 @@
   @apply top-4 py-1.5 opacity-90 scale-95;
 }
 
+.dynamic-island-nav.mobile-open {
+  @apply top-4 w-[calc(100vw-2rem)] items-start;
+}
+
 .dynamic-island-nav:hover {
   @apply bg-white opacity-100 scale-100;
   box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);

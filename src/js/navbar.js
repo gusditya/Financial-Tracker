@@ -11,6 +11,28 @@ export function initNavbar() {
         }
     });
 
+    // Handle Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const linksContainer = document.getElementById('nav-links-container');
+
+    if (mobileBtn && linksContainer) {
+        mobileBtn.addEventListener('click', () => {
+            linksContainer.classList.toggle('hidden');
+            linksContainer.classList.toggle('flex');
+
+            // Adjust navbar styling when menu is open
+            if (linksContainer.classList.contains('flex')) {
+                nav.classList.add('mobile-open');
+                nav.classList.remove('rounded-full');
+                nav.classList.add('rounded-3xl');
+            } else {
+                nav.classList.remove('mobile-open');
+                nav.classList.add('rounded-full');
+                nav.classList.remove('rounded-3xl');
+            }
+        });
+    }
+
     // Handle active link highlights (for hash links on the same page)
     const navLinks = nav.querySelectorAll('.nav-pill-item');
 
@@ -44,6 +66,15 @@ export function initNavbar() {
     // Smooth scroll for hash links if they exist on the current page
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
+            // Close mobile menu if open
+            if (mobileBtn && linksContainer && linksContainer.classList.contains('flex')) {
+                linksContainer.classList.add('hidden');
+                linksContainer.classList.remove('flex');
+                nav.classList.remove('mobile-open');
+                nav.classList.add('rounded-full');
+                nav.classList.remove('rounded-3xl');
+            }
+
             const href = link.getAttribute('href');
             if (href.startsWith('#')) {
                 const target = document.querySelector(href);
