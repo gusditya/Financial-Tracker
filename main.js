@@ -1,6 +1,7 @@
 import './style.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { initNavbar } from './navbar.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Initialize AOS
@@ -9,6 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     once: true,
     offset: 50,
   });
+
+  // 1.5. Initialize Dynamic Island Navbar
+  initNavbar();
 
   // 2. Tab Logic
   const tabBtns = document.querySelectorAll('.tab-btn');

@@ -1,6 +1,7 @@
 import './style.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { initNavbar } from './navbar.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   AOS.init({
@@ -8,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     once: true,
     offset: 50,
   });
+
+  initNavbar();
 
   const formatIDR = (number) => {
     return new Intl.NumberFormat('id-ID', {

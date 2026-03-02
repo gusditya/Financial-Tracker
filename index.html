@@ -19,86 +19,89 @@
 
 <body class="bg-[#fafafa] text-brand-black selection:bg-brand-green selection:text-white">
 
-    <!-- Top Border -->
-    <div class="h-2 w-full bg-brand-green"></div>
-
-    <!-- Header / Navigation -->
-    <header class="sticky top-0 w-full z-50 bg-[#fafafa] border-b border-black">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
-                    <div
-                        class="w-10 h-10 bg-brand-black flex items-center justify-center text-white font-serif font-bold text-xl">
-                        AN
-                    </div>
-                    <span class="font-serif font-bold text-2xl tracking-normal text-brand-black">Artha<span
-                            class="text-brand-green">Navigate</span></span>
-                </div>
-                <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
-                    <a href="#tentang"
-                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent">Tentang</a>
-                    <a href="#audiens"
-                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent">Audiens</a>
-                    <a href="#tracking"
-                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent">Pelacak</a>
-                    <a href="stocks.html"
-                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent">Saham</a>
-                    <a href="news.html"
-                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent">Berita</a>
-                </nav>
-                <div class="hidden md:flex">
-                    <a href="#kalkulator"
-                        class="px-6 py-2 bg-brand-green text-white font-bold tracking-wider uppercase text-sm editorial-shadow hover:bg-emerald-600 transition-colors">Alat
-                        Hitung</a>
-                </div>
-            </div>
+    <!-- Dynamic Island Navbar -->
+    <nav class="dynamic-island-nav" id="main-nav">
+        <a href="index.html" class="nav-logo-pill">AN</a>
+        <div class="hidden md:flex items-center gap-1">
+            <a href="#tentang" class="nav-pill-item">Tentang</a>
+            <a href="#audiens" class="nav-pill-item">Audiens</a>
+            <a href="#tracking" class="nav-pill-item">Pelacak</a>
+            <a href="stocks.html" class="nav-pill-item">Saham</a>
+            <a href="news.html" class="nav-pill-item">Berita</a>
         </div>
-    </header>
+        <a href="#kalkulator"
+            class="px-5 py-2 bg-brand-green text-white text-[10px] font-bold uppercase tracking-widest rounded-full hover:bg-emerald-600 transition-colors ml-2">Hitung</a>
+    </nav>
 
     <main>
         <!-- Hero Section -->
-        <section class="border-b border-black">
-            <div class="max-w-7xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-12">
-                    <div
-                        class="lg:col-span-7 px-4 sm:px-6 lg:px-8 py-16 lg:py-24 border-b lg:border-b-0 lg:border-r border-black relative">
-                        <div
-                            class="absolute top-0 left-0 w-16 h-16 border-t border-l border-brand-green opacity-50 m-4">
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 border-b border-black overflow-hidden bg-white">
+            <!-- Background Decorative Patterns -->
+            <div class="absolute inset-0 bg-grid-slate-200 opacity-30 pointer-events-none"></div>
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-slate-50 border-l border-black/5 hidden lg:block"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 relative z-10">
+                        <div class="inline-flex items-center gap-2 py-1 px-3 bg-brand-green/10 rounded-full mb-8"
+                            data-aos="fade-right">
+                            <span class="w-2 h-2 bg-brand-green rounded-full animate-pulse"></span>
+                            <span class="text-brand-green font-bold text-[10px] tracking-widest uppercase">Edisi 2026:
+                                Navigasi Cerdas</span>
                         </div>
-                        <span
-                            class="inline-block py-1 pr-4 border-b border-brand-green text-brand-green font-bold text-xs tracking-widest uppercase mb-8"
-                            data-aos="fade-right">Inovasi & Pemberdayaan Ekonomi</span>
-                        <h1 class="font-serif text-5xl md:text-7xl font-bold tracking-normal leading-[1.1] mb-8"
+
+                        <h1 class="font-serif text-5xl md:text-8xl font-bold tracking-tight leading-[0.9] mb-8"
                             data-aos="fade-up" data-aos-delay="100">
-                            Navigasi Arah <br />
-                            <span class="italic font-normal text-slate-600">Kekayaan Anda</span> <br />
-                            Dengan Tepat
+                            Navigasi <br />
+                            <span class="italic font-normal text-slate-400">Kekayaan</span> <br />
+                            Masa Depan
                         </h1>
-                        <p class="text-lg text-slate-700 max-w-xl mb-10 leading-relaxed font-sans" data-aos="fade-up"
+
+                        <p class="text-xl text-slate-600 max-w-xl mb-12 leading-relaxed font-sans" data-aos="fade-up"
                             data-aos-delay="200">
-                            Literasi ekonomi adalah kunci kedaulatan. Kami menyediakan alat untuk <strong
-                                class="text-brand-black font-semibold">memvalidasi</strong> dan <strong
-                                class="text-brand-black font-semibold">mengoptimalkan</strong> masa depan finansial Anda
-                            melalui data yang presisi.
+                            Literasi ekonomi adalah kunci kedaulatan. Kami menyediakan alat presisi untuk
+                            <strong class="text-brand-black">memvalidasi</strong> strategi finansial Anda di era
+                            volatilitas global.
                         </p>
-                        <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="300">
+
+                        <div class="flex flex-col sm:flex-row gap-6" data-aos="fade-up" data-aos-delay="300">
                             <a href="#audiens"
-                                class="px-8 py-3 bg-brand-black text-white font-bold tracking-wider uppercase text-sm editorial-shadow transition-all text-center">Jelajahi
+                                class="px-10 py-4 bg-brand-black text-white font-bold tracking-widest uppercase text-xs editorial-shadow transition-all text-center">Jelajahi
                                 Modul</a>
                             <a href="#tracking"
-                                class="px-8 py-3 bg-transparent border border-black text-brand-black font-bold tracking-wider uppercase text-sm editorial-shadow hover:bg-slate-100 transition-all text-center">Mulai
+                                class="px-10 py-4 bg-transparent border border-black text-brand-black font-bold tracking-widest uppercase text-xs editorial-shadow hover:bg-slate-50 transition-all text-center">Mulai
                                 Melacak</a>
                         </div>
                     </div>
-                    <div class="lg:col-span-5 bg-slate-100 relative overflow-hidden" data-aos="fade-left">
-                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=2070&q=80"
-                            alt="Bursa Efek"
-                            class="absolute inset-0 w-full h-full object-cover grayscale opacity-90 transition-transform duration-1000 hover:scale-105 hover:grayscale-0">
+
+                    <div class="lg:col-span-5 relative" data-aos="fade-left" data-aos-delay="200">
+                        <!-- Refined Hero Image Card -->
                         <div
-                            class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black via-black/80 to-transparent">
-                            <h3 class="font-serif text-white text-2xl font-bold mb-2">Makroekonomi Global</h3>
-                            <p class="text-slate-300 text-sm font-sans">Analisis dampak inflasi terhadap daya beli
-                                masyarakat Indonesia di 2026.</p>
+                            class="relative z-10 p-4 bg-white border border-black editorial-shadow rounded-sm hero-card-glow">
+                            <div
+                                class="aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=2070&q=80"
+                                    alt="Bursa Efek"
+                                    class="w-full h-full object-cover transition-transform duration-1000 hover:scale-110">
+                            </div>
+                        </div>
+
+                        <!-- Floating Data Cards -->
+                        <div class="absolute -top-10 -right-6 w-40 bg-white border border-black p-4 editorial-shadow animate-float z-20 hidden sm:block"
+                            style="animation-delay: -1s;">
+                            <span class="text-[9px] font-bold text-brand-green uppercase">Market Index</span>
+                            <div class="text-lg font-serif font-bold">+12.4%</div>
+                            <div class="w-full h-1 bg-slate-100 mt-2">
+                                <div class="w-3/4 h-full bg-brand-green"></div>
+                            </div>
+                        </div>
+
+                        <div class="absolute -bottom-6 -left-10 w-48 bg-brand-black text-white border border-black p-5 editorial-shadow animate-float z-20 hidden sm:block"
+                            style="animation-delay: -2.5s;">
+                            <span class="text-[9px] font-bold text-slate-400 uppercase">Personal Cashflow</span>
+                            <div class="text-xl font-serif font-bold">Rp 2.4M</div>
+                            <div class="text-[8px] text-brand-green mt-1">Status: Optimal</div>
                         </div>
                     </div>
                 </div>

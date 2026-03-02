@@ -19,36 +19,19 @@
 
 <body class="bg-[#fafafa] text-brand-black selection:bg-brand-green selection:text-white">
 
-    <!-- Top Border -->
-    <div class="h-2 w-full bg-brand-green"></div>
-
-    <!-- Header / Navigation -->
-    <header class="sticky top-0 w-full z-50 bg-[#fafafa] border-b border-black">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <a href="index.html" class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
-                    <div
-                        class="w-10 h-10 bg-brand-black flex items-center justify-center text-white font-serif font-bold text-xl">
-                        AN
-                    </div>
-                    <span class="font-serif font-bold text-2xl tracking-normal text-brand-black">Artha<span
-                            class="text-brand-green">Navigate</span></span>
-                </a>
-                <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
-                    <a href="index.html#tentang"
-                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent hover:border-brand-green">Tentang</a>
-                    <a href="index.html#audiens"
-                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent hover:border-brand-green">Audiens</a>
-                    <a href="index.html#tracking"
-                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent hover:border-brand-green">Pelacak</a>
-                    <a href="stocks.html"
-                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-brand-green">Saham</a>
-                    <a href="news.html"
-                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent hover:border-brand-green">Berita</a>
-                </nav>
-            </div>
+    <!-- Dynamic Island Navbar -->
+    <nav class="dynamic-island-nav" id="main-nav">
+        <a href="index.html" class="nav-logo-pill">AN</a>
+        <div class="hidden md:flex items-center gap-1">
+            <a href="index.html#tentang" class="nav-pill-item">Tentang</a>
+            <a href="index.html#audiens" class="nav-pill-item">Audiens</a>
+            <a href="index.html#tracking" class="nav-pill-item">Pelacak</a>
+            <a href="stocks.html" class="nav-pill-item active">Saham</a>
+            <a href="news.html" class="nav-pill-item">Berita</a>
         </div>
-    </header>
+        <a href="index.html#kalkulator"
+            class="px-5 py-2 bg-brand-green text-white text-[10px] font-bold uppercase tracking-widest rounded-full hover:bg-emerald-600 transition-colors ml-2">Hitung</a>
+    </nav>
 
     <main class="py-20 lg:py-32 border-b border-black bg-[#fafafa]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
