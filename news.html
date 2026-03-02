@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warta Ekonomi | ArthaNavigate</title>
+    <!-- SEO Optimization -->
+    <meta name="description"
+        content="Monitor pergerakan ekonomi dunia dengan berita pilihan dari pusat finansial global melalui ArthaNavigate.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-[#fafafa] text-brand-black selection:bg-brand-green selection:text-white">
+
+    <!-- Top Border -->
+    <div class="h-2 w-full bg-brand-green"></div>
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 w-full z-50 bg-[#fafafa] border-b border-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                    <div
+                        class="w-10 h-10 bg-brand-black flex items-center justify-center text-white font-serif font-bold text-xl">
+                        AN
+                    </div>
+                    <span class="font-serif font-bold text-2xl tracking-normal text-brand-black">Artha<span
+                            class="text-brand-green">Navigate</span></span>
+                </a>
+                <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
+                    <a href="index.html#tentang"
+                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent hover:border-brand-green">Tentang</a>
+                    <a href="index.html#audiens"
+                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent hover:border-brand-green">Audiens</a>
+                    <a href="index.html#tracking"
+                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent hover:border-brand-green">Pelacak</a>
+                    <a href="stocks.html"
+                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-transparent hover:border-brand-green">Saham</a>
+                    <a href="news.html"
+                        class="text-brand-black hover:text-brand-green transition-colors pb-1 border-b-2 border-brand-green">Berita</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-20 lg:py-32 border-b border-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- Main Content -->
+                <div class="lg:col-span-8">
+                    <div class="mb-16 pb-4 border-b border-black" data-aos="fade-up">
+                        <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6">Warta <br /><span
+                                class="italic font-normal text-slate-500">Ekonomi Global</span></h1>
+                        <p class="text-sm font-serif font-italic text-slate-400 uppercase tracking-[0.3em]">Laporan
+                            Utama Edisi 2025/2026</p>
+                    </div>
+
+                    <div id="main-news" class="space-y-20">
+                        <!-- News items will be injected by JS -->
+                    </div>
+                </div>
+
+                <!-- Sidebar Content -->
+                <div class="lg:col-span-4 lg:border-l border-black lg:pl-12">
+                    <div class="sticky top-32 space-y-12">
+                        <div>
+                            <h3
+                                class="font-serif font-bold text-xl uppercase tracking-wider border-b border-black pb-2 mb-8">
+                                Berita Terpopuler</h3>
+                            <div id="sidebar-news" class="space-y-10">
+                                <!-- Sidebar news item list -->
+                            </div>
+                        </div>
+
+                        <!-- Newsletter Mini-form -->
+                        <div class="bg-brand-black p-8 text-white editorial-shadow">
+                            <h4 class="font-serif text-xl font-bold mb-4">Briefing Artha</h4>
+                            <p class="text-xs text-slate-400 mb-6 leading-relaxed">Dapatkan ringkasan pasar modal setiap
+                                pagi langsung di email Anda.</p>
+                            <input type="email" placeholder="email@anda.com"
+                                class="w-full bg-[#222] border border-white/20 p-3 text-xs focus:outline-none focus:border-brand-green transition-colors mb-4">
+                            <button
+                                class="w-full bg-brand-green py-3 text-xs font-bold uppercase tracking-widest hover:bg-emerald-600 transition-colors">Berlangganan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- UI: Elegant Full-Width Footer -->
+    <footer class="bg-brand-black text-white border-t border-black w-full overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div
+                            class="w-10 h-10 bg-white flex items-center justify-center text-brand-black font-serif font-bold text-xl">
+                            AN</div>
+                        <span class="font-serif font-bold text-3xl tracking-normal text-white">Artha<span
+                                class="text-brand-green">Navigate</span></span>
+                    </div>
+                    <p class="font-serif text-xl italic text-slate-400 leading-relaxed mb-8">
+                        "Edukasi adalah satu-satunya instrumen dengan imbal hasil tak terbatas."
+                    </p>
+                </div>
+                <div class="md:col-span-2 space-y-4">
+                    <h5
+                        class="text-brand-green font-bold text-[10px] uppercase tracking-widest mb-6 border-b border-brand-green/30 pb-2">
+                        Navigasi</h5>
+                    <ul class="space-y-3 font-sans text-sm">
+                        <li><a href="index.html#tentang" class="hover:text-brand-green transition-colors">Manifesto</a>
+                        </li>
+                        <li><a href="index.html#audiens" class="hover:text-brand-green transition-colors">Edukasi</a>
+                        </li>
+                        <li><a href="index.html#kalkulator" class="hover:text-brand-green transition-colors">Alat
+                                Hitung</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2 space-y-4">
+                    <h5
+                        class="text-brand-green font-bold text-[10px] uppercase tracking-widest mb-6 border-b border-brand-green/30 pb-2">
+                        Layanan</h5>
+                    <ul class="space-y-3 font-sans text-sm">
+                        <li><a href="stocks.html" class="hover:text-brand-green transition-colors">Wawasan Saham</a>
+                        </li>
+                        <li><a href="news.html" class="hover:text-brand-green transition-colors">Berita Ekonomi</a></li>
+                        <li><a href="index.html#tracking" class="hover:text-brand-green transition-colors">Personal
+                                Tracker</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-3 space-y-4 text-right md:text-left">
+                    <h5
+                        class="text-brand-green font-bold text-[10px] uppercase tracking-widest mb-6 border-b border-brand-green/30 pb-2">
+                        Kontak</h5>
+                    <p class="text-sm font-sans text-slate-400">editorial@arthanavigate.id<br />Jakarta, Indonesia</p>
+                </div>
+            </div>
+            <div
+                class="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-[9px] uppercase tracking-[0.3em] text-slate-600 font-bold">&copy; 2026 ArthaNavigate.
+                    Versi 2.0.0 Refined.</p>
+                <div class="flex gap-8">
+                    <span
+                        class="text-[9px] uppercase tracking-widest text-slate-600 cursor-pointer hover:text-white">Instagram</span>
+                    <span
+                        class="text-[9px] uppercase tracking-widest text-slate-600 cursor-pointer hover:text-white">LinkedIn</span>
+                    <span
+                        class="text-[9px] uppercase tracking-widest text-slate-600 cursor-pointer hover:text-white">Twitter</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="/news.js"></script>
+</body>
+
+</html>
