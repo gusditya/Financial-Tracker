@@ -67,17 +67,17 @@ document.addEventListener('DOMContentLoaded', () => {
     news.forEach((item, i) => {
       if (item.type === 'main') {
         const article = document.createElement('div');
-        article.className = 'group cursor-pointer border-b border-black pb-16 last:border-0';
+        article.className = 'group cursor-pointer border-b border-white/10 pb-16 last:border-0';
         article.setAttribute('data-aos', 'fade-up');
         article.innerHTML = `
-          <div class="overflow-hidden border border-black mb-8 relative">
+          <div class="overflow-hidden glass-card mb-8 relative">
             <img src="${item.image}" class="w-full h-96 object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000">
-            <div class="absolute top-4 left-4 bg-brand-black text-white px-3 py-1 text-[9px] font-bold uppercase tracking-widest">${item.category}</div>
+            <div class="absolute top-4 left-4 bg-brand-green text-white px-3 py-1 text-[9px] font-bold uppercase tracking-widest rounded-full shadow-[0_0_15px_rgba(16,185,129,0.5)]">${item.category}</div>
           </div>
-          <h3 class="font-serif text-4xl font-bold mt-2 mb-6 group-hover:text-brand-green transition-colors leading-tight">${item.title}</h3>
-          <p class="text-slate-600 font-sans leading-relaxed text-lg mb-8">${item.excerpt}</p>
-          <div class="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
-            <span class="text-brand-black">By ${item.author}</span>
+          <h3 class="font-serif text-4xl font-bold mt-2 mb-6 text-white group-hover:text-brand-green transition-colors leading-tight">${item.title}</h3>
+          <p class="text-slate-400 font-sans leading-relaxed text-lg mb-8">${item.excerpt}</p>
+          <div class="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">
+            <span class="text-white">By ${item.author}</span>
             <span>|</span>
             <span>${item.date}</span>
           </div>
@@ -85,11 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
         mainNewsEl.appendChild(article);
       } else {
         const sideItem = document.createElement('div');
-        sideItem.className = 'group cursor-pointer border-b border-slate-200 pb-8 last:border-0';
+        sideItem.className = 'group cursor-pointer border-b border-white/10 pb-8 last:border-0';
         sideItem.innerHTML = `
           <span class="text-brand-green font-bold text-[9px] uppercase tracking-widest block mb-2">${item.category}</span>
-          <h4 class="font-serif font-bold text-xl group-hover:underline underline-offset-4 decoration-1">${item.title}</h4>
-          <span class="text-[10px] text-slate-400 mt-3 block font-bold uppercase tracking-tighter">${item.date}</span>
+          <h4 class="font-serif font-bold text-xl text-white group-hover:text-brand-green transition-colors">${item.title}</h4>
+          <span class="text-[10px] text-slate-500 mt-3 block font-bold uppercase tracking-tighter">${item.date}</span>
         `;
         sidebarNewsEl.appendChild(sideItem);
       }

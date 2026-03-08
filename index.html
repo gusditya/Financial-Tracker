@@ -17,7 +17,7 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-[#fafafa] text-brand-black selection:bg-brand-green selection:text-white">
+<body class="bg-brand-black text-slate-200 selection:bg-brand-green selection:text-white">
 
     <!-- Dynamic Island Navbar -->
     <nav class="dynamic-island-nav flex-col md:flex-row md:items-center" id="main-nav">
@@ -52,10 +52,12 @@
     <main>
         <!-- Hero Section -->
         <!-- Hero Section -->
-        <section class="relative pt-32 pb-20 border-b border-black overflow-hidden bg-white">
+        <section class="relative pt-32 pb-20 overflow-hidden bg-brand-black">
             <!-- Background Decorative Patterns -->
-            <div class="absolute inset-0 bg-grid-slate-200 opacity-30 pointer-events-none"></div>
-            <div class="absolute top-0 right-0 w-1/3 h-full bg-slate-50 border-l border-black/5 hidden lg:block"></div>
+            <div class="absolute inset-0 bg-grid-slate-200 opacity-100 pointer-events-none"></div>
+            <div
+                class="absolute top-0 right-0 w-1/3 h-full bg-brand-surface/50 border-l border-white/5 hidden lg:block">
+            </div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -67,36 +69,35 @@
                                 Navigasi Cerdas</span>
                         </div>
 
-                        <h1 class="font-serif text-5xl md:text-8xl font-bold tracking-tight leading-[0.9] mb-8"
+                        <h1 class="font-serif text-5xl md:text-8xl font-bold tracking-tight leading-[0.9] mb-8 text-white"
                             data-aos="fade-up" data-aos-delay="100">
                             Navigasi <br />
-                            <span class="italic font-normal text-slate-400">Kekayaan</span> <br />
+                            <span class="italic font-normal text-emerald-400">Kekayaan</span> <br />
                             Masa Depan
                         </h1>
 
-                        <p class="text-xl text-slate-600 max-w-xl mb-12 leading-relaxed font-sans" data-aos="fade-up"
+                        <p class="text-xl text-slate-400 max-w-xl mb-12 leading-relaxed font-sans" data-aos="fade-up"
                             data-aos-delay="200">
                             Literasi ekonomi adalah kunci kedaulatan. Kami menyediakan alat presisi untuk
-                            <strong class="text-brand-black">memvalidasi</strong> strategi finansial Anda di era
+                            <strong class="text-white">memvalidasi</strong> strategi finansial Anda di era
                             volatilitas global.
                         </p>
 
                         <div class="flex flex-col sm:flex-row gap-6" data-aos="fade-up" data-aos-delay="300">
                             <a href="#audiens"
-                                class="px-10 py-4 bg-brand-black text-white font-bold tracking-widest uppercase text-xs editorial-shadow transition-all text-center">Jelajahi
+                                class="px-10 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold tracking-widest uppercase text-xs rounded-xl hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] transition-all text-center">Jelajahi
                                 Modul</a>
                             <a href="#tracking"
-                                class="px-10 py-4 bg-transparent border border-black text-brand-black font-bold tracking-widest uppercase text-xs editorial-shadow hover:bg-slate-50 transition-all text-center">Mulai
+                                class="px-10 py-4 bg-white/5 border border-white/10 text-white font-bold tracking-widest uppercase text-xs rounded-xl hover:bg-white/10 transition-all text-center backdrop-blur-sm">Mulai
                                 Melacak</a>
                         </div>
                     </div>
 
                     <div class="lg:col-span-5 relative" data-aos="fade-left" data-aos-delay="200">
                         <!-- Refined Hero Image Card -->
-                        <div
-                            class="relative z-10 p-4 bg-white border border-black editorial-shadow rounded-sm hero-card-glow">
+                        <div class="relative z-10 p-3 glass-card hero-card-glow">
                             <div
-                                class="aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                                class="aspect-[4/5] overflow-hidden rounded-lg grayscale hover:grayscale-0 transition-all duration-700">
                                 <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=2070&q=80"
                                     alt="Bursa Efek"
                                     class="w-full h-full object-cover transition-transform duration-1000 hover:scale-110">
@@ -104,19 +105,19 @@
                         </div>
 
                         <!-- Floating Data Cards -->
-                        <div class="absolute -top-10 -right-6 w-40 bg-white border border-black p-4 editorial-shadow animate-float z-20 hidden sm:block"
+                        <div class="absolute -top-10 -right-6 w-40 glass-card p-4 animate-float z-20 hidden sm:block"
                             style="animation-delay: -1s;">
                             <span class="text-[9px] font-bold text-brand-green uppercase">Market Index</span>
-                            <div class="text-lg font-serif font-bold">+12.4%</div>
-                            <div class="w-full h-1 bg-slate-100 mt-2">
-                                <div class="w-3/4 h-full bg-brand-green"></div>
+                            <div class="text-lg font-serif font-bold text-white">+12.4%</div>
+                            <div class="w-full h-1 bg-white/10 mt-2 rounded-full">
+                                <div class="w-3/4 h-full bg-brand-green rounded-full"></div>
                             </div>
                         </div>
 
-                        <div class="absolute -bottom-6 -left-10 w-48 bg-brand-black text-white border border-black p-5 editorial-shadow animate-float z-20 hidden sm:block"
+                        <div class="absolute -bottom-6 -left-10 w-48 glass-card p-5 animate-float z-20 hidden sm:block"
                             style="animation-delay: -2.5s;">
                             <span class="text-[9px] font-bold text-slate-400 uppercase">Personal Cashflow</span>
-                            <div class="text-xl font-serif font-bold">Rp 2.4M</div>
+                            <div class="text-xl font-serif font-bold text-white">Rp 2.4M</div>
                             <div class="text-[8px] text-brand-green mt-1">Status: Optimal</div>
                         </div>
                     </div>
@@ -125,7 +126,7 @@
         </section>
 
         <!-- Stats Ticker -->
-        <div class="border-y border-black bg-brand-black text-white overflow-hidden py-3">
+        <div class="border-y border-white/5 bg-brand-surface overflow-hidden py-3">
             <div class="ticker-track flex gap-16 animate-ticker whitespace-nowrap">
                 <div class="flex gap-16 items-center">
                     <span class="text-xs font-bold uppercase tracking-widest flex items-center gap-2"><span
@@ -161,13 +162,13 @@
         </div>
 
         <!-- Quick Access Dashboard -->
-        <section class="py-16 border-b border-black bg-[#fafafa]">
+        <section class="py-16 bg-brand-black">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="section-divider mb-12"></div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                     <!-- Card 1: Kalkulator -->
-                    <a href="#kalkulator"
-                        class="group block bg-white border border-black p-8 editorial-shadow transition-all hover:-translate-y-1"
+                    <a href="#kalkulator" class="group block glass-card p-8 transition-all hover:-translate-y-1"
                         data-aos="fade-up" data-aos-delay="0">
                         <div
                             class="w-14 h-14 bg-brand-green/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-green/20 transition-colors">
@@ -187,8 +188,8 @@
 
                     <!-- Card 2: Saham -->
                     <a href="src/pages/stocks.html"
-                        class="group block bg-white border border-black p-8 editorial-shadow transition-all hover:-translate-y-1"
-                        data-aos="fade-up" data-aos-delay="100">
+                        class="group block glass-card p-8 transition-all hover:-translate-y-1" data-aos="fade-up"
+                        data-aos-delay="100">
                         <div
                             class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-500/20 transition-colors">
                             <svg class="w-7 h-7 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -206,8 +207,7 @@
                     </a>
 
                     <!-- Card 3: Berita -->
-                    <a href="src/pages/news.html"
-                        class="group block bg-white border border-black p-8 editorial-shadow transition-all hover:-translate-y-1"
+                    <a href="src/pages/news.html" class="group block glass-card p-8 transition-all hover:-translate-y-1"
                         data-aos="fade-up" data-aos-delay="200">
                         <div
                             class="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-amber-500/20 transition-colors">
@@ -230,40 +230,41 @@
         </section>
 
         <!-- Tentang Section -->
-        <section id="tentang" class="py-20 border-b border-black">
+        <section id="tentang" class="py-20 bg-brand-black">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="mb-16 border-b border-black pb-4 flex justify-between items-end" data-aos="fade-up">
+                <div class="section-divider mb-16"></div>
+                <div class="mb-16 border-b border-white/10 pb-4 flex justify-between items-end" data-aos="fade-up">
                     <div>
                         <span
                             class="text-brand-green font-bold text-xs tracking-widest uppercase block mb-2">Manifesto</span>
-                        <h2 class="font-serif text-4xl font-bold text-brand-black">Kerangka INNOVATE</h2>
+                        <h2 class="font-serif text-4xl font-bold text-white">Kerangka INNOVATE</h2>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-0 border border-black editorial-shadow bg-white">
-                    <div class="p-8 border-b md:border-b-0 md:border-r border-black hover:bg-slate-50 transition-colors group"
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-0 glass-card overflow-hidden">
+                    <div class="p-8 border-b md:border-b-0 md:border-r border-white/10 hover:bg-white/5 transition-colors group"
                         data-aos="fade-up" data-aos-delay="100">
                         <div
-                            class="text-4xl font-serif font-bold text-slate-300 mb-6 group-hover:text-brand-green transition-colors">
+                            class="text-4xl font-serif font-bold text-white/10 mb-6 group-hover:text-brand-green transition-colors">
                             I.</div>
                         <h3 class="font-serif text-2xl font-bold mb-4">Navigasi</h3>
-                        <p class="text-slate-600 font-sans leading-relaxed text-sm">Jalur intuitif yang dipetakan secara
+                        <p class="text-slate-400 font-sans leading-relaxed text-sm">Jalur intuitif yang dipetakan secara
                             khusus untuk tahap finansial Anda.</p>
                     </div>
-                    <div class="p-8 border-b md:border-b-0 md:border-r border-black hover:bg-slate-50 transition-colors group"
+                    <div class="p-8 border-b md:border-b-0 md:border-r border-white/10 hover:bg-white/5 transition-colors group"
                         data-aos="fade-up" data-aos-delay="200">
                         <div
-                            class="text-4xl font-serif font-bold text-slate-300 mb-6 group-hover:text-brand-green transition-colors">
+                            class="text-4xl font-serif font-bold text-white/10 mb-6 group-hover:text-brand-green transition-colors">
                             II.</div>
                         <h3 class="font-serif text-2xl font-bold mb-4">Optimasi</h3>
-                        <p class="text-slate-600 font-sans leading-relaxed text-sm">Wawasan berbasis data akurat untuk
+                        <p class="text-slate-400 font-sans leading-relaxed text-sm">Wawasan berbasis data akurat untuk
                             memaksimalkan modal Anda.</p>
                     </div>
-                    <div class="p-8 hover:bg-slate-50 transition-colors group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-8 hover:bg-white/5 transition-colors group" data-aos="fade-up" data-aos-delay="300">
                         <div
-                            class="text-4xl font-serif font-bold text-slate-300 mb-6 group-hover:text-brand-green transition-colors">
+                            class="text-4xl font-serif font-bold text-white/10 mb-6 group-hover:text-brand-green transition-colors">
                             III.</div>
                         <h3 class="font-serif text-2xl font-bold mb-4">Akselerasi</h3>
-                        <p class="text-slate-600 font-sans leading-relaxed text-sm">Instrumen analitis modern untuk
+                        <p class="text-slate-400 font-sans leading-relaxed text-sm">Instrumen analitis modern untuk
                             pembangunan kekayaan jangka panjang.</p>
                     </div>
                 </div>
@@ -271,35 +272,36 @@
         </section>
 
         <!-- Audiens Section -->
-        <section id="audiens" class="py-20 border-b border-black bg-white">
+        <section id="audiens" class="py-20 bg-brand-surface">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12" data-aos="fade-up">
                     <span
                         class="text-brand-green font-bold text-xs tracking-widest uppercase block mb-4 border-b border-brand-green pb-1 inline-block">Segmentasi
                         Edukasi</span>
-                    <h2 class="font-serif text-3xl md:text-5xl font-bold mb-6 text-brand-black">Disesuaikan Untuk Anda
+                    <h2 class="font-serif text-3xl md:text-5xl font-bold mb-6 text-white">Disesuaikan Untuk Anda
                     </h2>
                 </div>
-                <div class="flex flex-col sm:flex-row justify-center border-y border-black mb-12 bg-[#fafafa]"
+                <div class="flex flex-col sm:flex-row justify-center border-y border-white/10 mb-12 rounded-xl overflow-hidden"
                     data-aos="fade-up">
                     <button data-target="tab-students"
-                        class="tab-btn flex-1 py-4 font-serif font-semibold text-lg transition-all border-b sm:border-b-0 sm:border-r border-black bg-brand-black text-white hover:bg-brand-black/90 uppercase tracking-wide">Pelajar</button>
+                        class="tab-btn flex-1 py-4 font-serif font-semibold text-lg transition-all border-b sm:border-b-0 sm:border-r border-white/10 bg-brand-green text-white hover:bg-emerald-600 uppercase tracking-wide">Pelajar</button>
                     <button data-target="tab-professionals"
-                        class="tab-btn flex-1 py-4 font-serif font-semibold text-lg transition-all border-b sm:border-b-0 sm:border-r border-black bg-transparent text-brand-black hover:bg-slate-100 uppercase tracking-wide">Profesional</button>
+                        class="tab-btn flex-1 py-4 font-serif font-semibold text-lg transition-all border-b sm:border-b-0 sm:border-r border-white/10 bg-white/5 text-slate-300 hover:bg-white/10 uppercase tracking-wide">Profesional</button>
                     <button data-target="tab-msme"
-                        class="tab-btn flex-1 py-4 font-serif font-semibold text-lg transition-all border-black bg-transparent text-brand-black hover:bg-slate-100 uppercase tracking-wide">Pemilik
+                        class="tab-btn flex-1 py-4 font-serif font-semibold text-lg transition-all border-white/10 bg-white/5 text-slate-300 hover:bg-white/10 uppercase tracking-wide">Pemilik
                         UMKM</button>
                 </div>
                 <div class="relative">
                     <div id="tab-students" class="tab-pane animate-fade-in-up block">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 border border-black editorial-shadow bg-white">
-                            <div class="p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-black">
-                                <h3 class="font-serif text-4xl font-bold mb-6">Membangun Fondasi</h3>
-                                <p class="text-slate-700 leading-relaxed font-sans mb-8">Bagi para pelajar, membangun
+                        <div class="grid grid-cols-1 lg:grid-cols-2 glass-card overflow-hidden">
+                            <div class="p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-white/10">
+                                <h3 class="font-serif text-4xl font-bold mb-6 text-white">Membangun Fondasi</h3>
+                                <p class="text-slate-400 leading-relaxed font-sans mb-8">Bagi para pelajar, membangun
                                     kebiasaan finansial jauh lebih penting daripada nominal angka. Pahami konsep
                                     tabungan otomatis sejak dini.</p>
-                                <div class="bg-slate-50 p-6 border border-black border-l-4 border-l-brand-green">
-                                    <p class="text-slate-600 italic font-sans text-sm">"Bayar diri Anda sendiri terlebih
+                                <div
+                                    class="bg-white/5 p-6 border border-white/10 rounded-xl border-l-4 border-l-brand-green">
+                                    <p class="text-slate-400 italic font-sans text-sm">"Bayar diri Anda sendiri terlebih
                                         dahulu." Sisihkan langsung porsi tabungan dari uang saku.</p>
                                 </div>
                             </div>
@@ -309,14 +311,15 @@
                         </div>
                     </div>
                     <div id="tab-professionals" class="tab-pane animate-fade-in-up hidden">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 border border-black editorial-shadow bg-white">
-                            <div class="p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-black">
-                                <h3 class="font-serif text-4xl font-bold mb-6">Optimasi Arus Kas</h3>
-                                <p class="text-slate-700 leading-relaxed font-sans mb-8">Aturan 50/30/20 adalah kompas
+                        <div class="grid grid-cols-1 lg:grid-cols-2 glass-card overflow-hidden">
+                            <div class="p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-white/10">
+                                <h3 class="font-serif text-4xl font-bold mb-6 text-white">Optimasi Arus Kas</h3>
+                                <p class="text-slate-400 leading-relaxed font-sans mb-8">Aturan 50/30/20 adalah kompas
                                     profesional muda. Alokasikan pendapatan Anda dengan strategis antara kebutuhan,
                                     keinginan, dan investasi.</p>
-                                <div class="bg-slate-50 p-6 border border-black border-l-4 border-l-blue-600">
-                                    <p class="text-slate-600 italic font-sans text-sm">Gunakan sistem otomatisasi untuk
+                                <div
+                                    class="bg-white/5 p-6 border border-white/10 rounded-xl border-l-4 border-l-blue-600">
+                                    <p class="text-slate-400 italic font-sans text-sm">Gunakan sistem otomatisasi untuk
                                         memastikan porsi 20% bagi masa depan Anda selalu terpenuhi.</p>
                                 </div>
                             </div>
@@ -326,14 +329,15 @@
                         </div>
                     </div>
                     <div id="tab-msme" class="tab-pane animate-fade-in-up hidden">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 border border-black editorial-shadow bg-white">
-                            <div class="p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-black">
-                                <h3 class="font-serif text-4xl font-bold mb-6">Proteksi Margin</h3>
-                                <p class="text-slate-700 leading-relaxed font-sans mb-8">Dalam bisnis, pendapatan adalah
+                        <div class="grid grid-cols-1 lg:grid-cols-2 glass-card overflow-hidden">
+                            <div class="p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-white/10">
+                                <h3 class="font-serif text-4xl font-bold mb-6 text-white">Proteksi Margin</h3>
+                                <p class="text-slate-400 leading-relaxed font-sans mb-8">Dalam bisnis, pendapatan adalah
                                     ego sementara margin adalah realita. Lindungi profitabilitas UMKM Anda dengan
                                     pemahaman makroekonomi yang tepat.</p>
-                                <div class="bg-slate-50 p-6 border border-black border-l-4 border-l-amber-500">
-                                    <p class="text-slate-600 italic font-sans text-sm">"Revenue is vanity, profit is
+                                <div
+                                    class="bg-white/5 p-6 border border-white/10 rounded-xl border-l-4 border-l-amber-500">
+                                    <p class="text-slate-400 italic font-sans text-sm">"Revenue is vanity, profit is
                                         sanity." Selalu hitung HPP Anda dengan detail di tengah inflasi.</p>
                                 </div>
                             </div>
@@ -411,59 +415,64 @@
         </section>
 
         <!-- Kalkulator Section -->
-        <section id="kalkulator" class="py-20 bg-[#fafafa] border-b border-black">
+        <section id="kalkulator" class="py-20 bg-brand-surface">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="mb-16 border-b border-black pb-4 flex flex-col md:flex-row justify-between items-end gap-6"
+                <div class="mb-16 border-b border-white/10 pb-4 flex flex-col md:flex-row justify-between items-end gap-6"
                     data-aos="fade-up">
-                    <h2 class="font-serif text-4xl font-bold text-brand-black">Alat Validasi Interaktif</h2>
+                    <h2 class="font-serif text-4xl font-bold text-white">Alat Validasi Interaktif</h2>
                     <span
-                        class="text-sm font-sans text-slate-500 bg-white border border-black px-4 py-2 editorial-shadow">Mata
+                        class="text-sm font-sans text-slate-400 bg-white/5 border border-white/10 px-4 py-2 rounded-lg backdrop-blur-sm">Mata
                         Uang: IDR</span>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <div class="bg-white border border-black p-8 editorial-shadow transition-transform hover:-translate-y-1"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <h3 class="font-serif text-2xl font-bold mb-6 border-b border-slate-200 pb-3">Pelacak Tabungan
+                    <div class="glass-card p-8 transition-transform hover:-translate-y-1" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <h3 class="font-serif text-2xl font-bold mb-6 border-b border-white/10 pb-3 text-white">Pelacak
+                            Tabungan
                         </h3>
                         <form id="goal-form" class="space-y-6">
                             <input type="number" id="target-price" required placeholder="Target Saldo (Rp)"
-                                class="w-full bg-[#fafafa] border border-black px-4 py-3 font-sans focus:outline-none focus:ring-1 focus:ring-brand-green">
+                                class="w-full bg-white/5 border border-white/10 text-white px-4 py-3 font-sans focus:outline-none focus:border-brand-green rounded-lg">
                             <input type="number" id="days-target" required placeholder="Tenggat Waktu (Hari)"
-                                class="w-full bg-[#fafafa] border border-black px-4 py-3 font-sans focus:outline-none focus:ring-1 focus:ring-brand-green">
+                                class="w-full bg-white/5 border border-white/10 text-white px-4 py-3 font-sans focus:outline-none focus:border-brand-green rounded-lg">
                             <button type="submit"
-                                class="w-full bg-brand-green text-white font-bold tracking-widest uppercase text-sm py-4 editorial-shadow hover:bg-emerald-600 transition-colors">Hitung
+                                class="w-full bg-brand-green text-white font-bold tracking-widest uppercase text-sm py-4 rounded-lg hover:bg-emerald-600 transition-colors shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)]">Hitung
                                 Harian</button>
                         </form>
-                        <div id="goal-result" class="min-h-[60px] mt-6 border-t border-dashed border-slate-300 pt-4">
+                        <div id="goal-result"
+                            class="min-h-[60px] mt-6 border-t border-dashed border-white/20 pt-4 text-slate-300">
                         </div>
                     </div>
-                    <div class="bg-white border border-black p-8 editorial-shadow transition-transform hover:-translate-y-1"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <h3 class="font-serif text-2xl font-bold mb-6 border-b border-slate-200 pb-3">Dana Darurat</h3>
+                    <div class="glass-card p-8 transition-transform hover:-translate-y-1" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <h3 class="font-serif text-2xl font-bold mb-6 border-b border-white/10 pb-3 text-white">Dana
+                            Darurat</h3>
                         <form id="emergency-form" class="space-y-6">
                             <input type="number" id="monthly-expenses" required placeholder="Pengeluaran Bulanan (Rp)"
-                                class="w-full bg-[#fafafa] border border-black px-4 py-3 font-sans focus:outline-none focus:ring-1 focus:ring-brand-black">
+                                class="w-full bg-white/5 border border-white/10 text-white px-4 py-3 font-sans focus:outline-none focus:border-brand-green rounded-lg">
                             <div class="h-[60px]"></div>
                             <button type="submit"
-                                class="w-full bg-brand-black text-white font-bold tracking-widest uppercase text-sm py-4 editorial-shadow hover:bg-slate-800 transition-colors">Hitung
+                                class="w-full bg-slate-800 border border-white/10 text-white font-bold tracking-widest uppercase text-sm py-4 rounded-lg hover:bg-slate-700 transition-colors">Hitung
                                 Target</button>
                         </form>
                         <div id="emergency-result"
-                            class="min-h-[60px] mt-6 border-t border-dashed border-slate-300 pt-4"></div>
+                            class="min-h-[60px] mt-6 border-t border-dashed border-white/20 pt-4 text-slate-300"></div>
                     </div>
-                    <div class="bg-white border border-black p-8 editorial-shadow transition-transform hover:-translate-y-1"
-                        data-aos="fade-up" data-aos-delay="300">
-                        <h3 class="font-serif text-2xl font-bold mb-6 border-b border-slate-200 pb-3">Margin UMKM</h3>
+                    <div class="glass-card p-8 transition-transform hover:-translate-y-1" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <h3 class="font-serif text-2xl font-bold mb-6 border-b border-white/10 pb-3 text-white">Margin
+                            UMKM</h3>
                         <form id="profit-form" class="space-y-6">
                             <input type="number" id="capital-cost" required placeholder="Modal HPP / Unit (Rp)"
-                                class="w-full bg-[#fafafa] border border-black px-4 py-3 font-sans focus:outline-none focus:ring-1 focus:ring-brand-green">
+                                class="w-full bg-white/5 border border-white/10 text-white px-4 py-3 font-sans focus:outline-none focus:border-brand-green rounded-lg">
                             <input type="number" id="selling-price" required placeholder="Harga Jual / Unit (Rp)"
-                                class="w-full bg-[#fafafa] border border-black px-4 py-3 font-sans focus:outline-none focus:ring-1 focus:ring-brand-green">
+                                class="w-full bg-white/5 border border-white/10 text-white px-4 py-3 font-sans focus:outline-none focus:border-brand-green rounded-lg">
                             <button type="submit"
-                                class="w-full bg-brand-green text-white font-bold tracking-widest uppercase text-sm py-4 editorial-shadow hover:bg-emerald-600 transition-colors">Hitung
+                                class="w-full bg-brand-green text-white font-bold tracking-widest uppercase text-sm py-4 rounded-lg hover:bg-emerald-600 transition-colors shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)]">Hitung
                                 Margin</button>
                         </form>
-                        <div id="profit-result" class="min-h-[60px] mt-6 border-t border-dashed border-slate-300 pt-4">
+                        <div id="profit-result"
+                            class="min-h-[60px] mt-6 border-t border-dashed border-white/20 pt-4 text-slate-300">
                         </div>
                     </div>
                 </div>
@@ -471,22 +480,21 @@
         </section>
 
         <!-- Financial Tracking Section (ENHANCED) -->
-        <section id="tracking" class="py-20 bg-white border-b border-black">
+        <section id="tracking" class="py-20 bg-brand-black border-t border-white/10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="mb-16 border-b border-black pb-4 flex flex-col md:flex-row justify-between items-end gap-6"
                     data-aos="fade-up">
                     <div>
                         <span class="text-brand-green font-bold text-xs tracking-widest uppercase block mb-2">Pusat
                             Kendali Kas</span>
-                        <h2 class="font-serif text-4xl font-bold text-brand-black">Pelacak Keuangan Cerdas</h2>
+                        <h2 class="font-serif text-4xl font-bold text-white">Pelacak Keuangan Cerdas</h2>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
                     <!-- Left Sidebar: Summary & Budgeting -->
                     <div class="lg:col-span-1 space-y-8">
-                        <div class="bg-brand-black p-8 border border-black editorial-shadow text-white relative overflow-hidden"
-                            data-aos="fade-right">
+                        <div class="glass-card p-8 text-white relative overflow-hidden" data-aos="fade-right">
                             <div class="relative z-10">
                                 <span
                                     class="text-[10px] font-bold uppercase tracking-[0.2em] opacity-60 block mb-2">Saldo
@@ -501,42 +509,43 @@
                         </div>
 
                         <!-- Budgeting Tracker -->
-                        <div class="bg-white p-8 border border-black editorial-shadow" data-aos="fade-right"
-                            data-aos-delay="100">
-                            <h4 class="font-serif font-bold text-lg mb-4 border-b border-black pb-2">Kontrol Anggaran
+                        <div class="glass-card p-8" data-aos="fade-right" data-aos-delay="100">
+                            <h4 class="font-serif font-bold text-lg mb-4 border-b border-white/10 pb-2 text-white">
+                                Kontrol Anggaran
                             </h4>
                             <div class="mb-6">
                                 <label
-                                    class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Target
+                                    class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Target
                                     Bulanan</label>
                                 <input type="number" id="budget-limit" placeholder="Set Limit (Rp)"
-                                    class="w-full bg-slate-50 border border-black px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-brand-green">
+                                    class="w-full bg-white/5 border border-white/10 px-3 py-2 text-sm text-white focus:outline-none focus:border-brand-green rounded-lg">
                             </div>
                             <div id="budget-progress-container" class="hidden">
-                                <div class="flex justify-between text-[10px] uppercase font-bold mb-2">
+                                <div class="flex justify-between text-[10px] uppercase font-bold mb-2 text-white">
                                     <span>Pemakaian</span>
                                     <span id="budget-percent">0%</span>
                                 </div>
-                                <div class="w-full h-2 bg-slate-100 border border-black overflow-hidden">
-                                    <div id="budget-bar" class="h-full bg-brand-green transition-all duration-500"
+                                <div class="w-full h-2 bg-white/10 border border-white/5 overflow-hidden rounded-full">
+                                    <div id="budget-bar"
+                                        class="h-full bg-brand-green transition-all duration-500 rounded-full"
                                         style="width: 0%"></div>
                                 </div>
-                                <p id="budget-status" class="text-[9px] mt-2 text-slate-500 font-sans"></p>
+                                <p id="budget-status" class="text-[9px] mt-2 text-slate-400 font-sans"></p>
                             </div>
                         </div>
 
                         <div class="grid grid-cols-2 lg:grid-cols-1 gap-4">
-                            <div class="bg-emerald-50 p-4 border border-black editorial-shadow" data-aos="fade-right"
+                            <div class="glass-card p-4 border-l-2 border-l-brand-green" data-aos="fade-right"
                                 data-aos-delay="200">
                                 <span
-                                    class="text-[9px] font-bold uppercase tracking-widest text-emerald-700">Inbound</span>
-                                <h3 id="total-income" class="text-xl font-serif font-bold text-brand-black">Rp 0</h3>
+                                    class="text-[9px] font-bold uppercase tracking-widest text-brand-green">Inbound</span>
+                                <h3 id="total-income" class="text-xl font-serif font-bold text-white">Rp 0</h3>
                             </div>
-                            <div class="bg-red-50 p-4 border border-black editorial-shadow" data-aos="fade-right"
+                            <div class="glass-card p-4 border-l-2 border-l-rose-500" data-aos="fade-right"
                                 data-aos-delay="300">
                                 <span
-                                    class="text-[9px] font-bold uppercase tracking-widest text-red-700">Outbound</span>
-                                <h3 id="total-expense" class="text-xl font-serif font-bold text-brand-black">Rp 0</h3>
+                                    class="text-[9px] font-bold uppercase tracking-widest text-rose-500">Outbound</span>
+                                <h3 id="total-expense" class="text-xl font-serif font-bold text-white">Rp 0</h3>
                             </div>
                         </div>
                     </div>
@@ -544,59 +553,59 @@
                     <!-- Right Main: Entry & History -->
                     <div class="lg:col-span-3 space-y-10">
                         <!-- Entry Form -->
-                        <div class="bg-[#fafafa] border border-black p-10 editorial-shadow" data-aos="fade-up">
-                            <h3 class="font-serif text-2xl font-bold mb-8">Entri Baru</h3>
+                        <div class="glass-card p-10" data-aos="fade-up">
+                            <h3 class="font-serif text-2xl font-bold mb-8 text-white">Entri Baru</h3>
                             <form id="tracking-form" class="grid grid-cols-1 md:grid-cols-12 gap-6">
                                 <div class="md:col-span-12 lg:col-span-5">
                                     <label
-                                        class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Deskripsi</label>
+                                        class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Deskripsi</label>
                                     <input type="text" id="track-desc" required placeholder="Mau bayar apa?"
-                                        class="w-full bg-white border border-black px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-brand-green">
+                                        class="w-full bg-white/5 border border-white/10 px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-green rounded-lg">
                                 </div>
                                 <div class="md:col-span-6 lg:col-span-4">
                                     <label
-                                        class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Nominal
+                                        class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Nominal
                                         (Rp)</label>
                                     <input type="number" id="track-amount" required min="1" placeholder="0"
-                                        class="w-full bg-white border border-black px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-brand-green">
+                                        class="w-full bg-white/5 border border-white/10 px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-green rounded-lg">
                                 </div>
                                 <div class="md:col-span-6 lg:col-span-3">
                                     <label
-                                        class="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Kategori</label>
+                                        class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Kategori</label>
                                     <select id="track-category"
-                                        class="w-full bg-white border border-black px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-brand-green">
-                                        <option value="Kebutuhan">Kebutuhan</option>
-                                        <option value="Gaya Hidup">Gaya Hidup</option>
-                                        <option value="Investasi">Investasi</option>
-                                        <option value="Gaji">Gaji / Income</option>
-                                        <option value="Hiburan">Hiburan</option>
-                                        <option value="Lainnya">Lainnya</option>
+                                        class="w-full bg-brand-surface border border-white/10 px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-green rounded-lg">
+                                        <option value="Kebutuhan" class="bg-brand-black">Kebutuhan</option>
+                                        <option value="Gaya Hidup" class="bg-brand-black">Gaya Hidup</option>
+                                        <option value="Investasi" class="bg-brand-black">Investasi</option>
+                                        <option value="Gaji" class="bg-brand-black">Gaji / Income</option>
+                                        <option value="Hiburan" class="bg-brand-black">Hiburan</option>
+                                        <option value="Lainnya" class="bg-brand-black">Lainnya</option>
                                     </select>
                                 </div>
                                 <div class="md:col-span-12 flex gap-4 pt-4">
                                     <button type="button" id="btn-income"
-                                        class="flex-1 bg-brand-green text-white font-bold tracking-widest uppercase text-xs py-4 editorial-shadow hover:bg-emerald-600 transition-colors">Arus
+                                        class="flex-1 bg-brand-green text-white font-bold tracking-widest uppercase text-xs py-4 rounded-lg hover:bg-emerald-600 transition-colors shadow-[0_0_20px_rgba(16,185,129,0.3)]">Arus
                                         Masuk</button>
                                     <button type="button" id="btn-expense"
-                                        class="flex-1 bg-brand-black text-white font-bold tracking-widest uppercase text-xs py-4 editorial-shadow hover:bg-slate-800 transition-colors">Arus
+                                        class="flex-1 bg-white/5 border border-white/10 text-white font-bold tracking-widest uppercase text-xs py-4 rounded-lg hover:bg-white/10 transition-colors">Arus
                                         Keluar</button>
                                 </div>
                             </form>
                         </div>
 
                         <!-- History -->
-                        <div class="bg-white border border-black editorial-shadow overflow-hidden" data-aos="fade-up"
-                            data-aos-delay="100">
-                            <div class="border-b border-black p-5 bg-slate-50 flex justify-between items-center">
-                                <h3 class="font-serif font-bold uppercase tracking-widest text-xs italic">Historical
+                        <div class="glass-card overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                            <div class="border-b border-white/10 p-5 bg-white/5 flex justify-between items-center">
+                                <h3 class="font-serif font-bold uppercase tracking-widest text-xs italic text-white">
+                                    Historical
                                     Ledger</h3>
                                 <button id="clear-tracking"
-                                    class="text-[9px] font-bold text-red-500 uppercase tracking-[0.2em] hover:underline">Reset
+                                    class="text-[9px] font-bold text-rose-500 uppercase tracking-[0.2em] hover:text-rose-400 transition-colors">Reset
                                     Data</button>
                             </div>
                             <div class="overflow-x-auto">
                                 <table class="w-full text-left font-sans text-sm border-collapse">
-                                    <thead class="bg-brand-black text-white">
+                                    <thead class="bg-white/5 text-slate-300 border-b border-white/10">
                                         <tr>
                                             <th class="px-6 py-4 font-bold uppercase tracking-widest text-[9px]">Date
                                             </th>
@@ -622,13 +631,13 @@
     </main>
 
     <!-- UI: Elegant Full-Width Footer -->
-    <footer class="bg-brand-black text-white border-t border-black w-full overflow-hidden">
+    <footer class="bg-brand-black text-white border-t border-white/10 w-full overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
                 <div class="md:col-span-5">
                     <div class="flex items-center gap-3 mb-8">
                         <div
-                            class="w-10 h-10 bg-white flex items-center justify-center text-brand-black font-serif font-bold text-xl">
+                            class="w-10 h-10 bg-brand-green flex items-center justify-center text-white rounded-full font-serif font-bold text-xl shadow-[0_0_20px_rgba(16,185,129,0.4)]">
                             AN</div>
                         <span class="font-serif font-bold text-3xl tracking-normal text-white">Artha<span
                                 class="text-brand-green">Navigate</span></span>
@@ -687,8 +696,9 @@
     <!-- AI Assistant Widget -->
     <div id="ai-widget-container" class="fixed bottom-6 right-6 z-[100] flex flex-col items-end">
         <div id="ai-chat-window"
-            class="hidden w-[calc(100vw-3rem)] sm:w-[400px] bg-white border border-black editorial-shadow mb-4 flex-col origin-bottom-right transition-all duration-300">
-            <div class="bg-brand-black text-white p-4 flex justify-between items-center">
+            class="hidden w-[calc(100vw-3rem)] sm:w-[400px] glass-card mb-4 flex-col origin-bottom-right transition-all duration-300">
+            <div
+                class="bg-white/5 border-b border-white/10 text-white p-4 flex justify-between items-center rounded-t-2xl">
                 <div class="flex items-center gap-3">
                     <span class="relative flex h-3 w-3"><span
                             class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"></span><span
@@ -700,23 +710,24 @@
                         <path stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg></button>
             </div>
-            <div id="ai-messages" class="p-6 h-[400px] overflow-y-auto flex flex-col gap-6 bg-[#fafafa]">
+            <div id="ai-messages"
+                class="p-6 h-[400px] overflow-y-auto flex flex-col gap-6 bg-brand-surface text-slate-300">
                 <div class="flex flex-col gap-2 items-start">
                     <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Artha AI</span>
                     <div
-                        class="bg-white border border-black p-4 text-xs font-sans leading-relaxed shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                        class="bg-white/10 border border-white/20 p-4 text-xs font-sans leading-relaxed rounded-2xl rounded-tl-none text-white backdrop-blur-md">
                         Halo! Ada kebutuhan analisis makro atau optimasi UMKM hari ini?</div>
                 </div>
             </div>
-            <form id="ai-chat-form" class="p-4 border-t border-black bg-white flex gap-2">
+            <form id="ai-chat-form" class="p-4 border-t border-white/10 bg-brand-surface rounded-b-2xl flex gap-2">
                 <input type="text" id="ai-chat-input" placeholder="Masukkan query analisis..."
-                    class="flex-1 border border-black px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-brand-green">
+                    class="flex-1 bg-white/5 border border-white/10 text-white px-4 py-3 text-sm focus:outline-none focus:border-brand-green rounded-lg">
                 <button type="submit"
                     class="bg-brand-black text-white px-4 font-bold uppercase text-[10px] tracking-widest hover:bg-brand-green transition-colors">Kirim</button>
             </form>
         </div>
         <button id="ai-toggle-btn"
-            class="w-16 h-16 bg-brand-green text-white flex items-center justify-center border-2 border-black editorial-shadow hover:-translate-y-1 transition-transform rounded-none"><svg
+            class="w-16 h-16 bg-brand-green text-white flex items-center justify-center rounded-full hover:bg-emerald-600 transition-all hover:scale-110 shadow-[0_0_20px_rgba(16,185,129,0.4)]"><svg
                 class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-width="2"
                     d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z">

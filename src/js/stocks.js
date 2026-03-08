@@ -36,25 +36,25 @@ document.addEventListener('DOMContentLoaded', () => {
   if (stockGrid) {
     stocks.forEach((s, i) => {
       const card = document.createElement('div');
-      card.className = 'bg-white border border-black p-8 editorial-shadow transition-transform hover:-translate-y-2 group';
+      card.className = 'glass-card p-8 transition-transform hover:-translate-y-2 group';
       card.setAttribute('data-aos', 'fade-up');
       card.setAttribute('data-aos-delay', (i % 3) * 100);
       card.innerHTML = `
         <div class="flex justify-between items-start mb-6">
           <div>
-            <h4 class="font-bold text-xl group-hover:text-brand-green transition-colors">${s.symbol}</h4>
-            <p class="text-[10px] text-slate-500 uppercase tracking-widest font-semibold">${s.name}</p>
+            <h4 class="font-bold text-xl text-white group-hover:text-brand-green transition-colors">${s.symbol}</h4>
+            <p class="text-[10px] text-slate-400 uppercase tracking-widest font-semibold">${s.name}</p>
           </div>
-          <span class="px-3 py-1 text-[10px] font-bold ${s.trend === 'up' ? 'bg-emerald-100 text-emerald-700' : 'bg-red-100 text-red-700'} uppercase tracking-tighter">
+          <span class="px-3 py-1 text-[10px] font-bold rounded-full ${s.trend === 'up' ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' : 'bg-rose-500/20 text-rose-400 border border-rose-500/30'} uppercase tracking-tighter">
             ${s.trend === 'up' ? '▲' : '▼'} ${s.change}%
           </span>
         </div>
-        <div class="mb-6 flex items-baseline gap-1">
+        <div class="mb-6 flex items-baseline gap-1 text-white">
           <span class="text-3xl font-serif font-bold">${formatIDR(s.price).replace('Rp', '').trim()}</span>
           <span class="text-xs text-slate-400 font-sans font-bold">IDR</span>
         </div>
-        <div class="pt-4 border-t border-slate-100">
-            <p class="text-xs text-slate-600 italic font-sans leading-relaxed">"${s.advice}"</p>
+        <div class="pt-4 border-t border-white/10">
+            <p class="text-xs text-slate-400 italic font-sans leading-relaxed">"${s.advice}"</p>
         </div>
       `;
       stockGrid.appendChild(card);
