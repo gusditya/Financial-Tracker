@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crisis Survival Map | ArthaNavigate</title>
+    <meta name="description" content="Pelajari pola krisis ekonomi 1998, 2008, 2020 dan strategi UMKM yang bertahan.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-brand-cream text-slate-600 selection:bg-brand-green selection:text-white">
+
+    <div id="navbar-root"></div>
+
+    <main>
+        <!-- ========== HERO ========== -->
+        <section class="relative pt-32 pb-20 bg-white overflow-hidden">
+            <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="max-w-3xl" data-aos="fade-up">
+                    <a href="../../index.html"
+                        class="inline-flex items-center gap-2 text-xs font-bold text-red-500 uppercase tracking-widest mb-8 hover:gap-3 transition-all">
+                        <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                        Kembali ke Dashboard
+                    </a>
+                    <div class="section-label mb-4" style="margin-left:0;">
+                        <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+                        Navigate &mdash; Crisis Intel
+                    </div>
+                    <h1 class="font-serif text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
+                        Crisis Survival <span class="italic font-normal text-red-500">Map</span>
+                    </h1>
+                    <p class="text-lg text-slate-500 max-w-xl leading-relaxed">
+                        Belajar dari sejarah: pola krisis 1998, 2008, dan 2020. Ketahui sektor yang
+                        <strong>survive</strong> dan strategi UMKM yang terbukti bertahan.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CRISIS SELECTOR ========== -->
+        <section class="py-24 bg-brand-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-14" data-aos="fade-up">
+                    <div class="section-label mx-auto mb-4">Pilih Krisis</div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">3 Krisis Besar Indonesia</h2>
+                    <p class="text-slate-500 max-w-2xl mx-auto">Klik salah satu untuk melihat dampak dan strategi
+                        bertahan.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16" id="crisis-selector">
+                    <!-- Crisis 1998 -->
+                    <button data-crisis="1998"
+                        class="crisis-card harbor-card p-8 text-left transition-all hover:-translate-y-2 hover:shadow-xl border-2 border-transparent"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-6xl font-serif font-bold text-red-500/20 mb-4">1998</div>
+                        <h3 class="text-xl font-bold mb-2">Krisis Moneter Asia</h3>
+                        <p class="text-sm text-slate-500">Rupiah jatuh dari Rp 2.500 ke Rp 16.800/USD. Inflasi 77.6%. 16
+                            bank dilikuidasi.</p>
+                        <div
+                            class="mt-6 text-red-500 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                            Lihat Detail <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </div>
+                    </button>
+
+                    <!-- Crisis 2008 -->
+                    <button data-crisis="2008"
+                        class="crisis-card harbor-card p-8 text-left transition-all hover:-translate-y-2 hover:shadow-xl border-2 border-transparent"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-6xl font-serif font-bold text-amber-500/20 mb-4">2008</div>
+                        <h3 class="text-xl font-bold mb-2">Krisis Finansial Global</h3>
+                        <p class="text-sm text-slate-500">Subprime mortgage AS memicu efek domino. IHSG turun 50%.
+                            Ekspor Indonesia anjlok 25%.</p>
+                        <div
+                            class="mt-6 text-amber-600 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                            Lihat Detail <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </div>
+                    </button>
+
+                    <!-- Crisis 2020 -->
+                    <button data-crisis="2020"
+                        class="crisis-card harbor-card p-8 text-left transition-all hover:-translate-y-2 hover:shadow-xl border-2 border-transparent"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-6xl font-serif font-bold text-blue-500/20 mb-4">2020</div>
+                        <h3 class="text-xl font-bold mb-2">Pandemi COVID-19</h3>
+                        <p class="text-sm text-slate-500">PDB kontraksi -2.07%. UMKM paling terdampak. Tapi e-commerce
+                            &amp; digital meledak 54%.</p>
+                        <div
+                            class="mt-6 text-blue-600 text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                            Lihat Detail <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Detail Panel -->
+                <div id="crisis-detail" class="hidden">
+                    <div class="harbor-card p-8 md:p-12 mb-12" data-aos="fade-up">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="text-4xl font-serif font-bold" id="crisis-detail-year"></div>
+                            <div>
+                                <h3 class="text-2xl font-bold" id="crisis-detail-name"></h3>
+                                <p class="text-sm text-slate-500" id="crisis-detail-tagline"></p>
+                            </div>
+                        </div>
+
+                        <!-- Impact Stats -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10" id="crisis-stats">
+                            <!-- Injected by JS -->
+                        </div>
+
+                        <!-- Sectors Survived vs Collapsed -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                            <div>
+                                <h4
+                                    class="text-sm font-bold uppercase tracking-widest text-red-500 mb-4 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-red-500 rounded-full"></span> Sektor Terdampak
+                                </h4>
+                                <div id="sectors-collapsed" class="space-y-3">
+                                    <!-- Injected by JS -->
+                                </div>
+                            </div>
+                            <div>
+                                <h4
+                                    class="text-sm font-bold uppercase tracking-widest text-brand-green mb-4 flex items-center gap-2">
+                                    <span class="w-2 h-2 bg-brand-green rounded-full"></span> Sektor yang Survive
+                                </h4>
+                                <div id="sectors-survived" class="space-y-3">
+                                    <!-- Injected by JS -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- UMKM Survival Playbook -->
+                        <div class="bg-slate-50 rounded-2xl p-8">
+                            <h4 class="font-serif text-xl font-bold mb-6 flex items-center gap-3">
+                                <svg class="w-6 h-6 text-brand-green" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                    </path>
+                                </svg>
+                                Survival Playbook untuk UMKM
+                            </h4>
+                            <div id="survival-playbook" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <!-- Injected by JS -->
+                            </div>
+                        </div>
+
+                        <!-- Crisis Charts -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10">
+                            <div class="bg-slate-50 rounded-2xl p-6 md:p-8">
+                                <h4 class="font-bold text-sm uppercase tracking-widest text-slate-400 mb-6">Dampak
+                                    Krisis — Radar</h4>
+                                <div class="relative" style="height:300px;">
+                                    <canvas id="chart-crisis-radar"></canvas>
+                                </div>
+                            </div>
+                            <div class="bg-slate-50 rounded-2xl p-6 md:p-8">
+                                <h4 class="font-bold text-sm uppercase tracking-widest text-slate-400 mb-6">Sektor
+                                    Terdampak vs Survive</h4>
+                                <div class="relative" style="height:300px;">
+                                    <canvas id="chart-crisis-sectors"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PATTERN COMPARISON ========== -->
+        <section class="py-24 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-14" data-aos="fade-up">
+                    <div class="section-label mx-auto mb-4">Pola Berulang</div>
+                    <h2 class="font-serif text-4xl font-bold mb-4">Pelajaran dari 3 Krisis</h2>
+                    <p class="text-slate-500 max-w-2xl mx-auto">Pola yang sama terus berulang. UMKM yang memahami pola
+                        ini bisa bertahan di krisis berikutnya.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="harbor-card-flat p-8 text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="w-14 h-14 bg-brand-green-light rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-7 h-7 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-3">Cash is King</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">Di setiap krisis, bisnis dengan cadangan kas
+                            kuat survive 3x lebih baik. Siapkan minimal 6 bulan biaya operasional.</p>
+                    </div>
+                    <div class="harbor-card-flat p-8 text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-3">Pivot Cepat</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">UMKM yang pivot ke digital dalam 3 bulan
+                            pertama krisis memiliki tingkat survival 70% vs 30% yang menunggu.</p>
+                    </div>
+                    <div class="harbor-card-flat p-8 text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-lg mb-3">Kebutuhan Primer Menang</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">Sektor makanan, kesehatan, dan utilitas selalu
+                            pulih paling cepat. Sesuaikan produk ke kebutuhan dasar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-root"></div>
+
+    <script type="module" src="/src/js/pages/crisis-map.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 {
-  "name": "web-design---arthanavigate",
+  "name": "arthanavigate-financial-tracker",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "chart.js": "^4.5.1",
+    "lucide": "^0.577.0"
   }
 }

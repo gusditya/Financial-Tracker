@@ -6,10 +6,8 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wawasan Saham | ArthaNavigate</title>
-    <!-- SEO Optimization -->
     <meta name="description"
         content="Pahami dinamika bursa untuk memutar modal Anda dengan wawasan instrumen saham ArthaNavigate.">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,63 +15,32 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-brand-black text-slate-200 selection:bg-brand-green selection:text-white">
+<body class="bg-brand-cream text-slate-600 selection:bg-brand-green selection:text-white">
 
-    <!-- Dynamic Island Navbar -->
-    <nav class="dynamic-island-nav flex-col md:flex-row md:items-center" id="main-nav">
-        <div class="flex items-center justify-between w-full md:w-auto">
-            <a href="../../index.html" class="nav-logo-pill">AN</a>
+    <div id="navbar-root"></div>
 
-            <!-- Mobile Menu Toggle Button -->
-            <button id="mobile-menu-btn"
-                class="md:hidden ml-4 p-2 text-white hover:bg-white/10 rounded-full transition-colors focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                    </path>
-                </svg>
-            </button>
-        </div>
-
-        <!-- Links Container -->
-        <div id="nav-links-container"
-            class="hidden md:flex flex-col md:flex-row items-center gap-1 w-full md:w-auto mt-4 md:mt-0">
-            <a href="../../index.html#tentang" class="nav-pill-item w-full md:w-auto text-center">Tentang</a>
-            <a href="../../index.html#audiens" class="nav-pill-item w-full md:w-auto text-center">Audiens</a>
-            <a href="../../index.html#tracking" class="nav-pill-item w-full md:w-auto text-center">Pelacak</a>
-            <a href="stocks.html"
-                class="nav-pill-item active w-full md:w-auto text-center block md:inline-block">Saham</a>
-            <a href="news.html" class="nav-pill-item w-full md:w-auto text-center">Berita</a>
-
-            <a href="../../index.html#kalkulator"
-                class="mt-2 md:mt-0 px-5 py-2 bg-gradient-to-r from-emerald-500 to-teal-400 text-white text-[10px] font-bold uppercase tracking-widest rounded-full hover:shadow-[0_0_15px_rgba(16,185,129,0.5)] transition-all md:ml-2 w-full md:w-auto text-center block">Hitung</a>
-        </div>
-    </nav>
-
-    <main class="py-20 lg:py-32 border-b border-white/10 bg-brand-black">
+    <main class="pt-36 pb-20 bg-brand-cream">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="mb-16 pb-4 border-b border-white/10" data-aos="fade-up">
-                <span
-                    class="text-brand-green font-bold text-xs tracking-widest uppercase block mb-4 border-b border-brand-green/30 pb-1 inline-block">Analisis
-                    Pasar Modal</span>
-                <h1 class="font-serif text-5xl md:text-7xl font-bold mb-8 text-white">Wawasan <br /><span
-                        class="italic font-normal text-slate-400">Instrumen Saham</span></h1>
-                <p class="text-lg text-slate-400 max-w-2xl leading-relaxed font-sans">Eksplorasi mendalam terkait
-                    berbagai emiten potensial. Kami menyajikan data historis dan tren masa depan (2025-2026) untuk
-                    membantu keputusan investasi Anda.</p>
+            <div class="mb-16" data-aos="fade-up">
+                <div class="section-label mb-6">Analisis Pasar Modal</div>
+                <h1 class="font-serif text-5xl md:text-7xl font-bold mb-8">Wawasan <br /><span
+                        class="italic font-normal text-brand-green">Instrumen Saham</span></h1>
+                <p class="text-lg text-slate-500 max-w-2xl leading-relaxed">Eksplorasi mendalam terkait berbagai emiten
+                    potensial. Kami menyajikan data historis dan tren masa depan (2025-2026) untuk membantu keputusan
+                    investasi Anda.</p>
             </div>
 
-            <div id="stock-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Stock cards will be injected by JS -->
+            <div id="stock-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Stock cards injected by JS -->
             </div>
 
             <!-- Historical Trends Section -->
-            <div class="mt-32 glass-card p-10" data-aos="fade-up">
-                <h2 class="font-serif text-3xl font-bold mb-6 text-white">Tren Pasar 2025 - 2026</h2>
-                <div class="prose prose-slate max-w-none font-sans text-slate-400 leading-relaxed">
-                    <p class="mb-4">Tahun 2025 menandai kebangkitan sektor teknologi hijau dan energi terbarukan di
-                        bursa domestik. Didorong oleh regulasi ESG yang semakin ketat, emiten yang berfokus pada
-                        keberlanjutan mencatat pertumbuhan rata-rata 15% lebih tinggi dibandingkan sektor konvensional.
-                    </p>
+            <div class="mt-20 harbor-card p-10 md:p-14" data-aos="fade-up">
+                <h2 class="font-serif text-3xl font-bold mb-6">Tren Pasar 2025 — 2026</h2>
+                <div class="prose prose-slate max-w-none text-slate-500 leading-relaxed space-y-4">
+                    <p>Tahun 2025 menandai kebangkitan sektor teknologi hijau dan energi terbarukan di bursa domestik.
+                        Didorong oleh regulasi ESG yang semakin ketat, emiten yang berfokus pada keberlanjutan mencatat
+                        pertumbuhan rata-rata 15% lebih tinggi dibandingkan sektor konvensional.</p>
                     <p>Memasuki 2026, analis memproyeksikan konsolidasi di sektor perbankan digital. Bank konvensional
                         yang berhasil melakukan transformasi digital secara penuh diprediksi akan mendominasi pangsa
                         pasar, memberikan dividen yang lebih stabil bagi pemegang saham jangka panjang.</p>
@@ -82,75 +49,9 @@
         </div>
     </main>
 
-    <!-- UI: Elegant Full-Width Footer -->
-    <footer class="bg-brand-black text-white border-t border-white/10 w-full overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
-                <div class="md:col-span-5">
-                    <div class="flex items-center gap-3 mb-8">
-                        <div
-                            class="w-10 h-10 bg-brand-green flex items-center justify-center text-white rounded-full font-serif font-bold text-xl shadow-[0_0_20px_rgba(16,185,129,0.4)]">
-                            AN</div>
-                        <span class="font-serif font-bold text-3xl tracking-normal text-white">Artha<span
-                                class="text-brand-green">Navigate</span></span>
-                    </div>
-                    <p class="font-serif text-xl italic text-slate-400 leading-relaxed mb-8">
-                        "Edukasi adalah satu-satunya instrumen dengan imbal hasil tak terbatas."
-                    </p>
-                </div>
-                <div class="md:col-span-2 space-y-4">
-                    <h5
-                        class="text-brand-green font-bold text-[10px] uppercase tracking-widest mb-6 border-b border-brand-green/30 pb-2">
-                        Navigasi</h5>
-                    <ul class="space-y-3 font-sans text-sm">
-                        <li><a href="../../index.html#tentang"
-                                class="hover:text-brand-green transition-colors">Manifesto</a>
-                        </li>
-                        <li><a href="../../index.html#audiens"
-                                class="hover:text-brand-green transition-colors">Edukasi</a>
-                        </li>
-                        <li><a href="../../index.html#kalkulator" class="hover:text-brand-green transition-colors">Alat
-                                Hitung</a></li>
-                    </ul>
-                </div>
-                <div class="md:col-span-2 space-y-4">
-                    <h5
-                        class="text-brand-green font-bold text-[10px] uppercase tracking-widest mb-6 border-b border-brand-green/30 pb-2">
-                        Layanan</h5>
-                    <ul class="space-y-3 font-sans text-sm">
-                        <li><a href="stocks.html" class="hover:text-brand-green transition-colors">Wawasan Saham</a>
-                        </li>
-                        <li><a href="news.html" class="hover:text-brand-green transition-colors">Berita Ekonomi</a></li>
-                        <li><a href="../../index.html#tracking"
-                                class="hover:text-brand-green transition-colors">Personal
-                                Tracker</a></li>
-                    </ul>
-                </div>
-                <div class="md:col-span-3 space-y-4 text-right md:text-left">
-                    <h5
-                        class="text-brand-green font-bold text-[10px] uppercase tracking-widest mb-6 border-b border-brand-green/30 pb-2">
-                        Kontak</h5>
-                    <p class="text-sm font-sans text-slate-400">editorial@arthanavigate.id<br />Jakarta, Indonesia</p>
-                </div>
-            </div>
-            <div
-                class="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-                <p class="text-[9px] uppercase tracking-[0.3em] text-slate-600 font-bold">&copy; 2026 ArthaNavigate.
-                    Versi 2.0.0 Refined.</p>
-                <div class="flex gap-8">
-                    <span
-                        class="text-[9px] uppercase tracking-widest text-slate-600 cursor-pointer hover:text-white">Instagram</span>
-                    <span
-                        class="text-[9px] uppercase tracking-widest text-slate-600 cursor-pointer hover:text-white">LinkedIn</span>
-                    <span
-                        class="text-[9px] uppercase tracking-widest text-slate-600 cursor-pointer hover:text-white">Twitter</span>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-root"></div>
 
-    <!-- Scripts -->
-    <script type="module" src="../js/stocks.js"></script>
+    <script type="module" src="../js/pages/stocks.js"></script>
 </body>
 
 </html>

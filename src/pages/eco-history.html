@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco-History Sync | ArthaNavigate</title>
+    <meta name="description"
+        content="Lihat kondisi ekonomi Indonesia saat Anda lahir. Hubungkan cerita hidup dengan data ekonomi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-brand-cream text-slate-600 selection:bg-brand-green selection:text-white">
+
+    <div id="navbar-root"></div>
+
+    <main>
+        <!-- ========== HERO ========== -->
+        <section class="relative pt-32 pb-20 bg-white overflow-hidden">
+            <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="max-w-3xl" data-aos="fade-up">
+                    <a href="../../index.html"
+                        class="inline-flex items-center gap-2 text-xs font-bold text-brand-green uppercase tracking-widest mb-8 hover:gap-3 transition-all">
+                        <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                        Kembali ke Dashboard
+                    </a>
+                    <div class="section-label mb-4" style="margin-left:0;">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                        Impel Novelty
+                    </div>
+                    <h1 class="font-serif text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
+                        Eco-History <span class="italic font-normal text-brand-green">Sync</span>
+                    </h1>
+                    <p class="text-lg text-slate-500 max-w-xl leading-relaxed">
+                        Masukkan tahun lahir Anda dan lihat bagaimana kondisi ekonomi Indonesia saat Anda dilahirkan.
+                        Data statistik yang membosankan menjadi <strong>cerita hidup Anda</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== INPUT ========== -->
+        <section class="py-24 bg-brand-cream">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="harbor-card p-8 md:p-12" data-aos="fade-up">
+                    <div class="text-center mb-10">
+                        <h2 class="font-serif text-3xl font-bold mb-3">Tahun Berapa Anda Lahir?</h2>
+                        <p class="text-sm text-slate-500">Kami akan menampilkan snapshot ekonomi Indonesia di tahun
+                            tersebut.</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-end">
+                        <div class="flex-1 max-w-xs mx-auto sm:mx-0">
+                            <label
+                                class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Tahun
+                                Lahir</label>
+                            <input type="number" id="birth-year"
+                                class="harbor-input text-center text-2xl font-serif font-bold" placeholder="2000"
+                                min="1960" max="2010" />
+                        </div>
+                        <button id="sync-btn" class="btn-primary">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                            Sync Sejarah
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== RESULT ========== -->
+        <section id="eco-result" class="py-24 bg-white hidden">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Personal Header -->
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <div class="section-label mx-auto mb-4">Snapshot Ekonomi</div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4" id="result-title">Indonesia di Tahun
+                        <span class="text-brand-green" id="result-year">—</span></h2>
+                    <p class="text-slate-500 max-w-2xl mx-auto" id="result-subtitle">Saat Anda lahir, begini kondisi
+                        ekonomi negara ini.</p>
+                </div>
+
+                <!-- Data Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16" id="eco-data-cards">
+                    <!-- Injected by JS -->
+                </div>
+
+                <!-- Story Card -->
+                <div class="harbor-card p-8 md:p-12 mb-12" id="eco-story-card" data-aos="fade-up">
+                    <!-- Injected by JS -->
+                </div>
+
+                <!-- Charts -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <div class="harbor-card p-6 md:p-8" data-aos="fade-up">
+                        <h3 class="font-serif text-xl font-bold mb-6">Pertumbuhan PDB Indonesia</h3>
+                        <div class="relative" style="height:320px;">
+                            <canvas id="chart-pdb"></canvas>
+                        </div>
+                    </div>
+                    <div class="harbor-card p-6 md:p-8" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="font-serif text-xl font-bold mb-6">Inflasi &amp; Kurs Rupiah</h3>
+                        <div class="relative" style="height:320px;">
+                            <canvas id="chart-inflation"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="harbor-card p-8 md:p-12" data-aos="fade-up">
+                    <h3 class="font-serif text-2xl font-bold mb-8">Perjalanan Ekonomi Sejak Anda Lahir</h3>
+                    <div id="eco-timeline" class="space-y-6">
+                        <!-- Injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-root"></div>
+
+    <script type="module" src="/src/js/pages/eco-history.js"></script>
+</body>
+
+</html>
