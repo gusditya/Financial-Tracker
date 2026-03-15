@@ -17,6 +17,8 @@ export default defineConfig({
         "crisis-map": resolve(__dirname, "src/pages/crisis-map.html"),
         "value-converter": resolve(__dirname, "src/pages/value-converter.html"),
         "mentor-ai": resolve(__dirname, "src/pages/mentor-ai.html"),
+        "materi-pemula": resolve(__dirname, "src/pages/materi-pemula.html"),
+        "materi-mahasiswa": resolve(__dirname, "src/pages/materi-mahasiswa.html"),
       },
     },
   },

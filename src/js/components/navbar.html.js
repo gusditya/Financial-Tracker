@@ -67,7 +67,11 @@ export function renderNavbar({
   return `
     <nav class="dynamic-island-nav flex-col md:flex-row md:items-center" id="main-nav">
         <div class="flex items-center justify-between w-full md:w-auto">
-            <a href="${logoHref}" class="nav-logo-pill">AN</a>
+            <a href="${logoHref}" class="nav-logo-pill flex items-center gap-2">
+                <span class="w-6 h-6 bg-brand-green rounded-lg flex items-center justify-center text-white text-[10px] font-bold">AN</span>
+                <span class="hidden sm:inline">ArthaNavigate</span>
+                <span class="sm:hidden">AN</span>
+            </a>
             <button id="mobile-menu-btn"
                 class="md:hidden ml-4 p-2 text-slate-500 hover:bg-slate-100 rounded-full transition-colors focus:outline-none">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -87,9 +91,14 @@ export function renderNavbar({
                     ${toolDropdownItems}
                 </div>
             </div>
+            <a href="${activePage === 'home' ? '#pilih-jalur' : pagePath + 'pemula.html'}" class="nav-cta-btn hidden md:inline-flex items-center gap-1.5 ml-1">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                Mulai Gratis
+            </a>
             <div class="flex flex-col gap-1 w-full md:hidden mt-2 pt-2 border-t border-slate-200/60">
                 <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest px-3 mb-1">Fitur Inovatif</span>
                 ${mobileToolLinks}
+                <a href="${activePage === 'home' ? '#pilih-jalur' : pagePath + 'pemula.html'}" class="nav-cta-btn text-center mt-2">Mulai Gratis</a>
             </div>
         </div>
     </nav>`;

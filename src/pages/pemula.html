@@ -19,36 +19,136 @@
 
     <main>
         <!-- ========== HERO ========== -->
-        <section class="relative pt-32 pb-20 bg-white overflow-hidden">
-            <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
+        <section class="relative pt-28 pb-0 overflow-hidden hero-pemula">
+            <!-- Gradient Background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-teal-50"></div>
+            <div class="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
+            <!-- Decorative Floating Shapes -->
+            <div class="absolute top-20 right-10 w-72 h-72 bg-emerald-200/20 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-10 left-10 w-56 h-56 bg-teal-200/20 rounded-full blur-3xl animate-pulse" style="animation-delay:1.5s"></div>
+            <div class="absolute top-1/2 right-1/4 w-32 h-32 bg-emerald-300/10 rounded-full blur-2xl"></div>
+
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <div class="max-w-3xl" data-aos="fade-up">
-                    <a href="../../index.html"
-                        class="inline-flex items-center gap-2 text-xs font-bold text-brand-green uppercase tracking-widest mb-8 hover:gap-3 transition-all">
-                        <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                        </svg>
-                        Kembali ke Dashboard
-                    </a>
-                    <div class="section-label mb-4">
-                        <span class="w-2 h-2 bg-brand-green rounded-full animate-pulse"></span>
-                        Level 1 — Fondasi
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pb-16">
+                    <!-- Left: Text Content -->
+                    <div data-aos="fade-up">
+                        <a href="../../index.html"
+                            class="inline-flex items-center gap-2 text-xs font-bold text-brand-green uppercase tracking-widest mb-6 hover:gap-3 transition-all">
+                            <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                            Kembali ke Dashboard
+                        </a>
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+                            <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                            Level 1 — Fondasi Keuangan
+                        </div>
+                        <h1 class="font-serif text-5xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-6">
+                            Mulai dari <span class="italic font-normal text-brand-green">Nol</span>,<br>Raih Kebebasan Finansial.
+                        </h1>
+                        <p class="text-lg text-slate-500 max-w-xl leading-relaxed mb-8">
+                            Panduan komprehensif untuk membangun fondasi keuangan yang kuat. Dari memahami fungsi uang hingga membuat rencana investasi jangka panjang — semua disusun dengan bahasa sederhana, langkah terstruktur, dan visualisasi data interaktif.
+                        </p>
+                        <div class="flex flex-wrap gap-3 mb-8">
+                            <a href="#roadmap-belajar" class="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-green text-white font-bold text-xs tracking-widest uppercase rounded-full hover:shadow-lg hover:shadow-brand-green/25 hover:-translate-y-0.5 transition-all duration-300">
+                                Mulai Belajar
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+                            </a>
+                            <a href="#video" class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-slate-700 font-bold text-xs tracking-widest uppercase rounded-full border border-slate-200 hover:bg-slate-50 hover:border-brand-green hover:-translate-y-0.5 transition-all duration-300">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
+                                Tonton Video
+                            </a>
+                        </div>
+                        <!-- Trust Badges -->
+                        <div class="flex items-center gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-widest">
+                            <span>Sumber Referensi:</span>
+                            <span class="px-2.5 py-1 bg-white/80 rounded-md border border-slate-100">Bank Indonesia</span>
+                            <span class="px-2.5 py-1 bg-white/80 rounded-md border border-slate-100">OJK</span>
+                            <span class="px-2.5 py-1 bg-white/80 rounded-md border border-slate-100">BPS</span>
+                        </div>
                     </div>
-                    <h1 class="font-serif text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
-                        Mulai dari <span class="italic font-normal text-brand-green">Nol</span>,<br>Raih Kebebasan
-                        Finansial.
-                    </h1>
-                    <p class="text-lg text-slate-500 max-w-xl leading-relaxed">
-                        Panduan lengkap untuk Anda yang baru memulai perjalanan finansial. Semua materi disusun dengan
-                        bahasa sederhana dan langkah yang jelas.
-                    </p>
+
+                    <!-- Right: Stats & Feature Cards -->
+                    <div class="space-y-5" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Stats Row -->
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-emerald-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
+                                <div class="text-3xl font-serif font-bold text-brand-green mb-1">8</div>
+                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Modul</div>
+                            </div>
+                            <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-emerald-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
+                                <div class="text-3xl font-serif font-bold text-brand-green mb-1">20+</div>
+                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Chart</div>
+                            </div>
+                            <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-emerald-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
+                                <div class="text-3xl font-serif font-bold text-brand-green mb-1">100%</div>
+                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Gratis</div>
+                            </div>
+                        </div>
+
+                        <!-- Feature Cards -->
+                        <div class="hero-feature-card bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-emerald-100 shadow-sm hover:shadow-md transition-all duration-300">
+                            <h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Yang Akan Anda Pelajari</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-emerald-50/50 transition-colors">
+                                    <span class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center text-sm flex-shrink-0">💰</span>
+                                    <div>
+                                        <div class="text-sm font-bold text-slate-700">Pengelolaan Uang & Budgeting</div>
+                                        <div class="text-xs text-slate-400">Aturan 50/30/20, cash flow, dana darurat</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-emerald-50/50 transition-colors">
+                                    <span class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center text-sm flex-shrink-0">📈</span>
+                                    <div>
+                                        <div class="text-sm font-bold text-slate-700">Dasar Investasi & Produk Keuangan</div>
+                                        <div class="text-xs text-slate-400">Reksadana, saham, obligasi, risk vs return</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-emerald-50/50 transition-colors">
+                                    <span class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center text-sm flex-shrink-0">🎯</span>
+                                    <div>
+                                        <div class="text-sm font-bold text-slate-700">Perencanaan Keuangan Jangka Panjang</div>
+                                        <div class="text-xs text-slate-400">Compound interest, tujuan SMART, Rule of 72</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini Progress Preview -->
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-emerald-100 shadow-sm">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Perjalanan Belajar</span>
+                                <span class="text-[10px] font-bold text-brand-green">8 Langkah</span>
+                            </div>
+                            <div class="flex gap-1.5">
+                                <div class="h-1.5 flex-1 rounded-full bg-brand-green"></div>
+                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
+                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
+                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
+                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
+                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
+                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
+                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
+                            </div>
+                            <p class="text-xs text-slate-400 mt-2">Mulai dari Langkah 1: Pahami Uang & Fungsinya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="flex justify-center pb-6" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#roadmap-belajar" class="flex flex-col items-center gap-2 text-slate-400 hover:text-brand-green transition-colors">
+                        <span class="text-[10px] font-bold uppercase tracking-widest">Scroll untuk Mulai</span>
+                        <div class="w-6 h-10 rounded-full border-2 border-current flex justify-center pt-2">
+                            <div class="w-1 h-2.5 bg-current rounded-full animate-bounce"></div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- ========== STEP BY STEP GUIDE ========== -->
-        <section class="py-24 bg-brand-cream">
+        <section id="roadmap-belajar" class="py-24 bg-brand-cream">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <div class="section-label mx-auto mb-4">Roadmap Belajar</div>
@@ -64,6 +164,10 @@
                         <p class="text-sm text-slate-500 leading-relaxed">Uang bukan hanya alat tukar — ia adalah alat
                             ukur nilai, penyimpan kekayaan, dan standar pembayaran. Memahami peran uang dalam ekonomi
                             adalah langkah pertama menuju literasi finansial.</p>
+                        <a href="materi-pemula.html?topic=1" class="continue-link text-brand-green">
+                            Lanjutkan Pembelajaran
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        </a>
                     </div>
                     <div class="step-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="step-number">02</div>
@@ -71,6 +175,10 @@
                         <p class="text-sm text-slate-500 leading-relaxed">Inflasi menurunkan daya beli uang Anda seiring
                             waktu. Rata-rata inflasi Indonesia 2.87% per tahun (2026). Artinya Rp 1 juta hari ini
                             bernilai ~Rp 970.000 tahun depan jika hanya disimpan di bawah bantal.</p>
+                        <a href="materi-pemula.html?topic=2" class="continue-link text-brand-green">
+                            Lanjutkan Pembelajaran
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        </a>
                     </div>
                     <div class="step-card" data-aos="fade-up" data-aos-delay="150">
                         <div class="step-number">03</div>
@@ -78,6 +186,10 @@
                         <p class="text-sm text-slate-500 leading-relaxed">Gunakan aturan 50/30/20: 50% untuk kebutuhan
                             pokok, 30% untuk keinginan, 20% untuk tabungan & investasi. Catat semua pemasukan dan
                             pengeluaran selama 1 bulan pertama.</p>
+                        <a href="materi-pemula.html?topic=3" class="continue-link text-brand-green">
+                            Lanjutkan Pembelajaran
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        </a>
                     </div>
                     <div class="step-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="step-number">04</div>
@@ -85,6 +197,10 @@
                         <p class="text-sm text-slate-500 leading-relaxed">Target: 3-6 bulan pengeluaran bulanan. Simpan
                             di rekening terpisah yang mudah diakses (tabungan, deposito, atau Reksadana Pasar Uang). Ini
                             adalah fondasi keamanan finansial Anda.</p>
+                        <a href="materi-pemula.html?topic=4" class="continue-link text-brand-green">
+                            Lanjutkan Pembelajaran
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        </a>
                     </div>
                     <div class="step-card" data-aos="fade-up" data-aos-delay="250">
                         <div class="step-number">05</div>
@@ -92,6 +208,10 @@
                         <p class="text-sm text-slate-500 leading-relaxed">Tabungan, deposito, rekening giro — setiap
                             produk punya tujuan berbeda. Bunga tabungan biasa ~1-2% p.a., sedangkan deposito bisa 3-5%
                             p.a. Pilih yang sesuai kebutuhan Anda.</p>
+                        <a href="materi-pemula.html?topic=5" class="continue-link text-brand-green">
+                            Lanjutkan Pembelajaran
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        </a>
                     </div>
                     <div class="step-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="step-number">06</div>
@@ -99,6 +219,10 @@
                         <p class="text-sm text-slate-500 leading-relaxed">Investasi = membuat uang bekerja untuk Anda.
                             Mulai dari yang paling aman: Reksadana Pasar Uang → Obligasi → Reksadana Saham → Saham
                             individu. Prinsip: semakin tinggi return, semakin tinggi risiko.</p>
+                        <a href="materi-pemula.html?topic=6" class="continue-link text-brand-green">
+                            Lanjutkan Pembelajaran
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        </a>
                     </div>
                     <div class="step-card" data-aos="fade-up" data-aos-delay="350">
                         <div class="step-number">07</div>
@@ -106,6 +230,10 @@
                         <p class="text-sm text-slate-500 leading-relaxed">Setiap penghasilan di atas PTKP (Rp 54
                             juta/tahun untuk WP pribadi) wajib bayar PPh. Investasi juga dikenakan pajak: saham 0.1%
                             final per transaksi jual, deposito 20% dari bunga. Kenali kewajiban Anda.</p>
+                        <a href="materi-pemula.html?topic=7" class="continue-link text-brand-green">
+                            Lanjutkan Pembelajaran
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        </a>
                     </div>
                     <div class="step-card" data-aos="fade-up" data-aos-delay="400">
                         <div class="step-number">08</div>
@@ -113,13 +241,17 @@
                         <p class="text-sm text-slate-500 leading-relaxed">Tentukan tujuan: DP rumah dalam 5 tahun?
                             Pensiun di usia 50? Gunakan kalkulasi compound interest. Rp 500.000/bulan dengan return 10%
                             p.a. menjadi ~Rp 380 juta dalam 20 tahun.</p>
+                        <a href="materi-pemula.html?topic=8" class="continue-link text-brand-green">
+                            Lanjutkan Pembelajaran
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ========== VIDEO EDUKASI ========== -->
-        <section class="py-24 bg-white">
+        <section id="video" class="py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <div class="section-label mx-auto mb-4">Video Edukasi</div>
