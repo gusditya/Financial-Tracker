@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
 </head>
 
@@ -17,7 +17,7 @@
 
     <div id="navbar-root"></div>
 
-    <main>
+    <main class="main-content">
         <!-- ========== HERO ========== -->
         <section class="relative pt-28 pb-0 overflow-hidden hero-pemula">
             <!-- Gradient Background -->
@@ -43,7 +43,7 @@
                             <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
                             Level 1 — Fondasi Keuangan
                         </div>
-                        <h1 class="font-serif text-5xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-6">
+                        <h1 class="font-serif text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] mb-6">
                             Mulai dari <span class="italic font-normal text-brand-green">Nol</span>,<br>Raih Kebebasan Finansial.
                         </h1>
                         <p class="text-lg text-slate-500 max-w-xl leading-relaxed mb-8">
@@ -73,7 +73,7 @@
                         <!-- Stats Row -->
                         <div class="grid grid-cols-3 gap-4">
                             <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-emerald-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
-                                <div class="text-3xl font-serif font-bold text-brand-green mb-1">8</div>
+                                <div class="text-3xl font-serif font-semibold text-brand-green mb-1">8</div>
                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Modul</div>
                             </div>
                             <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-emerald-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
@@ -257,53 +257,80 @@
                     <div class="section-label mx-auto mb-4">Video Edukasi</div>
                     <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Belajar dari Para Ahli</h2>
                     <p class="text-slate-500 max-w-2xl mx-auto">Video pilihan dari kreator edukasi finansial terpercaya
-                        di Indonesia.</p>
+                        di Indonesia — pelajari dasar-dasar ekonomi dan keuangan pribadi.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Ferry Irwandi -->
-                    <div class="video-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="relative aspect-video bg-slate-900 rounded-xl overflow-hidden mb-6">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/nFMjhFCJbpE"
-                                title="Ferry Irwandi - Keuangan Pemula" frameborder="0"
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Video 1: Ferry Irwandi -->
+                    <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative aspect-video bg-slate-900">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/_-ofPdzjxAs"
+                                title="Ferry Irwandi - Dasar Ekonomi" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen loading="lazy"></iframe>
                         </div>
-                        <span class="text-[9px] font-bold text-brand-green uppercase tracking-widest block mb-2">Ferry
-                            Irwandi</span>
-                        <h3 class="text-lg font-bold mb-2">Cara Mengatur Keuangan untuk Pemula</h3>
-                        <p class="text-sm text-slate-500">Langkah-langkah praktis memulai pengelolaan keuangan pribadi
-                            dari nol.</p>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold">1</span>
+                                <span class="text-[10px] font-bold text-brand-green uppercase tracking-widest">Ferry Irwandi</span>
+                            </div>
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-brand-green transition-colors">Penjelasan Ekonomi Dasar untuk Pemula</h3>
+                            <p class="text-sm text-slate-500">Memahami konsep dasar ekonomi yang perlu diketahui setiap orang untuk membuat keputusan finansial yang cerdas.</p>
+                        </div>
                     </div>
 
-                    <!-- Timoty Ronald -->
-                    <div class="video-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="relative aspect-video bg-slate-900 rounded-xl overflow-hidden mb-6">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/86fSy3sLHDc"
-                                title="Timoty Ronald - Investasi Pemula" frameborder="0"
+                    <!-- Video 2: Kalimasada -->
+                    <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative aspect-video bg-slate-900">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/r_YPjXZcQQY"
+                                title="Kalimasada - Dasar Ekonomi" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen loading="lazy"></iframe>
                         </div>
-                        <span class="text-[9px] font-bold text-brand-green uppercase tracking-widest block mb-2">Timoty
-                            Ronald</span>
-                        <h3 class="text-lg font-bold mb-2">Investasi untuk Pemula — Mulai dari Mana?</h3>
-                        <p class="text-sm text-slate-500">Penjelasan sederhana tentang jenis investasi dan cara memulai
-                            dengan modal kecil.</p>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold">2</span>
+                                <span class="text-[10px] font-bold text-brand-green uppercase tracking-widest">Kalimasada</span>
+                            </div>
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-brand-green transition-colors">Konsep Ekonomi yang Wajib Dipahami</h3>
+                            <p class="text-sm text-slate-500">Penjelasan fundamental ekonomi dengan bahasa yang mudah dipahami untuk membangun literasi keuangan dasar.</p>
+                        </div>
                     </div>
 
-                    <!-- Purbaya Sahadewa -->
-                    <div class="video-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="relative aspect-video bg-slate-900 rounded-xl overflow-hidden mb-6">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/JlrN8uAqjD4"
-                                title="Purbaya Sahadewa - Mindset Finansial" frameborder="0"
+                    <!-- Video 3: Timoty Ronald -->
+                    <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div class="relative aspect-video bg-slate-900">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/bTZzgXxRhFo"
+                                title="Timoty Ronald - Dasar Ekonomi" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen loading="lazy"></iframe>
                         </div>
-                        <span class="text-[9px] font-bold text-brand-green uppercase tracking-widest block mb-2">Purbaya
-                            Sahadewa</span>
-                        <h3 class="text-lg font-bold mb-2">Mindset Keuangan yang Wajib Diketahui</h3>
-                        <p class="text-sm text-slate-500">Mengubah pola pikir tentang uang adalah kunci pertama menuju
-                            kebebasan finansial.</p>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold">3</span>
+                                <span class="text-[10px] font-bold text-brand-green uppercase tracking-widest">Timoty Ronald</span>
+                            </div>
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-brand-green transition-colors">Keuangan Pribadi & Cara Mengelola Uang</h3>
+                            <p class="text-sm text-slate-500">Tips praktis mengelola keuangan pribadi dari seorang yang berpengalaman di dunia finansial Indonesia.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 4: Timoty Ronald -->
+                    <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                        <div class="relative aspect-video bg-slate-900">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/07AGth0cGt0"
+                                title="Timoty Ronald - Dasar Ekonomi 2" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold">4</span>
+                                <span class="text-[10px] font-bold text-brand-green uppercase tracking-widest">Timoty Ronald</span>
+                            </div>
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-brand-green transition-colors">Investasi & Perencanaan Keuangan Pemula</h3>
+                            <p class="text-sm text-slate-500">Panduan langkah demi langkah untuk memulai investasi dan merencanakan masa depan finansial Anda.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -369,9 +396,8 @@
                 </div>
             </div>
         </section>
+        <div id="footer-root"></div>
     </main>
-
-    <div id="footer-root"></div>
 
     <script type="module" src="/src/js/pages/pemula.js"></script>
 </body>

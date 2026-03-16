@@ -1,93 +1,76 @@
 export function initNavbar() {
-  const nav = document.getElementById("main-nav");
-  if (!nav) return;
+  const sidebar = document.getElementById("main-sidebar");
+  if (!sidebar) return;
 
-  // Handle scroll resizing
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-      nav.classList.add("scrolled");
+  const toggleBtn = document.getElementById("sidebar-toggle-btn");
+  const closeBtn = document.getElementById("mobile-sidebar-close");
+  const collapseBtn = document.getElementById("desktop-sidebar-collapse");
+  const mainContent = document.querySelector(".main-content");
+  const sidebarLinks = sidebar.querySelectorAll(".sidebar-link");
+
+  const closeMobileSidebar = () => {
+    sidebar.classList.remove("mobile-open");
+    document.body.style.overflow = ""; // Restore scrolling
+  };
+
+  const openMobileSidebar = () => {
+    sidebar.classList.add("mobile-open");
+    document.body.style.overflow = "hidden"; // Prevent background scroll
+  };
+
+  const setSidebarState = (isCollapsed) => {
+    if (isCollapsed) {
+      sidebar.classList.add("sidebar-collapsed");
+      if (mainContent) mainContent.classList.add("sidebar-collapsed-content");
+      localStorage.setItem("sidebar-collapsed", "true");
     } else {
-      nav.classList.remove("scrolled");
+      sidebar.classList.remove("sidebar-collapsed");
+      if (mainContent) mainContent.classList.remove("sidebar-collapsed-content");
+      localStorage.setItem("sidebar-collapsed", "false");
     }
-  });
+  };
 
-  // Handle Mobile Menu Toggle
-  const mobileBtn = document.getElementById("mobile-menu-btn");
-  const linksContainer = document.getElementById("nav-links-container");
+  // Initialize from localStorage (only for desktop)
+  const savedState = localStorage.getItem("sidebar-collapsed");
+  if (savedState === "true" && window.innerWidth > 1024) {
+    setSidebarState(true);
+  }
 
-  if (mobileBtn && linksContainer) {
-    mobileBtn.addEventListener("click", () => {
-      linksContainer.classList.toggle("hidden");
-      linksContainer.classList.toggle("flex");
-
-      // Adjust navbar styling when menu is open
-      if (linksContainer.classList.contains("flex")) {
-        nav.classList.add("mobile-open");
-        nav.classList.remove("rounded-full");
-        nav.classList.add("rounded-3xl");
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", () => {
+      if (window.innerWidth <= 1024) {
+        openMobileSidebar();
       } else {
-        nav.classList.remove("mobile-open");
-        nav.classList.add("rounded-full");
-        nav.classList.remove("rounded-3xl");
+        setSidebarState(false);
       }
     });
   }
 
-  // Handle Tools Dropdown
-  const dropdownBtn = document.getElementById("tools-dropdown-btn");
-  const dropdownMenu = document.getElementById("tools-dropdown-menu");
-  const dropdownChevron = document.getElementById("tools-chevron");
-
-  if (dropdownBtn && dropdownMenu) {
-    dropdownBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const isOpen = !dropdownMenu.classList.contains("hidden");
-      if (isOpen) {
-        dropdownMenu.classList.add("hidden");
-        if (dropdownChevron) dropdownChevron.style.transform = "";
-      } else {
-        dropdownMenu.classList.remove("hidden");
-        if (dropdownChevron) dropdownChevron.style.transform = "rotate(180deg)";
-      }
-    });
-
-    // Close on outside click
-    document.addEventListener("click", (e) => {
-      if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
-        dropdownMenu.classList.add("hidden");
-        if (dropdownChevron) dropdownChevron.style.transform = "";
-      }
+  if (collapseBtn) {
+    collapseBtn.addEventListener("click", () => {
+      setSidebarState(true);
     });
   }
 
-  // Handle active link highlights (for hash links on the same page)
-  const navLinks = nav.querySelectorAll(".nav-pill-item");
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeMobileSidebar);
+  }
 
-  // Function to update active state based on current hash or scroll position
+  // Handle active link highlights
   const updateActiveState = () => {
-    const currentPath =
-      window.location.pathname.split("/").pop() || "index.html";
+    const path = window.location.pathname;
+    const fileName = path.split("/").pop() || "index.html";
     const currentHash = window.location.hash;
 
-    navLinks.forEach((link) => {
-      const href = link.getAttribute("href");
-      if (!href) return;
+    sidebarLinks.forEach((link) => {
+      const href = link.getAttribute("href") || "";
+      const linkFile = href.split("/").pop();
 
-      // Check if it's an internal hash link
       if (href.startsWith("#")) {
-        if (currentHash === href) {
-          link.classList.add("active");
-        } else {
-          link.classList.remove("active");
-        }
-      } else if (
-        href === currentPath ||
-        (currentPath === "index.html" && href === "index.html")
-      ) {
-        // Check if it's a page link
-        link.classList.add("active");
+        link.classList.toggle("active", currentHash === href);
       } else {
-        link.classList.remove("active");
+        const isHomeMatch = (fileName === "index.html" || fileName === "") && (linkFile === "index.html" || linkFile === "");
+        link.classList.toggle("active", linkFile === fileName || isHomeMatch);
       }
     });
   };
@@ -95,32 +78,39 @@ export function initNavbar() {
   window.addEventListener("hashchange", updateActiveState);
   updateActiveState();
 
-  // Smooth scroll for hash links if they exist on the current page
-  navLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      // Close mobile menu if open
-      if (
-        mobileBtn &&
-        linksContainer &&
-        linksContainer.classList.contains("flex")
-      ) {
-        linksContainer.classList.add("hidden");
-        linksContainer.classList.remove("flex");
-        nav.classList.remove("mobile-open");
-        nav.classList.add("rounded-full");
-        nav.classList.remove("rounded-3xl");
-      }
+  // Resize listener
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1024) {
+      closeMobileSidebar();
+      // Restore collapsed state if relevant
+      const isCollapsed = localStorage.getItem("sidebar-collapsed") === "true";
+      if (isCollapsed) setSidebarState(true);
+    } else {
+      // On mobile, ensure sidebar-collapsed classes don't interfere with drawer
+      sidebar.classList.remove("sidebar-collapsed");
+      if (mainContent) mainContent.classList.remove("sidebar-collapsed-content");
+    }
+  });
 
-      const href = link.getAttribute("href");
-      if (href && href.startsWith("#")) {
-        const target = document.querySelector(href);
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: "smooth" });
-          history.pushState(null, null, href);
-          updateActiveState();
-        }
-      }
+  // Keyboard accessibility
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeMobileSidebar();
+  });
+
+  // Close mobile sidebar on link click or outside click
+  sidebarLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 1024) closeMobileSidebar();
     });
   });
+
+  document.addEventListener("click", (e) => {
+    if (window.innerWidth <= 1024 && 
+        sidebar.classList.contains("mobile-open") && 
+        !sidebar.contains(e.target) && 
+        !toggleBtn.contains(e.target)) {
+      closeMobileSidebar();
+    }
+  });
 }
+

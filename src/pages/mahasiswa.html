@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
 </head>
 
@@ -17,7 +17,7 @@
 
     <div id="navbar-root"></div>
 
-    <main>
+    <main class="main-content">
         <!-- ========== HERO ========== -->
         <section class="relative pt-28 pb-0 overflow-hidden">
             <!-- Gradient Background -->
@@ -43,7 +43,7 @@
                             <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
                             Level 2 — Analisis Ekonomi
                         </div>
-                        <h1 class="font-serif text-5xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-6">
+                        <h1 class="font-serif text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] mb-6">
                             Dalami <span class="italic font-normal text-blue-600">Ekonomi</span>,<br>Kuasai Analisis.
                         </h1>
                         <p class="text-lg text-slate-500 max-w-xl leading-relaxed mb-8">
@@ -73,7 +73,7 @@
                         <!-- Stats Row -->
                         <div class="grid grid-cols-3 gap-4">
                             <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
-                                <div class="text-3xl font-serif font-bold text-blue-600 mb-1">8</div>
+                                <div class="text-3xl font-serif font-semibold text-blue-600 mb-1">8</div>
                                 <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Konsep</div>
                             </div>
                             <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
@@ -361,46 +361,80 @@
                     <div class="section-label mx-auto mb-4">Video Lanjutan</div>
                     <h2 class="font-serif text-4xl font-bold mb-4">Analisis dari Pakar</h2>
                     <p class="text-slate-500 max-w-2xl mx-auto">Video mendalam dari kreator edukasi yang membahas topik
-                        ekonomi level menengah.</p>
+                        ekonomi dan materi kuliah terkait keuangan.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="video-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="relative aspect-video bg-slate-900 rounded-xl overflow-hidden mb-6">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/PHe0bXAIuk0"
-                                title="Ferry Irwandi - Ekonomi Makro" frameborder="0"
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Video 1: Suli -->
+                    <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative aspect-video bg-slate-900">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/X8qpA2ladQM"
+                                title="Suli - Materi Kuliah Ekonomi" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen loading="lazy"></iframe>
                         </div>
-                        <span class="text-[9px] font-bold text-blue-600 uppercase tracking-widest block mb-2">Ferry
-                            Irwandi</span>
-                        <h3 class="text-lg font-bold mb-2">Memahami Ekonomi Indonesia Secara Mendalam</h3>
-                        <p class="text-sm text-slate-500">Analisis struktur ekonomi Indonesia dan peluang di masa depan.
-                        </p>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold">1</span>
+                                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Suli</span>
+                            </div>
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-blue-600 transition-colors">Materi Kuliah Ekonomi — Konsep Fundamental</h3>
+                            <p class="text-sm text-slate-500">Pembahasan materi ekonomi level perkuliahan dengan penjelasan yang mudah dipahami dan contoh riil.</p>
+                        </div>
                     </div>
-                    <div class="video-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="relative aspect-video bg-slate-900 rounded-xl overflow-hidden mb-6">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/Hkl3mYBducQ"
-                                title="Timoty Ronald - Analisis Saham" frameborder="0"
+
+                    <!-- Video 2: Agusleo Halim -->
+                    <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative aspect-video bg-slate-900">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/Folzufl-op8"
+                                title="Agusleo Halim - Materi Kuliah" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen loading="lazy"></iframe>
                         </div>
-                        <span class="text-[9px] font-bold text-blue-600 uppercase tracking-widest block mb-2">Timoty
-                            Ronald</span>
-                        <h3 class="text-lg font-bold mb-2">Cara Analisis Fundamental Saham</h3>
-                        <p class="text-sm text-slate-500">Teknik analisis fundamental yang digunakan oleh profesional.
-                        </p>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold">2</span>
+                                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Agusleo Halim</span>
+                            </div>
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-blue-600 transition-colors">Analisis Ekonomi & Strategi Keuangan</h3>
+                            <p class="text-sm text-slate-500">Wawasan mendalam tentang analisis ekonomi dan bagaimana mengaplikasikannya dalam strategi keuangan nyata.</p>
+                        </div>
                     </div>
-                    <div class="video-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="relative aspect-video bg-slate-900 rounded-xl overflow-hidden mb-6">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/u-sNSjS8cq0"
-                                title="Purbaya Sahadewa - Wealth Management" frameborder="0"
+
+                    <!-- Video 3: Ferry Irwandi -->
+                    <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                        <div class="relative aspect-video bg-slate-900">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/hErTL9lLeq8"
+                                title="Ferry Irwandi - Materi Kuliah" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen loading="lazy"></iframe>
                         </div>
-                        <span class="text-[9px] font-bold text-blue-600 uppercase tracking-widest block mb-2">Purbaya
-                            Sahadewa</span>
-                        <h3 class="text-lg font-bold mb-2">Wealth Management untuk Profesional Muda</h3>
-                        <p class="text-sm text-slate-500">Strategi pengelolaan kekayaan untuk level menengah-lanjut.</p>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold">3</span>
+                                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Ferry Irwandi</span>
+                            </div>
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-blue-600 transition-colors">Kebijakan Ekonomi & Dampaknya</h3>
+                            <p class="text-sm text-slate-500">Memahami kebijakan fiskal dan moneter serta dampaknya terhadap perekonomian Indonesia dari perspektif akademik.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 4: Ferry Irwandi -->
+                    <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300" data-aos="fade-up" data-aos-delay="400">
+                        <div class="relative aspect-video bg-slate-900">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/CegbEGYYMls"
+                                title="Ferry Irwandi - Materi Kuliah 2" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="w-7 h-7 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold">4</span>
+                                <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">Ferry Irwandi</span>
+                            </div>
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-blue-600 transition-colors">Makroekonomi & Analisis Data Finansial</h3>
+                            <p class="text-sm text-slate-500">Materi kuliah makroekonomi dengan studi kasus dan analisis data keuangan terkini.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -424,9 +458,8 @@
                 </div>
             </div>
         </section>
+        <div id="footer-root"></div>
     </main>
-
-    <div id="footer-root"></div>
 
     <script type="module" src="/src/js/pages/mahasiswa.js"></script>
 </body>
