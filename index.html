@@ -11,374 +11,236 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 </head>
 
-<body class="bg-brand-cream text-slate-600 selection:bg-brand-green selection:text-white">
+<body class="bg-[#f2f2f2] text-[#111111] selection:bg-[#111111] selection:text-white">
 
     <div id="navbar-root"></div>
 
     <main class="main-content">
         <!-- ========== HERO DASHBOARD ========== -->
-        <section class="relative pt-28 pb-24 overflow-hidden bg-white hero-section">
-            <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
-            <!-- Decorative floating shapes -->
-            <div class="absolute top-20 left-10 w-72 h-72 bg-brand-green/5 rounded-full blur-3xl animate-float pointer-events-none"></div>
-            <div class="absolute bottom-10 right-10 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl animate-float pointer-events-none" style="animation-delay: 2s;"></div>
+        <section class="relative pt-32 pb-40 bg-charcoal text-white hero-section rounded-b-[40px] md:rounded-b-[80px] shadow-2xl mb-12 overflow-hidden">
+            <!-- Decorative gradient or pattern could go here -->
+            <div class="absolute inset-0 opacity-10 bg-grid-pattern"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <div class="text-center max-w-4xl mx-auto" data-aos="fade-up">
-                    <div class="section-label mx-auto mb-6">
-                        <span class="w-2 h-2 bg-brand-green rounded-full animate-pulse"></span>
-                        Platform Finansial Cerdas — 2026
-                    </div>
-                    <h1 class="font-serif text-5xl md:text-7xl font-semibold tracking-tight leading-[1.08] mb-5">
-                        Navigasi Masa Depan<br />
-                        <span class="italic font-normal text-brand-green">Keuangan</span> Anda.
-                    </h1>
-                    <p class="text-base md:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed mb-4">
-                        Platform edukasi &amp; sistem manajemen keuangan all-in-one untuk Indonesia.
-                        Belajar dari nol, lacak keuangan bisnis, dan konsultasi dengan AI — semuanya <strong class="text-brand-black">gratis</strong>.
-                    </p>
-                    <!-- Trust badges -->
-                    <div class="flex items-center justify-center gap-4 mb-10 text-[10px] text-slate-400 tracking-wider uppercase font-semibold" data-aos="fade-up" data-aos-delay="100">
-                        <span class="flex items-center gap-1.5">
-                            <svg class="w-3.5 h-3.5 text-brand-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            12+ Modul
-                        </span>
-                        <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
-                        <span class="flex items-center gap-1.5">
-                            <svg class="w-3.5 h-3.5 text-brand-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            3 Jalur Belajar
-                        </span>
-                        <span class="w-1 h-1 bg-slate-300 rounded-full"></span>
-                        <span class="flex items-center gap-1.5">
-                            <svg class="w-3.5 h-3.5 text-brand-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            9+ Alat Finansial
-                        </span>
-                    </div>
-                    <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16" data-aos="fade-up" data-aos-delay="150">
-                        <a href="#pilih-jalur" class="btn-primary text-sm px-10 py-4 shadow-lg shadow-brand-green/20 hover:shadow-xl hover:shadow-brand-green/30 hover:scale-[1.02] transition-all duration-300">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                            Mulai Sekarang
-                        </a>
-                        <a href="#fitur-inovatif" class="btn-secondary text-sm px-10 py-4 hover:scale-[1.02] transition-all duration-300">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
-                            Pelajari Fitur
-                        </a>
-                    </div>
-                </div>
+                    <!-- Kiri: Teks -->
+                    <div class="text-left max-w-2xl mx-auto lg:mx-0">
+                        <div class="flat-badge mb-8 inline-block">
+                            / PLATFORM FINANSIAL Cerdas — 2026
+                        </div>
+                        <h1 class="font-serif text-5xl md:text-6xl lg:text-[4.5rem] font-medium tracking-tight leading-[1.05] mb-6 text-white reveal-text">
+                            Navigasi Masa Depan<br />
+                            <span class="text-bullion italic">Keuangan Anda.</span>
+                        </h1>
+                        <p class="text-base md:text-lg text-white/70 max-w-xl leading-relaxed mb-10 font-sans font-light reveal-text">
+                            Platform edukasi &amp; sistem manajemen keuangan premium untuk Indonesia.
+                            Belajar dari nol, lacak keuangan bisnis, dan konsultasi dengan AI — semuanya eksklusif.
+                        </p>
 
-                <!-- Quick Action Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-                    <a href="#pilih-jalur" class="quick-action-card group">
-                        <div class="quick-action-icon bg-emerald-50 text-emerald-600">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+                        <!-- Trust badges -->
+                        <div class="flex flex-wrap items-center gap-4 sm:gap-6 mb-12 text-[10px] text-white/40 tracking-[0.2em] uppercase font-bold reveal-text">
+                            <span>12+ Modul</span>
+                            <span class="w-1 h-1 bg-white/20 rounded-full"></span>
+                            <span>3 Jalur Belajar</span>
+                            <span class="w-1 h-1 bg-white/20 rounded-full"></span>
+                            <span>9+ Alat Finansial</span>
                         </div>
-                        <div>
-                            <h3 class="font-bold text-brand-black text-sm mb-1 group-hover:text-brand-green transition-colors">Lacak Keuangan</h3>
-                            <p class="text-xs text-slate-400 leading-relaxed">Kelola pemasukan &amp; pengeluaran bisnis Anda secara real-time</p>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 reveal-text">
+                            <a href="#pilih-jalur" class="inline-flex items-center justify-center px-10 py-5 bg-bullion text-charcoal text-sm font-bold uppercase tracking-widest rounded-full hover:bg-white transition-all duration-300 hover:scale-105 shadow-[0_0_40px_rgba(234,188,112,0.3)]">
+                                Mulai Sekarang <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                            </a>
+                            <a href="#fitur-inovatif" class="inline-flex items-center justify-center px-10 py-5 bg-transparent text-white border border-white/30 text-sm font-bold uppercase tracking-widest rounded-full hover:bg-white/10 transition-all duration-300">
+                                Pelajari Fitur
+                            </a>
                         </div>
-                        <svg class="w-4 h-4 text-slate-300 group-hover:text-brand-green group-hover:translate-x-1 transition-all ml-auto flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                    </a>
-                    <a href="#pilih-jalur" class="quick-action-card group">
-                        <div class="quick-action-icon bg-blue-50 text-blue-600">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+                    </div>
+
+                    <!-- Kanan: Visual / Gambar -->
+                    <div class="relative w-full h-[500px] lg:h-[600px] flex items-center justify-center lg:justify-end reveal-text delay-200 mt-12 lg:mt-0">
+                        <div class="relative w-full max-w-lg aspect-square lg:aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl group border border-white/10">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-charcoal/80 via-charcoal/20 to-transparent z-10"></div>
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Premium Dashboard" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+
+                            <!-- Floating Glassmorphism Card Element -->
+                            <div class="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-3xl z-20 flex items-center gap-6 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 opacity-90 group-hover:opacity-100">
+                                <div class="w-14 h-14 bg-bullion rounded-2xl flex items-center justify-center text-charcoal shadow-[0_0_20px_rgba(234,188,112,0.4)]">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] text-white/70 uppercase tracking-[0.2em] font-bold mb-1">Proyeksi Aset</p>
+                                    <p class="text-white font-serif text-2xl font-medium">+24.5% <span class="text-sm font-sans font-light text-white/50">YTD</span></p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h3 class="font-bold text-brand-black text-sm mb-1 group-hover:text-blue-600 transition-colors">Belajar Finansial</h3>
-                            <p class="text-xs text-slate-400 leading-relaxed">Materi lengkap dari pemula hingga level pengusaha</p>
-                        </div>
-                        <svg class="w-4 h-4 text-slate-300 group-hover:text-blue-600 group-hover:translate-x-1 transition-all ml-auto flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                    </a>
-                    <a href="src/pages/mentor-ai.html" class="quick-action-card group">
-                        <div class="quick-action-icon bg-violet-50 text-violet-600">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-brand-black text-sm mb-1 group-hover:text-violet-600 transition-colors">Konsultasi AI</h3>
-                            <p class="text-xs text-slate-400 leading-relaxed">Konsultasi strategi bisnis dengan AI Gemini canggih</p>
-                        </div>
-                        <svg class="w-4 h-4 text-slate-300 group-hover:text-violet-600 group-hover:translate-x-1 transition-all ml-auto flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                    </a>
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <!-- ========== MARKET TICKER ========== -->
-        <div class="border-y border-slate-200 bg-white overflow-hidden py-3">
+        <div class="border-y border-charcoal/5 bg-parchment overflow-hidden py-4">
             <div class="ticker-track flex gap-16 animate-ticker whitespace-nowrap">
                 <div class="flex gap-16 items-center px-4">
-                    <span
-                        class="text-xs font-semibold uppercase tracking-widest flex items-center gap-2 text-slate-500"><span
-                            class="w-1.5 h-1.5 bg-brand-green rounded-full"></span> IHSG <span
-                            class="text-brand-green font-bold">7,842 &#9650; +0.84%</span></span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">USD/IDR <span
-                            class="text-red-500 font-bold">15,623 &#9660;</span></span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">Inflasi YoY <span
-                            class="text-brand-green font-bold">2.87%</span></span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">BI Rate <span
-                            class="font-bold text-brand-black">5.75%</span></span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">BBCA <span
-                            class="text-brand-green font-bold">10,250 &#9650;</span></span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">Emas <span
-                            class="text-brand-green font-bold">1,245K/gr &#9650;</span></span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">GOTO <span
-                            class="text-brand-green font-bold">68 &#9650; +4.62%</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 text-charcoal/60">
+                        <span class="w-2 h-2 bg-bullion rounded-full"></span> IHSG <span class="text-charcoal font-black">7,842 &#9650; +0.84%</span>
+                    </span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-charcoal/60">USD/IDR <span class="text-charcoal font-black">15,623 &#9660;</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-charcoal/60">Inflasi YoY <span class="text-charcoal font-black">2.87%</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-charcoal/60">BI Rate <span class="text-charcoal font-black">5.75%</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-charcoal/60">BBCA <span class="text-charcoal font-black">10,250 &#9650;</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-charcoal/60">Emas <span class="text-charcoal font-black">1,245K/gr &#9650;</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-charcoal/60">GOTO <span class="text-charcoal font-black">68 &#9650; +4.62%</span></span>
                 </div>
                 <div class="flex gap-16 items-center px-4" aria-hidden="true">
-                    <span
-                        class="text-xs font-semibold uppercase tracking-widest flex items-center gap-2 text-slate-500"><span
-                            class="w-1.5 h-1.5 bg-brand-green rounded-full"></span> IHSG <span
-                            class="text-brand-green font-bold">7,842 &#9650; +0.84%</span></span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">USD/IDR <span
-                            class="text-red-500 font-bold">15,623 &#9660;</span></span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">Inflasi YoY <span
-                            class="text-brand-green font-bold">2.87%</span></span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">BI Rate <span
-                            class="font-bold text-brand-black">5.75%</span></span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">BBCA <span
-                            class="text-brand-green font-bold">10,250 &#9650;</span></span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">Emas <span
-                            class="text-brand-green font-bold">1,245K/gr &#9650;</span></span>
-                    <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">GOTO <span
-                            class="text-brand-green font-bold">68 &#9650; +4.62%</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 text-charcoal/60">
+                        <span class="w-2 h-2 bg-bullion rounded-full"></span> IHSG <span class="text-charcoal font-black">7,842 &#9650; +0.84%</span>
+                    </span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-charcoal/60">USD/IDR <span class="text-charcoal font-black">15,623 &#9660;</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-charcoal/60">Inflasi YoY <span class="text-charcoal font-black">2.87%</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-charcoal/60">BI Rate <span class="text-charcoal font-black">5.75%</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-charcoal/60">BBCA <span class="text-charcoal font-black">10,250 &#9650;</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-charcoal/60">Emas <span class="text-charcoal font-black">1,245K/gr &#9650;</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-charcoal/60">GOTO <span class="text-charcoal font-black">68 &#9650; +4.62%</span></span>
                 </div>
             </div>
         </div>
 
         <!-- ========== HOW IT WORKS ========== -->
-        <section class="py-20 bg-white" id="cara-kerja">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-14" data-aos="fade-up">
-                    <div class="section-label mx-auto mb-4">
-                        <span class="w-2 h-2 bg-brand-green rounded-full animate-pulse"></span>
-                        Panduan
+        <section class="py-32 bg-parchment" id="cara-kerja">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-24">
+                    <div class="section-label mx-auto mb-8 bg-charcoal/5 text-charcoal border border-charcoal/10 px-6 py-2">
+                        / PANDUAN STRATEGIS
                     </div>
-                    <h2 class="font-serif text-3xl md:text-4xl font-bold mb-3">Bagaimana Cara Kerjanya?</h2>
-                    <p class="text-slate-500 max-w-lg mx-auto text-sm">Tiga langkah mudah untuk memulai perjalanan finansial Anda bersama ArthaNavigate.</p>
+                    <h2 class="font-sans text-4xl md:text-5xl font-bold mb-8 text-charcoal tracking-tight">Bagaimana Cara Kerjanya?</h2>
+                    <p class="text-charcoal/60 max-w-2xl mx-auto text-lg font-light">Tiga langkah eksklusif untuk mentransformasi portofolio dan pemahaman ekonomi Anda.</p>
                 </div>
 
-                <div class="how-it-works-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative stagger-container">
                     <!-- Step 1 -->
-                    <div class="hiw-step group">
-                        <div class="hiw-number">1</div>
-                        <div class="hiw-icon-wrap bg-emerald-50">
-                            <svg class="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>
+                    <div class="group bg-white p-12 rounded-[40px] border border-charcoal/5 hover:border-bullion/30 transition-all duration-500 shadow-sm hover:shadow-2xl staggered-item">
+                        <div class="flex items-center gap-6 mb-10">
+                            <div class="w-16 h-16 bg-charcoal text-white text-xl font-serif rounded-2xl flex items-center justify-center group-hover:bg-bullion transition-colors duration-500">01</div>
+                            <svg class="w-8 h-8 text-charcoal/20 group-hover:text-bullion transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>
                         </div>
-                        <h3 class="text-lg font-bold text-brand-black mb-2">Pilih Jalur Anda</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed">Pemula, Mahasiswa Ekonomi, atau Pengusaha — konten disesuaikan dengan level Anda.</p>
-                    </div>
-
-                    <!-- Connector -->
-                    <div class="hiw-connector" data-aos="fade" data-aos-delay="200">
-                        <svg class="w-8 h-8 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        <h3 class="text-2xl font-sans font-bold text-charcoal mb-4">Pilih Jalur Anda</h3>
+                        <p class="text-[14px] text-charcoal/60 leading-relaxed font-light">Pemula, Mahasiswa, atau Pengusaha — navigasi yang disesuaikan dengan visi finansial Anda.</p>
                     </div>
 
                     <!-- Step 2 -->
-                    <div class="hiw-step group" data-aos="fade-up" data-aos-delay="150">
-                        <div class="hiw-number">2</div>
-                        <div class="hiw-icon-wrap bg-blue-50">
-                            <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.438 60.438 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/></svg>
+                    <div class="group bg-white p-12 rounded-[40px] border border-charcoal/5 hover:border-bullion/30 transition-all duration-500 shadow-sm hover:shadow-2xl staggered-item">
+                        <div class="flex items-center gap-6 mb-10">
+                            <div class="w-16 h-16 bg-charcoal text-white text-xl font-serif rounded-2xl flex items-center justify-center group-hover:bg-bullion transition-colors duration-500">02</div>
+                            <svg class="w-8 h-8 text-charcoal/20 group-hover:text-bullion transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.438 60.438 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/></svg>
                         </div>
-                        <h3 class="text-lg font-bold text-brand-black mb-2">Akses Materi &amp; Alat</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed">Video edukasi, artikel analisis, kalkulator, dan financial tracker siap digunakan.</p>
-                    </div>
-
-                    <!-- Connector -->
-                    <div class="hiw-connector" data-aos="fade" data-aos-delay="250">
-                        <svg class="w-8 h-8 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        <h3 class="text-2xl font-sans font-bold text-charcoal mb-4">Akses Materi</h3>
+                        <p class="text-[14px] text-charcoal/60 leading-relaxed font-light">Edukasi mendalam melalui analisis makro, video strategis, dan dashboard interaktif.</p>
                     </div>
 
                     <!-- Step 3 -->
-                    <div class="hiw-step group" data-aos="fade-up" data-aos-delay="200">
-                        <div class="hiw-number">3</div>
-                        <div class="hiw-icon-wrap bg-amber-50">
-                            <svg class="w-7 h-7 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg>
+                    <div class="group bg-white p-12 rounded-[40px] border border-charcoal/5 hover:border-bullion/30 transition-all duration-500 shadow-sm hover:shadow-2xl staggered-item">
+                        <div class="flex items-center gap-6 mb-10">
+                            <div class="w-16 h-16 bg-charcoal text-white text-xl font-serif rounded-2xl flex items-center justify-center group-hover:bg-bullion transition-colors duration-500">03</div>
+                            <svg class="w-8 h-8 text-charcoal/20 group-hover:text-bullion transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg>
                         </div>
-                        <h3 class="text-lg font-bold text-brand-black mb-2">Pantau &amp; Tumbuh</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed">Lacak progress keuangan, capai target bisnis, dan tumbuh bersama komunitas.</p>
+                        <h3 class="text-2xl font-sans font-bold text-charcoal mb-4">Pantau &amp; Tumbuh</h3>
+                        <p class="text-[14px] text-charcoal/60 leading-relaxed font-light">Monitor pertumbuhan aset, capai target bisnis, dan berkembang bersama komunitas elit.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ========== ROLE SELECTION ========== -->
-        <section id="pilih-jalur" class="py-24 bg-brand-cream">
+        <section id="pilih-jalur" class="py-32 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16" data-aos="fade-up">
-                    <div class="section-label mx-auto mb-4">Personalisasi</div>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Pilih Jalur Anda</h2>
-                    <p class="text-slate-500 max-w-2xl mx-auto">Setiap jalur dirancang khusus dengan materi, video, dan
-                        alat bantu yang relevan untuk tahap finansial Anda saat ini.</p>
+                <div class="text-center mb-24">
+                    <div class="section-label mx-auto mb-8 bg-charcoal/5 text-charcoal border border-charcoal/10 px-6 py-2">/ PERSONALISASI STRATEGIS</div>
+                    <h2 class="font-sans text-4xl md:text-5xl font-bold mb-8 text-charcoal tracking-tight">Pilih Jalur Anda</h2>
+                    <p class="text-charcoal/60 max-w-2xl mx-auto text-lg font-light font-sans">Setiap jalur dirancang khusus dengan materi kurasi, video analisis, dan alat bantu performa tinggi untuk setiap tahap finansial Anda.</p>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-10">
                     <!-- PEMULA -->
-                    <a href="src/pages/pemula.html" class="role-card group" data-aos="fade-up" data-aos-delay="100">
-                        <div
-                            class="absolute top-0 right-0 w-40 h-40 bg-brand-green/5 rounded-full -translate-y-1/2 translate-x-1/2">
-                        </div>
-                        <div class="relative">
-                            <div
-                                class="role-card-icon w-16 h-16 bg-brand-green-light rounded-2xl flex items-center justify-center mb-8">
-                                <svg class="w-8 h-8 text-brand-green" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5">
-                                    </path>
-                                </svg>
+                    <a href="src/pages/pemula.html" class="group relative overflow-hidden rounded-[40px] md:rounded-[48px] bg-parchment border border-charcoal/5 p-10 lg:p-12 text-left transition-all duration-300 hover:shadow-2xl hover:border-bullion/30 hover:-translate-y-2">
+                        <div class="relative z-10">
+                            <div class="w-16 h-16 bg-charcoal text-white rounded-2xl flex items-center justify-center mb-10 group-hover:bg-bullion transition-colors duration-500">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"></path></svg>
                             </div>
-                            <span
-                                class="text-[10px] font-bold text-brand-green uppercase tracking-widest block mb-3">Level
-                                1 &mdash; Fondasi</span>
-                            <h3 class="text-2xl font-bold mb-4">Baru Mulai Belajar</h3>
-                            <p class="text-slate-500 text-sm leading-relaxed mb-8">Belum paham ekonomi? Tenang. Kami
-                                bimbing Anda dari nol: apa itu tabungan, investasi, inflasi, hingga membuat rencana
-                                keuangan pertama.</p>
-                            <ul class="space-y-3 mb-8 text-sm text-slate-500">
-                                <li class="flex items-center gap-3"><span
-                                        class="w-5 h-5 bg-brand-green-light rounded-full flex items-center justify-center flex-shrink-0"><svg
-                                            class="w-3 h-3 text-brand-green" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg></span>Panduan langkah demi langkah</li>
-                                <li class="flex items-center gap-3"><span
-                                        class="w-5 h-5 bg-brand-green-light rounded-full flex items-center justify-center flex-shrink-0"><svg
-                                            class="w-3 h-3 text-brand-green" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg></span>Video dari Ferry Irwandi &amp; lainnya</li>
-                                <li class="flex items-center gap-3"><span
-                                        class="w-5 h-5 bg-brand-green-light rounded-full flex items-center justify-center flex-shrink-0"><svg
-                                            class="w-3 h-3 text-brand-green" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg></span>Bahasa sederhana &amp; mudah dipahami</li>
+                            <span class="text-[10px] font-bold text-charcoal/40 uppercase tracking-[0.2em] block mb-4">Level 1 &mdash; Fondasi</span>
+                            <h3 class="text-3xl font-sans font-bold mb-4 text-charcoal">Baru Mulai Belajar</h3>
+                            <p class="text-charcoal/60 text-[15px] leading-relaxed mb-10 font-light">Kami bimbing Anda melalui prinsip ekonomi fundamental: tabungan, investasi, dan inflasi, hingga rencana keuangan pertama Anda.</p>
+                            <ul class="space-y-4 mb-12 text-sm text-charcoal/70">
+                                <li class="flex items-center gap-4">
+                                    <span class="w-1.5 h-1.5 bg-bullion rounded-full"></span>Panduan langkah demi langkah
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <span class="w-1.5 h-1.5 bg-bullion rounded-full"></span>Video kurasi dari pakar
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <span class="w-1.5 h-1.5 bg-bullion rounded-full"></span>Bahasa sederhana &amp; elegan
+                                </li>
                             </ul>
-                            <div
-                                class="flex items-center gap-2 text-brand-green font-bold text-xs uppercase tracking-widest">
-                                Mulai Belajar <svg class="w-4 h-4 role-card-arrow" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                </svg>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto group-hover:text-bullion transition-colors">
+                                Mulai Belajar <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </div>
                         </div>
                     </a>
 
                     <!-- MAHASISWA -->
-                    <a href="src/pages/mahasiswa.html" class="role-card group" data-aos="fade-up" data-aos-delay="200">
-                        <div
-                            class="absolute top-0 right-0 w-40 h-40 bg-blue-500/5 rounded-full -translate-y-1/2 translate-x-1/2">
-                        </div>
-                        <div class="relative">
-                            <div
-                                class="role-card-icon w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8">
-                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25">
-                                    </path>
-                                </svg>
+                    <a href="src/pages/mahasiswa.html" class="group relative overflow-hidden rounded-[40px] md:rounded-[48px] bg-parchment border border-charcoal/5 p-10 lg:p-12 text-left transition-all duration-300 hover:shadow-2xl hover:border-bullion/30 hover:-translate-y-2">
+                        <div class="relative z-10">
+                            <div class="w-16 h-16 bg-charcoal text-white rounded-2xl flex items-center justify-center mb-10 group-hover:bg-bullion transition-colors duration-500">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"></path></svg>
                             </div>
-                            <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest block mb-3">Level
-                                2 &mdash; Intermediate</span>
-                            <h3 class="text-2xl font-bold mb-4">Mahasiswa Ekonomi</h3>
-                            <p class="text-slate-500 text-sm leading-relaxed mb-8">Sudah punya dasar? Dalami ekonomi
-                                makro &amp; mikro, baca artikel analisis, dan kuasai konsep yang dibutuhkan untuk karier
-                                atau riset.</p>
-                            <ul class="space-y-3 mb-8 text-sm text-slate-500">
-                                <li class="flex items-center gap-3"><span
-                                        class="w-5 h-5 bg-blue-50 rounded-full flex items-center justify-center flex-shrink-0"><svg
-                                            class="w-3 h-3 text-blue-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg></span>Ekonomi Makro &amp; Mikro</li>
-                                <li class="flex items-center gap-3"><span
-                                        class="w-5 h-5 bg-blue-50 rounded-full flex items-center justify-center flex-shrink-0"><svg
-                                            class="w-3 h-3 text-blue-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg></span>Artikel analisis terkini</li>
-                                <li class="flex items-center gap-3"><span
-                                        class="w-5 h-5 bg-blue-50 rounded-full flex items-center justify-center flex-shrink-0"><svg
-                                            class="w-3 h-3 text-blue-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg></span>Video lanjutan dari pakar</li>
+                            <span class="text-[10px] font-bold text-charcoal/40 uppercase tracking-[0.2em] block mb-4">Level 2 &mdash; Analisis</span>
+                            <h3 class="text-3xl font-sans font-bold mb-4 text-charcoal">Mahasiswa Ekonomi</h3>
+                            <p class="text-charcoal/60 text-[15px] leading-relaxed mb-10 font-light">Dalami ekonomi makro &amp; mikro melalui analisis mendalam dan data pasar untuk karier atau riset akademis Anda.</p>
+                            <ul class="space-y-4 mb-12 text-sm text-charcoal/70">
+                                <li class="flex items-center gap-4">
+                                    <span class="w-1.5 h-1.5 bg-bullion rounded-full"></span>Analisis Ekonomi Makro
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <span class="w-1.5 h-1.5 bg-bullion rounded-full"></span>Dokumen Riset Pilihan
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <span class="w-1.5 h-1.5 bg-bullion rounded-full"></span>Video Seminar Eksklusif
+                                </li>
                             </ul>
-                            <div
-                                class="flex items-center gap-2 text-blue-600 font-bold text-xs uppercase tracking-widest">
-                                Dalami Materi <svg class="w-4 h-4 role-card-arrow" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                </svg>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto group-hover:text-bullion transition-colors">
+                                Dalami Materi <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </div>
                         </div>
                     </a>
 
                     <!-- PENGUSAHA -->
-                    <a href="src/pages/pengusaha.html" class="role-card group" data-aos="fade-up" data-aos-delay="300">
-                        <div
-                            class="absolute top-0 right-0 w-40 h-40 bg-amber-500/5 rounded-full -translate-y-1/2 translate-x-1/2">
-                        </div>
-                        <div class="relative">
-                            <div
-                                class="role-card-icon w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center mb-8">
-                                <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z">
-                                    </path>
-                                </svg>
+                    <a href="src/pages/pengusaha.html" class="group relative overflow-hidden rounded-[40px] md:rounded-[48px] bg-parchment border border-charcoal/5 p-10 lg:p-12 text-left transition-all duration-300 hover:shadow-2xl hover:border-bullion/30 hover:-translate-y-2">
+                        <div class="relative z-10">
+                            <div class="w-16 h-16 bg-charcoal text-white rounded-2xl flex items-center justify-center mb-10 group-hover:bg-bullion transition-colors duration-500">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"></path></svg>
                             </div>
-                            <span
-                                class="text-[10px] font-bold text-amber-600 uppercase tracking-widest block mb-3">Level
-                                3 &mdash; Advanced</span>
-                            <h3 class="text-2xl font-bold mb-4">Pengusaha / UMKM</h3>
-                            <p class="text-slate-500 text-sm leading-relaxed mb-8">Sudah punya bisnis? Kelola keuangan
-                                usaha Anda: lacak pemasukan-pengeluaran, hitung margin, dan kejar target 1 Miliar
-                                pertama.</p>
-                            <ul class="space-y-3 mb-8 text-sm text-slate-500">
-                                <li class="flex items-center gap-3"><span
-                                        class="w-5 h-5 bg-amber-50 rounded-full flex items-center justify-center flex-shrink-0"><svg
-                                            class="w-3 h-3 text-amber-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg></span>Financial Tracker lengkap</li>
-                                <li class="flex items-center gap-3"><span
-                                        class="w-5 h-5 bg-amber-50 rounded-full flex items-center justify-center flex-shrink-0"><svg
-                                            class="w-3 h-3 text-amber-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg></span>Goal Tracker ke Rp 1 Miliar</li>
-                                <li class="flex items-center gap-3"><span
-                                        class="w-5 h-5 bg-amber-50 rounded-full flex items-center justify-center flex-shrink-0"><svg
-                                            class="w-3 h-3 text-amber-600" fill="none" stroke="currentColor"
-                                            viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                                d="M5 13l4 4L19 7"></path>
-                                        </svg></span>Kalkulator Margin &amp; Budget</li>
+                            <span class="text-[10px] font-bold text-charcoal/40 uppercase tracking-[0.2em] block mb-4">Level 3 &mdash; Strategi</span>
+                            <h3 class="text-3xl font-sans font-bold mb-4 text-charcoal">Pengusaha / UMKM</h3>
+                            <p class="text-charcoal/60 text-[15px] leading-relaxed mb-10 font-light">Kelola keuangan bisnis Anda dengan presisi tinggi: lacak performa, hitung margin, dan skalakan aset menuju 1 Miliar pertama.</p>
+                            <ul class="space-y-4 mb-12 text-sm text-charcoal/70">
+                                <li class="flex items-center gap-4">
+                                    <span class="w-1.5 h-1.5 bg-bullion rounded-full"></span>Suite Tracker Finansial
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <span class="w-1.5 h-1.5 bg-bullion rounded-full"></span>Kalkulator Strategi Margin
+                                </li>
+                                <li class="flex items-center gap-4">
+                                    <span class="w-1.5 h-1.5 bg-bullion rounded-full"></span>Tool Perencanaan Ekspansi
+                                </li>
                             </ul>
-                            <div
-                                class="flex items-center gap-2 text-amber-600 font-bold text-xs uppercase tracking-widest">
-                                Kelola Bisnis <svg class="w-4 h-4 role-card-arrow" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                </svg>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto group-hover:text-bullion transition-colors">
+                                Kelola Bisnis <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </div>
                         </div>
                     </a>
@@ -386,153 +248,176 @@
             </div>
         </section>
 
-        <!-- ========== QUICK STATS ========== -->
-        <section class="py-16 bg-white border-y border-slate-200">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                    <div data-aos="fade-up">
-                        <div class="text-4xl font-serif font-bold text-brand-black mb-1">12+</div>
-                        <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Modul Edukasi</div>
+        <!-- ========== EXECUTIVE HIGHLIGHTS ========== -->
+        <section class="py-24 bg-charcoal text-white border-t border-white/10 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-5 bg-grid-pattern pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="font-sans text-3xl font-bold text-white mb-4">Pilar Arsitektur Finansial 2026</h2>
+                    <p class="text-white/60">Fokus strategis yang membentuk rancangan modul platform ini.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-bullion text-charcoal rounded-xl flex items-center justify-center mb-6 font-bold text-xl">1</div>
+                        <h4 class="font-sans font-bold text-xl mb-3 text-white">Stabilitas Domestik</h4>
+                        <p class="text-sm text-white/60 leading-relaxed">Ketahanan PDB di angka rata-rata 5% didukung kuat oleh konsumsi rumah tangga, menjadi dasar pentingnya edukasi arus kas (cash flow) level dasar.</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="100">
-                        <div class="text-4xl font-serif font-bold text-brand-green mb-1">3</div>
-                        <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Jalur Belajar</div>
+                    <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-bullion text-charcoal rounded-xl flex items-center justify-center mb-6 font-bold text-xl">2</div>
+                        <h4 class="font-sans font-bold text-xl mb-3 text-white">Hilirisasi &amp; Digital</h4>
+                        <p class="text-sm text-white/60 leading-relaxed">Transisi UMKM menuju ekosistem digital dan green economy menciptakan nilai tambah (margin) yang lebih lebar untuk dioptimalkan pengusaha skala menengah.</p>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="200">
-                        <div class="text-4xl font-serif font-bold text-brand-black mb-1">8</div>
-                        <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Emiten Analisis
+                    <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
+                        <div class="w-12 h-12 bg-bullion text-charcoal rounded-xl flex items-center justify-center mb-6 font-bold text-xl">3</div>
+                        <h4 class="font-sans font-bold text-xl mb-3 text-white">Literasi Finansial</h4>
+                        <p class="text-sm text-white/60 leading-relaxed">Menutup gap antara inklusi (akses) dan literasi (pemahaman), memastikan setiap instrumen keuangan digunakan sebagai alat akselerasi aset, bukan beban utang konsumtif.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== INSIGHTS MAKROEKONOMI ========== -->
+        <section class="py-32 bg-[#111111] text-white overflow-hidden relative" id="makroekonomi">
+            <div class="absolute inset-0 opacity-5 bg-grid-pattern pointer-events-none"></div>
+            <div class="absolute -right-20 top-20 w-96 h-96 bg-bullion/10 rounded-full blur-[100px] pointer-events-none"></div>
+            <div class="absolute -left-20 bottom-20 w-96 h-96 bg-white/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
+                    <!-- Text Content -->
+                    <div class="flex-1 text-left">
+                        <div class="section-label mb-8 bg-white/10 text-white border border-white/20 px-6 py-2 inline-block">
+                            / RISET &amp; ANALISIS
+                        </div>
+                        <h2 class="font-sans text-3xl md:text-4xl font-bold tracking-tight mb-6 leading-snug">
+                            Dinamika Arsitektur Ekonomi <span class="text-bullion">Indonesia</span>
+                        </h2>
+                        <h3 class="text-lg text-white/80 font-sans font-medium mb-6 border-l-2 border-bullion pl-4">
+                            Transformasi Struktural &amp; Resiliensi Makroekonomi (2015-2025)
+                        </h3>
+                        <div class="space-y-6 text-[15px] text-white/60 font-light leading-relaxed">
+                            <p>
+                                Perekonomian Indonesia selama satu dekade terakhir telah melewati periode transformasi yang sangat dinamis, diwarnai oleh pergeseran paradigma dari ketergantungan pada komoditas mentah menuju penguatan sektor manufaktur, hilirisasi industri, dan akselerasi ekonomi digital. Berdasarkan data BPS, Bank Indonesia, dan World Bank, lintasan ekonomi nasional menunjukkan pola resiliensi yang signifikan meskipun dihantam oleh berbagai guncangan global.
+                            </p>
+                            <p>
+                                Secara makroekonomi, pertumbuhan Produk Domestik Bruto (PDB) Indonesia berhasil dipertahankan pada kisaran <strong class="text-white font-medium">5.0% - 5.3%</strong> pasca-pandemi. Keberhasilan Bank Indonesia dalam menahan laju inflasi pada target sasaran <strong class="text-white font-medium">2.5% &plusmn; 1%</strong> melalui bauran kebijakan moneter *pro-stability* memainkan peran krusial dalam menjaga daya beli.
+                            </p>
+                            <p>
+                                Namun demikian, terlepas dari indikator makroekonomi yang positif, tingkat penetrasi layanan jasa keuangan formal di masyarakat kelas menengah bawah dan UMKM masih menjadi tantangan struktural. Oleh karena itu, diperlukan Peta Jalan Literasi Finansial Multilevel yang memadukan kebijakan top-down dengan akses bottom-up yang merata, sebagai jembatan bagi para pemula, akademisi, hingga wirausahawan untuk terhubung dengan ekosistem ekonomi berkelanjutan.
+                            </p>
+                        </div>
+                        <div class="mt-8 bg-white/10 border border-white/20 p-5 rounded-xl backdrop-blur-sm">
+                            <p class="text-sm text-white/80 font-semibold mb-2 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-bullion" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                Kesimpulan Eksekutif
+                            </p>
+                            <p class="text-xs text-white/60 leading-relaxed font-light">Laporan riset domestik (OJK &amp; BI) menegaskan bahwa platform edukasi terstratifikasi—mulai dari tata kelola arus kas dasar hingga evaluasi Break-Even UMKM—merupakan infrastruktur esensial menuju Visi Indonesia Emas 2045.</p>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-delay="300">
-                        <div class="text-4xl font-serif font-bold text-brand-green mb-1">9+</div>
-                        <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Alat Keuangan</div>
+
+                    <!-- Visual / Stats Board -->
+                    <div class="w-full lg:w-[45%]">
+                        <div class="bg-white/5 border border-white/10 rounded-[40px] p-10 lg:p-12 backdrop-blur-md relative overflow-hidden group hover:border-bullion/30 transition-all duration-500">
+                            <!-- Glow effect inside card -->
+                            <div class="absolute inset-0 bg-gradient-to-tr from-bullion/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                            <h4 class="text-xs font-bold text-white/40 uppercase tracking-[0.2em] mb-8">Indikator Kunci Strategis</h4>
+
+                            <div class="space-y-8 relative z-10">
+                                <div class="flex items-center justify-between border-b border-white/10 pb-6">
+                                    <div>
+                                        <p class="text-[10px] font-bold text-bullion uppercase tracking-[0.2em] mb-1">Pertumbuhan PDB</p>
+                                        <p class="text-sm text-white/60 font-light">Target Pasca-Pandemi</p>
+                                    </div>
+                                    <div class="text-3xl font-serif text-white">5.0%<span class="text-lg text-white/40 font-sans ml-1">- 5.3%</span></div>
+                                </div>
+                                <div class="flex items-center justify-between border-b border-white/10 pb-6">
+                                    <div>
+                                        <p class="text-[10px] font-bold text-bullion uppercase tracking-[0.2em] mb-1">Target Inflasi</p>
+                                        <p class="text-sm text-white/60 font-light">Bank Indonesia</p>
+                                    </div>
+                                    <div class="text-3xl font-serif text-white">2.5%<span class="text-lg text-white/40 font-sans ml-1">&plusmn; 1%</span></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <p class="text-[10px] font-bold text-bullion uppercase tracking-[0.2em] mb-1">Status Ekonomi</p>
+                                        <p class="text-sm text-white/60 font-light">Pergeseran Paradigma</p>
+                                    </div>
+                                    <div class="text-lg font-serif text-white text-right">Hilirisasi &amp;<br/>Ekonomi Digital</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ========== FITUR INOVATIF ========== -->
-        <section class="py-24 bg-brand-cream" id="fitur-inovatif">
+        <section class="py-32 bg-white" id="fitur-inovatif">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16" data-aos="fade-up">
-                    <div class="section-label mx-auto mb-4">
-                        <span class="w-2 h-2 bg-brand-green rounded-full animate-pulse"></span>
-                        Baru
-                    </div>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Fitur Inovatif</h2>
-                    <p class="text-slate-500 max-w-2xl mx-auto">Empat alat unik yang menghubungkan sejarah ekonomi
-                        Indonesia dengan keputusan finansial Anda hari ini.</p>
+                <div class="text-center mb-24">
+                    <div class="section-label mx-auto mb-8 bg-charcoal/5 text-charcoal border border-charcoal/10 px-6 py-2">/ INOVASI</div>
+                    <h2 class="font-sans text-4xl md:text-5xl font-bold mb-8 text-charcoal tracking-tight">Fitur Inovatif</h2>
+                    <p class="text-charcoal/60 max-w-2xl mx-auto text-lg font-light">Empat instrumen unik yang menghubungkan histori ekonomi dengan proyeksi masa depan Anda.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 stagger-container">
                     <!-- ECO-HISTORY SYNC -->
-                    <a href="src/pages/eco-history.html" class="harbor-card p-8 group relative overflow-hidden"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <div
-                            class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full -translate-y-1/2 translate-x-1/2">
-                        </div>
+                    <a href="src/pages/eco-history.html" class="group bg-parchment hover:bg-white border border-charcoal/5 rounded-[40px] p-10 transition-all duration-500 relative overflow-hidden staggered-item shadow-sm hover:shadow-2xl">
                         <div class="relative">
-                            <div
-                                class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center mb-6 text-2xl">
-                                🕰️</div>
-                            <span
-                                class="text-[9px] font-bold text-emerald-600 uppercase tracking-widest block mb-2">Impel
-                                Novelty</span>
-                            <h3 class="text-xl font-bold mb-3 group-hover:text-brand-green transition-colors">
-                                Eco-History Sync</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed mb-6">Masukkan tahun lahir Anda dan lihat
-                                kondisi ekonomi Indonesia saat itu &mdash; PDB, inflasi, presiden, dan cerita sejarah
-                                yang membentuk dunia finansial Anda.</p>
-                            <div
-                                class="flex items-center gap-2 text-brand-green font-bold text-xs uppercase tracking-widest">
-                                Jelajahi <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                </svg>
+                            <div class="w-16 h-16 bg-charcoal text-white rounded-2xl flex items-center justify-center mb-10 group-hover:bg-bullion transition-colors duration-500">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <span class="text-[10px] font-bold text-charcoal/40 uppercase tracking-[0.2em] block mb-4">Historical Sync</span>
+                            <h3 class="text-2xl font-sans font-bold mb-4 text-charcoal">Eco-History Sync</h3>
+                            <p class="text-[14px] text-charcoal/60 leading-relaxed mb-10 font-light">Eksplorasi kondisi ekonomi saat tahun kelahiran Anda — inflasi, PDB, dan narasi sejarah yang membentuk fundamental finansial hari ini.</p>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto group-hover:text-bullion transition-colors">
+                                Jelajahi <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                             </div>
                         </div>
                     </a>
 
                     <!-- CRISIS SURVIVAL MAP -->
-                    <a href="src/pages/crisis-map.html" class="harbor-card p-8 group relative overflow-hidden"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <div
-                            class="absolute top-0 right-0 w-32 h-32 bg-red-500/5 rounded-full -translate-y-1/2 translate-x-1/2">
-                        </div>
+                    <a href="src/pages/crisis-map.html" class="group bg-parchment hover:bg-white border border-charcoal/5 rounded-[40px] p-10 transition-all duration-500 relative overflow-hidden staggered-item shadow-sm hover:shadow-2xl">
                         <div class="relative">
-                            <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 text-2xl">
-                                🗺️</div>
-                            <span
-                                class="text-[9px] font-bold text-red-500 uppercase tracking-widest block mb-2">Navigate</span>
-                            <h3 class="text-xl font-bold mb-3 group-hover:text-brand-green transition-colors">Crisis
-                                Survival Map</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed mb-6">Pelajari 3 krisis besar Indonesia
-                                (1998, 2008, 2020). Sektor yang kolaps, yang bertahan, dan playbook UMKM untuk bertahan
-                                di krisis berikutnya.</p>
-                            <div
-                                class="flex items-center gap-2 text-red-500 font-bold text-xs uppercase tracking-widest">
-                                Navigasi <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                </svg>
+                            <div class="w-16 h-16 bg-charcoal text-white rounded-2xl flex items-center justify-center mb-10 group-hover:bg-bullion transition-colors duration-500">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+                            </div>
+                            <span class="text-[10px] font-bold text-charcoal/40 uppercase tracking-[0.2em] block mb-4">Tactical Navigation</span>
+                            <h3 class="text-2xl font-sans font-bold mb-4 text-charcoal">Crisis Survival Map</h3>
+                            <p class="text-[14px] text-charcoal/60 leading-relaxed mb-10 font-light">Pelajari pola dari krisis 1998, 2008, dan 2020. Dapatkan "playbook" strategis untuk menjaga resiliensi bisnis dan aset Anda.</p>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto group-hover:text-bullion transition-colors">
+                                Navigasi <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                             </div>
                         </div>
                     </a>
 
                     <!-- VALUE CONVERTER -->
-                    <a href="src/pages/value-converter.html" class="harbor-card p-8 group relative overflow-hidden"
-                        data-aos="fade-up" data-aos-delay="300">
-                        <div
-                            class="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full -translate-y-1/2 translate-x-1/2">
-                        </div>
+                    <a href="src/pages/value-converter.html" class="group bg-parchment hover:bg-white border border-charcoal/5 rounded-[40px] p-10 transition-all duration-500 relative overflow-hidden staggered-item shadow-sm hover:shadow-2xl">
                         <div class="relative">
-                            <div
-                                class="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center mb-6 text-2xl">
-                                💰</div>
-                            <span
-                                class="text-[9px] font-bold text-amber-600 uppercase tracking-widest block mb-2">Validate</span>
-                            <h3 class="text-xl font-bold mb-3 group-hover:text-brand-green transition-colors">The
-                                &ldquo;Value&rdquo; Converter</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed mb-6">Berapa daya beli Rp 100.000 tahun
-                                1990 vs 2026? Konversi nilai uang lintas dekade dan rasakan erosi inflasi secara nyata.
-                            </p>
-                            <div
-                                class="flex items-center gap-2 text-amber-600 font-bold text-xs uppercase tracking-widest">
-                                Konversi <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                </svg>
+                            <div class="w-16 h-16 bg-charcoal text-white rounded-2xl flex items-center justify-center mb-10 group-hover:bg-bullion transition-colors duration-500">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <span class="text-[10px] font-bold text-charcoal/40 uppercase tracking-[0.2em] block mb-4">Inflation Analysis</span>
+                            <h3 class="text-2xl font-sans font-bold mb-4 text-charcoal">The &ldquo;Value&rdquo; Converter</h3>
+                            <p class="text-[14px] text-charcoal/60 leading-relaxed mb-10 font-light">Visualisasikan erosi daya beli secara nyata. Bandingkan nilai Rp 100.000 dari tahun 1990 hingga proyeksi 2026 secara akurat.</p>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto group-hover:text-bullion transition-colors">
+                                Konversi <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                             </div>
                         </div>
                     </a>
 
                     <!-- MENTOR AI -->
-                    <a href="src/pages/mentor-ai.html" class="harbor-card p-8 group relative overflow-hidden"
-                        data-aos="fade-up" data-aos-delay="400">
-                        <div
-                            class="absolute top-0 right-0 w-32 h-32 bg-violet-500/5 rounded-full -translate-y-1/2 translate-x-1/2">
-                        </div>
+                    <a href="src/pages/mentor-ai.html" class="group bg-parchment hover:bg-white border border-charcoal/5 rounded-[40px] p-10 transition-all duration-500 relative overflow-hidden staggered-item shadow-sm hover:shadow-2xl">
                         <div class="relative">
-                            <div
-                                class="w-14 h-14 bg-violet-50 rounded-2xl flex items-center justify-center mb-6 text-2xl">
-                                🤖</div>
-                            <span
-                                class="text-[9px] font-bold text-violet-600 uppercase tracking-widest block mb-2">Advance</span>
-                            <h3 class="text-xl font-bold mb-3 group-hover:text-brand-green transition-colors">MSME
-                                Mentor AI</h3>
-                            <p class="text-sm text-slate-500 leading-relaxed mb-6">Chatbot AI berbasis Gemini yang
-                                menerjemahkan kebijakan pemerintah menjadi strategi aksi untuk UMKM. Tanya apa saja soal
-                                bisnis Anda.</p>
-                            <div
-                                class="flex items-center gap-2 text-violet-600 font-bold text-xs uppercase tracking-widest">
-                                Konsultasi <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                                </svg>
+                            <div class="w-16 h-16 bg-charcoal text-white rounded-2xl flex items-center justify-center mb-10 group-hover:bg-bullion transition-colors duration-500">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"></path></svg>
+                            </div>
+                            <span class="text-[10px] font-bold text-charcoal/40 uppercase tracking-[0.2em] block mb-4">AI Consultation</span>
+                            <h3 class="text-2xl font-sans font-bold mb-4 text-charcoal">MSME Mentor AI</h3>
+                            <p class="text-[14px] text-charcoal/60 leading-relaxed mb-10 font-light">Asisten AI berbasis Gemini yang menerjemahkan dinamika ekonomi menjadi strategi aksi konkret untuk bisnis dan investasi Anda.</p>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto group-hover:text-bullion transition-colors">
+                                Konsultasi <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                             </div>
                         </div>
                     </a>
@@ -541,142 +426,278 @@
         </section>
 
         <!-- ========== NEWS SNAPSHOT ========== -->
-        <section class="py-24 bg-brand-cream">
+        <section class="py-32 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-14"
-                    data-aos="fade-up">
-                    <div>
-                        <div class="section-label mb-4">Warta Terkini</div>
-                        <h2 class="font-serif text-4xl font-bold">Berita Ekonomi Pilihan</h2>
-                    </div>
-                    <a href="src/pages/news.html" class="btn-secondary text-sm">Lihat Semua Berita</a>
+                <div class="text-center mb-20">
+                    <div class="section-label mx-auto mb-8 bg-charcoal/5 text-charcoal border border-charcoal/10 px-6 py-2">/ WARTA STRATEGIS</div>
+                    <h2 class="font-sans text-4xl md:text-5xl font-bold tracking-tight text-charcoal mb-8">Wawasan Ekonomi Terbaru</h2>
+                    <a href="src/pages/news.html" class="group inline-flex items-center justify-center px-10 py-4 bg-parchment border border-charcoal/10 text-charcoal text-[10px] font-bold uppercase tracking-[0.2em] rounded-full hover:bg-charcoal hover:text-white transition-all duration-500">
+                        Lihat Seluruh Arsip <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="harbor-card overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
-                        <div class="img-hover-zoom aspect-[16/10]"><img
-                                src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80"
-                                class="w-full h-full object-cover"></div>
-                        <div class="p-6">
-                            <span class="text-[9px] font-bold text-brand-green uppercase tracking-widest">Analisis
-                                2026</span>
-                            <h3
-                                class="text-lg font-bold mt-2 mb-3 group-hover:text-brand-green transition-colors leading-snug">
-                                Navigasi Suku Bunga: Mengapa 2026 Adalah Tahun Keseimbangan</h3>
-                            <p class="text-sm text-slate-500 line-clamp-2">Pasar global mulai menemukan titik
-                                ekuilibrium baru setelah ketidakpastian panjang.</p>
+
+                <div class="flex overflow-x-auto gap-6 md:gap-8 pb-12 snap-x snap-mandatory scrollbar-hide">
+                    <!-- News Card 1 -->
+                    <a href="src/pages/news.html" data-news-index="0" class="dash-news-card cursor-pointer min-w-[280px] md:min-w-[340px] max-w-[380px] shrink-0 snap-center bg-white border border-charcoal/5 rounded-[48px] overflow-hidden group hover:shadow-2xl transition-all duration-500 flex flex-col">
+                        <div class="img-hover-zoom aspect-[16/10] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-6 left-6 bg-charcoal text-white px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-full shadow-lg group-hover:bg-bullion transition-colors">Analisis Khusus</div>
                         </div>
-                    </div>
-                    <div class="harbor-card overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
-                        <div class="img-hover-zoom aspect-[16/10]"><img
-                                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
-                                class="w-full h-full object-cover"></div>
-                        <div class="p-6">
-                            <span class="text-[9px] font-bold text-blue-600 uppercase tracking-widest">Kilas
-                                Balik</span>
-                            <h3
-                                class="text-lg font-bold mt-2 mb-3 group-hover:text-brand-green transition-colors leading-snug">
-                                Transformasi Hijau: Roadmap Energi Indonesia Berubah</h3>
-                            <p class="text-sm text-slate-500 line-clamp-2">Investasi energi terbarukan melampaui target
-                                nasional sebesar 12%.</p>
+                        <div class="p-8 flex flex-col flex-1">
+                            <h3 class="text-xl font-serif font-bold mb-4 text-charcoal leading-tight group-hover:text-bullion transition-colors">Transformasi Makroekonomi Indonesia</h3>
+                            <p class="text-[14px] text-charcoal/60 line-clamp-3 leading-relaxed font-light mb-6 flex-1">Strategi komoditas emas, tantangan Gen Z terhadap AI, hingga analisis TVM praktis bagi pelaku UMKM nasional.</p>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto">
+                                Read Article <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="harbor-card overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
-                        <div class="img-hover-zoom aspect-[16/10]"><img
-                                src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=800&q=80"
-                                class="w-full h-full object-cover"></div>
-                        <div class="p-6">
-                            <span class="text-[9px] font-bold text-amber-600 uppercase tracking-widest">Market
-                                Update</span>
-                            <h3
-                                class="text-lg font-bold mt-2 mb-3 group-hover:text-brand-green transition-colors leading-snug">
-                                Bursa ASEAN Jadi Primadona Investor Global 2026</h3>
-                            <p class="text-sm text-slate-500 line-clamp-2">Arus modal asing masuk ASEAN menunjukkan tren
-                                positif di Q1 2026.</p>
+                    </a>
+
+                    <!-- News Card 2 -->
+                    <a href="src/pages/news.html" data-news-index="1" class="dash-news-card cursor-pointer min-w-[280px] md:min-w-[340px] max-w-[380px] shrink-0 snap-center bg-white border border-charcoal/5 rounded-[48px] overflow-hidden group hover:shadow-2xl transition-all duration-500 flex flex-col">
+                        <div class="img-hover-zoom aspect-[16/10] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1579532536935-619928decd08?auto=format&fit=crop&w=800"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-6 left-6 bg-charcoal text-white px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-full shadow-lg group-hover:bg-bullion transition-colors">Update SNLIK</div>
                         </div>
-                    </div>
+                        <div class="p-8 flex flex-col flex-1">
+                            <h3 class="text-xl font-serif font-bold mb-4 text-charcoal leading-tight group-hover:text-bullion transition-colors">Dinamika Literasi & Inklusi Keuangan</h3>
+                            <p class="text-[14px] text-charcoal/60 line-clamp-3 leading-relaxed font-light mb-6 flex-1">Hasil SNLIK 2025 menunjukkan kenaikan indeks nasional, namun kesenjangan perkotaan-perdesaan tetap menjadi fokus.</p>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto">
+                                Read Article <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- News Card 3 -->
+                    <a href="src/pages/news.html" data-news-index="2" class="dash-news-card cursor-pointer min-w-[280px] md:min-w-[340px] max-w-[380px] shrink-0 snap-center bg-white border border-charcoal/5 rounded-[48px] overflow-hidden group hover:shadow-2xl transition-all duration-500 flex flex-col">
+                        <div class="img-hover-zoom aspect-[16/10] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-6 left-6 bg-charcoal text-white px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-full shadow-lg group-hover:bg-bullion transition-colors">Kebijakan</div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-1">
+                            <h3 class="text-xl font-serif font-bold mb-4 text-charcoal leading-tight group-hover:text-bullion transition-colors">Rekomendasi Kebijakan Ekonomi Nasional</h3>
+                            <p class="text-[14px] text-charcoal/60 line-clamp-3 leading-relaxed font-light mb-6 flex-1">Langkah strategis reformasi pendidikan adaptif AI dan penguatan inklusi keuangan bagi UMKM pelosok negeri.</p>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto">
+                                Read Article <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- News Card 4 -->
+                    <a href="src/pages/news.html" data-news-index="3" class="dash-news-card cursor-pointer min-w-[280px] md:min-w-[340px] max-w-[380px] shrink-0 snap-center bg-white border border-charcoal/5 rounded-[48px] overflow-hidden group hover:shadow-2xl transition-all duration-500 flex flex-col">
+                        <div class="img-hover-zoom aspect-[16/10] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1543269664-76bc3997d9ea?auto=format&fit=crop&w=800"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-6 left-6 bg-charcoal text-white px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-full shadow-lg group-hover:bg-bullion transition-colors">Resiliensi</div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-1">
+                            <h3 class="text-xl font-serif font-bold mb-4 text-charcoal leading-tight group-hover:text-bullion transition-colors">Lanskap Ekonomi & Proyeksi Global</h3>
+                            <p class="text-[14px] text-charcoal/60 line-clamp-3 leading-relaxed font-light mb-6 flex-1">Indonesia tampil sebagai 'bright spot' ekonomi dunia dengan pertumbuhan stabil di atas 5% pada tahun 2025.</p>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto">
+                                Read Article <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- News Card 5 -->
+                    <a href="src/pages/news.html" data-news-index="4" class="dash-news-card cursor-pointer min-w-[280px] md:min-w-[340px] max-w-[380px] shrink-0 snap-center bg-white border border-charcoal/5 rounded-[48px] overflow-hidden group hover:shadow-2xl transition-all duration-500 flex flex-col">
+                        <div class="img-hover-zoom aspect-[16/10] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-6 left-6 bg-charcoal text-white px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-full shadow-lg group-hover:bg-bullion transition-colors">Kesejahteraan</div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-1">
+                            <h3 class="text-xl font-serif font-bold mb-4 text-charcoal leading-tight group-hover:text-bullion transition-colors">Indikator Kemiskinan & Kesenjangan</h3>
+                            <p class="text-[14px] text-charcoal/60 line-clamp-3 leading-relaxed font-light mb-6 flex-1">Menganalisis penurunan kemiskinan nasional menjadi 8,25% dan tantangan disparitas antar wilayah di Indonesia.</p>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto">
+                                Read Article <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- News Card 6 -->
+                    <a href="src/pages/news.html" data-news-index="5" class="dash-news-card cursor-pointer min-w-[280px] md:min-w-[340px] max-w-[380px] shrink-0 snap-center bg-white border border-charcoal/5 rounded-[48px] overflow-hidden group hover:shadow-2xl transition-all duration-500 flex flex-col">
+                        <div class="img-hover-zoom aspect-[16/10] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1574607383077-47ddc2dc51c4?auto=format&fit=crop&w=800"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-6 left-6 bg-charcoal text-white px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-full shadow-lg group-hover:bg-bullion transition-colors">Aset Aman</div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-1">
+                            <h3 class="text-xl font-serif font-bold mb-4 text-charcoal leading-tight group-hover:text-bullion transition-colors">Evolusi Instrumen Emas Antam</h3>
+                            <p class="text-[14px] text-charcoal/60 line-clamp-3 leading-relaxed font-light mb-6 flex-1">Retrospeksi harga emas tiga dekade terakhir dan proyeksi target Rp2,1 juta per gram pada tahun 2025.</p>
+                            <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] mt-auto">
+                                Read Article <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- News Card 7 -->
+                    <a href="src/pages/news.html" data-news-index="6" class="dash-news-card cursor-pointer min-w-[280px] md:min-w-[340px] max-w-[380px] shrink-0 snap-center bg-white border border-charcoal/5 rounded-[48px] overflow-hidden group hover:shadow-2xl transition-all duration-500 flex flex-col">
+                        <div class="img-hover-zoom aspect-[16/10] overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=800"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-6 left-6 bg-charcoal text-white px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-full shadow-lg group-hover:bg-bullion transition-colors">Aset Digital</div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-1">
+                            <h3 class="text-xl font-serif font-bold mb-4 text-charcoal leading-tight group-hover:text-bullion transition-colors">Pasar Modal & Ekosistem Kripto</h3>
+                            <p class="text-[10px] text-charcoal/60 leading-relaxed line-clamp-2 mb-8 uppercase tracking-widest font-bold">Analisis pergerakan IHSG dan adopsi aset kripto di Indonesia pasca regulasi terbaru.</p>
+                            
+                            <div class="mt-auto flex items-center justify-between">
+                                <span class="text-[8px] font-bold text-charcoal/30 tracking-[0.2em] uppercase">Investor Daily</span>
+                                <span class="bg-charcoal/5 px-4 py-1.5 rounded-full text-[8px] font-bold text-charcoal tracking-widest uppercase">7 Menit Baca</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- ========== STOCK SNAPSHOT ========== -->
-        <section class="py-24 bg-white">
+        <section class="py-32 bg-parchment">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-14"
-                    data-aos="fade-up">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-12 mb-20">
                     <div>
-                        <div class="section-label mb-4">Pasar Modal</div>
-                        <h2 class="font-serif text-4xl font-bold">Saham Unggulan</h2>
+                        <div class="section-label mb-8 bg-charcoal/5 text-charcoal border border-charcoal/10 px-6 py-2">/ PASAR EKUITAS</div>
+                        <h2 class="font-serif text-5xl md:text-6xl font-bold tracking-tight text-charcoal">Monitor Performa Saham</h2>
                     </div>
-                    <a href="src/pages/stocks.html" class="btn-secondary text-sm">Lihat Semua Saham</a>
+                    <a href="src/pages/stocks.html" class="group inline-flex items-center justify-center px-10 py-4 bg-white border border-charcoal/10 text-charcoal text-[10px] font-bold uppercase tracking-[0.2em] rounded-full hover:bg-charcoal hover:text-white transition-all duration-500">
+                        Seluruh Emiten <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="harbor-card-flat p-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="flex justify-between items-start mb-3">
-                            <h4 class="font-bold text-lg">BBCA</h4>
-                            <span
-                                class="px-2 py-0.5 text-[9px] font-bold rounded-full bg-brand-green-light text-brand-green">&#9650;
-                                1.25%</span>
+                <div class="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide">
+                    <a href="src/pages/stocks.html" class="min-w-[280px] shrink-0 snap-center bg-white border border-charcoal/5 rounded-[32px] p-10 hover:shadow-xl transition-all duration-500 group"  >
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center shadow-lg border-2 border-white/20">
+                                <span class="text-white font-bold text-[10px]">BC</span>
+                            </div>
+                            <span class="px-3 py-1 text-[10px] font-bold rounded-lg bg-surplus/10 text-surplus">UP 1.25%</span>
                         </div>
-                        <p class="text-[10px] text-slate-400 uppercase tracking-widest mb-4">Bank Central Asia</p>
-                        <div class="text-2xl font-serif font-bold text-brand-black">10,250 <span
-                                class="text-xs text-slate-400 font-sans">IDR</span></div>
-                    </div>
-                    <div class="harbor-card-flat p-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="flex justify-between items-start mb-3">
-                            <h4 class="font-bold text-lg">TLKM</h4>
-                            <span class="px-2 py-0.5 text-[9px] font-bold rounded-full bg-red-50 text-red-500">&#9660;
-                                0.85%</span>
+                        <h4 class="font-serif text-2xl font-medium text-charcoal mb-1">BBCA</h4>
+                        <p class="text-[10px] text-charcoal/40 uppercase tracking-[0.2em] mb-8 font-bold">Bank Central Asia</p>
+                        <div class="text-4xl font-serif font-medium text-charcoal">10.250 <span class="text-sm text-charcoal/40 tracking-normal font-sans font-light">IDR</span></div>
+                    </a>
+                    <a href="src/pages/stocks.html" class="min-w-[280px] shrink-0 snap-center bg-white border border-charcoal/5 rounded-[32px] p-10 hover:shadow-xl transition-all duration-500 group"  >
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-red-600 flex items-center justify-center shadow-lg border-2 border-white/20">
+                                <span class="text-white font-bold text-[10px]">TL</span>
+                            </div>
+                            <span class="px-3 py-1 text-[10px] font-bold rounded-lg bg-deficit/10 text-deficit">DWN 0.85%</span>
                         </div>
-                        <p class="text-[10px] text-slate-400 uppercase tracking-widest mb-4">Telkom Indonesia</p>
-                        <div class="text-2xl font-serif font-bold text-brand-black">3,820 <span
-                                class="text-xs text-slate-400 font-sans">IDR</span></div>
-                    </div>
-                    <div class="harbor-card-flat p-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="flex justify-between items-start mb-3">
-                            <h4 class="font-bold text-lg">GOTO</h4>
-                            <span
-                                class="px-2 py-0.5 text-[9px] font-bold rounded-full bg-brand-green-light text-brand-green">&#9650;
-                                4.62%</span>
+                        <h4 class="font-serif text-2xl font-medium text-charcoal mb-1">TLKM</h4>
+                        <p class="text-[10px] text-charcoal/40 uppercase tracking-[0.2em] mb-8 font-bold">Telkom Indonesia</p>
+                        <div class="text-4xl font-serif font-medium text-charcoal">3.820 <span class="text-sm text-charcoal/40 tracking-normal font-sans font-light">IDR</span></div>
+                    </a>
+                    <a href="src/pages/stocks.html" class="min-w-[280px] shrink-0 snap-center bg-white border border-charcoal/5 rounded-[32px] p-10 hover:shadow-xl transition-all duration-500 group"  >
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-emerald-500 flex items-center justify-center shadow-lg border-2 border-white/20">
+                                <span class="text-white font-bold text-[10px]">GO</span>
+                            </div>
+                            <span class="px-3 py-1 text-[10px] font-bold rounded-lg bg-surplus/10 text-surplus">UP 4.62%</span>
                         </div>
-                        <p class="text-[10px] text-slate-400 uppercase tracking-widest mb-4">GoTo Gojek Tokopedia</p>
-                        <div class="text-2xl font-serif font-bold text-brand-black">68 <span
-                                class="text-xs text-slate-400 font-sans">IDR</span></div>
-                    </div>
-                    <div class="harbor-card-flat p-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="flex justify-between items-start mb-3">
-                            <h4 class="font-bold text-lg">BBNI</h4>
-                            <span
-                                class="px-2 py-0.5 text-[9px] font-bold rounded-full bg-brand-green-light text-brand-green">&#9650;
-                                0.95%</span>
+                        <h4 class="font-serif text-2xl font-medium text-charcoal mb-1">GOTO</h4>
+                        <p class="text-[10px] text-charcoal/40 uppercase tracking-[0.2em] mb-8 font-bold">GoTo Gojek Tokopedia</p>
+                        <div class="text-4xl font-serif font-medium text-charcoal">68 <span class="text-sm text-charcoal/40 tracking-normal font-sans font-light">IDR</span></div>
+                    </a>
+                    <a href="src/pages/stocks.html" class="min-w-[280px] shrink-0 snap-center bg-white border border-charcoal/5 rounded-[32px] p-10 hover:shadow-xl transition-all duration-500 group"  >
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-2xl bg-orange-500 flex items-center justify-center shadow-lg border-2 border-white/20">
+                                <span class="text-white font-bold text-[10px]">BN</span>
+                            </div>
+                            <span class="px-3 py-1 text-[10px] font-bold rounded-lg bg-surplus/10 text-surplus">UP 0.95%</span>
                         </div>
-                        <p class="text-[10px] text-slate-400 uppercase tracking-widest mb-4">Bank Negara Indonesia</p>
-                        <div class="text-2xl font-serif font-bold text-brand-black">5,400 <span
-                                class="text-xs text-slate-400 font-sans">IDR</span></div>
-                    </div>
+                        <h4 class="font-serif text-2xl font-medium text-charcoal mb-1">BBNI</h4>
+                        <p class="text-[10px] text-charcoal/40 uppercase tracking-[0.2em] mb-8 font-bold">Bank Negara Indonesia</p>
+                        <div class="text-4xl font-serif font-medium text-charcoal">5.400 <span class="text-sm text-charcoal/40 tracking-normal font-sans font-light">IDR</span></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ALAT FINANSIAL ========== -->
+        <section class="py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-24">
+                    <div class="section-label mx-auto mb-8 bg-charcoal/5 text-charcoal border border-charcoal/10 px-6 py-2">/ EKOSISTEM INSTRUMEN</div>
+                    <h2 class="font-sans text-4xl md:text-5xl font-bold tracking-tight mb-8">Alat Finansial Praktis</h2>
+                    <p class="text-charcoal/60 max-w-2xl mx-auto text-lg font-light">Gunakan suite alat interaktif kami yang didesain untuk akurasi dan kemudahan navigasi aset Anda.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                    <a href="src/pages/investasi-compare.html"
+                        class="bg-parchment border border-charcoal/5 rounded-[48px] p-12 group hover:shadow-2xl hover:border-bullion/30 transition-all duration-500 relative overflow-hidden"
+                         >
+                        <div class="w-16 h-16 bg-charcoal text-white rounded-2xl flex items-center justify-center mb-10 group-hover:bg-bullion transition-colors duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-3xl font-medium mb-6 text-charcoal">
+                            Bandingkan Investasi</h3>
+                        <p class="text-[15px] text-charcoal/60 leading-relaxed font-light mb-8">Bandingkan 9 profil instrumen investasi — risiko, imbal hasil, dan kesesuaian dengan visibilitas portofolio Anda.</p>
+                        <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] group-hover:text-bullion transition-colors">
+                            Explore Tool <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </a>
+                    <a href="src/pages/glosarium.html"
+                        class="bg-parchment border border-charcoal/5 rounded-[48px] p-12 group hover:shadow-2xl hover:border-bullion/30 transition-all duration-500 relative overflow-hidden"
+                         >
+                        <div class="w-16 h-16 bg-charcoal text-white rounded-2xl flex items-center justify-center mb-10 group-hover:bg-bullion transition-colors duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-3xl font-medium mb-6 text-charcoal">
+                            Glosarium Finansial</h3>
+                        <p class="text-[15px] text-charcoal/60 leading-relaxed font-light mb-8">Ensiklopedi 35+ terminologi ekonomi dan finansial krusial dengan definisi presisi dan konteks aplikasi praktis.</p>
+                        <div class="flex items-center gap-2 text-charcoal font-bold text-[10px] uppercase tracking-[0.2em] group-hover:text-bullion transition-colors">
+                            Explore Glossary <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- ========== CTA ========== -->
-        <section class="py-20 bg-brand-cream">
+        <section class="pb-32 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="cta-gradient rounded-3xl p-12 md:p-20 text-center text-white relative overflow-hidden"
-                    data-aos="fade-up">
-                    <div class="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
+                <div class="bg-charcoal rounded-[64px] p-16 md:p-32 text-center text-white relative overflow-hidden shadow-2xl" >
+                    <div class="absolute inset-0 opacity-10 bg-grid-pattern"></div>
                     <div class="relative z-10">
-                        <h2 class="font-serif text-3xl md:text-5xl font-bold mb-6 text-white">Siap
-                            Mengendalikan<br />Masa Depan Finansial?</h2>
-                        <p class="text-emerald-100 max-w-xl mx-auto mb-10 text-lg leading-relaxed">Pilih jalur, pelajari
-                            materinya, dan gunakan alat yang kami sediakan. Semuanya gratis.</p>
-                        <a href="#pilih-jalur"
-                            class="inline-block px-10 py-4 bg-white text-brand-green font-bold tracking-widest uppercase text-xs rounded-full hover:shadow-xl transition-all">Pilih
-                            Jalur Sekarang</a>
+                        <h2 class="font-sans text-4xl md:text-5xl font-bold mb-10 text-white tracking-tight">Siap Mengendalikan<br />Masa Depan Finansial?</h2>
+                        <p class="text-white/60 max-w-2xl mx-auto mb-16 text-xl leading-relaxed font-light">Pilih jalur strategis Anda, eksplorasi materi premium, dan manfaatkan alat bantu eksklusif kami tanpa batasan.</p>
+                        <a href="#pilih-jalur" class="inline-flex items-center justify-center px-12 py-5 bg-bullion text-charcoal font-bold tracking-[0.2em] uppercase text-xs rounded-full hover:bg-white transition-all duration-500 hover:scale-105 shadow-xl">
+                            Akses Sekarang
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
+
         <div id="footer-root"></div>
     </main>
+
+    <!-- News Modal (Dashboard) -->
+    <div id="news-modal" class="fixed inset-0 z-[200] bg-charcoal/80 backdrop-blur-sm hidden flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-parchment w-full max-w-4xl max-h-[90vh] rounded-[32px] overflow-hidden flex flex-col relative transform scale-95 transition-transform duration-300 shadow-2xl">
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center p-6 md:p-8 border-b border-charcoal/10 bg-white">
+                <span id="modal-category" class="text-[10px] font-bold text-brand-green uppercase tracking-widest bg-brand-green-light/20 px-3 py-1 rounded-full">Kategori</span>
+                <button id="close-modal-btn" class="w-10 h-10 flex items-center justify-center rounded-full bg-charcoal/5 hover:bg-charcoal hover:text-white transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <!-- Modal Body -->
+            <div class="overflow-y-auto p-6 md:p-12 scrollbar-hide">
+                <h2 id="modal-title" class="font-serif text-3xl md:text-5xl font-bold mb-6 text-charcoal leading-tight">Judul Berita</h2>
+                <div class="flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-10 pb-6 border-b border-charcoal/10">
+                    <span id="modal-author" class="text-charcoal">By Author</span>
+                    <span>|</span>
+                    <span id="modal-date">Date</span>
+                </div>
+                <img id="modal-image" src="" class="w-full h-auto aspect-video object-cover rounded-2xl mb-10 hidden" alt="News Image">
+                <div id="modal-content" class="prose prose-lg prose-slate max-w-none text-charcoal/80 font-sans leading-relaxed">
+                    <!-- HTML Content goes here -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script type="module" src="/src/js/pages/dashboard.js"></script>
 </body>

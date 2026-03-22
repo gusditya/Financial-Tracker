@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Compound Interest | ArthaNavigate</title>
+    <meta name="description"
+        content="Hitung kekuatan bunga berbunga — lihat bagaimana investasi kecil tumbuh menjadi besar dengan compound interest.">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-parchment text-charcoal selection:bg-bullion selection:text-white font-sans">
+
+    <div id="navbar-root"></div>
+
+    <main class="main-content">
+        <!-- ========== HERO ========== -->
+        <section class="relative pt-32 pb-20 bg-parchment overflow-hidden">
+            <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
+            <div class="absolute top-20 right-10 w-72 h-72 bg-emerald-200/20 rounded-full blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-10 left-10 w-56 h-56 bg-teal-200/20 rounded-full blur-3xl animate-pulse"
+                style="animation-delay:1.5s"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="max-w-3xl" >
+                    <a href="../../index.html"
+                        class="inline-flex items-center gap-2 text-xs font-bold text-brand-green uppercase tracking-widest mb-8 hover:gap-3 transition-all">
+                        <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                        Kembali ke Dashboard
+                    </a>
+                    <div class="section-label mb-4" style="margin-left:0;">
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                        Kalkulator &mdash; Compound Interest
+                    </div>
+                    <h1 class="font-serif text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
+                        Kalkulator <span class="italic font-normal text-brand-green">Compound</span> Interest
+                    </h1>
+                    <p class="text-lg text-slate-500 max-w-xl leading-relaxed">
+                        Lihat kekuatan bunga berbunga — <strong>"keajaiban dunia ke-8"</strong> menurut Albert Einstein.
+                        Masukkan angka investasi Anda dan saksikan bagaimana uang kecil tumbuh menjadi besar.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CALCULATOR ========== -->
+        <section class="py-24 bg-parchment">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="harbor-card p-8 md:p-12" >
+                    <div class="text-center mb-10">
+                        <h2 class="font-serif text-3xl font-bold mb-3">Simulasi Investasi</h2>
+                        <p class="text-sm text-slate-500">Masukkan data investasi Anda dan lihat proyeksi pertumbuhan
+                            dengan compound interest.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <label
+                                class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Modal
+                                Awal (Rp)</label>
+                            <input type="number" id="ci-initial" class="harbor-input" placeholder="1000000" />
+                        </div>
+                        <div>
+                            <label
+                                class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Kontribusi
+                                Bulanan (Rp)</label>
+                            <input type="number" id="ci-monthly" class="harbor-input" placeholder="500000" />
+                        </div>
+                        <div>
+                            <label
+                                class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Return
+                                Tahunan (%)</label>
+                            <input type="number" id="ci-rate" class="harbor-input" placeholder="10" step="0.1" />
+                        </div>
+                        <div>
+                            <label
+                                class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Jangka
+                                Waktu (Tahun)</label>
+                            <input type="number" id="ci-years" class="harbor-input" placeholder="20" />
+                        </div>
+                    </div>
+                    <button id="ci-calc-btn" class="btn-primary w-full text-sm py-4">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        Hitung Compound Interest
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== RESULT ========== -->
+        <section id="ci-result" class="py-24 bg-white hidden">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Result Title -->
+                <div class="text-center mb-16" >
+                    <div class="section-label mx-auto mb-4">Hasil Simulasi</div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4" id="ci-result-title"></h2>
+                    <p class="text-slate-500 max-w-2xl mx-auto" id="ci-result-subtitle"></p>
+                </div>
+
+                <!-- Result Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
+                    <div class="harbor-card p-8 text-center"  >
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-brand-green mb-3">Nilai Akhir
+                            Investasi</div>
+                        <div class="text-3xl md:text-4xl font-serif font-bold text-brand-green ci-countup"
+                            id="ci-final-value">—</div>
+                    </div>
+                    <div class="harbor-card p-8 text-center"  >
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-blue-600 mb-3">Total Modal
+                            Disetor</div>
+                        <div class="text-3xl md:text-4xl font-serif font-bold text-blue-600 ci-countup"
+                            id="ci-total-modal">—</div>
+                    </div>
+                    <div class="harbor-card p-8 text-center"  >
+                        <div class="text-[10px] font-bold uppercase tracking-widest text-amber-600 mb-3">Keuntungan
+                            Compound</div>
+                        <div class="text-3xl md:text-4xl font-serif font-bold text-amber-600 ci-countup"
+                            id="ci-profit">—</div>
+                    </div>
+                </div>
+
+                <!-- Profit Ratio Bar -->
+                <div class="harbor-card p-8 md:p-12 mb-12" >
+                    <h3 class="font-serif text-2xl font-bold mb-6">Komposisi Nilai Akhir</h3>
+                    <div class="flex gap-4 items-center mb-4">
+                        <div class="flex-1">
+                            <div class="flex h-6 rounded-full overflow-hidden">
+                                <div id="ci-bar-modal"
+                                    class="bg-blue-500 transition-all duration-1000 flex items-center justify-center text-[9px] font-bold text-white"
+                                    style="width:50%">Modal</div>
+                                <div id="ci-bar-profit"
+                                    class="bg-amber-500 transition-all duration-1000 flex items-center justify-center text-[9px] font-bold text-white"
+                                    style="width:50%">Bunga</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between text-xs text-slate-500">
+                        <span id="ci-bar-modal-pct">50% Modal</span>
+                        <span id="ci-bar-profit-pct">50% Keuntungan Bunga</span>
+                    </div>
+                </div>
+
+                <!-- Growth Chart -->
+                <div class="harbor-card p-6 md:p-8 mb-12" >
+                    <h3 class="font-serif text-xl font-bold mb-6">Pertumbuhan Investasi vs Menabung Biasa</h3>
+                    <div class="relative" style="height:380px;">
+                        <canvas id="ci-chart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Rule of 72 -->
+                <div class="harbor-card p-8 md:p-12 mb-12" >
+                    <div class="flex items-start gap-6">
+                        <div
+                            class="w-16 h-16 bg-brand-green-light rounded-2xl flex items-center justify-center flex-shrink-0">
+                            <span class="text-2xl font-serif font-bold text-brand-green">72</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl font-bold mb-2">Rule of 72</h3>
+                            <p class="text-sm text-slate-500 leading-relaxed mb-3">Rumus cepat memperkirakan berapa lama
+                                uang Anda berlipat ganda:</p>
+                            <p class="text-lg font-bold text-brand-black mb-2">72 ÷ <span
+                                    id="ci-r72-rate">10</span>% = <span id="ci-r72-years"
+                                    class="text-brand-green">7.2</span> tahun</p>
+                            <p class="text-sm text-slate-500" id="ci-r72-msg">Dengan return 10% per tahun, investasi
+                                Anda akan berlipat ganda setiap ~7.2 tahun.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yearly Table -->
+                <div class="harbor-card p-6 md:p-8" >
+                    <h3 class="font-serif text-xl font-bold mb-6">Proyeksi Tahunan</h3>
+                    <div class="overflow-x-auto">
+                        <table class="materi-table w-full">
+                            <thead>
+                                <tr>
+                                    <th>Tahun</th>
+                                    <th>Total Modal</th>
+                                    <th>Nilai Investasi</th>
+                                    <th>Keuntungan</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ci-table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="footer-root"></div>
+    </main>
+
+    <script type="module" src="/src/js/pages/compound-calc.js"></script>
+</body>
+
+</html>

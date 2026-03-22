@@ -631,6 +631,199 @@ const materiData = [
       "Rule of 72: 72 ÷ return(%) = tahun untuk menggandakan uang",
       "Tetapkan tujuan SMART dan hitung berapa investasi bulanan yang dibutuhkan"
     ]
+  },
+  {
+    id: 9,
+    label: "Langkah 09",
+    title: "Asuransi & Perlindungan Finansial",
+    subtitle: "Jaring pengaman kedua — lindungi diri dan keluarga dari risiko keuangan yang tidak terduga.",
+    content: `
+      <div class="materi-article">
+        <h2>Mengapa Asuransi Penting?</h2>
+        <p>Asuransi adalah <strong>mekanisme transfer risiko</strong> — Anda membayar premi kecil untuk melindungi dari kerugian finansial besar. Tanpa asuransi, satu kejadian darurat (sakit parah, kecelakaan, bencana) bisa menghabiskan tabungan dan investasi yang Anda bangun bertahun-tahun.</p>
+
+        <div class="materi-highlight">
+          <h4>Jenis Asuransi yang Penting</h4>
+          <div class="materi-grid-2">
+            <div class="materi-mini-card" style="border-left: 4px solid #ef4444;">
+              <span class="materi-emoji">🏥</span>
+              <h5>Asuransi Kesehatan</h5>
+              <p>Paling krusial. Biaya rawat inap RS swasta bisa Rp 20-50 juta/hari. BPJS Kesehatan wajib, asuransi swasta sebagai tambahan.</p>
+            </div>
+            <div class="materi-mini-card" style="border-left: 4px solid #3b82f6;">
+              <span class="materi-emoji">🛡️</span>
+              <h5>Asuransi Jiwa</h5>
+              <p>Penting jika Anda pencari nafkah utama. Uang Pertanggungan (UP) ideal: 10-12x penghasilan tahunan.</p>
+            </div>
+            <div class="materi-mini-card" style="border-left: 4px solid #f59e0b;">
+              <span class="materi-emoji">🚗</span>
+              <h5>Asuransi Kendaraan</h5>
+              <p>All-risk atau TLO (Total Loss Only). All-risk menanggung semua kerusakan, TLO hanya kehilangan total.</p>
+            </div>
+            <div class="materi-mini-card" style="border-left: 4px solid #10b981;">
+              <span class="materi-emoji">🏠</span>
+              <h5>Asuransi Properti</h5>
+              <p>Melindungi rumah/bangunan dari kebakaran, banjir, gempa. Wajib jika rumah masih KPR.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>BPJS vs Asuransi Swasta</h2>
+        <div class="materi-table-wrap">
+          <table class="materi-table">
+            <thead><tr><th>Fitur</th><th>BPJS Kesehatan</th><th>Asuransi Swasta</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Premi</strong></td><td>Rp 35-150K/bulan</td><td>Rp 300K-3 Juta/bulan</td></tr>
+              <tr><td><strong>Cakupan</strong></td><td>Semua penyakit, sesuai kelas</td><td>Sesuai plan, bisa lebih luas</td></tr>
+              <tr><td><strong>RS Rujukan</strong></td><td>Faskes bertahap (puskesmas → RS)</td><td>Langsung ke RS pilihan</td></tr>
+              <tr><td><strong>Kamar</strong></td><td>Kelas 1/2/3 sesuai iuran</td><td>Bisa 1 bed/VIP</td></tr>
+              <tr><td><strong>Antrian</strong></td><td>Bisa lama</td><td>Lebih cepat</td></tr>
+              <tr><td><strong>Saran</strong></td><td>WAJIB punya sebagai fondasi</td><td>Tambahan jika mampu</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Tips Memilih Asuransi</h2>
+        <ul>
+          <li><strong>Prioritas:</strong> Kesehatan → Jiwa (jika ada tanggungan) → Kendaraan → Properti</li>
+          <li><strong>Hindari asuransi unit link</strong> untuk pemula — pisahkan asuransi dan investasi</li>
+          <li><strong>Cek exclusion</strong> (pengecualian) — apa saja yang TIDAK ditanggung</li>
+          <li><strong>Baca polis</strong> dengan teliti sebelum tanda tangan</li>
+          <li><strong>Pastikan perusahaan terdaftar OJK</strong> dan memiliki RBC >120%</li>
+          <li><strong>Jangan over-insured</strong> — premi total idealnya 5-10% dari penghasilan</li>
+        </ul>
+
+        <div class="materi-info-box">
+          <strong>⚠️ Urutan Perlindungan Finansial yang Benar</strong>
+          <p>1. BPJS Kesehatan (wajib) → 2. Dana Darurat (3-6 bulan) → 3. Asuransi Jiwa (jika ada tanggungan) → 4. Asuransi Kesehatan Swasta (opsional) → 5. Baru mulai investasi.</p>
+        </div>
+      </div>
+    `,
+    chart: {
+      title: "Biaya Kesehatan vs Premi Asuransi (Rata-rata)",
+      desc: "Perbandingan biaya medis tanpa asuransi vs total premi yang dibayarkan per tahun",
+      type: "bar",
+      data: {
+        labels: ["Rawat Inap 5 Hari", "Operasi Caesar", "Operasi Jantung", "Perawatan ICU/Minggu", "Premi BPJS/Tahun", "Premi Swasta/Tahun"],
+        datasets: [{
+          label: "Biaya (Juta Rp)",
+          data: [25, 40, 200, 70, 1.8, 12],
+          backgroundColor: ["#fca5a5", "#fca5a5", "#fca5a5", "#fca5a5", "#10b981", "#3b82f6"],
+          borderRadius: 8,
+        }]
+      },
+      options: { indexAxis: "y", plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true } } }
+    },
+    takeaways: [
+      "Asuransi = transfer risiko keuangan — bayar sedikit untuk lindungi dari kerugian besar",
+      "BPJS Kesehatan WAJIB sebagai fondasi, asuransi swasta sebagai tambahan",
+      "Hindari asuransi unit link untuk pemula — pisahkan asuransi dan investasi",
+      "Premi total idealnya tidak lebih dari 5-10% penghasilan bulanan"
+    ]
+  },
+  {
+    id: 10,
+    label: "Langkah 10",
+    title: "Fintech & Digital Banking",
+    subtitle: "Mengelola keuangan di era digital — e-wallet, neobank, dan bagaimana tetap aman bertransaksi online.",
+    content: `
+      <div class="materi-article">
+        <h2>Revolusi Keuangan Digital Indonesia</h2>
+        <p>Indonesia mengalami <strong>ledakan fintech</strong> dalam 5 tahun terakhir. Dari e-wallet hingga pinjaman online, teknologi finansial mengubah cara kita bertransaksi, menabung, dan berinvestasi.</p>
+
+        <div class="materi-highlight">
+          <h4>Ekosistem Fintech Indonesia</h4>
+          <div class="materi-grid-2">
+            <div class="materi-mini-card">
+              <span class="materi-emoji">💳</span>
+              <h5>E-Wallet & Pembayaran</h5>
+              <p>GoPay, OVO, DANA, ShopeePay, LinkAja. Transaksi e-money Indonesia mencapai Rp 472 triliun (2025).</p>
+            </div>
+            <div class="materi-mini-card">
+              <span class="materi-emoji">🏦</span>
+              <h5>Neobank / Bank Digital</h5>
+              <p>Jago, Blu (BCA Digital), Seabank, Neobank. Bunga tabungan hingga 6% p.a. tanpa biaya admin.</p>
+            </div>
+            <div class="materi-mini-card">
+              <span class="materi-emoji">📊</span>
+              <h5>Investasi Digital</h5>
+              <p>Bibit, Bareksa, Ajaib, Stockbit, Pluang. Investasi mulai dari Rp 10.000 langsung dari HP.</p>
+            </div>
+            <div class="materi-mini-card">
+              <span class="materi-emoji">💰</span>
+              <h5>P2P Lending</h5>
+              <p>Investree, Modalku, Amartha. Meminjamkan uang ke UMKM/individu dengan return 10-18% p.a.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>QRIS — Revolusi Pembayaran Indonesia</h2>
+        <p><strong>Quick Response Code Indonesian Standard (QRIS)</strong> adalah standar QR code pembayaran nasional yang diluncurkan Bank Indonesia. Satu QR code = bisa dibayar dari semua e-wallet dan mobile banking.</p>
+        <ul>
+          <li>Diterima di >30 juta merchant di seluruh Indonesia</li>
+          <li>Cross-border: bisa dipakai di Malaysia, Thailand, Singapura, Jepang</li>
+          <li>Batas transaksi: Rp 5 juta per transaksi (merchant), Rp 2 juta (personal)</li>
+        </ul>
+
+        <h2>⚠️ Risiko Pinjaman Online (Pinjol)</h2>
+        <div class="materi-table-wrap">
+          <table class="materi-table">
+            <thead><tr><th>Aspek</th><th>Pinjol Legal (OJK)</th><th>Pinjol Ilegal</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Bunga</strong></td><td>Maks 0.4%/hari (SKB OJK)</td><td>Bisa 1-3%/hari atau lebih</td></tr>
+              <tr><td><strong>Denda</strong></td><td>Terbatas, terukur</td><td>Membengkak tanpa batas</td></tr>
+              <tr><td><strong>Penagihan</strong></td><td>Sesuai aturan OJK, profesional</td><td>Intimidasi, teror ke kontak, penyebaran data</td></tr>
+              <tr><td><strong>Data Pribadi</strong></td><td>Dilindungi, hanya akses kamera/mic/lokasi</td><td>Akses seluruh kontak, galeri, pesan</td></tr>
+              <tr><td><strong>Contoh</strong></td><td>Kredivo, Akulaku, Home Credit</td><td>Aplikasi tidak terdaftar OJK</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Tips Keamanan Transaksi Digital</h2>
+        <ul>
+          <li><strong>Aktifkan 2FA</strong> (Two-Factor Authentication) di semua akun keuangan</li>
+          <li><strong>Jangan share OTP</strong> ke siapapun — termasuk yang mengaku dari bank</li>
+          <li><strong>Gunakan PIN/biometrik</strong> yang berbeda untuk setiap aplikasi keuangan</li>
+          <li><strong>Cek berkala</strong> riwayat transaksi dan notifikasi</li>
+          <li><strong>Hanya unduh aplikasi</strong> dari Play Store/App Store resmi</li>
+          <li><strong>Waspadai phishing</strong> — jangan klik link mencurigakan via SMS/WhatsApp</li>
+          <li><strong>Pisahkan rekening</strong> — gunakan rekening berbeda untuk transaksi harian dan tabungan utama</li>
+        </ul>
+
+        <div class="materi-info-box">
+          <strong>🔒 Cara Cek Legalitas Fintech</strong>
+          <p>Kunjungi website OJK (<strong>ojk.go.id</strong>) → masuk ke menu "Fintech" → cari nama perusahaan di daftar penyelenggara terdaftar/berizin. Jika tidak ada, JANGAN GUNAKAN.</p>
+        </div>
+      </div>
+    `,
+    chart: {
+      title: "Pertumbuhan Transaksi Digital Indonesia (2019-2026)",
+      desc: "Volume transaksi e-money dan QRIS terus meningkat eksponensial (dalam triliun Rupiah)",
+      type: "line",
+      data: {
+        labels: ["2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026*"],
+        datasets: [{
+          label: "E-Money (Triliun Rp)",
+          data: [145, 201, 256, 310, 388, 437, 472, 520],
+          borderColor: "#10b981",
+          backgroundColor: "rgba(16,185,129,0.1)",
+          tension: 0.4, fill: true, pointRadius: 5, pointBackgroundColor: "#10b981",
+        }, {
+          label: "QRIS (Triliun Rp)",
+          data: [0, 0.5, 3, 12, 36, 60, 95, 140],
+          borderColor: "#3b82f6",
+          backgroundColor: "rgba(59,130,246,0.1)",
+          tension: 0.4, fill: true, pointRadius: 5, pointBackgroundColor: "#3b82f6",
+        }]
+      },
+      options: { scales: { y: { beginAtZero: true } } }
+    },
+    takeaways: [
+      "E-wallet dan QRIS sudah menjadi tulang punggung pembayaran digital Indonesia",
+      "Neobank menawarkan bunga tabungan lebih tinggi (5-6%) dari bank konvensional",
+      "WASPADA pinjol ilegal — selalu cek legalitas di website OJK sebelum pinjam",
+      "Aktifkan 2FA dan jangan pernah share OTP ke siapapun untuk keamanan transaksi"
+    ]
   }
 ];
 
@@ -696,4 +889,8 @@ function renderMateri() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", renderMateri);
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", renderMateri);
+} else {
+  renderMateri();
+}

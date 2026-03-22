@@ -33,12 +33,12 @@ export function initApp({
     footRoot.innerHTML = renderFooter({ basePath, pagePath });
   }
 
-  /* -- AOS scroll animations -- */
-  AOS.init({
+  /* -- AOS scroll animations (Disabled in favor of custom system) -- */
+  /* AOS.init({
     duration: 800,
     once: true,
     offset: 50,
-  });
+  }); */
 
   /* -- Dynamic Island Navbar behaviour -- */
   initNavbar();

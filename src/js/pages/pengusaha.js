@@ -209,3 +209,6 @@ function recalcBudget() {
 
 if (budgetTotal) budgetTotal.addEventListener("input", recalcBudget);
 budgetCats.forEach((input) => input.addEventListener("input", recalcBudget));
+
+import { initAnimations } from '../animations.js';
+ initAnimations(); 

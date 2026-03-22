@@ -591,6 +591,110 @@ const materiData = [
       "Kurva indiferen: kombinasi barang dengan tingkat kepuasan yang sama",
       "Behavioral economics menunjukkan manusia tidak selalu rasional dalam keputusan"
     ]
+  },
+  {
+    id: 9,
+    label: "Tambahan — Konsep 5",
+    title: "Ekonomi Syariah",
+    subtitle: "Sistem ekonomi berbasis prinsip Islam — akad, bank syariah, sukuk, dan reksadana syariah di Indonesia.",
+    content: `
+      <div class="materi-article">
+        <h2>Apa Itu Ekonomi Syariah?</h2>
+        <p>Ekonomi syariah adalah <strong>sistem ekonomi yang berlandaskan prinsip-prinsip Islam</strong>. Tiga larangan utama: <strong>riba</strong> (bunga), <strong>gharar</strong> (ketidakpastian berlebihan), dan <strong>maisir</strong> (spekulasi/judi). Indonesia memiliki ekonomi syariah terbesar di Asia Tenggara.</p>
+
+        <div class="materi-highlight">
+          <h4>Prinsip Dasar Ekonomi Syariah</h4>
+          <div class="materi-grid-2">
+            <div class="materi-mini-card" style="border-left: 4px solid #10b981;">
+              <span class="materi-emoji">🤝</span>
+              <h5>Keadilan (Al-'Adl)</h5>
+              <p>Setiap transaksi harus adil bagi semua pihak. Tidak boleh ada pihak yang dirugikan atau dieksploitasi.</p>
+            </div>
+            <div class="materi-mini-card" style="border-left: 4px solid #3b82f6;">
+              <span class="materi-emoji">📜</span>
+              <h5>Transparansi</h5>
+              <p>Semua syarat dan risiko harus jelas di awal. Tidak boleh ada unsur penipuan (gharar) atau ketidakjelasan.</p>
+            </div>
+            <div class="materi-mini-card" style="border-left: 4px solid #f59e0b;">
+              <span class="materi-emoji">🚫</span>
+              <h5>Bebas Riba</h5>
+              <p>Tidak mengenakan bunga atas pinjaman. Keuntungan diperoleh dari bagi hasil (profit sharing) atau jual-beli.</p>
+            </div>
+            <div class="materi-mini-card" style="border-left: 4px solid #ef4444;">
+              <span class="materi-emoji">⚖️</span>
+              <h5>Berbasis Aset Riil</h5>
+              <p>Setiap transaksi keuangan harus memiliki underlying asset yang jelas — bukan spekulasi murni.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Akad-Akad dalam Keuangan Syariah</h2>
+        <div class="materi-table-wrap">
+          <table class="materi-table">
+            <thead><tr><th>Akad</th><th>Jenis</th><th>Penjelasan</th><th>Contoh Penerapan</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Murabahah</strong></td><td>Jual-Beli</td><td>Bank membeli barang lalu menjual ke nasabah dengan margin yang disepakati</td><td>KPR Syariah, kredit motor</td></tr>
+              <tr><td><strong>Mudharabah</strong></td><td>Bagi Hasil</td><td>Satu pihak menyediakan modal, pihak lain mengelola. Keuntungan dibagi sesuai nisbah</td><td>Tabungan/deposito syariah</td></tr>
+              <tr><td><strong>Musyarakah</strong></td><td>Kemitraan</td><td>Kedua pihak menyediakan modal dan berbagi keuntungan/kerugian proporsional</td><td>Pembiayaan usaha bersama</td></tr>
+              <tr><td><strong>Ijarah</strong></td><td>Sewa</td><td>Pemilik menyewakan aset kepada pihak lain. Bisa dengan opsi beli (IMBT)</td><td>Leasing kendaraan syariah</td></tr>
+              <tr><td><strong>Wakalah</strong></td><td>Perwakilan</td><td>Mewakilkan suatu urusan kepada pihak lain dengan atau tanpa imbalan</td><td>Asuransi syariah, investasi</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Bank Syariah vs Bank Konvensional</h2>
+        <div class="materi-table-wrap">
+          <table class="materi-table">
+            <thead><tr><th>Aspek</th><th>Bank Konvensional</th><th>Bank Syariah</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Dasar</strong></td><td>Bunga (interest)</td><td>Bagi hasil (profit sharing)</td></tr>
+              <tr><td><strong>Hubungan</strong></td><td>Debitur-Kreditur</td><td>Kemitraan (partner)</td></tr>
+              <tr><td><strong>Return Tabungan</strong></td><td>Bunga tetap</td><td>Nisbah bagi hasil (bisa naik/turun)</td></tr>
+              <tr><td><strong>Pengawasan</strong></td><td>OJK</td><td>OJK + Dewan Pengawas Syariah (DPS)</td></tr>
+              <tr><td><strong>Investasi Dana</strong></td><td>Bebas (termasuk sektor haram)</td><td>Hanya ke sektor halal</td></tr>
+              <tr><td><strong>Contoh Bank</strong></td><td>BCA, BRI, Mandiri</td><td>BSI, Bank Muamalat, BCA Syariah</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Produk Investasi Syariah</h2>
+        <ul>
+          <li><strong>Sukuk (Obligasi Syariah)</strong> — Surat berharga negara berbasis syariah. Return: 5-7% p.a. Contoh: Sukuk Tabungan (ST), Sukuk Ritel (SR)</li>
+          <li><strong>Reksadana Syariah</strong> — Dana diinvestasikan hanya ke instrumen yang sesuai prinsip syariah (saham JII, sukuk). Tersedia di Bibit, Bareksa</li>
+          <li><strong>Saham Syariah (JII/ISSI)</strong> — Saham yang masuk Jakarta Islamic Index atau Indeks Saham Syariah Indonesia</li>
+          <li><strong>Emas</strong> — Secara syariah, emas adalah investasi halal selama dibeli tunai (tidak margin trading)</li>
+        </ul>
+
+        <h2>Zakat & Peran Ekonomi</h2>
+        <p>Zakat bukan sekadar kewajiban ibadah — ini adalah <strong>mekanisme redistribusi kekayaan</strong> dalam Islam. Zakat maal (harta) sebesar <strong>2.5%</strong> wajib dikeluarkan jika harta mencapai nisab (~85 gram emas ≈ Rp 95 juta).</p>
+
+        <div class="materi-info-box">
+          <strong>🌙 Potensi Ekonomi Syariah Indonesia</strong>
+          <p>Indonesia memiliki populasi Muslim terbesar di dunia (>230 juta). Aset perbankan syariah Indonesia mencapai <strong>Rp 800+ triliun</strong> (2025) dengan market share ~7% dari total perbankan — masih sangat besar ruang pertumbuhannya.</p>
+        </div>
+      </div>
+    `,
+    chart: {
+      title: "Pertumbuhan Aset Perbankan Syariah Indonesia",
+      desc: "Aset perbankan syariah terus tumbuh signifikan (dalam triliun Rupiah)",
+      type: "bar",
+      data: {
+        labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
+        datasets: [{
+          label: "Aset (Triliun Rp)",
+          data: [316, 350, 397, 475, 554, 648, 730, 810],
+          backgroundColor: ["#d1fae5", "#a7f3d0", "#6ee7b7", "#34d399", "#10b981", "#059669", "#047857", "#065f46"],
+          borderRadius: 8,
+        }]
+      },
+      options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
+    },
+    takeaways: [
+      "Ekonomi syariah melarang riba (bunga), gharar (ketidakpastian), dan maisir (spekulasi)",
+      "Akad utama: murabahah (jual-beli), mudharabah (bagi hasil), musyarakah (kemitraan)",
+      "Produk investasi syariah: sukuk, reksadana syariah, saham JII, emas",
+      "Aset perbankan syariah Indonesia >Rp 800 triliun dengan potensi pertumbuhan besar"
+    ]
   }
 ];
 
@@ -637,4 +741,8 @@ function renderMateri() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", renderMateri);
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", renderMateri);
+} else {
+  renderMateri();
+}

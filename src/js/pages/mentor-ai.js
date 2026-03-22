@@ -1,7 +1,8 @@
-/* ===== mentor-ai.js — MSME Mentor AI (Advance) ===== */
 import { initApp } from "../core/app-init.js";
+import { initAnimations } from "../animations.js";
 
 initApp({ activePage: "mentor-ai", basePath: "../../", pagePath: "" });
+initAnimations();
 
 /* =========================================
    GEMINI API CONFIG
@@ -49,7 +50,7 @@ if (savedKey && apiKeyInput) {
   apiKeyInput.value = savedKey;
   sendBtn.disabled = false;
   keyStatus.textContent = "API key tersimpan.";
-  keyStatus.className = "mt-3 text-xs text-brand-green";
+  keyStatus.className = "mt-3 text-xs text-surplus";
   keyStatus.classList.remove("hidden");
 }
 
@@ -65,7 +66,7 @@ if (saveKeyBtn) {
     saveApiKey(key);
     sendBtn.disabled = false;
     keyStatus.textContent = "API key berhasil disimpan!";
-    keyStatus.className = "mt-3 text-xs text-brand-green";
+    keyStatus.className = "mt-3 text-xs text-surplus";
     keyStatus.classList.remove("hidden");
   });
 }
@@ -80,17 +81,17 @@ function addMessage(role, content) {
 
   if (isUser) {
     wrapper.innerHTML = `
-      <div class="bg-purple-600 text-white rounded-2xl rounded-tr-sm p-4 max-w-[80%]">
+      <div class="bg-charcoal text-white rounded-2xl rounded-tr-sm p-4 max-w-[80%]">
         <p class="text-sm leading-relaxed">${escapeHtml(content)}</p>
       </div>
-      <div class="w-8 h-8 bg-purple-200 rounded-full flex items-center justify-center flex-shrink-0">
-        <svg class="w-4 h-4 text-purple-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+      <div class="w-8 h-8 bg-bullion rounded-full flex items-center justify-center flex-shrink-0">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
       </div>
     `;
   } else {
     wrapper.innerHTML = `
-      <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-        <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+      <div class="w-8 h-8 bg-charcoal text-white rounded-full flex items-center justify-center flex-shrink-0">
+        <svg class="w-4 h-4 text-bullion" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
       </div>
       <div class="bg-white rounded-2xl rounded-tl-sm p-4 max-w-[80%] border border-slate-200">
         <div class="text-sm text-slate-600 leading-relaxed prose-sm">${formatMarkdown(content)}</div>
@@ -107,14 +108,14 @@ function addLoadingIndicator() {
   wrapper.className = "flex gap-3";
   wrapper.id = "loading-indicator";
   wrapper.innerHTML = `
-    <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-      <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+    <div class="w-8 h-8 bg-charcoal text-white rounded-full flex items-center justify-center flex-shrink-0">
+      <svg class="w-4 h-4 text-bullion" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
     </div>
     <div class="bg-white rounded-2xl rounded-tl-sm p-4 border border-slate-200">
       <div class="flex gap-1.5">
-        <div class="w-2 h-2 bg-purple-400 rounded-full animate-bounce" style="animation-delay:0ms"></div>
-        <div class="w-2 h-2 bg-purple-400 rounded-full animate-bounce" style="animation-delay:150ms"></div>
-        <div class="w-2 h-2 bg-purple-400 rounded-full animate-bounce" style="animation-delay:300ms"></div>
+        <div class="w-2 h-2 bg-bullion rounded-full animate-bounce" style="animation-delay:0ms"></div>
+        <div class="w-2 h-2 bg-bullion rounded-full animate-bounce" style="animation-delay:150ms"></div>
+        <div class="w-2 h-2 bg-bullion rounded-full animate-bounce" style="animation-delay:300ms"></div>
       </div>
     </div>
   `;

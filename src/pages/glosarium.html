@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glosarium Finansial | ArthaNavigate</title>
+    <meta name="description"
+        content="Kamus lengkap istilah finansial dan ekonomi Indonesia — cari definisi, contoh, dan penjelasan mudah dipahami.">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-parchment text-charcoal selection:bg-bullion selection:text-white font-sans">
+
+    <div id="navbar-root"></div>
+
+    <main class="main-content">
+        <!-- ========== HERO ========== -->
+        <section class="relative pt-32 pb-16 bg-white overflow-hidden">
+            <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
+            <div class="absolute top-20 right-10 w-64 h-64 bg-emerald-200/20 rounded-full blur-3xl"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="max-w-3xl" >
+                    <a href="../../index.html"
+                        class="inline-flex items-center gap-2 text-xs font-bold text-bullion uppercase tracking-widest mb-8 hover:gap-3 transition-all">
+                        <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                        Kembali ke Dashboard
+                    </a>
+                    <div class="section-label mb-4" style="margin-left:0;">
+                        <span class="w-2 h-2 bg-bullion rounded-full animate-pulse"></span>
+                        Referensi &mdash; Glosarium Finansial
+                    </div>
+                    <h1 class="font-serif text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
+                        Glosarium <span class="italic font-normal text-bullion">Finansial</span>
+                    </h1>
+                    <p class="text-lg text-slate-500 max-w-xl leading-relaxed mb-8">
+                        Kamus lengkap istilah keuangan dan ekonomi Indonesia. Cari istilah, pahami definisinya, dan
+                        lihat contoh praktis.
+                    </p>
+                    <!-- Search -->
+                    <div class="relative max-w-xl">
+                        <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        <input type="text" id="glos-search" class="harbor-input pl-12 pr-4 py-4 text-base"
+                            placeholder="Cari istilah... (contoh: inflasi, saham, BPJS)" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CATEGORY FILTER ========== -->
+        <section class="bg-white border-b border-slate-100 sticky top-0 z-30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div class="flex items-center gap-3 overflow-x-auto pb-1" id="glos-categories">
+                    <button
+                        class="glos-cat-btn active px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all"
+                        data-cat="all">Semua</button>
+                </div>
+                <div class="mt-3 text-xs text-slate-400" id="glos-count">Menampilkan 0 istilah</div>
+            </div>
+        </section>
+
+        <!-- ========== TERMS GRID ========== -->
+        <section class="py-16 bg-parchment">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="glos-grid">
+                </div>
+                <div id="glos-empty" class="hidden text-center py-20">
+                    <div class="text-5xl mb-4">🔍</div>
+                    <h3 class="font-serif text-xl font-bold mb-2">Tidak Ditemukan</h3>
+                    <p class="text-slate-500 text-sm">Coba kata kunci lain atau pilih kategori berbeda.</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer-root"></div>
+    </main>
+
+    <script type="module" src="/src/js/pages/glosarium.js"></script>
+</body>
+
+</html>
