@@ -35,23 +35,4 @@ export function initNavbar() {
       link.addEventListener("click", closeMobileMenu);
     });
   }
-
-  // Dark Mode Toggle Logic
-  const themeToggleBtns = document.querySelectorAll("#theme-toggle-btn");
-  themeToggleBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.documentElement.classList.toggle("dark");
-      const isDark = document.documentElement.classList.contains("dark");
-      localStorage.setItem("theme", isDark ? "dark" : "light");
-    });
-  });
-}
-
-// Initialize theme immediately to prevent FOUC
-const savedTheme = localStorage.getItem("theme");
-const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-if (savedTheme === "dark" || (!savedTheme && systemPrefersDark)) {
-  document.documentElement.classList.add("dark");
-} else {
-  document.documentElement.classList.remove("dark");
 }

@@ -35,7 +35,7 @@ export function renderNavbar({
     <nav class="fixed top-0 inset-x-0 z-[100] bg-white/95 backdrop-blur-md border-b border-charcoal/5 transition-all w-full">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
-          
+
           <!-- LOGO -->
           <a href="${logoHref}" class="flex items-center gap-3 group shrink-0">
             <div class="w-10 h-10 bg-charcoal text-white rounded-[12px] flex items-center justify-center font-serif font-black text-lg group-hover:bg-bullion transition-all duration-500 shadow-md">AN</div>
@@ -52,13 +52,9 @@ export function renderNavbar({
 
           <!-- ACTIONS -->
           <div class="flex items-center gap-4 shrink-0">
-            <button id="theme-toggle-btn" class="w-10 h-10 flex items-center justify-center bg-charcoal/5 text-charcoal/60 hover:text-charcoal rounded-full transition-all duration-300 hover:bg-charcoal/10 hidden md:flex" title="Toggle Theme">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-            </button>
-            <a href="${pagePath}pemula.html" class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-charcoal text-white text-[9px] font-bold rounded-full hover:bg-bullion transition-all duration-500 uppercase tracking-[0.2em] shadow-md hover:scale-105">
+            <a href="${pagePath}pemula.html" class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-charcoal text-white text-[9px] font-bold rounded-full hover:bg-bullion hover:text-white transition-all duration-500 uppercase tracking-[0.2em] shadow-md hover:scale-105">
                Mulai Belajar
             </a>
-            
             <!-- MOBILE MENU TOGGLE -->
             <button id="mobile-menu-toggle" class="md:hidden p-3 text-charcoal hover:bg-charcoal/5 rounded-xl transition-colors">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"/></svg>
@@ -90,4 +86,3 @@ export function renderNavbar({
     </div>
   `;
 }
-

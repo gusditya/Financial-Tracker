@@ -19,129 +19,126 @@
 
     <main class="main-content">
         <!-- ========== HERO ========== -->
-        <section class="relative pt-28 pb-0 overflow-hidden">
-            <!-- Gradient Background -->
-            <div class="absolute inset-0 bg-gradient-to-br from-amber-50 via-white to-orange-50"></div>
-            <div class="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
-            <!-- Decorative Floating Shapes -->
-            <div class="absolute top-20 right-10 w-72 h-72 bg-amber-200/20 rounded-full blur-3xl animate-pulse"></div>
-            <div class="absolute bottom-10 left-10 w-56 h-56 bg-orange-200/20 rounded-full blur-3xl animate-pulse" style="animation-delay:1.5s"></div>
-            <div class="absolute top-1/2 right-1/4 w-32 h-32 bg-amber-300/10 rounded-full blur-2xl"></div>
+        <section class="hero-dark relative pt-32 pb-20 rounded-b-[40px] md:rounded-b-[60px] shadow-2xl">
+            <div class="absolute inset-0 bg-grid-pattern"></div>
+            <!-- Glow Effects -->
+            <div class="hero-dark-glow hero-dark-glow--gold absolute -right-20 top-20 w-96 h-96"></div>
+            <div class="hero-dark-glow hero-dark-glow--white absolute -left-20 bottom-20 w-80 h-80"></div>
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pb-16">
                     <!-- Left: Text Content -->
-                    <div >
+                    <div>
                         <a href="../../index.html"
-                            class="inline-flex items-center gap-2 text-xs font-bold text-amber-600 uppercase tracking-widest mb-6 hover:gap-3 transition-all">
+                            class="inline-flex items-center gap-2 text-xs font-bold text-white/50 uppercase tracking-widest mb-6 hover:gap-3 hover:text-bullion transition-all">
                             <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                             </svg>
                             Kembali ke Dashboard
                         </a>
-                        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-amber-100 text-amber-700 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
-                            <span class="w-2 h-2 bg-amber-500 rounded-full animate-pulse"></span>
-                            Level 3 — Pengusaha & UMKM
+                        <div class="hero-badge-dark mb-6">
+                            <span class="badge-dot"></span>
+                            Level 3 — Pengusaha &amp; UMKM
                         </div>
-                        <h1 class="font-serif text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] mb-6">
-                            Kelola <span class="italic font-normal text-amber-600">Bisnis</span>,<br>Kejar 1 Miliar.
+                        <h1 class="font-serif text-5xl md:text-6xl font-medium tracking-tight leading-[1.05] mb-6 text-white">
+                            Kelola <span class="italic text-bullion">Bisnis</span>,<br>Kejar 1 Miliar.
                         </h1>
-                        <p class="text-lg text-slate-500 max-w-xl leading-relaxed mb-8">
+                        <p class="text-lg text-white/60 max-w-xl leading-relaxed mb-8 font-light">
                             Toolkit lengkap untuk pengusaha & UMKM: lacak keuangan bisnis, hitung margin keuntungan, rencanakan budget, dan pantau progres menuju target Rp 1 Miliar — semua dalam satu platform.
                         </p>
-                        <div class="flex flex-wrap gap-3 mb-8">
-                            <a href="#goal-tracker" class="inline-flex items-center gap-2 px-8 py-3.5 bg-amber-600 text-white font-bold text-xs tracking-widest uppercase rounded-full hover:shadow-lg hover:shadow-amber-600/25 hover:-translate-y-0.5 transition-all duration-300">
+                        <div class="flex flex-wrap gap-4 mb-10">
+                            <a href="#goal-tracker" class="inline-flex items-center gap-2 px-10 py-4 bg-bullion text-charcoal font-bold text-xs tracking-widest uppercase rounded-full hover:bg-white transition-all duration-300 hover:scale-105 shadow-[0_0_40px_rgba(212,175,55,0.25)]">
                                 Mulai Sekarang
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
                             </a>
-                            <a href="#kalkulator" class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-slate-700 font-bold text-xs tracking-widest uppercase rounded-full border border-slate-200 hover:bg-slate-50 hover:border-amber-600 hover:-translate-y-0.5 transition-all duration-300">
+                            <a href="#kalkulator" class="inline-flex items-center gap-2 px-10 py-4 bg-transparent text-white border border-white/20 font-bold text-xs tracking-widest uppercase rounded-full hover:bg-white/10 transition-all duration-300">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
                                 Hitung Margin
                             </a>
                         </div>
                         <!-- Trust Badges -->
-                        <div class="flex items-center gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-widest">
+                        <div class="flex items-center gap-4 text-[10px] font-bold text-white/30 uppercase tracking-[0.2em]">
                             <span>Didukung oleh:</span>
-                            <span class="px-2.5 py-1 bg-white/80 rounded-md border border-slate-100">Kemenkopukm</span>
-                            <span class="px-2.5 py-1 bg-white/80 rounded-md border border-slate-100">BRI</span>
-                            <span class="px-2.5 py-1 bg-white/80 rounded-md border border-slate-100">OJK</span>
+                            <span class="px-3 py-1.5 bg-white/5 rounded-full border border-white/10">Kemenkopukm</span>
+                            <span class="px-3 py-1.5 bg-white/5 rounded-full border border-white/10">BRI</span>
+                            <span class="px-3 py-1.5 bg-white/5 rounded-full border border-white/10">OJK</span>
                         </div>
                     </div>
 
-                    <!-- Right: Stats & Feature Cards -->
-                    <div class="space-y-5"  >
+                    <!-- Right: Stats & Feature Cards (Dark Glassmorphism) -->
+                    <div class="space-y-5">
                         <!-- Stats Row -->
                         <div class="grid grid-cols-3 gap-4">
-                            <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-amber-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
-                                <div class="text-3xl font-serif font-semibold text-amber-600 mb-1">5</div>
-                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Fitur</div>
+                            <div class="hero-stat-dark">
+                                <div class="stat-number">5</div>
+                                <div class="stat-label">Fitur</div>
                             </div>
-                            <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-amber-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
-                                <div class="text-3xl font-serif font-bold text-amber-600 mb-1">🏪</div>
-                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">UMKM</div>
+                            <div class="hero-stat-dark">
+                                <div class="stat-number">🏪</div>
+                                <div class="stat-label">UMKM</div>
                             </div>
-                            <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-amber-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
-                                <div class="text-3xl font-serif font-bold text-amber-600 mb-1">1 M</div>
-                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Target</div>
+                            <div class="hero-stat-dark">
+                                <div class="stat-number">1 M</div>
+                                <div class="stat-label">Target</div>
                             </div>
                         </div>
 
                         <!-- Feature Cards -->
-                        <div class="hero-feature-card bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-amber-100 shadow-sm hover:shadow-md transition-all duration-300">
-                            <h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Tools & Edukasi</h4>
+                        <div class="hero-feature-dark">
+                            <h4 class="text-xs font-bold uppercase tracking-widest mb-4">Tools &amp; Edukasi</h4>
                             <div class="space-y-3">
-                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-amber-50/50 transition-colors">
-                                    <span class="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center text-sm flex-shrink-0">🎯</span>
+                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 transition-colors">
+                                    <span class="feature-icon">🎯</span>
                                     <div>
-                                        <div class="text-sm font-bold text-slate-700">Goal Tracker — Rp 1 Miliar</div>
-                                        <div class="text-xs text-slate-400">Pantau progres aset menuju target dengan milestone</div>
+                                        <div class="feature-title">Goal Tracker — Rp 1 Miliar</div>
+                                        <div class="feature-desc">Pantau progres aset menuju target dengan milestone</div>
                                     </div>
                                 </div>
-                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-amber-50/50 transition-colors">
-                                    <span class="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center text-sm flex-shrink-0">📊</span>
+                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 transition-colors">
+                                    <span class="feature-icon">📊</span>
                                     <div>
-                                        <div class="text-sm font-bold text-slate-700">Financial & Budget Tracker</div>
-                                        <div class="text-xs text-slate-400">Catat keuangan dan rencanakan alokasi budget UMKM</div>
+                                        <div class="feature-title">Financial &amp; Budget Tracker</div>
+                                        <div class="feature-desc">Catat keuangan dan rencanakan alokasi budget UMKM</div>
                                     </div>
                                 </div>
-                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-amber-50/50 transition-colors">
-                                    <span class="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center text-sm flex-shrink-0">🚀</span>
+                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 transition-colors">
+                                    <span class="feature-icon">🚀</span>
                                     <div>
-                                        <div class="text-sm font-bold text-slate-700">Studi Kasus UMKM Sukses</div>
-                                        <div class="text-xs text-slate-400">Belajar strategi dari Kopi Kenangan, Eiger, & Esteh</div>
+                                        <div class="feature-title">Studi Kasus UMKM Sukses</div>
+                                        <div class="feature-desc">Belajar strategi dari Kopi Kenangan, Eiger, &amp; Esteh</div>
                                     </div>
                                 </div>
-                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-amber-50/50 transition-colors">
-                                    <span class="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center text-sm flex-shrink-0">📋</span>
+                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 transition-colors">
+                                    <span class="feature-icon">📋</span>
                                     <div>
-                                        <div class="text-sm font-bold text-slate-700">Panduan Pajak UMKM (PP 55/2022)</div>
-                                        <div class="text-xs text-slate-400">Edukasi PPh Final 0.5% & kalkulator margin harga</div>
+                                        <div class="feature-title">Panduan Pajak UMKM (PP 55/2022)</div>
+                                        <div class="feature-desc">Edukasi PPh Final 0.5% &amp; kalkulator margin harga</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Target Preview -->
-                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-amber-100 shadow-sm">
+                        <div class="hero-progress-dark">
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Target Bisnis</span>
-                                <span class="text-[10px] font-bold text-amber-600">Rp 1 Miliar</span>
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-white/40">Target Bisnis</span>
+                                <span class="text-[10px] font-bold text-bullion">Rp 1 Miliar</span>
                             </div>
                             <div class="flex items-center gap-3">
-                                <span class="text-[9px] font-bold text-slate-400">Rp 0</span>
-                                <div class="flex-1 h-2 bg-amber-100 rounded-full overflow-hidden">
-                                    <div class="h-full w-0 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full" style="width:0%"></div>
+                                <span class="text-[9px] font-bold text-white/30">Rp 0</span>
+                                <div class="progress-bar-track flex-1">
+                                    <div class="progress-bar-fill" style="width:0%"></div>
                                 </div>
-                                <span class="text-[9px] font-bold text-amber-600">1 M</span>
+                                <span class="text-[9px] font-bold text-bullion">1 M</span>
                             </div>
-                            <p class="text-xs text-slate-400 mt-2">Mulai input aset untuk memantau perjalanan Anda</p>
+                            <p class="text-xs text-white/40 mt-2">Mulai input aset untuk memantau perjalanan Anda</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Scroll Indicator -->
-                <div class="flex justify-center pb-6"  >
-                    <a href="#goal-tracker" class="flex flex-col items-center gap-2 text-slate-400 hover:text-amber-600 transition-colors">
+                <div class="flex justify-center pb-6">
+                    <a href="#goal-tracker" class="flex flex-col items-center gap-2 text-white/40 hover:text-bullion transition-colors">
                         <span class="text-[10px] font-bold uppercase tracking-widest">Scroll untuk Mulai</span>
                         <div class="w-6 h-10 rounded-full border-2 border-current flex justify-center pt-2">
                             <div class="w-1 h-2.5 bg-current rounded-full animate-bounce"></div>
@@ -712,6 +709,123 @@
                                     <p class="text-xs text-amber-600">UMKM yang taat pajak dan memiliki NPWP lebih
                                         mudah mengajukan <strong>KUR (Kredit Usaha Rakyat)</strong> dengan bunga
                                         hanya 6% p.a.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== MANAJEMEN OPERASIONAL PEDAGANG ========== -->
+        <section class="py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <div class="section-label mx-auto mb-8 bg-charcoal/5 text-charcoal border border-charcoal/10 px-6 py-2">/ EFISIENSI OPERASIONAL</div>
+                    <h2 class="font-sans text-4xl md:text-5xl font-bold mb-6 text-charcoal tracking-tight">Manajemen Operasional Pedagang</h2>
+                    <p class="text-charcoal/60 max-w-2xl mx-auto text-lg font-light">Tingkatkan efisiensi bisnis Anda dengan metode pengelolaan stok dan digitalisasi yang terbukti efektif.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <!-- FIFO -->
+                    <div class="bg-parchment rounded-[32px] p-10 border border-charcoal/5 relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="absolute top-0 left-0 w-full h-1.5 bg-amber-500"></div>
+                        <div class="w-16 h-16 bg-amber-500 text-white rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-charcoal">Sistem FIFO</h3>
+                        <p class="text-sm text-charcoal/40 uppercase tracking-widest font-bold mb-4">First In, First Out</p>
+                        <p class="text-charcoal/60 leading-relaxed mb-6">Keluarkan stok barang yang paling lama masuk terlebih dahulu.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3 text-sm text-charcoal/70">
+                                <span class="w-6 h-6 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                Meminimalkan risiko kerusakan/kadaluwarsa
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-charcoal/70">
+                                <span class="w-6 h-6 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                Menjaga kualitas produk yang dijual
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-charcoal/70">
+                                <span class="w-6 h-6 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                Cocok untuk F&B dan produk musiman
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stok Opname -->
+                    <div class="bg-parchment rounded-[32px] p-10 border border-charcoal/5 relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="absolute top-0 left-0 w-full h-1.5 bg-charcoal"></div>
+                        <div class="w-16 h-16 bg-charcoal text-white rounded-2xl flex items-center justify-center mb-8 group-hover:bg-bullion transition-colors duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-charcoal">Stok Opname Berkala</h3>
+                        <p class="text-sm text-charcoal/40 uppercase tracking-widest font-bold mb-4">Physical Counting</p>
+                        <p class="text-charcoal/60 leading-relaxed mb-6">Cocokkan data fisik di gudang dengan catatan sistem secara rutin.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3 text-sm text-charcoal/70">
+                                <span class="w-6 h-6 rounded-full bg-charcoal/10 text-charcoal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                Deteksi kehilangan/kerusakan sejak dini
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-charcoal/70">
+                                <span class="w-6 h-6 rounded-full bg-charcoal/10 text-charcoal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                Akurasi laporan keuangan terjamin
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-charcoal/70">
+                                <span class="w-6 h-6 rounded-full bg-charcoal/10 text-charcoal flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                                Lakukan minimal 1× per bulan
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Digitalisasi Stok -->
+                    <div class="bg-parchment rounded-[32px] p-10 border border-charcoal/5 relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+                        <div class="absolute top-0 left-0 w-full h-1.5 bg-blue-500"></div>
+                        <div class="w-16 h-16 bg-blue-500 text-white rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-charcoal">Digitalisasi Stok</h3>
+                        <p class="text-sm text-charcoal/40 uppercase tracking-widest font-bold mb-4">Real-Time Monitoring</p>
+                        <p class="text-charcoal/60 leading-relaxed mb-6">Pantau persediaan secara real-time dan otomatis menggunakan aplikasi.</p>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3 text-sm text-charcoal/70">
+                                <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">1</span>
+                                <strong>Mekari Jurnal</strong> — Akuntansi + Stok
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-charcoal/70">
+                                <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">2</span>
+                                <strong>Sortly</strong> — Visual Inventory
+                            </div>
+                            <div class="flex items-start gap-3 text-sm text-charcoal/70">
+                                <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">3</span>
+                                <strong>HelloBill</strong> — POS + Stok F&B
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adaptasi AI untuk Gen Z -->
+                <div class="bg-charcoal rounded-[32px] p-10 md:p-12 text-white relative overflow-hidden">
+                    <div class="absolute inset-0 opacity-5 bg-grid-pattern pointer-events-none"></div>
+                    <div class="absolute -right-20 -top-20 w-60 h-60 bg-bullion/10 rounded-full blur-[80px] pointer-events-none"></div>
+                    <div class="relative z-10">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                            <div>
+                                <span class="text-[10px] font-bold text-bullion uppercase tracking-[0.2em] block mb-4">🤖 Fokus Masa Depan</span>
+                                <h3 class="font-sans text-2xl font-bold mb-4 text-white">Adaptasi AI bagi Generasi Z</h3>
+                                <p class="text-white/60 leading-relaxed mb-6">Di pasar kerja era AI, penguatan soft skills menjadi kunci ketahanan karir. Berikut adalah tiga kemampuan yang tidak bisa digantikan mesin:</p>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="bg-white/10 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                                    <h4 class="font-bold text-bullion mb-2">Kecerdasan Emosional (EQ)</h4>
+                                    <p class="text-sm text-white/60">Kemampuan membaca isyarat sosial dan membangun empati yang tidak bisa digantikan mesin.</p>
+                                </div>
+                                <div class="bg-white/10 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                                    <h4 class="font-bold text-bullion mb-2">Critical Thinking</h4>
+                                    <p class="text-sm text-white/60">Mengevaluasi hasil AI untuk akurasi dan etika — kemampuan verifikasi yang krusial.</p>
+                                </div>
+                                <div class="bg-white/10 border border-white/10 rounded-2xl p-6 backdrop-blur-sm">
+                                    <h4 class="font-bold text-bullion mb-2">Systems Thinking</h4>
+                                    <p class="text-sm text-white/60">Memahami dampak keputusan pada ekosistem bisnis secara luas dan interkoneksi antar variabel.</p>
                                 </div>
                             </div>
                         </div>

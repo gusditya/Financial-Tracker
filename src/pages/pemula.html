@@ -19,127 +19,115 @@
 
     <main class="main-content">
         <!-- ========== HERO ========== -->
-        <section class="relative pt-28 pb-0 overflow-hidden hero-pemula">
-            <!-- Gradient Background -->
-            <div class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-teal-50"></div>
-            <div class="absolute inset-0 bg-grid-pattern opacity-30 pointer-events-none"></div>
-            <!-- Decorative Floating Shapes -->
-            <div class="absolute top-20 right-10 w-72 h-72 bg-emerald-200/20 rounded-full blur-3xl animate-pulse"></div>
-            <div class="absolute bottom-10 left-10 w-56 h-56 bg-teal-200/20 rounded-full blur-3xl animate-pulse" style="animation-delay:1.5s"></div>
-            <div class="absolute top-1/2 right-1/4 w-32 h-32 bg-emerald-300/10 rounded-full blur-2xl"></div>
+        <section class="hero-dark relative pt-32 pb-20 rounded-b-[40px] md:rounded-b-[60px] shadow-2xl">
+            <div class="absolute inset-0 bg-grid-pattern"></div>
+            <!-- Glow Effects -->
+            <div class="hero-dark-glow hero-dark-glow--gold absolute -right-20 top-20 w-96 h-96"></div>
+            <div class="hero-dark-glow hero-dark-glow--white absolute -left-20 bottom-20 w-80 h-80"></div>
 
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pb-16">
                     <!-- Left: Text Content -->
-                    <div >
+                    <div>
                         <a href="../../index.html"
-                            class="inline-flex items-center gap-2 text-xs font-bold text-brand-green uppercase tracking-widest mb-6 hover:gap-3 transition-all">
+                            class="inline-flex items-center gap-2 text-xs font-bold text-white/50 uppercase tracking-widest mb-6 hover:gap-3 hover:text-bullion transition-all">
                             <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                             </svg>
                             Kembali ke Dashboard
                         </a>
-                        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
-                            <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                        <div class="hero-badge-dark mb-6">
+                            <span class="badge-dot"></span>
                             Level 1 — Fondasi Keuangan
                         </div>
-                        <h1 class="font-serif text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] mb-6">
-                            Mulai dari <span class="italic font-normal text-brand-green">Nol</span>,<br>Raih Kebebasan Finansial.
+                        <h1 class="font-serif text-5xl md:text-6xl font-medium tracking-tight leading-[1.05] mb-6 text-white">
+                            Mulai dari <span class="italic text-bullion">Nol</span>,<br>Raih Kebebasan Finansial.
                         </h1>
-                        <p class="text-lg text-slate-500 max-w-xl leading-relaxed mb-8">
+                        <p class="text-lg text-white/60 max-w-xl leading-relaxed mb-8 font-light">
                             Panduan komprehensif untuk membangun fondasi keuangan yang kuat. Dari memahami fungsi uang hingga membuat rencana investasi jangka panjang — semua disusun dengan bahasa sederhana, langkah terstruktur, dan visualisasi data interaktif.
                         </p>
-                        <div class="flex flex-wrap gap-3 mb-8">
-                            <a href="#roadmap-belajar" class="inline-flex items-center gap-2 px-8 py-3.5 bg-brand-green text-white font-bold text-xs tracking-widest uppercase rounded-full hover:shadow-lg hover:shadow-brand-green/25 hover:-translate-y-0.5 transition-all duration-300">
+                        <div class="flex flex-wrap gap-4 mb-10">
+                            <a href="#roadmap-belajar" class="inline-flex items-center gap-2 px-10 py-4 bg-bullion text-charcoal font-bold text-xs tracking-widest uppercase rounded-full hover:bg-white transition-all duration-300 hover:scale-105 shadow-[0_0_40px_rgba(212,175,55,0.25)]">
                                 Mulai Belajar
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
                             </a>
-                            <a href="#video" class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-slate-700 font-bold text-xs tracking-widest uppercase rounded-full border border-slate-200 hover:bg-slate-50 hover:border-brand-green hover:-translate-y-0.5 transition-all duration-300">
+                            <a href="#video" class="inline-flex items-center gap-2 px-10 py-4 bg-transparent text-white border border-white/20 font-bold text-xs tracking-widest uppercase rounded-full hover:bg-white/10 transition-all duration-300">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/></svg>
                                 Tonton Video
                             </a>
                         </div>
                         <!-- Trust Badges -->
-                        <div class="flex items-center gap-4 text-[10px] font-semibold text-slate-400 uppercase tracking-widest">
+                        <div class="flex items-center gap-4 text-[10px] font-bold text-white/30 uppercase tracking-[0.2em]">
                             <span>Sumber Referensi:</span>
-                            <span class="px-2.5 py-1 bg-white/80 rounded-md border border-slate-100">Bank Indonesia</span>
-                            <span class="px-2.5 py-1 bg-white/80 rounded-md border border-slate-100">OJK</span>
-                            <span class="px-2.5 py-1 bg-white/80 rounded-md border border-slate-100">BPS</span>
+                            <span class="px-3 py-1.5 bg-white/5 rounded-full border border-white/10">Bank Indonesia</span>
+                            <span class="px-3 py-1.5 bg-white/5 rounded-full border border-white/10">OJK</span>
+                            <span class="px-3 py-1.5 bg-white/5 rounded-full border border-white/10">BPS</span>
                         </div>
                     </div>
 
-                    <!-- Right: Stats & Feature Cards -->
-                    <div class="space-y-5"  >
+                    <!-- Right: Stats & Feature Cards (Dark Glassmorphism) -->
+                    <div class="space-y-5">
                         <!-- Stats Row -->
                         <div class="grid grid-cols-3 gap-4">
-                            <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-emerald-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
-                                <div class="text-3xl font-serif font-semibold text-brand-green mb-1">10</div>
-                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Modul</div>
+                            <div class="hero-stat-dark">
+                                <div class="stat-number">10</div>
+                                <div class="stat-label">Modul</div>
                             </div>
-                            <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-emerald-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
-                                <div class="text-3xl font-serif font-bold text-brand-green mb-1">20+</div>
-                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Chart</div>
+                            <div class="hero-stat-dark">
+                                <div class="stat-number">20+</div>
+                                <div class="stat-label">Chart</div>
                             </div>
-                            <div class="hero-stat-card bg-white/80 backdrop-blur-sm rounded-2xl p-5 text-center border border-emerald-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-default">
-                                <div class="text-3xl font-serif font-bold text-brand-green mb-1">100%</div>
-                                <div class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Gratis</div>
+                            <div class="hero-stat-dark">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Gratis</div>
                             </div>
                         </div>
 
                         <!-- Feature Cards -->
-                        <div class="hero-feature-card bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-emerald-100 shadow-sm hover:shadow-md transition-all duration-300">
-                            <h4 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">Yang Akan Anda Pelajari</h4>
+                        <div class="hero-feature-dark">
+                            <h4 class="text-xs font-bold uppercase tracking-widest mb-4">Yang Akan Anda Pelajari</h4>
                             <div class="space-y-3">
-                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-emerald-50/50 transition-colors">
-                                    <span class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center text-sm flex-shrink-0">💰</span>
+                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 transition-colors">
+                                    <span class="feature-icon">💰</span>
                                     <div>
-                                        <div class="text-sm font-bold text-slate-700">Pengelolaan Uang & Budgeting</div>
-                                        <div class="text-xs text-slate-400">Aturan 50/30/20, cash flow, dana darurat</div>
+                                        <div class="feature-title">Pengelolaan Uang & Budgeting</div>
+                                        <div class="feature-desc">Aturan 50/30/20, cash flow, dana darurat</div>
                                     </div>
                                 </div>
-                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-emerald-50/50 transition-colors">
-                                    <span class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center text-sm flex-shrink-0">📈</span>
+                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 transition-colors">
+                                    <span class="feature-icon">📈</span>
                                     <div>
-                                        <div class="text-sm font-bold text-slate-700">Dasar Investasi & Produk Keuangan</div>
-                                        <div class="text-xs text-slate-400">Reksadana, saham, obligasi, risk vs return</div>
+                                        <div class="feature-title">Dasar Investasi & Produk Keuangan</div>
+                                        <div class="feature-desc">Reksadana, saham, obligasi, risk vs return</div>
                                     </div>
                                 </div>
-                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-emerald-50/50 transition-colors">
-                                    <span class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center text-sm flex-shrink-0">🎯</span>
+                                <div class="flex items-center gap-3 p-2 rounded-xl hover:bg-white/5 transition-colors">
+                                    <span class="feature-icon">🎯</span>
                                     <div>
-                                        <div class="text-sm font-bold text-slate-700">Perencanaan Keuangan Jangka Panjang</div>
-                                        <div class="text-xs text-slate-400">Compound interest, tujuan SMART, Rule of 72</div>
+                                        <div class="feature-title">Perencanaan Keuangan Jangka Panjang</div>
+                                        <div class="feature-desc">Compound interest, tujuan SMART, Rule of 72</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Mini Progress Preview -->
-                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-5 border border-emerald-100 shadow-sm">
+                        <div class="hero-progress-dark">
                             <div class="flex items-center justify-between mb-3">
-                                <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Perjalanan Belajar</span>
-                                <span class="text-[10px] font-bold text-brand-green">10 Langkah</span>
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-white/40">Perjalanan Belajar</span>
+                                <span class="text-[10px] font-bold text-bullion">10 Langkah</span>
                             </div>
-                            <div class="flex gap-1.5">
-                                <div class="h-1.5 flex-1 rounded-full bg-brand-green"></div>
-                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
-                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
-                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
-                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
-                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
-                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
-                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
-                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
-                                <div class="h-1.5 flex-1 rounded-full bg-emerald-200"></div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" style="width: 10%"></div>
                             </div>
-                            <p class="text-xs text-slate-400 mt-2">Mulai dari Langkah 1: Pahami Uang & Fungsinya</p>
+                            <p class="text-xs text-white/40 mt-2">Mulai dari Langkah 1: Pahami Uang & Fungsinya</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Scroll Indicator -->
-                <div class="flex justify-center pb-6"  >
-                    <a href="#roadmap-belajar" class="flex flex-col items-center gap-2 text-slate-400 hover:text-brand-green transition-colors">
+                <div class="flex justify-center pb-6">
+                    <a href="#roadmap-belajar" class="flex flex-col items-center gap-2 text-white/40 hover:text-bullion transition-colors">
                         <span class="text-[10px] font-bold uppercase tracking-widest">Scroll untuk Mulai</span>
                         <div class="w-6 h-10 rounded-full border-2 border-current flex justify-center pt-2">
                             <div class="w-1 h-2.5 bg-current rounded-full animate-bounce"></div>
@@ -358,76 +346,84 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 stagger-container">
                     <!-- Video 1: Ferry Irwandi -->
-                    <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"  >
+                    <a href="https://www.youtube.com/watch?v=_-ofPdzjxAs" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 block">
                         <div class="relative aspect-video bg-slate-900">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/_-ofPdzjxAs"
-                                title="Ferry Irwandi - Dasar Ekonomi" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen loading="lazy"></iframe>
+                            <img src="https://img.youtube.com/vi/_-ofPdzjxAs/maxresdefault.jpg" alt="Ferry Irwandi - Dasar Ekonomi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                                <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/></svg>
+                                </div>
+                            </div>
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-3 mb-3">
-                                <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold">1</span>
-                                <span class="text-[10px] font-bold text-brand-green uppercase tracking-widest">Ferry Irwandi</span>
+                                <span class="w-7 h-7 rounded-full bg-bullion/10 text-bullion flex items-center justify-center text-xs font-bold">1</span>
+                                <span class="text-[10px] font-bold text-bullion uppercase tracking-widest">Ferry Irwandi</span>
                             </div>
-                            <h3 class="text-lg font-bold mb-2 group-hover:text-brand-green transition-colors">Penjelasan Ekonomi Dasar untuk Pemula</h3>
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-bullion transition-colors">Penjelasan Ekonomi Dasar untuk Pemula</h3>
                             <p class="text-sm text-slate-500">Memahami konsep dasar ekonomi yang perlu diketahui setiap orang untuk membuat keputusan finansial yang cerdas.</p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Video 2: Kalimasada -->
-                    <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"  >
+                    <a href="https://www.youtube.com/watch?v=r_YPjXZcQQY" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 block">
                         <div class="relative aspect-video bg-slate-900">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/r_YPjXZcQQY"
-                                title="Kalimasada - Dasar Ekonomi" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen loading="lazy"></iframe>
+                            <img src="https://img.youtube.com/vi/r_YPjXZcQQY/maxresdefault.jpg" alt="Kalimasada - Dasar Ekonomi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                                <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/></svg>
+                                </div>
+                            </div>
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-3 mb-3">
-                                <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold">2</span>
-                                <span class="text-[10px] font-bold text-brand-green uppercase tracking-widest">Kalimasada</span>
+                                <span class="w-7 h-7 rounded-full bg-bullion/10 text-bullion flex items-center justify-center text-xs font-bold">2</span>
+                                <span class="text-[10px] font-bold text-bullion uppercase tracking-widest">Kalimasada</span>
                             </div>
-                            <h3 class="text-lg font-bold mb-2 group-hover:text-brand-green transition-colors">Konsep Ekonomi yang Wajib Dipahami</h3>
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-bullion transition-colors">Konsep Ekonomi yang Wajib Dipahami</h3>
                             <p class="text-sm text-slate-500">Penjelasan fundamental ekonomi dengan bahasa yang mudah dipahami untuk membangun literasi keuangan dasar.</p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Video 3: Timoty Ronald -->
-                    <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"  >
+                    <a href="https://www.youtube.com/watch?v=bTZzgXxRhFo" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 block">
                         <div class="relative aspect-video bg-slate-900">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/bTZzgXxRhFo"
-                                title="Timoty Ronald - Dasar Ekonomi" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen loading="lazy"></iframe>
+                            <img src="https://img.youtube.com/vi/bTZzgXxRhFo/maxresdefault.jpg" alt="Timoty Ronald - Dasar Ekonomi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                                <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/></svg>
+                                </div>
+                            </div>
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-3 mb-3">
-                                <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold">3</span>
-                                <span class="text-[10px] font-bold text-brand-green uppercase tracking-widest">Timoty Ronald</span>
+                                <span class="w-7 h-7 rounded-full bg-bullion/10 text-bullion flex items-center justify-center text-xs font-bold">3</span>
+                                <span class="text-[10px] font-bold text-bullion uppercase tracking-widest">Timoty Ronald</span>
                             </div>
-                            <h3 class="text-lg font-bold mb-2 group-hover:text-brand-green transition-colors">Keuangan Pribadi & Cara Mengelola Uang</h3>
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-bullion transition-colors">Keuangan Pribadi &amp; Cara Mengelola Uang</h3>
                             <p class="text-sm text-slate-500">Tips praktis mengelola keuangan pribadi dari seorang yang berpengalaman di dunia finansial Indonesia.</p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Video 4: Timoty Ronald -->
-                    <div class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"  >
+                    <a href="https://www.youtube.com/watch?v=07AGth0cGt0" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 block">
                         <div class="relative aspect-video bg-slate-900">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/07AGth0cGt0"
-                                title="Timoty Ronald - Dasar Ekonomi 2" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen loading="lazy"></iframe>
+                            <img src="https://img.youtube.com/vi/07AGth0cGt0/maxresdefault.jpg" alt="Timoty Ronald - Dasar Ekonomi 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                                <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/></svg>
+                                </div>
+                            </div>
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-3 mb-3">
-                                <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold">4</span>
-                                <span class="text-[10px] font-bold text-brand-green uppercase tracking-widest">Timoty Ronald</span>
+                                <span class="w-7 h-7 rounded-full bg-bullion/10 text-bullion flex items-center justify-center text-xs font-bold">4</span>
+                                <span class="text-[10px] font-bold text-bullion uppercase tracking-widest">Timoty Ronald</span>
                             </div>
-                            <h3 class="text-lg font-bold mb-2 group-hover:text-brand-green transition-colors">Investasi & Perencanaan Keuangan Pemula</h3>
+                            <h3 class="text-lg font-bold mb-2 group-hover:text-bullion transition-colors">Investasi &amp; Perencanaan Keuangan Pemula</h3>
                             <p class="text-sm text-slate-500">Panduan langkah demi langkah untuk memulai investasi dan merencanakan masa depan finansial Anda.</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
