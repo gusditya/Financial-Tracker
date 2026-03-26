@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Mahasiswa - REALIGN</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-brand-cream text-slate-800 font-sans">
+    <div id="navbar-root"></div>
+
+    <main class="pt-32 page-buffer">
+        <div class="max-w-4xl mx-auto px-6">
+            <!-- Breadcrumb -->
+            <nav class="flex items-center gap-2 text-[10px] font-bold text-slate-400 mb-10 uppercase tracking-[0.2em]">
+                <a href="edukasi.html" class="hover:text-blue-600 flex items-center gap-1 transition-colors">
+                    <i data-lucide="book-open" class="w-3 h-3"></i>
+                    Edukasi
+                </a>
+                <span class="opacity-30">/</span>
+                <span class="text-blue-600/70">Fase Mahasiswa</span>
+            </nav>
+
+            <div id="materi-content">
+                <!-- Content will be injected here by JS -->
+                <div class="flex justify-center items-center py-20">
+                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+                </div>
+            </div>
+
+            <!-- Navigation Between Topics -->
+            <div class="mt-24 pt-12 border-t border-slate-100/50 flex flex-col sm:flex-row gap-6 justify-between items-stretch">
+                <a id="prev-topic" href="#" class="flex-1 p-8 rounded-[32px] border border-slate-100 hover:border-blue-200/50 hover:bg-soft-mahasiswa transition-all duration-500 group invisible relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-blue-500/0 group-hover:bg-blue-500 transition-all duration-500"></div>
+                    <span class="flex items-center gap-2 text-[9px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3">
+                        <i data-lucide="chevron-left" class="w-3 h-3 transition-transform group-hover:-translate-x-1"></i>
+                        Sebelumnya
+                    </span>
+                    <span class="block font-serif text-xl text-slate-800 font-bold group-hover:text-blue-600 transition-colors" id="prev-topic-title">Judul Materi</span>
+                </a>
+                <a id="next-topic" href="#" class="flex-1 p-8 rounded-[32px] border border-slate-100 hover:border-blue-200/50 hover:bg-soft-mahasiswa transition-all duration-500 group invisible text-right relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-1 h-full bg-blue-500/0 group-hover:bg-blue-500 transition-all duration-500"></div>
+                    <span class="flex items-center justify-end gap-2 text-[9px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3">
+                        Selanjutnya
+                        <i data-lucide="chevron-right" class="w-3 h-3 transition-transform group-hover:translate-x-1"></i>
+                    </span>
+                    <span class="block font-serif text-xl text-slate-800 font-bold group-hover:text-blue-600 transition-colors" id="next-topic-title">Judul Materi</span>
+                </a>
+            </div>
+            <div class="page-buffer"></div>
+        </div>
+    </main>
+
+    <div id="footer-root"></div>
+
+    <script type="module" src="/src/js/materi-mahasiswa.js"></script>
+</body>
+</html>

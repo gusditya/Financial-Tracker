@@ -15,6 +15,11 @@ export default defineConfig({
         tools: resolve(__dirname, "src/pages/tools.html"),
         glosarium: resolve(__dirname, "src/pages/glosarium.html"),
         tokoh: resolve(__dirname, "src/pages/tokoh.html"),
+<<<<<<< HEAD
+=======
+        materiPemula: resolve(__dirname, "src/pages/materi-pemula.html"),
+        materiMahasiswa: resolve(__dirname, "src/pages/materi-mahasiswa.html"),
+>>>>>>> 704946e (Update materi)
       },
     },
   },

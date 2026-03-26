@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { createIcons, Menu, X } from 'lucide';
+=======
+import { createIcons, Menu, X, ChevronDown, ArrowRight } from 'lucide';
+>>>>>>> 704946e (Update materi)
 
 // Simple active state check
 const currentPath = window.location.pathname;
@@ -38,6 +42,7 @@ export function initNavbar() {
           if (item.hasDropdown) {
             return `
               <div class="relative group h-16 flex items-center cursor-pointer">
+<<<<<<< HEAD
                 <span class="font-sans text-sm font-medium transition-colors ${currentPath.includes('/src/pages/') || currentPath.includes('content.html') ? 'text-charcoal border-b-2 border-bullion' : 'text-charcoal/70 hover:text-charcoal'}">
                   ${item.name} <span class="text-xs ml-1 opacity-50">▼</span>
                 </span>
@@ -53,6 +58,28 @@ export function initNavbar() {
                     <a href="/src/pages/content.html" class="block px-4 py-2 hover:bg-parchment font-sans text-sm text-surplus font-semibold hover:text-surplus transition-colors">
                       Data Utama REALIGN &rarr;
                     </a>
+=======
+                <span class="font-sans text-sm font-medium flex items-center gap-1 transition-colors ${currentPath.includes('/src/pages/') || currentPath.includes('content.html') ? 'text-charcoal border-b-2 border-bullion' : 'text-charcoal/70 hover:text-charcoal'}">
+                  ${item.name} <i data-lucide="chevron-down" class="w-3 h-3 opacity-40 group-hover:rotate-180 transition-transform duration-300"></i>
+                </span>
+                <!-- Dropdown Menu -->
+                <div class="absolute top-[calc(100%-8px)] left-0 w-72 bg-white border border-charcoal/5 rounded-[24px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-500 overflow-hidden p-2">
+                  <div class="flex flex-col">
+                    <div class="px-4 py-3 border-b border-charcoal/5 mb-1">
+                      <p class="text-[10px] font-bold text-mist uppercase tracking-widest">Eksplorasi Data</p>
+                    </div>
+                    ${dropdownItems.map(drop => `
+                      <a href="${drop.path}" class="flex items-center gap-3 px-4 py-3 hover:bg-parchment/50 rounded-xl font-sans text-sm text-charcoal/80 hover:text-charcoal transition-all ${isActive(drop.path) ? 'bg-parchment font-semibold text-charcoal' : ''}">
+                        <span class="w-1.5 h-1.5 rounded-full bg-bullion/40"></span>
+                        ${drop.name}
+                      </a>
+                    `).join('')}
+                    <div class="mt-2 p-2 bg-charcoal/5 rounded-xl">
+                      <a href="/src/pages/content.html" class="flex items-center justify-between px-3 py-2 font-sans text-xs text-surplus font-bold hover:translate-x-1 transition-transform">
+                        Data Utama REALIGN <span>&rarr;</span>
+                      </a>
+                    </div>
+>>>>>>> 704946e (Update materi)
                   </div>
                 </div>
               </div>
@@ -108,7 +135,11 @@ export function initNavbar() {
 
   // Initialize Lucide Icons
   createIcons({
+<<<<<<< HEAD
     icons: { Menu, X }
+=======
+    icons: { Menu, X, ChevronDown, ArrowRight }
+>>>>>>> 704946e (Update materi)
   });
 
   // Event Listeners

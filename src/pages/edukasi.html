@@ -5,17 +5,48 @@
     <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edukasi Finansial - REALIGN</title>
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 704946e (Update materi)
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Lora:ital,wght@0,400;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css">
+<<<<<<< HEAD
 </head>
 <body class="bg-parchment text-charcoal font-sans antialiased flex flex-col min-h-screen">
     
     <div id="navbar-root"></div>
 
     <main class="flex-grow pt-32 pb-24">
+=======
+    <style>
+        .edu-grid-force {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        @media (min-width: 768px) {
+            .edu-grid-force {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+        @media (min-width: 1024px) {
+            .edu-grid-force {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-parchment text-charcoal font-sans antialiased flex flex-col min-h-screen">
+
+    <div id="navbar-root"></div>
+
+    <main class="flex-grow pt-32 page-buffer">
+>>>>>>> 704946e (Update materi)
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-charcoal/10 text-xs font-mono uppercase tracking-widest text-mist mb-4">
@@ -38,6 +69,7 @@
             </div>
 
             <!-- Content Area -->
+<<<<<<< HEAD
             <div id="tab-content-pemula" class="edu-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
                 
                 <a href="#" class="group block bg-white border border-[#E5DAC8] p-8 rounded-2xl hover:border-bullion hover:shadow-md transition-all">
@@ -93,6 +125,763 @@
             </div>
 
         </div>
+=======
+            <div id="tab-content-pemula" class="edu-content animate-fade-in">
+                <!-- ========== MATERI EKSKLUSIF ========== -->
+                <section class="py-12 bg-white rounded-[32px] mb-12" id="materi-eksklusif">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center mb-16">
+                            <div class="section-label mx-auto mb-4 bg-emerald-50 text-emerald-700 border border-emerald-100">/ PANDUAN DASAR</div>
+                            <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Pengelolaan <span class="text-brand-green">Keuangan Pribadi</span></h2>
+                            <p class="text-slate-500 max-w-2xl mx-auto">Empat pilar utama yang wajib dikuasai untuk mengubah kebiasaan finansial dan membangun keamanan jangka panjang.</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <!-- Pillar 1 -->
+                            <div class="bg-brand-cream border border-emerald-100 rounded-[32px] p-10 hover:shadow-xl transition-all duration-300">
+                                <div class="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center text-2xl mb-8">💡</div>
+                                <h3 class="font-serif text-2xl font-bold text-slate-800 mb-4">1. Prinsip Kebutuhan vs Keinginan</h3>
+                                <p class="text-[15px] text-slate-500 leading-relaxed font-light mb-6">
+                                    Langkah paling krusial bagi pemula adalah mengendalikan impuls konsumtif. Kebutuhan berkaitan erat dengan fungsi dasar *survival* (papan, pangan, sandang standar, kesehatan), sementara keinginan didorong oleh peningkatan *lifestyle* atau validasi sosial.
+                                </p>
+                                <div class="bg-white p-4 rounded-xl border border-emerald-50">
+                                    <p class="text-sm text-slate-600 font-medium"><strong class="text-brand-green">Aturan Emas:</strong> Evaluasi ulang pengeluaran langganan (subscriptions) bulanan dan terapkan jeda waktu 24 jam sebelum melakukan pembelian barang bernilai besar.</p>
+                                </div>
+                            </div>
+
+                            <!-- Pillar 2 -->
+                            <div class="bg-brand-cream border border-emerald-100 rounded-[32px] p-10 hover:shadow-xl transition-all duration-300">
+                                <div class="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center text-2xl mb-8">📊</div>
+                                <h3 class="font-serif text-2xl font-bold text-slate-800 mb-4">2. Strategi Budgeting: 50/30/20</h3>
+                                <p class="text-[15px] text-slate-500 leading-relaxed font-light mb-6">
+                                    Diperkenalkan oleh Senator Elizabeth Warren, metode ini sangat efektif untuk mengamankan arus kas. Alokasikan tepat saat gaji / sumber pendapatan diterima agar Anda "membayar diri sendiri" lebih dulu sebelum pengeluaran konsumtif.
+                                </p>
+                                <div class="space-y-3">
+                                    <div class="flex items-center gap-4 text-sm font-medium"><span class="w-10 h-6 bg-brand-green text-white text-xs rounded-full flex items-center justify-center">50%</span> <span class="text-slate-600">Kebutuhan Hidup (Sewa, Makan, Transport)</span></div>
+                                    <div class="flex items-center gap-4 text-sm font-medium"><span class="w-10 h-6 bg-amber-400 text-white text-xs rounded-full flex items-center justify-center">30%</span> <span class="text-slate-600">Keinginan Pribadi (Hiburan, Hobi, Makan Luar)</span></div>
+                                    <div class="flex items-center gap-4 text-sm font-medium"><span class="w-10 h-6 bg-blue-500 text-white text-xs rounded-full flex items-center justify-center">20%</span> <span class="text-slate-600">Tabungan &amp; Investasi Masa Depan</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Pillar 3 -->
+                            <div class="bg-brand-cream border border-emerald-100 rounded-[32px] p-10 hover:shadow-xl transition-all duration-300">
+                                <div class="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center text-2xl mb-8">⚖️</div>
+                                <h3 class="font-serif text-2xl font-bold text-slate-800 mb-4">3. Manajemen Utang Bijak</h3>
+                                <p class="text-[15px] text-slate-500 leading-relaxed font-light mb-6">
+                                    Dalam literasi keuangan, tidak semua utang bersifat destruktif. Penting bagi kita untuk memahami perbedaan antara <em>Good Debt</em> dan <em>Bad Debt</em> untuk mengelola rasio cicilan secara efektif.
+                                </p>
+                                <div class="grid grid-cols-2 gap-4 mt-auto">
+                                    <div class="bg-white p-4 rounded-xl border border-emerald-50">
+                                        <span class="text-brand-green font-bold text-xs uppercase tracking-wider block mb-2">Good Debt</span>
+                                        <p class="text-xs text-slate-500">Utang produktif yang nilai asetnya naik (mis. KPR) atau menghasilkan arus kas (modal usaha).</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-xl border border-red-50">
+                                        <span class="text-red-500 font-bold text-xs uppercase tracking-wider block mb-2">Bad Debt</span>
+                                        <p class="text-xs text-slate-500">Utang konsumtif bersuku bunga tinggi yang digesek untuk gaya hidup (mis. PayLater/Kartu Kredit tidak dilunasi).</p>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-brand-green font-bold mt-4">Jaga Total Beban Cicilan (Debt Service Ratio) Maksimal 30% dari Penghasilan.</p>
+                            </div>
+
+                            <!-- Pillar 4 -->
+                            <div class="bg-brand-cream border border-emerald-100 rounded-[32px] p-10 hover:shadow-xl transition-all duration-300">
+                                <div class="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center text-2xl mb-8">🛡️</div>
+                                <h3 class="font-serif text-2xl font-bold text-slate-800 mb-4">4. Membangun Dana Darurat</h3>
+                                <p class="text-[15px] text-slate-500 leading-relaxed font-light mb-6">
+                                    Dana darurat adalah jaring pengaman utama saat terjadi krisis (PHK mendadak, sakit, atau alat produksi rusak). Simpan di instrumen yang sangat likuid (mudah dicairkan) dan rendah risiko, seperti Tabungan Khusus, Reksadana Pasar Uang (RDPU), atau Deposito tenor pendek.
+                                </p>
+                                <div class="bg-white p-4 rounded-xl border border-emerald-50 space-y-2">
+                                    <div class="flex justify-between items-center text-sm"><span class="text-slate-500">Lajang tanpa tanggungan:</span> <strong class="text-slate-700">3-6x pengeluaran bulanan</strong></div>
+                                    <div class="flex justify-between items-center text-sm"><span class="text-slate-500">Keluarga (1 anak):</span> <strong class="text-slate-700">6-9x pengeluaran bulanan</strong></div>
+                                    <div class="flex justify-between items-center text-sm"><span class="text-slate-500">Freelancer/Pengusaha:</span> <strong class="text-slate-700">12x pengeluaran bulanan</strong></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ========== STEP BY STEP GUIDE ========== -->
+                <section id="roadmap-belajar" class="py-12 bg-brand-cream rounded-[32px]">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center mb-16" >
+                            <div class="section-label mx-auto mb-4">Roadmap Belajar</div>
+                            <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">10 Langkah Menuju Literasi Finansial</h2>
+                            <p class="text-slate-500 max-w-2xl mx-auto">Ikuti langkah-langkah ini secara berurutan. Setiap
+                                langkah membangun fondasi untuk langkah berikutnya.</p>
+                        </div>
+
+                        <!-- FASE 1: PEMULA HEADER -->
+                        <div class="mb-8">
+                            <div class="flex items-center gap-4">
+                                <div class="h-[1px] flex-grow bg-emerald-100"></div>
+                                <span class="px-6 py-2 rounded-full border border-emerald-100 bg-emerald-50/50 text-emerald-700 font-bold text-[10px] uppercase tracking-widest">FASE 1: Fondasi Pemula</span>
+                                <div class="h-[1px] flex-grow bg-emerald-100"></div>
+                            </div>
+                        </div>
+
+                        <div class="edu-grid-force">
+
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-pemula text-[9px]">Pemula</div>
+                                <div class="mb-6 p-5 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="banknote" class="w-8 h-8 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Lesson 01</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Filosofi <span class="text-emerald-700">Uang</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Uang bukan sekadar kertas, melainkan manifestasi dari nilai dan kepercayaan. Pahami bagaimana instrumen ini bekerja untuk melayani masa depan Anda.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Alat Tukar</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Store of Value</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-pemula.html?topic=1" class="btn-premium-pemula w-full justify-center py-2.5 text-xs">
+                                        Mulai Belajar
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-pemula text-[9px]">Pemula</div>
+                                <div class="mb-6 p-5 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="trending-up" class="w-8 h-8 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Lesson 02</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Seni <span class="text-emerald-700">Inflasi</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Pahami mengapa nilai uang terus tergerus oleh waktu. Strategi menjaga daya beli adalah kunci dalam membangun kekayaan jangka panjang.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Daya Beli</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Target 2%</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-pemula.html?topic=2" class="btn-premium-pemula w-full justify-center py-2.5 text-xs">
+                                        Pelajari Inflasi
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-pemula text-[9px]">Pemula</div>
+                                <div class="mb-6 p-5 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="pie-chart" class="w-8 h-8 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Lesson 03</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Prinsip <span class="text-emerald-700">50/30/20</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Anggaran bukanlah pembatasan, melainkan peta jalan menuju kebebasan. Temukan formula yang mengubah cara Anda melihat pengeluaran.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Kebutuhan</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Keinginan</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-pemula.html?topic=3" class="btn-premium-pemula w-full justify-center py-2.5 text-xs">
+                                        Atur Budget
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-pemula text-[9px]">Pemula</div>
+                                <div class="mb-6 p-5 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="shield-check" class="w-8 h-8 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Lesson 04</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Benteng <span class="text-emerald-700">Ekonomi</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Dana darurat adalah garis pertahanan pertama Anda. Pelajari cara membangun bantalan ekonomi yang membuat Anda tetap tenang.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Safety Net</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Likuiditas</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-pemula.html?topic=4" class="btn-premium-pemula w-full justify-center py-2.5 text-xs">
+                                        Bangun Fondasi
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-pemula text-[9px]">Pemula</div>
+                                <div class="mb-6 p-5 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="landmark" class="w-8 h-8 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Lesson 05</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Labirin <span class="text-emerald-700">Perbankan</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Navigasi dunia perbankan modern. Pahami perbedaan antara tabungan, deposito, dan instrumen pasar uang untuk optimalisasi aset.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Deposito</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Tabungan</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-pemula.html?topic=5" class="btn-premium-pemula w-full justify-center py-2.5 text-xs">
+                                        Pilih Produk
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-pemula text-[9px]">Pemula</div>
+                                <div class="mb-6 p-5 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="line-chart" class="w-8 h-8 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Lesson 06</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Cerdas <span class="text-emerald-700">Investasi</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Investasi adalah seni membuat uang bekerja untuk Anda. Mulai dari profil risiko hingga pemilihan instrumen yang tepat bagi masa depan.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Compound Interest</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Risk Profile</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-pemula.html?topic=6" class="btn-premium-pemula w-full justify-center py-2.5 text-xs">
+                                        Buka Portofolio
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-pemula text-[9px]">Pemula</div>
+                                <div class="mb-6 p-5 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="file-text" class="w-8 h-8 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Lesson 07</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Etika <span class="text-emerald-700">Perpajakan</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Setiap kontribusi membangun negeri. Pahami kewajiban perpajakan Anda sebagai warga negara yang bertanggung jawab secara finansial.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">PPh 21</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">NPWP</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-pemula.html?topic=7" class="btn-premium-pemula w-full justify-center py-2.5 text-xs">
+                                        Pahami Pajak
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-pemula text-[9px]">Pemula</div>
+                                <div class="mb-6 p-5 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="calendar" class="w-8 h-8 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Lesson 08</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Visi <span class="text-emerald-700">Jangka Panjang</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Membangun kekayaan adalah maraton, bukan sprint. Rancang visi finansial untuk 10, 20, hingga 30 tahun ke depan dengan perhitungan yang matang.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Retirement plan</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Wealth projection</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-pemula.html?topic=8" class="btn-premium-pemula w-full justify-center py-2.5 text-xs">
+                                        Rancang Masa Depan
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-pemula text-[9px]">Pemula</div>
+                                <div class="mb-6 p-5 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="umbrella" class="w-8 h-8 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Lesson 09</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Perisai <span class="text-emerald-700">Finansial</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Hidup penuh ketidakpastian. Pelajari bagaimana asuransi dan instrumen proteksi lainnya bertindak sebagai perisai yang menjaga harta dan keluarga Anda.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Proteksi</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Manajemen Risiko</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-pemula.html?topic=9" class="btn-premium-pemula w-full justify-center py-2.5 text-xs">
+                                        Siapkan Perisai
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-pemula text-[9px]">Pemula</div>
+                                <div class="mb-6 p-5 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="smartphone-nfc" class="w-8 h-8 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Lesson 10</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Era <span class="text-emerald-700">Fintech</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Navigasi ekosistem keuangan digital dengan aman. Pahami cara memanfaatkan teknologi keuangan (e-wallet, neobanks) untuk efisiensi tanpa mengorbankan keamanan.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Digital Security</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Smart Payment</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-pemula.html?topic=10" class="btn-premium-pemula w-full justify-center py-2.5 text-xs">
+                                        Go Digital
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="tab-content-mahasiswa" class="edu-content hidden animate-fade-in">
+                <!-- ========== MAKROEKONOMI ========== -->
+                <section id="makroekonomi" class="py-12 bg-brand-cream rounded-[32px] mb-12">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-14"
+                            >
+                            <div>
+                                <div class="section-label mb-4">Modul Utama</div>
+                                <h2 class="font-serif text-4xl md:text-5xl font-bold">Ekonomi Makro</h2>
+                            </div>
+                        </div>
+
+                        <!-- FASE 2: MAHASISWA HEADER -->
+                        <div class="mb-8">
+                            <div class="flex items-center gap-4">
+                                <div class="h-[1px] flex-grow bg-blue-100"></div>
+                                <span class="px-6 py-2 rounded-full border border-blue-100 bg-blue-50/50 text-blue-700 font-bold text-[10px] uppercase tracking-widest">FASE 2: Analisis Mahasiswa</span>
+                                <div class="h-[1px] flex-grow bg-blue-100"></div>
+                            </div>
+                        </div>
+
+                        <div class="edu-grid-force">
+
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-mahasiswa text-[9px]">Mahasiswa</div>
+                                <div class="mb-6 p-6 bg-blue-100/30 w-fit rounded-2xl group-hover:bg-blue-100 transition-colors">
+                                    <i data-lucide="globe" class="w-12 h-12 text-blue-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-blue-600/60 uppercase tracking-[0.4em] block mb-2">Macro Analysis 01</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Denyut <span class="text-blue-700">PDB</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Bedah anatomi ekonomi nasional melalui Produk Domestik Bruto. Pahami bagaimana setiap transaksi berkontribusi pada pertumbuhan dan posisi global Indonesia.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-blue-700 mr-1.5">Agregat Demand</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-blue-700 mr-1.5">Economic Growth</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-blue-500/5">
+                                    <a href="materi-mahasiswa.html?topic=1" class="btn-premium-mahasiswa w-full justify-center py-2.5 text-xs">
+                                        Analisis PDB
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-mahasiswa text-[9px]">Mahasiswa</div>
+                                <div class="mb-6 p-6 bg-blue-100/30 w-fit rounded-2xl group-hover:bg-blue-100 transition-colors">
+                                    <i data-lucide="building-2" class="w-12 h-12 text-blue-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-blue-600/60 uppercase tracking-[0.4em] block mb-2">Macro Analysis 02</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Otoritas <span class="text-blue-700">Moneter</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Jelajahi mekanisme Bank Indonesia dalam menjaga stabilitas nilai tukar dan mengawal inflasi melalui instrumen suku bunga yang presisi.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-blue-700 mr-1.5">BI Rate</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-blue-700 mr-1.5">Stability</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-blue-500/5">
+                                    <a href="materi-mahasiswa.html?topic=2" class="btn-premium-mahasiswa w-full justify-center py-2.5 text-xs">
+                                        Bedah Kebijakan
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-mahasiswa text-[9px]">Mahasiswa</div>
+                                <div class="mb-6 p-6 bg-blue-100/30 w-fit rounded-2xl group-hover:bg-blue-100 transition-colors">
+                                    <i data-lucide="repeat" class="w-12 h-12 text-blue-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-blue-600/60 uppercase tracking-[0.4em] block mb-2">Macro Analysis 03</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Arus <span class="text-blue-700">Valuta</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Pahami dinamika nilai tukar Rupiah dan neraca perdagangan. Jelajahi bagaimana sentimen global dan fundamental domestik membentuk resiliensi ekonomi kita.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-blue-700 mr-1.5">Surplus Dagang</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-blue-700 mr-1.5">Exchange Rate</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-blue-500/5">
+                                    <a href="materi-mahasiswa.html?topic=3" class="btn-premium-mahasiswa w-full justify-center py-2.5 text-xs">
+                                        Pantau Kurs
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-mahasiswa text-[9px]">Mahasiswa</div>
+                                <div class="mb-6 p-6 bg-blue-100/30 w-fit rounded-2xl group-hover:bg-blue-100 transition-colors">
+                                    <i data-lucide="refresh-cw" class="w-12 h-12 text-blue-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-blue-600/60 uppercase tracking-[0.4em] block mb-2">Macro Analysis 04</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Siklus <span class="text-blue-700">Bisnis</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Ekonomi tidak pernah statis. Deteksi sinyal ekspansi maupun resesi melalui indikator-indikator ekonomi makro yang saling berkelindan.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-blue-700 mr-1.5">Expansion</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-blue-700 mr-1.5">Recession</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-blue-500/5">
+                                    <a href="materi-mahasiswa.html?topic=4" class="btn-premium-mahasiswa w-full justify-center py-2.5 text-xs">
+                                        Deteksi Sinyal
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full">
+                                <div class="phase-badge phase-badge-mahasiswa text-[9px]">Mahasiswa</div>
+                                <div class="mb-6 p-6 bg-blue-100/30 w-fit rounded-2xl group-hover:bg-blue-100 transition-colors">
+                                    <i data-lucide="moon" class="w-12 h-12 text-blue-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-blue-600/60 uppercase tracking-[0.4em] block mb-2">Macro Analysis 05</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Sistem <span class="text-blue-700">Syariah</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Eksplorasi harmoni antara ekonomi dan etika. Pelajari bagaimana instrumen syariah (Sukuk, Murabahah) membangun ekosistem yang inklusif.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-blue-700 mr-1.5">Tanpa Riba</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-blue-700 mr-1.5">Sukuk</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-blue-500/5">
+                                    <a href="materi-mahasiswa.html?topic=9" class="btn-premium-mahasiswa w-full justify-center py-2.5 text-xs">
+                                        Pelajari Syariah
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ========== MIKROEKONOMI ========== -->
+                <section class="py-12 bg-white rounded-[32px] mb-12">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4 mb-20">
+                            <div>
+                                <div class="section-label mb-4 bg-emerald-50 text-emerald-700 border border-emerald-100 italic">Modul Lanjutan</div>
+                                <h2 class="font-serif text-4xl md:text-5xl font-bold">Ekonomi <span class="text-brand-green">Mikro</span></h2>
+                            </div>
+                        </div>
+
+                        <div class="edu-grid-force">
+                            <div class="harbor-card group flex flex-col h-full bg-emerald-50/50 border-emerald-500/40 hover:shadow-emerald-900/10">
+                                <div class="phase-badge phase-badge-mahasiswa text-[9px]">Mahasiswa</div>
+                                <div class="mb-6 p-6 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="shopping-cart" class="w-12 h-12 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Micro Analysis 01</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Mekanisme <span class="text-emerald-700">Pasar</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Hukum fundamental yang menggerakkan dunia. Temukan bagaimana titik temu antara keinginan pembeli dan kemampuan penjual menciptakan keseimbangan.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Supply-Demand</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Price Discovery</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-mahasiswa.html?topic=5" class="btn-premium-mahasiswa w-full justify-center py-2.5 text-xs">
+                                        Analisis Pasar
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full bg-emerald-50/50 border-emerald-500/40 hover:shadow-emerald-900/10">
+                                <div class="phase-badge phase-badge-mahasiswa text-[9px]">Mahasiswa</div>
+                                <div class="mb-6 p-6 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="factory" class="w-12 h-12 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Micro Analysis 02</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Arsitektur <span class="text-emerald-700">Industri</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Persaingan sempurna hingga monopoli. Bedah karakteristik setiap struktur pasar dan implikasinya terhadap efisiensi dan kesejahteraan masyarakat.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Market Power</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Oligopoly</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-mahasiswa.html?topic=6" class="btn-premium-mahasiswa w-full justify-center py-2.5 text-xs">
+                                        Bedah Struktur
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group h-full flex flex-col bg-emerald-50/50 border-emerald-500/40 hover:shadow-emerald-900/10">
+                                <div class="phase-badge phase-badge-mahasiswa text-[9px]">Mahasiswa</div>
+                                <div class="mb-6 p-6 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="gauge" class="w-12 h-12 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Micro Analysis 03</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Efisiensi <span class="text-emerald-700">Produksi</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Bedah struktur biaya dan optimalisasi output. Pahami bagaimana perusahaan menyeimbangkan biaya marjinal untuk mencapai profitabilitas maksimal.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Marginal Cost</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Fixed Cost</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-mahasiswa.html?topic=7" class="btn-premium-mahasiswa w-full justify-center py-2.5 text-xs">
+                                        Analisis Biaya
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="harbor-card group flex flex-col h-full bg-emerald-50/50 border-emerald-500/40 hover:shadow-emerald-900/10">
+                                <div class="phase-badge phase-badge-mahasiswa text-[9px]">Mahasiswa</div>
+                                <div class="mb-6 p-6 bg-emerald-100/30 w-fit rounded-2xl group-hover:bg-emerald-100 transition-colors">
+                                    <i data-lucide="user-check" class="w-12 h-12 text-emerald-700"></i>
+                                </div>
+                                <div class="mb-6 flex-grow">
+                                    <span class="text-[11px] font-bold text-emerald-600/60 uppercase tracking-[0.4em] block mb-2">Micro Analysis 04</span>
+                                    <h3 class="text-3xl font-serif font-bold mb-4 text-slate-800 leading-tight">Psikologi <span class="text-emerald-700">Konsumen</span></h3>
+                                    <p class="text-[15px] text-slate-500 leading-relaxed mb-6">Jelajahi bagaimana utilitas dan preferensi membentuk permintaan. Pahami logika di balik setiap keputusan konsumsi dalam keterbatasan anggaran.</p>
+                                    <div class="flex flex-wrap gap-1.5 mt-2">
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Utilitas</span>
+                                        <span class="px-2.5 py-0.5 bg-white/50 rounded-full text-[9px] font-bold text-emerald-700 mr-1.5">Budget Constraint</span>
+                                    </div>
+                                </div>
+                                <div class="mt-auto pt-6 border-t border-emerald-500/5">
+                                    <a href="materi-mahasiswa.html?topic=8" class="btn-premium-mahasiswa w-full justify-center py-2.5 text-xs">
+                                        Analisis Perilaku
+                                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ========== MATERI AKADEMIK LANJUTAN ========== -->
+                <section class="py-12 bg-slate-50 rounded-[32px] relative overflow-hidden" id="materi-lanjutan">
+                    <div class="absolute right-0 top-0 w-1/3 h-full bg-blue-50/50 skew-x-12 transform origin-top-right pointer-events-none"></div>
+
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                        <div class="text-center mb-20">
+                            <div class="section-label mx-auto mb-6 bg-blue-100/50 text-blue-700 border border-blue-200/50 italic">Deep Dive Modules</div>
+                            <h2 class="font-serif text-5xl md:text-6xl font-bold mb-6 text-slate-900">Analisis Ekonomi <span class="text-blue-600">Terapan</span></h2>
+                            <p class="text-slate-500 max-w-2xl mx-auto text-lg font-light leading-relaxed">Pendalaman materi akademik esensial: merumuskan PDB, memahami elastisitas, menganalisis MPC/MPS, dan kalkulasi Time Value of Money (TVM).</p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <!-- Concept 1: Makro -->
+                            <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-sm border border-slate-100 flex flex-col lg:flex-row gap-10 items-center justify-between group hover:border-blue-200 transition-colors">
+                                <div class="lg:w-3/5">
+                                    <div class="flex items-center gap-3 mb-4">
+                                        <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-sm">1</span>
+                                        <h3 class="font-serif text-2xl font-bold text-slate-800">Pengukuran Kinerja Ekonomi Makro</h3>
+                                    </div>
+                                    <p class="text-[15px] text-slate-600 leading-relaxed font-light mb-4">
+                                        Produk Domestik Bruto (PDB) adalah indikator utama kesehatan ekonomi. Indonesia menggunakan pendekatan pengeluaran untuk menghitung PDB, yang merepresentasikan total agregat demand di dalam negeri.
+                                    </p>
+                                    <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                                        <li><strong class="text-blue-600">Konsumsi (C):</strong> Pengeluaran rumah tangga (pendorong utama ~50% PDB RI).</li>
+                                        <li><strong class="text-blue-600">Investasi (I):</strong> Penanaman modal domestik bruto.</li>
+                                        <li><strong class="text-blue-600">Government (G):</strong> Pengeluaran pemerintah (APBN/APBD).</li>
+                                        <li><strong class="text-blue-600">Ekspor Netto (X-M):</strong> Selisih ekspor dan impor.</li>
+                                    </ul>
+                                </div>
+                                <div class="lg:w-2/5 w-full bg-slate-900 rounded-2xl p-6 text-white text-center transform group-hover:-translate-y-2 transition-transform duration-300">
+                                    <p class="text-[10px] text-slate-400 uppercase tracking-widest font-bold mb-3">Formula Pendekatan Pengeluaran</p>
+                                    <div class="font-serif text-3xl font-medium tracking-wider mb-2 text-blue-300">
+                                        Y = C + I + G + (X - M)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Concept 2: TEORI KONSUMEN -->
+                            <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-sm border border-slate-100 flex flex-col lg:flex-row-reverse gap-10 items-center justify-between group hover:border-blue-200 transition-colors">
+                                <div class="lg:w-3/5">
+                                    <div class="flex items-center gap-3 mb-4">
+                                        <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-sm">2</span>
+                                        <h3 class="font-serif text-2xl font-bold text-slate-800">Teori Perilaku Konsumen &amp; Tabungan</h3>
+                                    </div>
+                                    <p class="text-[15px] text-slate-600 leading-relaxed font-light mb-4">
+                                        Model Keynesian membagi pendapatan disposabel (Yd) menjadi dua: Konsumsi (C) dan Tabungan (S). Proporsi perubahan pendapatan yang dikonsumsi disebut <em>Marginal Propensity to Consume</em> (MPC), sedangkan yang ditabung disebut <em>Marginal Propensity to Save</em> (MPS).
+                                    </p>
+                                    <div class="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                                        <p class="text-sm text-slate-700 italic">"Jika MPC = 0.8, artinya setiap tambahan Rp 10.000 pendapatan, konsumen akan membelanjakan Rp 8.000 dan menabung Rp 2.000."</p>
+                                    </div>
+                                </div>
+                                <div class="lg:w-2/5 w-full bg-slate-900 rounded-2xl p-6 text-white text-center transform group-hover:-translate-y-2 transition-transform duration-300">
+                                    <p class="text-[10px] text-slate-400 uppercase tracking-widest font-bold mb-3">Persamaan Fundamental</p>
+                                    <div class="font-serif text-3xl font-medium tracking-wider mb-2 text-blue-300">
+                                        MPC + MPS = 1
+                                    </div>
+                                    <p class="text-xs text-slate-400 mt-2">Keterkaitan langsung Konsumsi &amp; Tabungan</p>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Concept 3: Elastisitas -->
+                                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 group hover:border-emerald-200 transition-colors">
+                                    <div class="flex items-center gap-3 mb-4">
+                                        <span class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold text-sm">3</span>
+                                        <h3 class="font-serif text-xl font-bold text-slate-800">Analisis Elastisitas Pasar</h3>
+                                    </div>
+                                    <p class="text-[14px] text-slate-600 leading-relaxed font-light mb-4">
+                                        Mengukur sensitivitas permintaan terhadap perubahan harga (Price Elasticity of Demand). Secara strategis, perusahaan menaikkan harga pada produk inelastis (kebutuhan pokok) untuk memaksimalkan penerimaan, namun akan menurunkan harga untuk produk elastis.
+                                    </p>
+                                    <div class="bg-slate-50 rounded-xl p-4 text-center font-serif text-xl border border-slate-200 text-emerald-700 mb-2">
+                                        |E| = %&Delta;Q / %&Delta;P
+                                    </div>
+                                    <p class="text-[11px] text-slate-400 mt-2 text-center uppercase tracking-wider font-bold">
+                                        %&Delta;Q = Persentase Perubahan Kuantitas<br/>%&Delta;P = Persentase Perubahan Harga
+                                    </p>
+                                </div>
+
+                                <!-- Concept 4: TVM -->
+                                <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 group hover:border-amber-200 transition-colors">
+                                    <div class="flex items-center gap-3 mb-4">
+                                        <span class="w-8 h-8 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-sm">4</span>
+                                        <h3 class="font-serif text-xl font-bold text-slate-800">Nilai Waktu dari Uang (TVM)</h3>
+                                    </div>
+                                    <p class="text-[14px] text-slate-600 leading-relaxed font-light mb-4">
+                                        Prinsip paling fundamental dalam komputasi finansial: Rp 1 juta hari ini (Present Value) lebih berharga dari Rp 1 juta di masa depan (Future Value) karena kapasitas produktif (bunga/return) dan risiko degradasi (inflasi).
+                                    </p>
+                                    <div class="bg-slate-50 rounded-xl p-4 text-center font-serif text-xl border border-slate-200 text-amber-600 mb-2">
+                                        FV = PV &times; (1 + r)<sup>n</sup>
+                                    </div>
+                                    <p class="text-[11px] text-slate-400 mt-2 text-center uppercase tracking-wider font-bold">
+                                        FV = Future Value | PV = Present Value<br/>r = Suku Bunga (Interest Rate) | n = Jumlah Periode Waktu
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ========== STRATEGI KEUANGAN MAHASISWA ========== -->
+                <section class="py-12 bg-white rounded-[32px]">
+                    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center mb-16">
+                            <div class="section-label mx-auto mb-8 bg-charcoal/5 text-charcoal border border-charcoal/10 px-6 py-2">/ PANDUAN PRAKTIS</div>
+                            <h2 class="font-sans text-4xl md:text-5xl font-bold mb-6 text-charcoal tracking-tight">Metode 50/30/20</h2>
+                            <p class="text-charcoal/60 max-w-2xl mx-auto text-lg font-light">Strategi pengelolaan keuangan yang sangat disarankan untuk membangun disiplin finansial sejak dini.</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                            <!-- 50% Kebutuhan -->
+                            <div class="harbor-card group relative overflow-hidden flex flex-col h-full">
+                                <div class="absolute top-0 left-0 w-full h-1 bg-charcoal/40"></div>
+                                <div class="mb-5 p-4 bg-charcoal/5 w-fit rounded-2xl group-hover:bg-charcoal/10 transition-colors">
+                                    <span class="font-serif font-bold text-2xl text-charcoal">50%</span>
+                                </div>
+                                <h3 class="text-2xl font-serif font-bold mb-4 text-charcoal">Kebutuhan Pokok</h3>
+                                <p class="text-[13px] text-slate-500 leading-relaxed mb-6">Alokasikan separuh pendapatan untuk kebutuhan wajib yang tidak bisa dinegosiasikan.</p>
+                                <ul class="space-y-3 text-[13px] text-slate-500">
+                                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-3.5 h-3.5 text-charcoal/40"></i>Makan & kebutuhan harian</li>
+                                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-3.5 h-3.5 text-charcoal/40"></i>Sewa tempat tinggal (kos)</li>
+                                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-3.5 h-3.5 text-charcoal/40"></i>Transportasi & Tagihan</li>
+                                </ul>
+                            </div>
+
+                            <!-- 30% Keinginan -->
+                            <div class="harbor-card group relative overflow-hidden flex flex-col h-full">
+                                <div class="absolute top-0 left-0 w-full h-1 bg-bullion/40"></div>
+                                <div class="mb-5 p-4 bg-bullion/5 w-fit rounded-2xl group-hover:bg-bullion/10 transition-colors">
+                                    <span class="font-serif font-bold text-2xl text-bullion">30%</span>
+                                </div>
+                                <h3 class="text-2xl font-serif font-bold mb-4 text-charcoal">Keinginan</h3>
+                                <p class="text-[13px] text-slate-500 leading-relaxed mb-6">Alokasi untuk hal-hal yang membuat hidup lebih menyenangkan — agar terhindar dari burnout finansial.</p>
+                                <ul class="space-y-3 text-[13px] text-slate-500">
+                                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-3.5 h-3.5 text-bullion/40"></i>Hiburan & Hangout</li>
+                                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-3.5 h-3.5 text-bullion/40"></i>Lifestyle & Fashion</li>
+                                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-3.5 h-3.5 text-bullion/40"></i>Hobi & Explore</li>
+                                </ul>
+                            </div>
+
+                            <!-- 20% Masa Depan -->
+                            <div class="harbor-card group relative overflow-hidden flex flex-col h-full">
+                                <div class="absolute top-0 left-0 w-full h-1 bg-blue-500/40"></div>
+                                <div class="mb-5 p-4 bg-blue-500/5 w-fit rounded-2xl group-hover:bg-blue-500/10 transition-colors">
+                                    <span class="font-serif font-bold text-2xl text-blue-600">20%</span>
+                                </div>
+                                <h3 class="text-2xl font-serif font-bold mb-4 text-charcoal">Masa Depan</h3>
+                                <p class="text-[13px] text-slate-500 leading-relaxed mb-6">Investasi untuk diri sendiri di masa depan — garis pertahanan terkuat menuju kebebasan.</p>
+                                <ul class="space-y-3 text-[13px] text-slate-500">
+                                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-500/40"></i>Tabungan & Dana Darurat</li>
+                                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-500/40"></i>Instrumen Investasi</li>
+                                    <li class="flex items-center gap-3"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-500/40"></i>Sertifikasi & Kursus</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Quote + Inklusi Keuangan -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div class="bg-charcoal rounded-[28px] p-10 text-white flex flex-col justify-center">
+                                <svg class="w-10 h-10 text-bullion mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                                <p class="text-xl font-serif italic leading-relaxed mb-6 text-white/90">"Angka tidak pernah berbohong. Catat pengeluaran Anda — itu yang akan membantu memperbaiki 'dosa-dosa' pengeluaran setiap bulannya."</p>
+                                <p class="text-sm text-bullion font-bold uppercase tracking-widest">— Raditya Dika</p>
+                                <p class="text-xs text-white/40 mt-1">Tentang pentingnya mencatat pengeluaran</p>
+                            </div>
+
+                            <div class="bg-parchment rounded-[28px] p-10 border border-charcoal/5">
+                                <span class="text-[10px] font-bold text-charcoal/40 uppercase tracking-[0.2em] block mb-6">Inklusi Keuangan ASEAN 2025</span>
+                                <h3 class="text-xl font-bold mb-6 text-charcoal">Indonesia Masih Perlu Mengejar</h3>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center py-3 border-b border-charcoal/10">
+                                        <span class="text-sm font-medium">🇸🇬 Singapura</span>
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-24 h-2 bg-charcoal/10 rounded-full overflow-hidden"><div class="h-full bg-charcoal rounded-full" style="width:97.8%"></div></div>
+                                            <span class="text-sm font-bold w-14 text-right">97.8%</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center py-3 border-b border-charcoal/10">
+                                        <span class="text-sm font-medium">🇹🇭 Thailand</span>
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-24 h-2 bg-charcoal/10 rounded-full overflow-hidden"><div class="h-full bg-charcoal rounded-full" style="width:91.1%"></div></div>
+                                            <span class="text-sm font-bold w-14 text-right">91.1%</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center py-3 border-b border-charcoal/10">
+                                        <span class="text-sm font-medium">🇲🇾 Malaysia</span>
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-24 h-2 bg-charcoal/10 rounded-full overflow-hidden"><div class="h-full bg-charcoal rounded-full" style="width:87.1%"></div></div>
+                                            <span class="text-sm font-bold w-14 text-right">87.1%</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center py-3 border-b border-charcoal/10">
+                                        <span class="text-sm font-medium">🇻🇳 Vietnam</span>
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-24 h-2 bg-charcoal/10 rounded-full overflow-hidden"><div class="h-full bg-charcoal rounded-full" style="width:69.9%"></div></div>
+                                            <span class="text-sm font-bold w-14 text-right">69.9%</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center py-3 bg-amber-50 rounded-xl px-4">
+                                        <span class="text-sm font-bold">🇮🇩 Indonesia</span>
+                                        <div class="flex items-center gap-3">
+                                            <div class="w-24 h-2 bg-amber-100 rounded-full overflow-hidden"><div class="h-full bg-amber-500 rounded-full" style="width:52.39%"></div></div>
+                                            <span class="text-sm font-bold text-amber-600 w-14 text-right">52.4%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-charcoal/40 mt-4">Sumber: Global FIndex 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        <div class="page-buffer"></div>
+>>>>>>> 704946e (Update materi)
     </main>
 
     <div id="footer-root"></div>
@@ -107,13 +896,21 @@
             tabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     const target = tab.getAttribute('data-target');
+<<<<<<< HEAD
                     
+=======
+
+>>>>>>> 704946e (Update materi)
                     // Reset Tabs
                     tabs.forEach(t => {
                         t.classList.remove('border-charcoal', 'text-charcoal');
                         t.classList.add('border-transparent', 'text-mist');
                     });
+<<<<<<< HEAD
                     
+=======
+
+>>>>>>> 704946e (Update materi)
                     // Set Active Tab
                     tab.classList.remove('border-transparent', 'text-mist');
                     tab.classList.add('border-charcoal', 'text-charcoal');

@@ -2,6 +2,10 @@
 export default {
   content: [
     "./index.html",
+<<<<<<< HEAD
+=======
+    "./src/pages/*.html",
+>>>>>>> 704946e (Update materi)
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -18,6 +22,10 @@ export default {
         'brand-red': "#C0392B",
         'brand-gold': "#B8872A",
         'brand-black': "#2B2B28",
+<<<<<<< HEAD
+=======
+        'brand-cream': "#F2EDE4",
+>>>>>>> 704946e (Update materi)
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
