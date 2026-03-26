@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Kalkulator - REALIGN</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Lora:ital,wght@0,400;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-parchment text-charcoal font-sans antialiased flex flex-col min-h-screen">
+    
+    <div id="navbar-root"></div>
+
+    <main class="flex-grow pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-charcoal/10 text-xs font-mono uppercase tracking-widest text-mist mb-4">
+                    <i data-lucide="cpu" class="w-4 h-4 text-charcoal"></i> Financial Tools
+                </span>
+                <h1 class="font-display text-4xl md:text-5xl text-charcoal mb-6">Mekanika Kapital</h1>
+                <p class="font-serif italic text-xl text-mist max-w-2xl mx-auto">Tiga alat fundamental untuk mengukur kekuatan matematismu melawan waktu dan inflasi.</p>
+            </div>
+
+            <!-- TOOL 1: COMPOUND INTEREST -->
+            <section id="compound" class="mb-24" data-aos="fade-up">
+                <div class="bg-white border border-[#E5DAC8] rounded-3xl p-8 md:p-12 shadow-sm relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-bullion/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                    
+                    <h2 class="font-display text-3xl mb-2 relative z-10"><i data-lucide="trending-up" class="inline w-6 h-6 text-bullion mr-2"></i>Kalkulator Compound Interest</h2>
+                    <p class="font-sans text-mist mb-8 max-w-xl relative z-10">Lihat seberapa besar keajaiban bunga majemuk bekerja jika kamu menyisihkan Rp1 juta per bulan ke Reksa Dana Saham (asumsi bunga 10%/tahun).</p>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
+                        <!-- Inputs -->
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block font-sans text-sm font-bold text-charcoal uppercase tracking-widest mb-2">Modal Awal (Rp)</label>
+                                <input type="number" id="ci-principal" value="10000000" class="w-full bg-parchment border border-charcoal/10 rounded-xl px-4 py-3 font-mono text-charcoal focus:ring-2 focus:ring-bullion focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block font-sans text-sm font-bold text-charcoal uppercase tracking-widest mb-2">Setoran Rutin Bulanan (Rp)</label>
+                                <input type="number" id="ci-monthly" value="1000000" class="w-full bg-parchment border border-charcoal/10 rounded-xl px-4 py-3 font-mono text-charcoal focus:ring-2 focus:ring-bullion focus:outline-none">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block font-sans text-sm font-bold text-charcoal uppercase tracking-widest mb-2">Waktu (Tahun)</label>
+                                    <input type="number" id="ci-years" value="10" class="w-full bg-parchment border border-charcoal/10 rounded-xl px-4 py-3 font-mono text-charcoal focus:ring-2 focus:ring-bullion focus:outline-none">
+                                </div>
+                                <div>
+                                    <label class="block font-sans text-sm font-bold text-charcoal uppercase tracking-widest mb-2">Bunga Tahunan (%)</label>
+                                    <input type="number" id="ci-rate" value="8" class="w-full bg-parchment border border-charcoal/10 rounded-xl px-4 py-3 font-mono text-charcoal focus:ring-2 focus:ring-bullion focus:outline-none">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Output -->
+                        <div class="bg-charcoal rounded-2xl p-8 flex flex-col justify-center text-center">
+                            <p class="font-mono text-xs text-parchment/50 uppercase tracking-widest mb-4">Total Aset Masa Depan</p>
+                            <h3 id="ci-result" class="font-serif text-4xl sm:text-5xl text-bullion mb-4 truncate">Rp 0</h3>
+                            
+                            <div class="grid grid-cols-2 gap-4 text-left border-t border-white/10 pt-6 mt-2">
+                                <div>
+                                    <div class="text-[10px] text-parchment/40 uppercase tracking-widest mb-1">Total Setoranmu</div>
+                                    <div id="ci-total-invested" class="font-mono text-sm text-parchment">Rp 0</div>
+                                </div>
+                                <div>
+                                    <div class="text-[10px] text-parchment/40 uppercase tracking-widest mb-1">Total Bunga Majemuk</div>
+                                    <div id="ci-total-interest" class="font-mono text-sm text-surplus">Rp 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+                
+                <!-- TOOL 2: INVESTASI COMPARE -->
+                <section id="compare" class="bg-white border border-[#E5DAC8] rounded-3xl p-8 shadow-sm flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="font-display text-2xl mb-2"><i data-lucide="git-compare" class="inline w-5 h-5 text-mist mr-2"></i>Saham vs Deposito</h2>
+                    <p class="font-sans text-mist text-sm mb-8">Membandingkan secara kasar return rata-rata deposito bank digital (5%) melawan IHSG jangka panjang (10%).</p>
+                    
+                    <div class="mt-auto space-y-4">
+                        <div class="relative pt-1">
+                            <div class="flex mb-2 items-center justify-between">
+                                <div class="text-xs font-bold uppercase text-charcoal">Deposito Bank Digital (Rp 100Jt &rarr; 5 Thn)</div>
+                                <div class="text-xs font-mono font-semibold text-charcoal">Rp 127.628.000</div>
+                            </div>
+                            <div class="overflow-hidden h-2 text-xs flex rounded bg-parchment">
+                                <div style="width: 50%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-mist"></div>
+                            </div>
+                        </div>
+                        <div class="relative pt-1">
+                            <div class="flex mb-2 items-center justify-between">
+                                <div class="text-xs font-bold uppercase text-charcoal">Saham Bluechip/IHSG (Rp 100Jt &rarr; 5 Thn)</div>
+                                <div class="text-xs font-mono font-semibold text-surplus">Rp 161.051.000</div>
+                            </div>
+                            <div class="overflow-hidden h-2 text-xs flex rounded bg-parchment">
+                                <div style="width: 75%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-surplus"></div>
+                            </div>
+                        </div>
+                        <p class="font-mono text-[10px] text-mist mt-4 text-center">*Asumsi tanpa pajak dan biaya broker. Saham memiliki volatilitas nilai pokok.</p>
+                    </div>
+                </section>
+
+                <!-- TOOL 3: VALUE CONVERTER -->
+                <section id="converter" class="bg-charcoal text-parchment rounded-3xl p-8 shadow-sm flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="font-display text-2xl mb-2"><i data-lucide="refresh-cw" class="inline w-5 h-5 text-bullion mr-2"></i>Kalkulator Kurs Cepat (IDR - USD)</h2>
+                    <p class="font-sans text-parchment/60 text-sm mb-8">Bagi kamu yang mulai melirik pendapatan Global Gig Economy.</p>
+                    
+                    <div class="mt-auto bg-white/5 border border-white/10 rounded-xl p-6">
+                        <div class="flex items-center gap-4">
+                            <div class="flex-1">
+                                <label class="block text-[10px] font-mono text-bullion uppercase tracking-widest mb-1">Pendapatan Freelance (USD)</label>
+                                <div class="flex items-center text-2xl font-mono border-b border-parchment/30 pb-2">
+                                    <span class="mr-2">$</span>
+                                    <input type="number" id="usd-input" value="1000" class="bg-transparent w-full outline-none text-parchment">
+                                </div>
+                            </div>
+                            <div class="flex-1 text-right">
+                                <label class="block text-[10px] font-mono text-mist uppercase tracking-widest mb-1">Total IDR (Asumsi Rp 16.000)</label>
+                                <div id="idr-result" class="text-2xl font-mono pt-1 text-parchment">Rp 16.000.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+
+        </div>
+    </main>
+
+    <div id="footer-root"></div>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Calculator 1: Compound
+            const pInput = document.getElementById('ci-principal');
+            const mInput = document.getElementById('ci-monthly');
+            const yInput = document.getElementById('ci-years');
+            const rInput = document.getElementById('ci-rate');
+            
+            const resDisplay = document.getElementById('ci-result');
+            const invDisplay = document.getElementById('ci-total-invested');
+            const intDisplay = document.getElementById('ci-total-interest');
+
+            const formatIdr = (n) => new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(n);
+
+            const calculateCompound = () => {
+                const p = parseFloat(pInput.value) || 0;
+                const m = parseFloat(mInput.value) || 0;
+                const t = parseFloat(yInput.value) || 0;
+                const r = (parseFloat(rInput.value) || 0) / 100;
+                
+                const n = 12; // monthly compounding
+                
+                // Formula: A = P(1+r/n)^(nt) + PMT * (((1+r/n)^(nt) - 1) / (r/n))
+                const amountPrincipal = p * Math.pow((1 + r/n), (n*t));
+                const amountFuture = amountPrincipal + (m * ((Math.pow((1 + r/n), (n*t)) - 1) / (r/n)));
+                
+                const invested = p + (m * 12 * t);
+                const interest = amountFuture - invested;
+
+                resDisplay.textContent = formatIdr(amountFuture);
+                invDisplay.textContent = formatIdr(invested);
+                intDisplay.textContent = formatIdr(interest);
+            };
+
+            [pInput, mInput, yInput, rInput].forEach(el => el.addEventListener('input', calculateCompound));
+            calculateCompound();
+
+            // Calculator 3: USD Converter
+            const usdInput = document.getElementById('usd-input');
+            const idrResult = document.getElementById('idr-result');
+            const rate = 16000;
+
+            usdInput.addEventListener('input', () => {
+                const usd = parseFloat(usdInput.value) || 0;
+                idrResult.textContent = formatIdr(usd * rate);
+            });
+        });
+    </script>
+</body>
+</html>

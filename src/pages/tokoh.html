@@ -1,243 +1,122 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
-
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArthaNavigate | Tokoh Inspirasi Ekonomi</title>
-    <meta name="description" content="Kisah inspiratif dari tokoh-tokoh ekonomi Indonesia — dari pedagang kecil hingga konglomerat.">
+    <title>Tokoh Ekonomi - REALIGN</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Lora:ital,wght@0,400;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
 </head>
-
-<body class="bg-[#f2f2f2] text-[#111111] selection:bg-[#111111] selection:text-white">
-
+<body class="bg-parchment text-charcoal font-sans antialiased flex flex-col min-h-screen">
+    
     <div id="navbar-root"></div>
 
-    <main class="main-content">
-        <!-- ========== HERO ========== -->
-        <section class="hero-dark relative pt-32 pb-20 rounded-b-[40px] md:rounded-b-[60px] shadow-2xl">
-            <div class="absolute inset-0 bg-grid-pattern"></div>
-            <div class="hero-dark-glow hero-dark-glow--gold absolute -right-20 top-20 w-96 h-96"></div>
-            <div class="hero-dark-glow hero-dark-glow--white absolute -left-20 bottom-20 w-80 h-80"></div>
-
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="text-center max-w-3xl mx-auto">
-                    <a href="../../index.html"
-                        class="inline-flex items-center gap-2 text-xs font-bold text-white/50 uppercase tracking-widest mb-6 hover:gap-3 hover:text-bullion transition-all">
-                        <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                        </svg>
-                        Kembali ke Dashboard
-                    </a>
-                    <div class="hero-badge-dark mb-6">
-                        <span class="badge-dot"></span>
-                        Kisah Nyata — Pengusaha Indonesia
-                    </div>
-                    <h1 class="font-serif text-5xl md:text-6xl font-medium tracking-tight leading-[1.05] mb-6 text-white">
-                        Tokoh <span class="italic text-bullion">Inspirasi</span><br>Pengusaha Indonesia.
-                    </h1>
-                    <p class="text-lg text-white/60 max-w-2xl mx-auto leading-relaxed mb-8 font-light">
-                        Dari berjualan biskuit keliling hingga membangun konglomerasi — kisah nyata para pengusaha Indonesia yang membuktikan bahwa keberanian, kegigihan, dan kerja keras adalah kunci kesuksesan.
-                    </p>
+    <main class="flex-grow pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16" data-aos="fade-up">
+                
+                <div class="max-w-2xl">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-charcoal/10 text-xs font-mono uppercase tracking-widest text-mist mb-4">
+                        <i data-lucide="users" class="w-4 h-4 text-charcoal"></i> Arsip Tokoh
+                    </span>
+                    <h1 class="font-display text-4xl md:text-5xl text-charcoal mb-4">Arsitek Ekonomi Indonesia</h1>
+                    <p class="font-serif italic text-xl text-mist">Mereka yang kebijakannya masih memengaruhi isi dompetmu hari ini.</p>
                 </div>
-
-                <!-- Scroll Indicator -->
-                <div class="flex justify-center pt-8 pb-6">
-                    <a href="#profiles" class="flex flex-col items-center gap-2 text-white/40 hover:text-bullion transition-colors">
-                        <span class="text-[10px] font-bold uppercase tracking-widest">Scroll untuk Membaca</span>
-                        <div class="w-6 h-10 rounded-full border-2 border-current flex justify-center pt-2">
-                            <div class="w-1 h-2.5 bg-current rounded-full animate-bounce"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== PROFILES ========== -->
-        <section id="profiles" class="py-24 bg-white">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
-                <!-- Tokoh 1: Eka Tjipta Widjaja -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
+                
+                <!-- Filter Select -->
+                <div class="w-full md:w-64 shrink-0">
+                    <label class="block text-xs font-mono uppercase tracking-widest text-mist mb-2">Filter Berdasarkan Era</label>
                     <div class="relative">
-                        <div class="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl">
-                            <img src="/images/tokoh/eka-tjipta.png" alt="Eka Tjipta Widjaja" class="w-full h-full object-cover">
-                        </div>
-                        <div class="absolute -bottom-4 -right-4 bg-bullion text-charcoal px-6 py-3 rounded-2xl font-bold text-sm shadow-lg">
-                            Pendiri Sinar Mas Group
-                        </div>
-                    </div>
-                    <div>
-                        <span class="text-[10px] font-bold text-bullion uppercase tracking-[0.2em] block mb-4">Dari Nol ke Konglomerasi</span>
-                        <h2 class="font-serif text-4xl font-bold mb-6">Eka Tjipta Widjaja</h2>
-                        <div class="space-y-4 text-charcoal/70 leading-relaxed">
-                            <p>Pendiri <strong class="text-charcoal">Sinar Mas Group</strong> ini lahir dalam kemiskinan dan hanya lulusan SD. Keterbatasan pendidikan tidak menghalangi tekadnya untuk meraih kesuksesan.</p>
-                            <p>Di usia <strong class="text-charcoal">15 tahun</strong>, ia mulai berjualan biskuit dan permen berkeliling kota Makassar menggunakan sepeda. Sebuah usaha sederhana yang menjadi fondasi dari salah satu konglomerasi terbesar Indonesia.</p>
-                            <p>Ketangguhannya menghadapi <strong class="text-charcoal">kebangkrutan di masa penjajahan Jepang</strong> membuktikan bahwa keinginan untuk berjuang adalah kunci mengatasi segala kesulitan.</p>
-                        </div>
-                        <div class="mt-8 p-6 bg-charcoal/5 rounded-2xl border border-charcoal/10">
-                            <p class="text-sm font-bold text-charcoal mb-2">💡 Pelajaran Kunci</p>
-                            <p class="text-sm text-charcoal/60">Pendidikan formal bukan satu-satunya jalan menuju sukses — semangat pantang menyerah dan kegigihan adalah modal utama.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tokoh 2: Susi Pudjiastuti -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
-                    <div class="order-2 lg:order-1">
-                        <span class="text-[10px] font-bold text-bullion uppercase tracking-[0.2em] block mb-4">Dari Pedagang Ikan ke Menteri</span>
-                        <h2 class="font-serif text-4xl font-bold mb-6">Susi Pudjiastuti</h2>
-                        <div class="space-y-4 text-charcoal/70 leading-relaxed">
-                            <p>Mantan <strong class="text-charcoal">Menteri Kelautan dan Perikanan</strong> ini merupakan pengusaha yang sangat inspiratif. Putus sekolah di bangku SMA, ia tidak menyerah pada keadaan.</p>
-                            <p>Ia memulai usahanya sebagai <strong class="text-charcoal">pedagang pengepul ikan di Pangandaran</strong> dengan modal Rp750.000 hasil menjual perhiasannya — sebuah keputusan berani yang mengubah hidupnya.</p>
-                            <p>Keuletannya membangun bisnis perikanan membawanya <strong class="text-charcoal">mendirikan maskapai Susi Air</strong> untuk mempercepat distribusi produk lautnya ke berbagai daerah.</p>
-                        </div>
-                        <div class="mt-8 p-6 bg-charcoal/5 rounded-2xl border border-charcoal/10">
-                            <p class="text-sm font-bold text-charcoal mb-2">💡 Pelajaran Kunci</p>
-                            <p class="text-sm text-charcoal/60">Keuletan dan keberanian mengambil risiko bisa mengubah pedagang kecil menjadi pemimpin industri nasional.</p>
-                        </div>
-                    </div>
-                    <div class="relative order-1 lg:order-2">
-                        <div class="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl">
-                            <img src="/images/tokoh/susi-pudjiastuti.png" alt="Susi Pudjiastuti" class="w-full h-full object-cover">
-                        </div>
-                        <div class="absolute -bottom-4 -left-4 bg-bullion text-charcoal px-6 py-3 rounded-2xl font-bold text-sm shadow-lg">
-                            Pendiri Susi Air · Ex-Menteri
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tokoh 3: Chairul Tanjung -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
-                    <div class="relative">
-                        <div class="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl">
-                            <img src="/images/tokoh/chairul-tanjung.png" alt="Chairul Tanjung" class="w-full h-full object-cover">
-                        </div>
-                        <div class="absolute -bottom-4 -right-4 bg-bullion text-charcoal px-6 py-3 rounded-2xl font-bold text-sm shadow-lg">
-                            Pendiri CT Corp
-                        </div>
-                    </div>
-                    <div>
-                        <span class="text-[10px] font-bold text-bullion uppercase tracking-[0.2em] block mb-4">Si Anak Singkong</span>
-                        <h2 class="font-serif text-4xl font-bold mb-6">Chairul Tanjung</h2>
-                        <div class="space-y-4 text-charcoal/70 leading-relaxed">
-                            <p>Dikenal sebagai <strong class="text-charcoal">"Si Anak Singkong"</strong>, ia memulai bisnisnya untuk membiayai kuliah di Fakultas Kedokteran Gigi UI.</p>
-                            <p>Dengan tekad baja, ia <strong class="text-charcoal">berjualan buku, kaos, hingga jasa fotokopi</strong> demi menghidupi diri dan keluarganya sambil menempuh pendidikan.</p>
-                            <p>Melalui kerja keras dan dedikasi tanpa henti, ia berhasil membangun <strong class="text-charcoal">CT Corp</strong> yang kini menggurita di sektor perbankan, media, dan ritel Indonesia.</p>
-                        </div>
-                        <div class="mt-8 p-6 bg-charcoal/5 rounded-2xl border border-charcoal/10">
-                            <p class="text-sm font-bold text-charcoal mb-2">💡 Pelajaran Kunci</p>
-                            <p class="text-sm text-charcoal/60">Tidak ada mimpi yang terlalu besar — usaha sekecil apapun yang dilakukan dengan konsisten bisa menjadi fondasi kerajaan bisnis.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tokoh 4: Bob Sadino -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
-                    <div class="order-2 lg:order-1">
-                        <span class="text-[10px] font-bold text-bullion uppercase tracking-[0.2em] block mb-4">Ikonik dengan Celana Pendek</span>
-                        <h2 class="font-serif text-4xl font-bold mb-6">Bob Sadino</h2>
-                        <div class="space-y-4 text-charcoal/70 leading-relaxed">
-                            <p>Sosok ikonik yang dikenal dengan gaya <strong class="text-charcoal">celana pendeknya</strong> ini memulai bisnis dari bawah setelah keluar dari pekerjaan sebagai karyawan BUMN.</p>
-                            <p>Ia pernah menjadi <strong class="text-charcoal">sopir mobil sewaan hingga buruh bangunan</strong> sebelum menemukan jalannya sendiri dalam dunia bisnis.</p>
-                            <p>Akhirnya ia sukses merintis <strong class="text-charcoal">bisnis peternakan ayam</strong> dan mendirikan supermarket <strong class="text-charcoal">Kem-Chicks</strong> yang menjadi ikon ritel premium di Indonesia.</p>
-                        </div>
-                        <div class="mt-8 p-6 bg-charcoal/5 rounded-2xl border border-charcoal/10">
-                            <p class="text-sm font-bold text-charcoal mb-2">💡 Pelajaran Kunci</p>
-                            <p class="text-sm text-charcoal/60">Jangan takut gagal dan memulai dari bawah — setiap pengalaman hidup adalah pelajaran berharga menuju kesuksesan.</p>
-                        </div>
-                    </div>
-                    <div class="relative order-1 lg:order-2">
-                        <div class="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl">
-                            <img src="/images/tokoh/bob-sadino.png" alt="Bob Sadino" class="w-full h-full object-cover">
-                        </div>
-                        <div class="absolute -bottom-4 -left-4 bg-bullion text-charcoal px-6 py-3 rounded-2xl font-bold text-sm shadow-lg">
-                            Pendiri Kem-Chicks
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tokoh 5: Reza Nurhilman -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-32">
-                    <div class="relative">
-                        <div class="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl">
-                            <img src="/images/tokoh/reza-nurhilman.png" alt="Reza Nurhilman" class="w-full h-full object-cover">
-                        </div>
-                        <div class="absolute -bottom-4 -right-4 bg-bullion text-charcoal px-6 py-3 rounded-2xl font-bold text-sm shadow-lg">
-                            Pendiri Keripik Maicih
-                        </div>
-                    </div>
-                    <div>
-                        <span class="text-[10px] font-bold text-bullion uppercase tracking-[0.2em] block mb-4">Pelopor Keripik Viral</span>
-                        <h2 class="font-serif text-4xl font-bold mb-6">Reza Nurhilman</h2>
-                        <div class="space-y-4 text-charcoal/70 leading-relaxed">
-                            <p>Pelopor <strong class="text-charcoal">keripik pedas "Maicih"</strong> yang viral di seluruh Indonesia. Memulai bisnis di usia 23 tahun dengan modal hanya Rp15 juta.</p>
-                            <p>Ia memanfaatkan <strong class="text-charcoal">media sosial Twitter</strong> untuk membangun komunitas konsumen yang loyal dan menciptakan sistem keagenan <strong class="text-charcoal">"Jenderal"</strong> yang inovatif.</p>
-                            <p>Strategi pemasaran digital yang unik ini membuatnya mampu meraih <strong class="text-charcoal">omzet miliaran rupiah per bulan</strong> — membuktikan kekuatan media sosial untuk bisnis.</p>
-                        </div>
-                        <div class="mt-8 p-6 bg-charcoal/5 rounded-2xl border border-charcoal/10">
-                            <p class="text-sm font-bold text-charcoal mb-2">💡 Pelajaran Kunci</p>
-                            <p class="text-sm text-charcoal/60">Kreativitas dalam pemasaran dan kemampuan memanfaatkan media sosial bisa mengubah produk sederhana menjadi fenomena bisnis.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tokoh 6: Harris Kristanto -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="order-2 lg:order-1">
-                        <span class="text-[10px] font-bold text-bullion uppercase tracking-[0.2em] block mb-4">Jaringan Kuliner Nasional</span>
-                        <h2 class="font-serif text-4xl font-bold mb-6">Harris Kristanto</h2>
-                        <div class="space-y-4 text-charcoal/70 leading-relaxed">
-                            <p>Pengusaha muda di balik kesuksesan <strong class="text-charcoal">"Mie Gacoan"</strong>, jaringan bisnis kuliner mie pedas yang sangat diminati masyarakat Indonesia.</p>
-                            <p>Kunci keberhasilannya adalah strategi <strong class="text-charcoal">harga terjangkau</strong> yang menjangkau semua kalangan, dari mahasiswa hingga keluarga.</p>
-                            <p>Bisnisnya terus berkembang pesat hingga mampu <strong class="text-charcoal">menyerap lebih dari 3.000 karyawan</strong> di berbagai wilayah Jawa dan Bali — bukti nyata skalabilitas bisnis F&B.</p>
-                        </div>
-                        <div class="mt-8 p-6 bg-charcoal/5 rounded-2xl border border-charcoal/10">
-                            <p class="text-sm font-bold text-charcoal mb-2">💡 Pelajaran Kunci</p>
-                            <p class="text-sm text-charcoal/60">Memahami kebutuhan pasar dan menawarkan produk berkualitas dengan harga terjangkau adalah resep sukses yang tidak lekang waktu.</p>
-                        </div>
-                    </div>
-                    <div class="relative order-1 lg:order-2">
-                        <div class="aspect-[4/5] rounded-[40px] overflow-hidden shadow-2xl">
-                            <img src="/images/tokoh/harris-kristanto.png" alt="Harris Kristanto" class="w-full h-full object-cover">
-                        </div>
-                        <div class="absolute -bottom-4 -left-4 bg-bullion text-charcoal px-6 py-3 rounded-2xl font-bold text-sm shadow-lg">
-                            Pendiri Mie Gacoan
-                        </div>
+                        <select id="tokoh-filter" class="w-full appearance-none bg-white border border-charcoal/10 rounded-xl px-4 py-3 font-display text-charcoal focus:ring-2 focus:ring-charcoal focus:outline-none">
+                            <option value="all">Semua Era</option>
+                            <option value="orde-lama">Orde Lama</option>
+                            <option value="orde-baru">Orde Baru (Bappenas)</option>
+                            <option value="reformasi">Reformasi & Modern</option>
+                        </select>
+                        <i data-lucide="chevron-down" class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-mist pointer-events-none"></i>
                     </div>
                 </div>
 
             </div>
-        </section>
 
-        <!-- ========== CTA ========== -->
-        <section class="py-20 bg-parchment">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-charcoal rounded-[48px] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl">
-                    <div class="absolute inset-0 opacity-10 bg-grid-pattern"></div>
-                    <div class="relative z-10">
-                        <h2 class="font-sans text-3xl md:text-4xl font-bold mb-6 text-white tracking-tight">Terinspirasi?<br>Mulai Perjalanan Anda.</h2>
-                        <p class="text-white/60 max-w-2xl mx-auto mb-10 text-lg leading-relaxed font-light">Pelajari strategi keuangan dari nol, kelola bisnis Anda, dan jadilah tokoh inspirasi berikutnya.</p>
-                        <div class="flex flex-wrap justify-center gap-4">
-                            <a href="pemula.html" class="inline-flex items-center justify-center px-10 py-4 bg-bullion text-charcoal font-bold tracking-[0.2em] uppercase text-xs rounded-full hover:bg-white transition-all duration-500 hover:scale-105 shadow-xl">
-                                Mulai Belajar
-                            </a>
-                            <a href="../../index.html" class="inline-flex items-center justify-center px-10 py-4 bg-transparent text-white border border-white/20 font-bold tracking-[0.2em] uppercase text-xs rounded-full hover:bg-white/10 transition-all duration-300">
-                                Dashboard
-                            </a>
-                        </div>
+            <!-- Grid Tokoh -->
+            <div id="tokoh-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="tokoh-card bg-white border border-[#E5DAC8] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all" data-era="orde-lama">
+                    <!-- Placeholder Image Block -->
+                    <div class="w-full h-48 bg-charcoal flex items-center justify-center">
+                        <span class="font-serif italic text-white/30 text-2xl">1902-1980</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="inline-block px-2 py-1 bg-parchment text-charcoal text-[10px] uppercase font-mono tracking-widest rounded mb-4">Orde Lama</div>
+                        <h3 class="font-display text-2xl text-charcoal mb-2">Mohammad Hatta</h3>
+                        <p class="font-sans text-sm text-mist leading-relaxed line-clamp-4">Bapak Koperasi Indonesia. Visinya tentang ekonomi kerakyatan berdasarkan asas kekeluargaan (Pasal 33 UUD 1945) meletakkan fondasi filosofis Indonesia sebelum digerus kapitalisme modern.</p>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <div id="footer-root"></div>
+                <div class="tokoh-card bg-white border border-[#E5DAC8] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all" data-era="orde-baru">
+                    <div class="w-full h-48 bg-charcoal flex items-center justify-center">
+                        <span class="font-serif italic text-white/30 text-2xl">Mafia Berkeley</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="inline-block px-2 py-1 bg-parchment text-charcoal text-[10px] uppercase font-mono tracking-widest rounded mb-4">Orde Baru</div>
+                        <h3 class="font-display text-2xl text-charcoal mb-2">Widjojo Nitisastro</h3>
+                        <p class="font-sans text-sm text-mist leading-relaxed line-clamp-4">Arsitek Utama Ekonomi Orde Baru. Mengeluarkan kebijakan Repelita (Rencana Pembangunan Lima Tahun) dan membuka lebar penanaman modal asing yang membentuk struktur industri hari ini.</p>
+                    </div>
+                </div>
+
+                <div class="tokoh-card bg-white border border-[#E5DAC8] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all" data-era="reformasi">
+                    <div class="w-full h-48 bg-charcoal flex items-center justify-center">
+                        <span class="font-serif italic text-white/30 text-2xl">Modern</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="inline-block px-2 py-1 bg-parchment text-charcoal text-[10px] uppercase font-mono tracking-widest rounded mb-4">Reformasi</div>
+                        <h3 class="font-display text-2xl text-charcoal mb-2">Sri Mulyani Indrawati</h3>
+                        <p class="font-sans text-sm text-mist leading-relaxed line-clamp-4">Menjabat Menteri Keuangan terlama pasca-reformasi. Aktor sentral penyeimbang defisit APBN, penyelamat dari efek Subprime Mortgage 2008, hingga mengarahkan manuver fiskal selama resesi Pandemi 2020.</p>
+                    </div>
+                </div>
+
+                <div class="tokoh-card bg-white border border-[#E5DAC8] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all" data-era="reformasi">
+                    <div class="w-full h-48 bg-charcoal flex items-center justify-center">
+                        <span class="font-serif italic text-white/30 text-2xl">Bank Sentral</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="inline-block px-2 py-1 bg-parchment text-charcoal text-[10px] uppercase font-mono tracking-widest rounded mb-4">Reformasi</div>
+                        <h3 class="font-display text-2xl text-charcoal mb-2">Perry Warjiyo</h3>
+                        <p class="font-sans text-sm text-mist leading-relaxed line-clamp-4">Gubernur BI yang mengatur ritme suku bunga acuan (BI Rate) pasca pandemi. Keputusannya inilah yang langsung mengubah bunga KPR para pejuang rumah pertama Gen Z.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </main>
 
-    <script type="module" src="/src/js/pages/dashboard.js"></script>
-</body>
+    <div id="footer-root"></div>
 
+    <script type="module" src="/src/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const selectFilter = document.getElementById('tokoh-filter');
+            const cards = document.querySelectorAll('.tokoh-card');
+
+            selectFilter.addEventListener('change', (e) => {
+                const term = e.target.value;
+                
+                cards.forEach(card => {
+                    const era = card.getAttribute('data-era');
+                    if (term === 'all' || term === era) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
 </html>

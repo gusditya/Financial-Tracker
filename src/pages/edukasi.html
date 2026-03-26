@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edukasi Finansial - REALIGN</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Lora:ital,wght@0,400;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-parchment text-charcoal font-sans antialiased flex flex-col min-h-screen">
+    
+    <div id="navbar-root"></div>
+
+    <main class="flex-grow pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-charcoal/10 text-xs font-mono uppercase tracking-widest text-mist mb-4">
+                    <i data-lucide="book-open" class="w-4 h-4 text-charcoal"></i> Pustaka Edukasi
+                </span>
+                <h1 class="font-display text-4xl md:text-5xl text-charcoal mb-6">Mulai Melek Finansial</h1>
+                <p class="font-serif italic text-xl text-mist max-w-2xl mx-auto">Kurikulum mandiri tanpa filter instusional. Pilih materi sesuai tingkat transisimu.</p>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="flex justify-center mb-12 border-b border-charcoal/10" data-aos="fade-in">
+                <div class="flex gap-8">
+                    <button class="edu-tab font-mono text-sm tracking-widest uppercase pb-4 border-b-2 border-charcoal text-charcoal transition-colors hover:text-charcoal" data-target="pemula">
+                        Fase Pemula
+                    </button>
+                    <button class="edu-tab font-mono text-sm tracking-widest uppercase pb-4 border-b-2 border-transparent text-mist hover:text-charcoal transition-colors" data-target="mahasiswa">
+                        Fase Mahasiswa
+                    </button>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div id="tab-content-pemula" class="edu-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
+                
+                <a href="#" class="group block bg-white border border-[#E5DAC8] p-8 rounded-2xl hover:border-bullion hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-charcoal/5 rounded-xl flex justify-center items-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="piggy-bank" class="w-6 h-6 text-charcoal"></i>
+                    </div>
+                    <h3 class="font-display text-xl text-charcoal mb-3">Mitos Dana Darurat</h3>
+                    <p class="font-sans text-sm text-mist leading-relaxed line-clamp-3">Berapa sebenarnya dana darurat yang logis untuk UMP 5 juta saat biaya pengobatan naik gila-gilaan?</p>
+                </a>
+
+                <a href="#" class="group block bg-white border border-[#E5DAC8] p-8 rounded-2xl hover:border-surplus hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-surplus/10 rounded-xl flex justify-center items-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="line-chart" class="w-6 h-6 text-surplus"></i>
+                    </div>
+                    <h3 class="font-display text-xl text-charcoal mb-3">Reksadana Pasar Uang 101</h3>
+                    <p class="font-sans text-sm text-mist leading-relaxed line-clamp-3">Mengapa menyimpan uang di rekening tabungan konvensional adalah cara paling lambat untuk miskin.</p>
+                </a>
+
+                <a href="#" class="group block bg-white border border-[#E5DAC8] p-8 rounded-2xl hover:border-deficit hover:shadow-md transition-all">
+                    <div class="w-12 h-12 bg-deficit/10 rounded-xl flex justify-center items-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="alert-circle" class="w-6 h-6 text-deficit"></i>
+                    </div>
+                    <h3 class="font-display text-xl text-charcoal mb-3">Jebakan Paylater</h3>
+                    <p class="font-sans text-sm text-mist leading-relaxed line-clamp-3">Membongkar struktur bunga berbunga dari Buy Now Pay Later yang menarget gengsi sosial Gen Z.</p>
+                </a>
+            </div>
+
+            <div id="tab-content-mahasiswa" class="edu-content hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
+                
+                <a href="#" class="group block bg-charcoal p-8 rounded-2xl hover:bg-[#1A1A18] transition-all">
+                    <div class="w-12 h-12 bg-bullion/10 rounded-xl flex justify-center items-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="briefcase" class="w-6 h-6 text-bullion"></i>
+                    </div>
+                    <h3 class="font-display text-xl text-parchment mb-3">Skill Gig Economy Internasional</h3>
+                    <p class="font-sans text-sm text-parchment/60 leading-relaxed line-clamp-3">Cara menembus platform Upwork & Fiverr dan dibayar dalam USD untuk lepas dari jerat gaji regional.</p>
+                </a>
+
+                <a href="#" class="group block bg-charcoal p-8 rounded-2xl hover:bg-[#1A1A18] transition-all">
+                    <div class="w-12 h-12 bg-surplus/10 rounded-xl flex justify-center items-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="bar-chart-2" class="w-6 h-6 text-surplus"></i>
+                    </div>
+                    <h3 class="font-display text-xl text-parchment mb-3">Portofolio Saham Defensif</h3>
+                    <p class="font-sans text-sm text-parchment/60 leading-relaxed line-clamp-3">Menganalisis saham BUMN dan Consumer Goods yang anti-resesi untuk benteng investasi pertamamu.</p>
+                </a>
+
+                <a href="#" class="group block bg-charcoal p-8 rounded-2xl hover:bg-[#1A1A18] transition-all">
+                    <div class="w-12 h-12 bg-deficit/10 rounded-xl flex justify-center items-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="repeat" class="w-6 h-6 text-deficit"></i>
+                    </div>
+                    <h3 class="font-display text-xl text-parchment mb-3">Membangun Side-Hustle</h3>
+                    <p class="font-sans text-sm text-parchment/60 leading-relaxed line-clamp-3">Manajemen waktu antara skripsi dan merintis sumber penghasilan kedua berbasis digital asset.</p>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="footer-root"></div>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+        // Vanilla JS Tab System
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.edu-tab');
+            const contents = document.querySelectorAll('.edu-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const target = tab.getAttribute('data-target');
+                    
+                    // Reset Tabs
+                    tabs.forEach(t => {
+                        t.classList.remove('border-charcoal', 'text-charcoal');
+                        t.classList.add('border-transparent', 'text-mist');
+                    });
+                    
+                    // Set Active Tab
+                    tab.classList.remove('border-transparent', 'text-mist');
+                    tab.classList.add('border-charcoal', 'text-charcoal');
+
+                    // Hide All Content
+                    contents.forEach(c => c.classList.add('hidden'));
+
+                    // Show Target Content
+                    document.getElementById(`tab-content-${target}`).classList.remove('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

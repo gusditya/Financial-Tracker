@@ -1,7 +1,7 @@
 {
-  "name": "arthanavigate-financial-tracker",
-  "private": true,
+  "name": "realign",
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,14 +10,15 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.27",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.2.1",
-    "vite": "^7.3.1"
+    "postcss": "^8.5.8",
+    "tailwindcss": "^3.4.19",
+    "vite": "^8.0.1"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.1",
     "aos": "^2.3.4",
     "chart.js": "^4.5.1",
-    "lucide": "^0.577.0"
+    "chartjs-plugin-annotation": "^3.1.0",
+    "countup.js": "^2.10.0",
+    "lucide": "^1.7.0"
   }
 }

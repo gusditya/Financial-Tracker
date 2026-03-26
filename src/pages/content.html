@@ -19,41 +19,11 @@
     <div id="navbar-root"></div>
 
     <main class="overflow-hidden">
-        <!-- ==========================================
-             S00 HERO SECTION: THE HOOK 
-             ========================================== -->
-        <section id="s00-hero" class="relative min-h-[90vh] flex flex-col justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
-            <div class="text-center max-w-4xl mx-auto" data-aos="fade-up">
-                <h1 class="font-serif text-[4rem] sm:text-[6rem] leading-none text-deficit mb-6" id="hero-countup">
-                    0
-                </h1>
-                <p class="font-sans text-xl sm:text-2xl text-charcoal font-medium mb-8">
-                    Gen Z <span class="text-mist">tidak bekerja, tidak sekolah, tidak berlatih.</span>
-                </p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto text-left mt-16">
-                    <div class="p-6 border border-charcoal/10 rounded-xl bg-white shadow-sm" data-aos="fade-up" data-aos-delay="100">
-                        <div class="font-serif text-4xl text-charcoal mb-2">50,29%</div>
-                        <p class="font-sans text-charcoal">Pengangguran nasional adalah Gen Z.</p>
-                        <p class="font-mono text-xs text-mist mt-3">Sumber: BPS + LPEM UI</p>
-                    </div>
-                    <div class="p-6 border border-charcoal/10 rounded-xl bg-white shadow-sm" data-aos="fade-up" data-aos-delay="200">
-                        <div class="font-serif text-4xl text-deficit mb-2">4,76%</div>
-                        <p class="font-sans text-charcoal">Inflasi YoY — tertinggi sejak Mar 2023.</p>
-                        <p class="font-mono text-xs text-mist mt-3">Sumber: BPS, 2 Mar 2026</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="absolute bottom-10 inset-x-0 flex justify-center animate-bounce opacity-50">
-                <svg class="w-6 h-6 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-            </div>
-        </section>
 
         <!-- ==========================================
              S01 PROMISE VS REALITY 
              ========================================== -->
-        <section id="s01-promise" class="py-24 bg-white border-y border-charcoal/10">
+        <section id="promise" class="py-24 bg-white border-y border-charcoal/10">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <h2 class="font-display text-4xl text-charcoal mb-4">Yang Dijanjikan vs Yang Terjadi</h2>
@@ -103,7 +73,7 @@
         <!-- ==========================================
              S02 THE DATA SPEAKS (CHARTS) 
              ========================================== -->
-        <section id="s02-data" class="py-24 bg-parchment">
+        <section id="data" class="py-24 bg-parchment">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 <!-- Chart 1: Kelas Menengah -->
@@ -159,7 +129,7 @@
         <!-- ==========================================
              S03 KALKULATOR INTERAKTIF 
              ========================================== -->
-        <section id="s03-kalkulator" class="py-24 bg-white border-y border-charcoal/10">
+        <section id="kalkulator" class="py-24 bg-white border-y border-charcoal/10">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-charcoal/10 text-xs font-mono uppercase tracking-widest text-mist mb-4">
@@ -214,8 +184,32 @@
                                 Untuk mencapai <span id="calc-dp-target" class="font-bold">Rp0</span> <br>
                                 (DP 20% <span id="calc-city-target">Jakarta</span>)
                             </p>
+
+                            <!-- Boomer vs GenZ Visual Comparison Bar -->
+                            <div class="flex flex-col gap-3 my-8 w-full max-w-[90%] mx-auto">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-14 text-xs font-mono tracking-widest text-left text-mist uppercase">Boomer</span>
+                                    <div class="flex-1 max-w-[100%] bg-parchment h-4 rounded-r-lg relative overflow-hidden">
+                                        <div class="absolute left-0 top-0 bottom-0 bg-surplus rounded-r-lg" style="width: 4%"></div>
+                                    </div>
+                                    <span class="w-12 text-left text-xs font-bold text-surplus">~4 thn</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="w-14 text-xs font-mono tracking-widest text-left text-mist uppercase">Kamu</span>
+                                    <div class="flex-1 max-w-[100%] bg-parchment h-4 rounded-r-lg relative overflow-hidden">
+                                        <div id="calc-kamu-bar" class="absolute left-0 top-0 bottom-0 bg-deficit rounded-r-lg transition-all duration-700 ease-out" style="width: 0%"></div>
+                                    </div>
+                                    <span id="calc-kamu-label" class="w-12 text-left text-xs font-bold text-deficit transition-colors duration-300">0 thn</span>
+                                </div>
+                            </div>
+
+                            <!-- Share Button -->
+                            <button id="calc-share-btn" class="w-full mt-2 mb-6 flex items-center justify-center gap-2 py-3 px-4 bg-charcoal text-parchment rounded-xl hover:bg-bullion transition-colors">
+                                <i data-lucide="copy" class="w-4 h-4"></i>
+                                <span id="calc-share-text">Salin Hasil</span>
+                            </button>
                             
-                            <div class="bg-parchment/50 border border-charcoal/5 rounded-lg p-4 mt-6">
+                            <div class="bg-parchment/50 border border-charcoal/5 rounded-lg p-4 mt-2">
                                 <p class="font-sans text-sm text-mist leading-relaxed italic">
                                     *Model ini menghitung inflasi harga properti 8%/tahun, dan daya beli tabunganmu digerus 4,76%/tahun. Generasi orang tuamu ("Boomer") rata-rata butuh <strong class="text-charcoal not-italic font-mono">4 tahun</strong> menabung di usia yang sama.
                                 </p>
@@ -229,7 +223,7 @@
         <!-- ==========================================
              S04 INTERACTIVE QUIZ
              ========================================== -->
-        <section id="s04-quiz" class="py-24 bg-charcoal text-parchment overflow-hidden">
+        <section id="quiz" class="py-24 bg-charcoal text-parchment overflow-hidden">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12" data-aos="fade-up">
                     <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-parchment/20 text-xs font-mono uppercase tracking-widest text-parchment/70 mb-4">
@@ -256,18 +250,28 @@
                     </div>
 
                     <!-- Result Area (Hidden initially) -->
-                    <div id="quiz-result-area" class="hidden text-center animate-fade-in">
-                        <h3 class="font-serif text-3xl md:text-4xl text-bullion mb-2" id="quiz-result-tagline">Result</h3>
-                        <p class="font-sans text-parchment/90 mb-8 max-w-lg mx-auto leading-relaxed" id="quiz-result-desc">Description</p>
-                        
-                        <div class="bg-white/10 rounded-xl p-5 border border-white/5 mb-8">
-                            <p class="font-sans font-medium text-parchment uppercase tracking-widest text-sm mb-2">Langkah Konkret Mumpung 2026</p>
-                            <p class="font-sans text-parchment/80" id="quiz-result-action">Action steps</p>
-                        </div>
+                    <div id="quiz-result-area" class="hidden text-left animate-fade-in w-full max-w-2xl mx-auto">
+                        <div id="quiz-result-card" class="p-8 md:p-10 rounded-2xl border-l-[6px] shadow-lg mb-6 flex flex-col items-center text-center transition-all bg-white relative">
+                            <div id="quiz-result-icon" class="w-16 h-16 rounded-full flex items-center justify-center mb-6"></div>
+                            
+                            <h3 class="font-serif text-3xl md:text-4xl text-charcoal mb-4" id="quiz-result-tagline">Result Tagline</h3>
+                            <p class="font-sans text-charcoal/80 mb-8 leading-relaxed max-w-xl mx-auto" id="quiz-result-desc">Description of your outcome.</p>
+                            
+                            <div class="bg-white/60 rounded-xl p-6 border border-charcoal/5 w-full mb-8 relative shadow-sm">
+                                <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-charcoal text-parchment text-[10px] font-mono uppercase tracking-widest px-3 py-1 rounded-full">Langkah Konkret</span>
+                                <p class="font-sans text-charcoal/90 text-sm mt-3" id="quiz-result-action">Action steps to take</p>
+                            </div>
 
-                        <button id="quiz-restart" class="font-display font-semibold border-b border-parchment pb-1 text-parchment hover:text-bullion hover:border-bullion transition-colors">
-                            Coba Ulang Kuis
-                        </button>
+                            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+                                <button id="quiz-share-btn" class="flex-1 sm:flex-none w-full sm:w-auto flex items-center justify-center gap-2 py-3 px-6 bg-charcoal text-parchment rounded-xl hover:bg-bullion transition-colors shadow-sm">
+                                    <i data-lucide="share" class="w-4 h-4"></i> 
+                                    <span id="quiz-share-text">Bagikan Hasilku</span>
+                                </button>
+                                <button id="quiz-restart" class="font-display font-semibold border-b border-charcoal/30 pb-1 mt-2 sm:mt-0 text-charcoal hover:text-mist transition-colors">
+                                    Coba Ulang Kuis
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -277,7 +281,7 @@
         <!-- ==========================================
              S05 ROOT CAUSE
              ========================================== -->
-        <section id="s05-rootcause" class="py-24 bg-parchment border-y border-charcoal/10">
+        <section id="rootcause" class="py-24 bg-parchment border-y border-charcoal/10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center md:text-left mb-16" data-aos="fade-up">
                     <h2 class="font-display text-4xl text-charcoal mb-4">Bukan Salahmu Semata</h2>
@@ -317,7 +321,7 @@
         <!-- ==========================================
              S-TIMELINE: SEJARAH INFLASI
              ========================================== -->
-        <section id="s-timeline" class="py-24 bg-white border-y border-charcoal/10">
+        <section id="timeline" class="py-24 bg-white border-y border-charcoal/10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-charcoal/10 text-xs font-mono uppercase tracking-widest text-mist mb-4">
@@ -347,7 +351,7 @@
         <!-- ==========================================
              S06 NOW WHAT?
              ========================================== -->
-        <section id="s06-nowwhat" class="py-24 bg-charcoal text-parchment">
+        <section id="nowwhat" class="py-24 bg-charcoal text-parchment">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16" data-aos="fade-up">
                     <h2 class="font-display text-5xl mb-6">Lalu, Apa Sekarang?</h2>
@@ -379,26 +383,8 @@
         </section>
     </main>
 
-    <!-- FOOTER: Methodology -->
-    <footer class="bg-charcoal border-t border-white/10 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left flex flex-col md:flex-row justify-between items-start gap-8">
-            <div class="max-w-md">
-                <div class="font-display font-semibold text-parchment text-2xl tracking-tight mb-4">REALIGN</div>
-                <p class="font-serif italic text-parchment/50 text-sm mb-4">Editorial Data Journalism for Gen Z</p>
-                <p class="font-sans text-xs text-parchment/40 leading-relaxed">Dirancang untuk Kompetisi Web Design. Bertujuan meningkatkan literasi ekonomi makro melalui visualisasi data.</p>
-            </div>
-            
-            <div class="md:text-right">
-                <h4 class="font-mono text-xs uppercase tracking-widest text-parchment/70 mb-4">Metodologi & Sumber Data</h4>
-                <ul class="font-sans text-xs text-parchment/40 space-y-2">
-                    <li>Badan Pusat Statistik (BPS) 2019–2026</li>
-                    <li>Survei Angkatan Kerja Nasional (Sakernas) 2025</li>
-                    <li>Lembaga Penyelidikan Ekonomi dan Masyarakat (LPEM) UI</li>
-                    <li>Bank Indonesia & Survei Nasional Literasi Inklusi Keuangan (SNLIK) OJK</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer Injector -->
+    <div id="footer-root"></div>
 
     <script type="module" src="/src/main.js"></script>
 </body>
