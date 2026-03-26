@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siklus Krisis - REALIGN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Lora:ital,wght@0,400;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-parchment text-charcoal font-sans antialiased flex flex-col min-h-screen">
+    
+    <div id="navbar-root"></div>
+
+    <main class="flex-grow pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="/src/pages/content.html#timeline" class="inline-flex items-center gap-2 text-mist hover:text-charcoal transition-colors text-sm font-mono uppercase tracking-widest mb-8">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Kembali ke Timeline Interaktif
+            </a>
+            
+            <h1 class="font-display text-4xl md:text-5xl text-charcoal mb-6">Pola Krisis Moneter Indonesia</h1>
+            <p class="font-serif italic text-xl text-mist mb-12">Sejarah berulang. Yang berubah hanya siapa yang dikorbankan.</p>
+
+            <div class="prose prose-lg prose-charcoal max-w-none font-sans">
+                <p>Krisis ekonomi bukanlah anomali, melainkan siklus berulang akibat rentannya fondasi fiskal dan pergantian rezim. Untuk Gen Z, memahami pola ini adalah kunci navigasi karier, karena keruntuhan makro selalu diiringi PHK massal (layoff) dan lonjakan biaya hidup seketika.</p>
+                
+                <div class="mt-12 space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-charcoal/20 before:to-transparent">
+                    
+                    <!-- Crisis 1966 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active" data-aos="fade-up">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-parchment bg-deficit shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                            <i data-lucide="skull" class="w-4 h-4 text-white"></i>
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl border border-charcoal/10 shadow-sm transition-transform hover:-translate-y-1">
+                            <h3 class="font-display text-2xl text-charcoal m-0">Sanering 1966</h3>
+                            <div class="font-mono text-xs text-deficit tracking-widest my-2">INFLASI: 650%</div>
+                            <p class="text-charcoal/70 text-sm m-0">Pemerintah Orde Lama memotong nilai mata uang. Tabungan masyarakat hangus dalam semalam. Kegagalan fiskal yang meruntuhkan satu orde politik.</p>
+                        </div>
+                    </div>
+
+                    <!-- Crisis 1998 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active" data-aos="fade-up">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-parchment bg-deficit shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                            <i data-lucide="trending-down" class="w-4 h-4 text-white"></i>
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl border border-charcoal/10 shadow-sm transition-transform hover:-translate-y-1">
+                            <h3 class="font-display text-2xl text-charcoal m-0">Krisis Moneter 1998</h3>
+                            <div class="font-mono text-xs text-deficit tracking-widest my-2">INFLASI: 77% | KURS: RP 16.000/USD</div>
+                            <p class="text-charcoal/70 text-sm m-0">Sektor perbankan kolaps. Utang luar negeri swasta meledak. PHK di mana-mana dan kerusuhan massal meletus, sekaligus menandai akhir dari otoritarianisme Orde Baru.</p>
+                        </div>
+                    </div>
+
+                    <!-- Crisis 2008 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active" data-aos="fade-up">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-parchment bg-bullion shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                            <i data-lucide="globe" class="w-4 h-4 text-white"></i>
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl border border-charcoal/10 shadow-sm transition-transform hover:-translate-y-1">
+                            <h3 class="font-display text-2xl text-charcoal m-0">Krisis Subprime 2008</h3>
+                            <div class="font-mono text-xs text-bullion tracking-widest my-2">DAMPAK: IHSG ANJLOK 50%</div>
+                            <p class="text-charcoal/70 text-sm m-0">Imbas kejatuhan Lehman Brothers di AS. Indonesia relatif selamat karena basis konsumsi domestik yang kuat, tapi menyadarkan pentingnya dana cadangan devisa.</p>
+                        </div>
+                    </div>
+
+                    <!-- Crisis 2020 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active" data-aos="fade-up">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-parchment bg-mist shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                            <i data-lucide="virus" class="w-4 h-4 text-white"></i>
+                        </div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-6 rounded-xl border border-charcoal/10 shadow-sm transition-transform hover:-translate-y-1">
+                            <h3 class="font-display text-2xl text-charcoal m-0">Resesi Pandemi 2020</h3>
+                            <div class="font-mono text-xs text-mist tracking-widest my-2">PERTUMBUHAN: -2,07%</div>
+                            <p class="text-charcoal/70 text-sm m-0">Rantai pasok terhenti secara tiba-tiba. Melahirkan "Tech Bubble" singkat yang kemudian pecah menjadi gelombang Layoff Startup berkepanjangan pada 2022-2024.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-charcoal text-parchment p-8 rounded-2xl mt-16 text-center" data-aos="zoom-in">
+                    <h3 class="font-display text-2xl mb-4 text-parchment">Cetak Biru Pertahanan Gen Z</h3>
+                    <p class="text-parchment/80 mb-6 max-w-lg mx-auto leading-relaxed">Pola ini membuktikan uang "kas" bukan aset mutlak saat hiper-inflasi terjadi. Membangun portofolio skill internasional, membatasi hutang konsumtif, dan likuiditas adalah kunci menunggangi gelombang crash berikutnya.</p>
+                    <a href="/src/pages/content.html#nowwhat" class="inline-flex items-center justify-center px-6 py-3 bg-parchment text-charcoal font-medium rounded-full hover:bg-bullion hover:text-white transition-colors">
+                        Pelajari Langkah Antisipasi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-root"></div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

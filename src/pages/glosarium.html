@@ -1,89 +1,114 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
-
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glosarium Finansial | ArthaNavigate</title>
-    <meta name="description"
-        content="Kamus lengkap istilah finansial dan ekonomi Indonesia — cari definisi, contoh, dan penjelasan mudah dipahami.">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Glosarium Ekonomi - REALIGN</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Lora:ital,wght@0,400;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
 </head>
-
-<body class="bg-parchment text-charcoal selection:bg-bullion selection:text-white font-sans">
-
+<body class="bg-parchment text-charcoal font-sans antialiased flex flex-col min-h-screen">
+    
     <div id="navbar-root"></div>
 
-    <main class="main-content">
-        <!-- ========== HERO ========== -->
-        <section class="relative pt-32 pb-16 bg-white overflow-hidden">
-            <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
-            <div class="absolute top-20 right-10 w-64 h-64 bg-emerald-200/20 rounded-full blur-3xl"></div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <div class="max-w-3xl" >
-                    <a href="../../index.html"
-                        class="inline-flex items-center gap-2 text-xs font-bold text-bullion uppercase tracking-widest mb-8 hover:gap-3 transition-all">
-                        <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                        </svg>
-                        Kembali ke Dashboard
-                    </a>
-                    <div class="section-label mb-4" style="margin-left:0;">
-                        <span class="w-2 h-2 bg-bullion rounded-full animate-pulse"></span>
-                        Referensi &mdash; Glosarium Finansial
-                    </div>
-                    <h1 class="font-serif text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
-                        Glosarium <span class="italic font-normal text-bullion">Finansial</span>
-                    </h1>
-                    <p class="text-lg text-slate-500 max-w-xl leading-relaxed mb-8">
-                        Kamus lengkap istilah keuangan dan ekonomi Indonesia. Cari istilah, pahami definisinya, dan
-                        lihat contoh praktis.
-                    </p>
-                    <!-- Search -->
-                    <div class="relative max-w-xl">
-                        <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                        <input type="text" id="glos-search" class="harbor-input pl-12 pr-4 py-4 text-base"
-                            placeholder="Cari istilah... (contoh: inflasi, saham, BPJS)" />
-                    </div>
-                </div>
+    <main class="flex-grow pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-charcoal/10 text-xs font-mono uppercase tracking-widest text-mist mb-4">
+                    <i data-lucide="book-open" class="w-4 h-4 text-charcoal"></i> Glosarium
+                </span>
+                <h1 class="font-display text-4xl md:text-5xl text-charcoal mb-6">Kamus Ekonomi Gen Z</h1>
+                <p class="font-serif italic text-xl text-mist max-w-2xl mx-auto">Istilah-istilah makro yang sengaja dibuat rumit, disederhanakan agar kamu paham regulasi yang mempengaruhimu.</p>
             </div>
-        </section>
 
-        <!-- ========== CATEGORY FILTER ========== -->
-        <section class="bg-white border-b border-slate-100 sticky top-0 z-30">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-                <div class="flex items-center gap-3 overflow-x-auto pb-1" id="glos-categories">
-                    <button
-                        class="glos-cat-btn active px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all"
-                        data-cat="all">Semua</button>
-                </div>
-                <div class="mt-3 text-xs text-slate-400" id="glos-count">Menampilkan 0 istilah</div>
+            <!-- Search Bar -->
+            <div class="max-w-2xl mx-auto mb-16 relative" data-aos="fade-up" data-aos-delay="100">
+                <i data-lucide="search" class="absolute left-6 top-1/2 -translate-y-1/2 w-6 h-6 text-mist"></i>
+                <input type="text" id="glos-search" placeholder="Cari istilah... (contoh: Inflasi, Bunga Majemuk)" class="w-full bg-white border border-charcoal/10 rounded-full pl-16 pr-8 py-5 font-display text-lg text-charcoal focus:ring-2 focus:ring-charcoal focus:outline-none shadow-sm transition-shadow">
             </div>
-        </section>
 
-        <!-- ========== TERMS GRID ========== -->
-        <section class="py-16 bg-parchment">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="glos-grid">
+            <!-- Grid Glossary -->
+            <div id="glos-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="200">
+                
+                <div class="glos-card bg-white border border-[#E5DAC8] p-8 rounded-2xl hover:shadow-md transition-shadow">
+                    <h3 class="glos-title font-display text-2xl text-charcoal mb-3">Inflasi</h3>
+                    <p class="font-sans text-sm text-mist leading-relaxed m-0">Penurunan nilai beli uang dari waktu ke waktu. Artinya, Rp 50.000 hari ini akan mendapat lebih sedikit barang di masa depan.</p>
                 </div>
-                <div id="glos-empty" class="hidden text-center py-20">
-                    <div class="text-5xl mb-4">🔍</div>
-                    <h3 class="font-serif text-xl font-bold mb-2">Tidak Ditemukan</h3>
-                    <p class="text-slate-500 text-sm">Coba kata kunci lain atau pilih kategori berbeda.</p>
+
+                <div class="glos-card bg-white border border-[#E5DAC8] p-8 rounded-2xl hover:shadow-md transition-shadow">
+                    <h3 class="glos-title font-display text-2xl text-charcoal mb-3">Bunga Majemuk</h3>
+                    <p class="font-sans text-sm text-mist leading-relaxed m-0">"Compound interest". Bunga yang dihitung tidak hanya dari modal awal, tapi juga dari akumulasi bunga sebelumnya. Bisa jadi pedang bermata dua (investasi vs pinjol).</p>
                 </div>
+
+                <div class="glos-card bg-white border border-[#E5DAC8] p-8 rounded-2xl hover:shadow-md transition-shadow">
+                    <h3 class="glos-title font-display text-2xl text-charcoal mb-3">Gini Ratio</h3>
+                    <p class="font-sans text-sm text-mist leading-relaxed m-0">Ukuran ketimpangan penghasilan suatu negara (0=merata sempurna, 1=timpang sempurna). Gen Z saat ini mewarisi angka Gini yang stagnan di level 0,38.</p>
+                </div>
+
+                <div class="glos-card bg-white border border-[#E5DAC8] p-8 rounded-2xl hover:shadow-md transition-shadow flex flex-col border-l-4 !border-l-deficit">
+                    <div class="text-[10px] font-mono text-deficit tracking-widest uppercase mb-1">REALIGN Core Concept</div>
+                    <h3 class="glos-title font-display text-2xl text-charcoal mb-3">Sandwich Generation</h3>
+                    <p class="font-sans text-sm text-mist leading-relaxed m-0">Pekerja dewasa muda abad 21 yang harus membiayai tiga generasi sekaligus: dirinya sendiri, anak-anaknya, dan orang tuanya karena ketiadaan jaminan pensiun yang solid.</p>
+                </div>
+
+                <div class="glos-card bg-white border border-[#E5DAC8] p-8 rounded-2xl hover:shadow-md transition-shadow">
+                    <h3 class="glos-title font-display text-2xl text-charcoal mb-3">Capital Gain</h3>
+                    <p class="font-sans text-sm text-mist leading-relaxed m-0">Keuntungan yang didapat saat harga jual suatu aset (saham, tanah, rumah) lebih tinggi daripada harga belinya.</p>
+                </div>
+
+                <div class="glos-card bg-white border border-[#E5DAC8] p-8 rounded-2xl hover:shadow-md transition-shadow">
+                    <h3 class="glos-title font-display text-2xl text-charcoal mb-3">Liquidity (Likuiditas)</h3>
+                    <p class="font-sans text-sm text-mist leading-relaxed m-0">Seberapa cepat sebuah aset bisa dicairkan menjadi uang tunai tanpa kehilangan nilai pasarnya. Deposito lebih likuid dari tanah.</p>
+                </div>
+
             </div>
-        </section>
+            
+            <!-- Empty State -->
+            <div id="glos-empty" class="hidden text-center py-24">
+                <i data-lucide="file-question" class="w-16 h-16 text-mist/30 mx-auto mb-4"></i>
+                <h3 class="font-display text-2xl text-charcoal mb-2">Istilah Tidak Ditemukan</h3>
+                <p class="font-sans text-mist">Coba kata kunci lain atau kirimkan saran ke tim REALIGN.</p>
+            </div>
 
-        <div id="footer-root"></div>
+        </div>
     </main>
 
-    <script type="module" src="/src/js/pages/glosarium.js"></script>
-</body>
+    <div id="footer-root"></div>
 
+    <script type="module" src="/src/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('glos-search');
+            const cards = document.querySelectorAll('.glos-card');
+            const emptyState = document.getElementById('glos-empty');
+
+            searchInput.addEventListener('input', (e) => {
+                const term = e.target.value.toLowerCase();
+                let hasVisible = false;
+
+                cards.forEach(card => {
+                    const title = card.querySelector('.glos-title').textContent.toLowerCase();
+                    const body = card.querySelector('p').textContent.toLowerCase();
+                    
+                    if (title.includes(term) || body.includes(term)) {
+                        card.style.display = 'flex';
+                        hasVisible = true;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                if (hasVisible) {
+                    emptyState.classList.add('hidden');
+                } else {
+                    emptyState.classList.remove('hidden');
+                }
+            });
+        });
+    </script>
+</body>
 </html>

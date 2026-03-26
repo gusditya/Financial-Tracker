@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-parchment: #F2EDE4;
+    --color-charcoal:  #2B2B28;
+    --color-deficit:   #C0392B;
+    --color-surplus:   #1E7B55;
+    --color-bullion:   #B8872A;
+    --color-mist:      #6E6E6A;
+  }
+  
+  body {
+    @apply bg-parchment text-charcoal font-sans antialiased selection:bg-bullion selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-medium tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center border-[1.5px] border-charcoal px-5 py-2 rounded-lg font-display font-semibold transition-all duration-150;
+  }
+  .btn-primary:hover {
+    @apply bg-charcoal text-parchment scale-[1.02] shadow-lg;
+  }
+}

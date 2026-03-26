@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REALIGN | Melihat ulang ekonomi dari sudut pandang generasimu</title>
+    
+    <!-- Google Fonts as per PRD -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Lora:ital,wght@0,400;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-parchment text-charcoal font-sans antialiased selection:bg-bullion selection:text-white">
+    
+    <!-- Navbar Injector -->
+    <div id="navbar-root"></div>
+
+    <main class="overflow-hidden">
+
+        <!-- ==========================================
+             S01 PROMISE VS REALITY 
+             ========================================== -->
+        <section id="promise" class="py-24 bg-white border-y border-charcoal/10">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="font-display text-4xl text-charcoal mb-4">Yang Dijanjikan vs Yang Terjadi</h2>
+                    <p class="font-sans text-lg text-mist max-w-2xl mx-auto">Narasi yang kita dengar sejak kecil berbeda jauh dengan realita ekonomi 2026.</p>
+                </div>
+
+                <div class="overflow-x-auto" data-aos="fade-up" data-aos-delay="150">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b-2 border-charcoal text-charcoal font-display text-lg">
+                                <th class="py-4 px-4 font-semibold">Yang Dijanjikan</th>
+                                <th class="py-4 px-4 font-semibold">Yang Terjadi</th>
+                                <th class="py-4 px-4 font-semibold text-mist text-sm">Data & Sumber</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-sans text-charcoal divide-y divide-charcoal/10">
+                            <tr class="hover:bg-parchment/50 transition-colors">
+                                <td class="py-5 px-4 font-medium">Rajin kuliah &rarr; dapat kerja bagus</td>
+                                <td class="py-5 px-4"><span class="text-deficit font-semibold">6,23%</span> sarjana menganggur — lebih tinggi dari lulusan SD (2,32%)</td>
+                                <td class="py-5 px-4 font-mono text-xs text-mist">Sakernas Feb 2025</td>
+                            </tr>
+                            <tr class="hover:bg-parchment/50 transition-colors">
+                                <td class="py-5 px-4 font-medium">Ekonomi tumbuh 5%</td>
+                                <td class="py-5 px-4"><span class="text-deficit font-semibold">10,63 juta</span> orang jatuh dari kelas menengah sejak 2019</td>
+                                <td class="py-5 px-4 font-mono text-xs text-mist">BPS + Mandiri Institute 2026</td>
+                            </tr>
+                            <tr class="hover:bg-parchment/50 transition-colors">
+                                <td class="py-5 px-4 font-medium">Nabung &rarr; bisa beli rumah</td>
+                                <td class="py-5 px-4">Butuh <span class="text-deficit font-semibold">15–29 tahun</span> menabung untuk DP di kota besar</td>
+                                <td class="py-5 px-4 font-mono text-xs text-mist">Kalkulasi BI + BPS 2025</td>
+                            </tr>
+                            <tr class="hover:bg-parchment/50 transition-colors">
+                                <td class="py-5 px-4 font-medium">Indonesia maju & merata</td>
+                                <td class="py-5 px-4">Gini 0,379 — <span class="text-deficit font-semibold">50,29%</span> pengangguran adalah Gen Z</td>
+                                <td class="py-5 px-4 font-mono text-xs text-mist">BPS + LPEM UI 2024</td>
+                            </tr>
+                            <tr class="hover:bg-parchment/50 transition-colors bg-deficit/5">
+                                <td class="py-5 px-4 font-medium">Melek keuangan = sejahtera</td>
+                                <td class="py-5 px-4">Literasi keuangan <span class="text-surplus font-semibold">66,46%</span> — tapi kelas menengah <span class="text-deficit font-semibold">tetap menyusut</span></td>
+                                <td class="py-5 px-4 font-mono text-xs text-mist">SNLIK OJK 2025 + BPS 2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             S02 THE DATA SPEAKS (CHARTS) 
+             ========================================== -->
+        <section id="data" class="py-24 bg-parchment">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Chart 1: Kelas Menengah -->
+                <div class="mb-32">
+                    <div class="text-center md:text-left mb-10" data-aos="fade-up">
+                        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-charcoal/10 text-xs font-mono uppercase tracking-widest text-mist mb-4">
+                            <span class="w-1.5 h-1.5 bg-deficit rounded-full"></span> Data 1
+                        </span>
+                        <h2 class="font-display text-4xl text-charcoal mb-4">Keruntuhan Kelas Menengah</h2>
+                        <p class="font-sans text-lg text-charcoal/70 max-w-3xl">Lebih dari 10,63 juta jiwa turun kelas sejak 2019. Kelas menengah kini hanya tersisa 16,6% dari total populasi Indonesia.</p>
+                    </div>
+                    <div class="bg-white border border-[#E5DAC8] rounded-xl p-4 sm:p-8 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-full h-[400px]">
+                            <canvas id="chartMiddleClass"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chart 2: Paradoks Pendidikan -->
+                <div class="mb-32">
+                    <div class="text-center md:text-right mb-10" data-aos="fade-up">
+                        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-charcoal/10 text-xs font-mono uppercase tracking-widest text-mist mb-4">
+                            <span class="w-1.5 h-1.5 bg-bullion rounded-full"></span> Data 2
+                        </span>
+                        <h2 class="font-display text-4xl text-charcoal mb-4">Paradoks Pendidikan Tinggi</h2>
+                        <p class="font-sans text-lg text-charcoal/70 max-w-3xl ml-auto">Makin tinggi pendidikan tidak menjamin makin mudah mencari kerja. Lulusan Sarjana dan SMK justru mendominasi angka pengangguran terbuka.</p>
+                    </div>
+                    <div class="bg-white border border-[#E5DAC8] rounded-xl p-4 sm:p-8 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-full h-[450px]">
+                            <canvas id="chartEducation"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chart 3: Harga Hidup vs Gaji -->
+                <div>
+                    <div class="text-center md:text-left mb-10" data-aos="fade-up">
+                        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-charcoal/10 text-xs font-mono uppercase tracking-widest text-mist mb-4">
+                            <span class="w-1.5 h-1.5 bg-deficit rounded-full animate-pulse"></span> Data 3
+                        </span>
+                        <h2 class="font-display text-4xl text-charcoal mb-4">Harga Hidup Meninggalkan Gaji</h2>
+                        <p class="font-sans text-lg text-charcoal/70 max-w-3xl">Gaji (UMP) naik rata-rata 600% dalam 20 tahun terakhir. Namun, biaya komponen dasar seperti properti dan pendidikan naik eksponensial hingga 2.300%.</p>
+                    </div>
+                    <div class="bg-white border border-[#E5DAC8] rounded-xl p-4 sm:p-8 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-full h-[450px]">
+                            <canvas id="chartLivingCost"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ==========================================
+             S03 KALKULATOR INTERAKTIF 
+             ========================================== -->
+        <section id="kalkulator" class="py-24 bg-white border-y border-charcoal/10">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-charcoal/10 text-xs font-mono uppercase tracking-widest text-mist mb-4">
+                        <svg class="w-4 h-4 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg> 
+                        Simulasi Riil
+                    </span>
+                    <h2 class="font-display text-4xl text-charcoal mb-4">Berapa Tahun Kamu Harus Menabung?</h2>
+                    <p class="font-sans text-lg text-mist max-w-2xl mx-auto">Masalah ini tidak hanya berupa grafik makro. Mari kita hitung apa dampaknya langsung ke mimpimu punya rumah.</p>
+                </div>
+
+                <div class="bg-parchment border border-[#E5DAC8] rounded-2xl p-6 md:p-12 shadow-sm" data-aos="fade-up" data-aos-delay="150">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        
+                        <!-- Input Control -->
+                        <div class="space-y-8">
+                            <div>
+                                <label for="calc-city" class="block font-sans text-sm font-bold text-charcoal uppercase tracking-widest mb-3">Pilih Kota Tujuan</label>
+                                <select id="calc-city" class="w-full bg-white border border-[#E5DAC8] font-display text-lg text-charcoal rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-bullion focus:border-transparent transition-all">
+                                    <!-- Options injected via JS -->
+                                </select>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between items-center mb-3">
+                                    <label for="calc-salary" class="font-sans text-sm font-bold text-charcoal uppercase tracking-widest">Gaji per Bulan</label>
+                                    <span id="calc-salary-val" class="font-mono font-medium text-bullion">Rp 5.000.000</span>
+                                </div>
+                                <input type="range" id="calc-salary" min="3000000" max="50000000" step="500000" value="5000000" class="w-full h-1.5 bg-[#E5DAC8] rounded-lg appearance-none cursor-pointer accent-charcoal">
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between items-center mb-3">
+                                    <label for="calc-saving" class="font-sans text-sm font-bold text-charcoal uppercase tracking-widest">Alokasi Tabungan DP</label>
+                                    <span id="calc-saving-val" class="font-mono font-medium text-bullion">20%</span>
+                                </div>
+                                <input type="range" id="calc-saving" min="5" max="60" step="1" value="20" class="w-full h-1.5 bg-[#E5DAC8] rounded-lg appearance-none cursor-pointer accent-charcoal">
+                            </div>
+                        </div>
+
+                        <!-- Otuput Result -->
+                        <div class="bg-white rounded-xl p-8 border border-[#E5DAC8] text-center relative overflow-hidden">
+                            <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-deficit/30 to-transparent"></div>
+                            
+                            <p class="font-sans text-sm text-mist uppercase tracking-widest mb-6">Waktu yang dibutuhkan</p>
+                            
+                            <div class="flex items-baseline justify-center gap-3 mb-6">
+                                <span id="calc-result" class="font-serif text-[5rem] leading-none text-deficit transition-all duration-300">0</span>
+                                <span class="font-display font-medium text-2xl text-charcoal">Tahun</span>
+                            </div>
+                            
+                            <p class="font-sans text-charcoal leading-relaxed mb-4">
+                                Untuk mencapai <span id="calc-dp-target" class="font-bold">Rp0</span> <br>
+                                (DP 20% <span id="calc-city-target">Jakarta</span>)
+                            </p>
+
+                            <!-- Boomer vs GenZ Visual Comparison Bar -->
+                            <div class="flex flex-col gap-3 my-8 w-full max-w-[90%] mx-auto">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-14 text-xs font-mono tracking-widest text-left text-mist uppercase">Boomer</span>
+                                    <div class="flex-1 max-w-[100%] bg-parchment h-4 rounded-r-lg relative overflow-hidden">
+                                        <div class="absolute left-0 top-0 bottom-0 bg-surplus rounded-r-lg" style="width: 4%"></div>
+                                    </div>
+                                    <span class="w-12 text-left text-xs font-bold text-surplus">~4 thn</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="w-14 text-xs font-mono tracking-widest text-left text-mist uppercase">Kamu</span>
+                                    <div class="flex-1 max-w-[100%] bg-parchment h-4 rounded-r-lg relative overflow-hidden">
+                                        <div id="calc-kamu-bar" class="absolute left-0 top-0 bottom-0 bg-deficit rounded-r-lg transition-all duration-700 ease-out" style="width: 0%"></div>
+                                    </div>
+                                    <span id="calc-kamu-label" class="w-12 text-left text-xs font-bold text-deficit transition-colors duration-300">0 thn</span>
+                                </div>
+                            </div>
+
+                            <!-- Share Button -->
+                            <button id="calc-share-btn" class="w-full mt-2 mb-6 flex items-center justify-center gap-2 py-3 px-4 bg-charcoal text-parchment rounded-xl hover:bg-bullion transition-colors">
+                                <i data-lucide="copy" class="w-4 h-4"></i>
+                                <span id="calc-share-text">Salin Hasil</span>
+                            </button>
+                            
+                            <div class="bg-parchment/50 border border-charcoal/5 rounded-lg p-4 mt-2">
+                                <p class="font-sans text-sm text-mist leading-relaxed italic">
+                                    *Model ini menghitung inflasi harga properti 8%/tahun, dan daya beli tabunganmu digerus 4,76%/tahun. Generasi orang tuamu ("Boomer") rata-rata butuh <strong class="text-charcoal not-italic font-mono">4 tahun</strong> menabung di usia yang sama.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             S04 INTERACTIVE QUIZ
+             ========================================== -->
+        <section id="quiz" class="py-24 bg-charcoal text-parchment overflow-hidden">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-parchment/20 text-xs font-mono uppercase tracking-widest text-parchment/70 mb-4">
+                        <span class="w-1.5 h-1.5 bg-bullion rounded-full"></span> Asesmen Pribadi
+                    </span>
+                    <h2 class="font-display text-4xl mb-4">Seberapa Siap Ekonomimu?</h2>
+                    <p class="font-sans text-lg text-parchment/70">Jawab 5 pertanyaan cepat untuk melihat posisimu di tengah turbulensi ekonomi Gen Z saat ini.</p>
+                </div>
+
+                <!-- Quiz Container -->
+                <div id="quiz-container" class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-10 relative" data-aos="fade-up" data-aos-delay="100">
+                    
+                    <!-- Progress Bar -->
+                    <div id="quiz-progress-container" class="w-full bg-white/10 rounded-full h-1.5 mb-8 overflow-hidden">
+                        <div id="quiz-progress-bar" class="bg-bullion h-1.5 rounded-full transition-all duration-500 w-[20%]"></div>
+                    </div>
+
+                    <!-- Question Area -->
+                    <div id="quiz-question-area" class="min-h-[250px] relative transition-transform duration-300">
+                        <h3 id="quiz-question-text" class="font-display text-2xl md:text-3xl leading-snug mb-8">Loading question...</h3>
+                        <div id="quiz-options" class="flex flex-col gap-3">
+                            <!-- Options injected here -->
+                        </div>
+                    </div>
+
+                    <!-- Result Area (Hidden initially) -->
+                    <div id="quiz-result-area" class="hidden text-left animate-fade-in w-full max-w-2xl mx-auto">
+                        <div id="quiz-result-card" class="p-8 md:p-10 rounded-2xl border-l-[6px] shadow-lg mb-6 flex flex-col items-center text-center transition-all bg-white relative">
+                            <div id="quiz-result-icon" class="w-16 h-16 rounded-full flex items-center justify-center mb-6"></div>
+                            
+                            <h3 class="font-serif text-3xl md:text-4xl text-charcoal mb-4" id="quiz-result-tagline">Result Tagline</h3>
+                            <p class="font-sans text-charcoal/80 mb-8 leading-relaxed max-w-xl mx-auto" id="quiz-result-desc">Description of your outcome.</p>
+                            
+                            <div class="bg-white/60 rounded-xl p-6 border border-charcoal/5 w-full mb-8 relative shadow-sm">
+                                <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-charcoal text-parchment text-[10px] font-mono uppercase tracking-widest px-3 py-1 rounded-full">Langkah Konkret</span>
+                                <p class="font-sans text-charcoal/90 text-sm mt-3" id="quiz-result-action">Action steps to take</p>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+                                <button id="quiz-share-btn" class="flex-1 sm:flex-none w-full sm:w-auto flex items-center justify-center gap-2 py-3 px-6 bg-charcoal text-parchment rounded-xl hover:bg-bullion transition-colors shadow-sm">
+                                    <i data-lucide="share" class="w-4 h-4"></i> 
+                                    <span id="quiz-share-text">Bagikan Hasilku</span>
+                                </button>
+                                <button id="quiz-restart" class="font-display font-semibold border-b border-charcoal/30 pb-1 mt-2 sm:mt-0 text-charcoal hover:text-mist transition-colors">
+                                    Coba Ulang Kuis
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             S05 ROOT CAUSE
+             ========================================== -->
+        <section id="rootcause" class="py-24 bg-parchment border-y border-charcoal/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center md:text-left mb-16" data-aos="fade-up">
+                    <h2 class="font-display text-4xl text-charcoal mb-4">Bukan Salahmu Semata</h2>
+                    <p class="font-sans text-lg text-charcoal/70 max-w-3xl">Ada kegagalan struktural yang membuat Gen Z menanggung beban ekonomi lebih berat dibanding generasi sebelumnya pada usia yang sama.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Cause 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-[#E5DAC8] hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 bg-deficit/10 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-deficit" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        </div>
+                        <h3 class="font-display text-xl text-charcoal font-semibold mb-3">Inflasi Aset Meroket</h3>
+                        <p class="font-sans text-mist leading-relaxed">Gaji UMP diatur agar naik perlahan (bahkan di bawah inflasi), tapi instrumen investasi dan properti dibiarkan naik mengikuti spekulasi pasar liar.</p>
+                    </div>
+
+                    <!-- Cause 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-[#E5DAC8] hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 bg-mist/10 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                        </div>
+                        <h3 class="font-display text-xl text-charcoal font-semibold mb-3">Gap Pendidikan & Industri</h3>
+                        <p class="font-sans text-mist leading-relaxed">Kurikulum yang tidak relevan menghasilkan jutaan "sarjana kertas". Industri berkembang ke arah tech & AI, universitas masih mencetak admin.</p>
+                    </div>
+
+                    <!-- Cause 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-[#E5DAC8] hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-12 h-12 bg-charcoal/10 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <h3 class="font-display text-xl text-charcoal font-semibold mb-3">"Pajak" Tak Terlihat</h3>
+                        <p class="font-sans text-mist leading-relaxed">Beban Sandwich Generation merawat lansia seiring life-expectancy naik, ditambah potongan BPJS, Tapera, dan PPN 12% yang menggerus sirkulasi uang.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             S-TIMELINE: SEJARAH INFLASI
+             ========================================== -->
+        <section id="timeline" class="py-24 bg-white border-y border-charcoal/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-charcoal/10 text-xs font-mono uppercase tracking-widest text-mist mb-4">
+                        <span class="w-1.5 h-1.5 bg-deficit rounded-full animate-pulse"></span> Histori Ekonomi
+                    </span>
+                    <h2 class="font-display text-4xl text-charcoal mb-4">Sejarah Berulang: Inflasi Hancurkan Daya Beli</h2>
+                    <p class="font-sans text-lg text-mist max-w-3xl mx-auto">Dari Orde Lama hingga era diskon listrik, nilai uang selalu jadi korban pertama. Gen Z adalah generasi ke-sekian yang harus menanggung beban ini.</p>
+                </div>
+
+                <div class="bg-parchment/30 border border-[#E5DAC8] rounded-2xl p-4 sm:p-8 shadow-sm relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-full h-[500px]">
+                        <canvas id="chartTimeline"></canvas>
+                    </div>
+                    <!-- Context Box updated via JS -->
+                    <div id="timeline-context" class="mt-8 bg-white border border-charcoal/10 rounded-xl p-6 hidden animate-fade-in">
+                        <div class="flex items-center justify-between mb-4">
+                            <span id="tl-year" class="font-mono text-xl font-bold text-charcoal">Year</span>
+                            <span id="tl-president" class="px-3 py-1 bg-parchment text-mist text-xs font-mono uppercase tracking-widest rounded-md">Presiden</span>
+                        </div>
+                        <h4 id="tl-event" class="font-display text-2xl text-deficit mb-3">Event</h4>
+                        <p id="tl-frame" class="font-sans text-charcoal leading-relaxed">Gen Z Frame</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             S06 NOW WHAT?
+             ========================================== -->
+        <section id="nowwhat" class="py-24 bg-charcoal text-parchment">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="font-display text-5xl mb-6">Lalu, Apa Sekarang?</h2>
+                    <p class="font-sans text-xl text-parchment/80 max-w-2xl mx-auto">Sistem mungkin tidak berpihak, tapi diam bukan pilihan. Beberapa platform bisa membantumu mulai membangun pertahanan finansial.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Action 1 -->
+                    <a href="#" class="group block border border-white/20 bg-white/5 rounded-2xl p-8 hover:bg-white/10 transition-colors duration-300">
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="font-display text-2xl font-semibold group-hover:text-surplus transition-colors">Dana Darurat</h3>
+                            <svg class="w-6 h-6 text-parchment/50 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                        <p class="font-sans text-parchment/70 leading-relaxed mb-6">Jangan tunggu gaji besar. Mulai dari Rp100.000/bulan di instrumen likuid dan rendah risiko.</p>
+                        <div class="inline-flex items-center text-xs font-mono tracking-widest uppercase border border-white/20 px-3 py-1 rounded">Rekomendasi: Bibit / Bareksa</div>
+                    </a>
+
+                    <!-- Action 2 -->
+                    <a href="#" class="group block border border-white/20 bg-white/5 rounded-2xl p-8 hover:bg-white/10 transition-colors duration-300">
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="font-display text-2xl font-semibold group-hover:text-bullion transition-colors">Tingkatkan Skill (Gig)</h3>
+                            <svg class="w-6 h-6 text-parchment/50 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </div>
+                        <p class="font-sans text-parchment/70 leading-relaxed mb-6">UMP bukan batas maksimalmu. Jual keahlianmu ke luar negeri atau secara lepas (freelance).</p>
+                        <div class="inline-flex items-center text-xs font-mono tracking-widest uppercase border border-white/20 px-3 py-1 rounded">Rekomendasi: Upwork / Fiverr</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Injector -->
+    <div id="footer-root"></div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

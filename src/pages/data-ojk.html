@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Defisit Literasi - REALIGN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Lora:ital,wght@0,400;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-parchment text-charcoal font-sans antialiased selection:bg-bullion selection:text-white flex flex-col min-h-screen">
+    
+    <div id="navbar-root"></div>
+
+    <main class="flex-grow pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <a href="/src/pages/content.html#data" class="inline-flex items-center gap-2 text-mist hover:text-charcoal transition-colors text-sm font-mono uppercase tracking-widest mb-8">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Kembali ke Data
+            </a>
+            
+            <h1 class="font-display text-4xl md:text-5xl text-charcoal mb-6">Ilusi Literasi Keuangan (Survei OJK)</h1>
+            <p class="font-serif italic text-xl text-mist mb-12">Mengapa indeks literasi naik, tapi kelas menengah tetap hancur?</p>
+
+            <div class="prose prose-lg prose-charcoal max-w-none font-sans">
+                <p>Berdasarkan Survei Nasional Literasi dan Inklusi Keuangan (SNLIK) yang dirilis oleh Otoritas Jasa Keuangan (OJK), tingkat literasi keuangan masyarakat Indonesia telah mencapai <strong>65,43%</strong>, dengan tingkat inklusi menyentuh <strong>75,02%</strong>. Angka ini sering dibanggakan sebagai pencapaian institusional.</p>
+                
+                <div class="bg-white border border-charcoal/10 rounded-2xl p-8 my-10 shadow-sm flex flex-col md:flex-row gap-8 items-center justify-between" data-aos="fade-up">
+                    <div>
+                        <div class="font-mono text-xs uppercase tracking-widest text-mist mb-2">Indeks Literasi</div>
+                        <div class="font-serif border-l-4 border-bullion pl-4 text-5xl text-charcoal">65,43% <span class="text-bullion text-xl font-sans inline-block -translate-y-2">&uarr;</span></div>
+                    </div>
+                    <div>
+                        <div class="font-mono text-xs uppercase tracking-widest text-mist mb-2">Indeks Inklusi</div>
+                        <div class="font-serif border-l-4 border-surplus pl-4 text-5xl text-charcoal">75,02% <span class="text-surplus text-xl font-sans inline-block -translate-y-2">&uarr;</span></div>
+                    </div>
+                </div>
+
+                <h3 class="font-display text-2xl mt-12 mb-4">Paradoks Angka Statistik</h3>
+                <p>Namun, angka ini menyimpan <em>survival bias</em> tingkat tinggi. Jika melihat data Badan Pusat Statistik (BPS), di periode yang sama ketika literasi diklaim naik, lebih dari <strong>10,63 juta rakyat Indonesia terlempar dari kelas menengah</strong> menuju kelas rentan miskin.</p>
+
+                <p>Bagaimana mungkin masyarakat yang "melek finansial" justru kehilangan kekuatan daya belinya secara masif? Jawabannya ada pada ketimpangan struktural:</p>
+
+                <ul class="space-y-6 my-10 list-none pl-0">
+                    <li class="flex items-start" data-aos="fade-up" data-aos-delay="100">
+                        <i data-lucide="x-circle" class="w-6 h-6 text-deficit mr-4 shrink-0 mt-1"></i>
+                        <span><strong>Literasi tidak bisa melawan inflasi properti.</strong> Mengetahui cara mengatur budget (literasi) tidak berguna ketika inflasi harga rumah 8% per tahun, sementara UMP hanya naik 2-3%.</span>
+                    </li>
+                    <li class="flex items-start" data-aos="fade-up" data-aos-delay="200">
+                        <i data-lucide="x-circle" class="w-6 h-6 text-deficit mr-4 shrink-0 mt-1"></i>
+                        <span><strong>Inklusi berarti akses utang, bukan aset.</strong> Inklusi 75% lebih banyak digerakkan oleh akses Pinjaman Online (Pinjol) dan Paylater konsumtif untuk menambal biaya hidup pokok, bukan kemudahan akses KPR / kredit usaha produktif bersubsidi.</span>
+                    </li>
+                </ul>
+
+                <h3 class="font-display text-2xl mt-16 mb-4">Kesimpulan REALIGN</h3>
+                <div class="bg-deficit/5 border-l-[6px] border-deficit p-6 rounded-r-xl" data-aos="fade-up">
+                    <p class="m-0 text-charcoal leading-relaxed">Berhenti menyalahkan diri sendiri. Mengurangi jajan es kopi susu dan menguasai *financial planning* tidak akan menyelamatkanmu dari kegagalan sistemik jika pemerintah gagal menjaga daya beli dan stabilitas harga dasar (properti, pangan, pendidikan).</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-root"></div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
