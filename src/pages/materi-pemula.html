@@ -1,63 +1,380 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Materi Pemula - REALIGN</title>
-    <!-- Fonts -->
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fase Pemula — Literasi Finansial | REALIGN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Lora:ital,wght@0,400;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body class="bg-brand-cream text-slate-800 font-sans">
+<body class="bg-parchment text-charcoal font-sans antialiased">
     <div id="navbar-root"></div>
 
-    <main class="pt-32 page-buffer">
-        <div class="max-w-4xl mx-auto px-6">
-            <!-- Breadcrumb -->
-            <nav class="flex items-center gap-2 text-[10px] font-bold text-slate-400 mb-10 uppercase tracking-[0.2em]">
-                <a href="edukasi.html" class="hover:text-brand-green flex items-center gap-1 transition-colors">
-                    <i data-lucide="book-open" class="w-3 h-3"></i>
-                    Edukasi
-                </a>
+    <main class="pt-24 pb-24">
+        <!-- Hero -->
+        <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mb-16" data-aos="fade-up">
+            <nav class="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-mist mb-8">
+                <a href="/src/pages/edukasi.html" class="hover:text-charcoal transition-colors">Edukasi</a>
                 <span class="opacity-30">/</span>
-                <span class="text-brand-green/70">Fase Pemula</span>
+                <span class="text-charcoal">Fase Pemula</span>
             </nav>
+            <h1 class="font-display text-4xl md:text-5xl text-charcoal mb-4 tracking-tight">Fase Pemula</h1>
+            <p class="font-sans text-lg text-charcoal/60 leading-relaxed">Fondasi literasi keuangan — dari memahami uang hingga merencanakan masa depan finansial Anda.</p>
+        </section>
 
-            <div id="materi-content">
-                <!-- Content will be injected here by JS -->
-                <div class="flex justify-center items-center py-20">
-                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-brand-green"></div>
-                </div>
+        <!-- Card Grid -->
+        <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col gap-4" id="materi-cards">
+
+                <!-- CARD 1 -->
+                <details class="group bg-white border border-charcoal/[0.06] rounded-2xl overflow-hidden" data-aos="fade-up">
+                    <summary class="flex items-center gap-4 p-6 cursor-pointer select-none hover:bg-charcoal/[0.02] transition-colors">
+                        <span class="w-8 h-8 rounded-full bg-surplus/10 flex items-center justify-center shrink-0"><i data-lucide="banknote" class="w-4 h-4 text-surplus"></i></span>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-lg text-charcoal">Pahami Uang & Fungsinya</h3>
+                            <p class="text-sm text-charcoal/50 mt-0.5 truncate">Uang bukan hanya alat tukar — ia adalah alat ukur nilai, penyimpan kekayaan, dan standar pembayaran.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-charcoal/30 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-8 pt-2 border-t border-charcoal/[0.04]">
+                        <p class="text-sm text-charcoal/60 mb-6 italic">Fondasi pertama literasi keuangan — memahami peran uang dalam kehidupan dan ekonomi.</p>
+                        <h4 class="font-display text-base text-charcoal mb-2">Apa Itu Uang?</h4>
+                        <p class="text-sm text-charcoal/70 mb-6 leading-relaxed">Uang adalah alat yang diterima secara umum sebagai medium pertukaran dalam transaksi ekonomi. Namun peran uang jauh lebih luas dari sekadar alat tukar. Dalam ilmu ekonomi, uang memiliki empat fungsi utama yang saling melengkapi.</p>
+                        <h4 class="font-display text-base text-charcoal mb-3">4 Fungsi Utama Uang</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                            <div class="bg-parchment rounded-xl p-4"><span class="w-7 h-7 rounded-full bg-surplus/10 flex items-center justify-center mb-2"><i data-lucide="repeat" class="w-3.5 h-3.5 text-surplus"></i></span><span class="font-semibold text-sm block mb-1">Alat Tukar</span><span class="text-xs text-charcoal/60">Menghilangkan kebutuhan barter. Tukar tenaga kerja → uang → barang kebutuhan.</span></div>
+                            <div class="bg-parchment rounded-xl p-4"><span class="w-7 h-7 rounded-full bg-bullion/10 flex items-center justify-center mb-2"><i data-lucide="ruler" class="w-3.5 h-3.5 text-bullion"></i></span><span class="font-semibold text-sm block mb-1">Alat Ukur Nilai</span><span class="text-xs text-charcoal/60">Standar untuk mengukur dan membandingkan nilai barang/jasa.</span></div>
+                            <div class="bg-parchment rounded-xl p-4"><span class="w-7 h-7 rounded-full bg-charcoal/10 flex items-center justify-center mb-2"><i data-lucide="vault" class="w-3.5 h-3.5 text-charcoal"></i></span><span class="font-semibold text-sm block mb-1">Penyimpan Nilai</span><span class="text-xs text-charcoal/60">Bisa disimpan dan digunakan di masa depan. Namun nilainya bisa berkurang karena inflasi.</span></div>
+                            <div class="bg-parchment rounded-xl p-4"><span class="w-7 h-7 rounded-full bg-deficit/10 flex items-center justify-center mb-2"><i data-lucide="clipboard-list" class="w-3.5 h-3.5 text-deficit"></i></span><span class="font-semibold text-sm block mb-1">Standar Pembayaran</span><span class="text-xs text-charcoal/60">Memungkinkan transaksi kredit — bayar sekarang, bayar nanti, atau cicilan.</span></div>
+                        </div>
+                        <h4 class="font-display text-base text-charcoal mb-3">Jenis-Jenis Uang di Indonesia</h4>
+                        <ul class="text-sm text-charcoal/70 space-y-2 mb-6 list-disc list-inside">
+                            <li><strong>Uang Kartal</strong> — Uang kertas dan logam yang beredar di masyarakat</li>
+                            <li><strong>Uang Giral</strong> — Saldo di rekening bank (cek, transfer, debit)</li>
+                            <li><strong>E-Money</strong> — GoPay, OVO, DANA, ShopeePay — saldo digital untuk transaksi harian</li>
+                            <li><strong>QRIS</strong> — Sistem pembayaran digital nasional yang menyatukan semua e-wallet</li>
+                        </ul>
+                        <div class="bg-bullion/10 border border-bullion/20 rounded-xl p-4 mb-6">
+                            <p class="text-sm text-charcoal/80 flex items-start gap-2">
+                                <i data-lucide="lightbulb" class="w-4 h-4 text-bullion shrink-0 mt-0.5"></i>
+                                <span><strong>Tahukah Anda?</strong> Transaksi digital di Indonesia tumbuh 38.71% per tahun (2023-2025). Nilai transaksi e-money mencapai Rp 472 triliun di tahun 2025.</span>
+                            </p>
+                        </div>
+                        <div class="bg-charcoal rounded-xl p-5">
+                            <p class="text-sm text-parchment/80 font-medium mb-2 flex items-center gap-2">
+                                <i data-lucide="lightbulb" class="w-4 h-4 text-parchment"></i>
+                                Poin Penting
+                            </p>
+                            <ul class="text-xs text-parchment/60 space-y-1 list-disc list-inside">
+                                <li>Uang memiliki 4 fungsi: alat tukar, ukur nilai, simpan nilai, dan standar pembayaran</li>
+                                <li>Transaksi digital di Indonesia tumbuh >38% per tahun</li>
+                                <li>E-money dan QRIS sudah menjadi bagian penting ekonomi Indonesia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- CARD 2 -->
+                <details class="group bg-white border border-charcoal/[0.06] rounded-2xl overflow-hidden" data-aos="fade-up">
+                    <summary class="flex items-center gap-4 p-6 cursor-pointer select-none hover:bg-charcoal/[0.02] transition-colors">
+                        <span class="w-8 h-8 rounded-full bg-deficit/10 flex items-center justify-center shrink-0"><i data-lucide="trending-down" class="w-4 h-4 text-deficit"></i></span>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-lg text-charcoal">Mengenal Inflasi & Deflasi</h3>
+                            <p class="text-sm text-charcoal/50 mt-0.5 truncate">Inflasi menurunkan daya beli uang Anda seiring waktu. Rata-rata inflasi Indonesia 2.87% per tahun.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-charcoal/30 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-8 pt-2 border-t border-charcoal/[0.04]">
+                        <p class="text-sm text-charcoal/60 mb-6 italic">Bagaimana nilai uang Anda berubah seiring waktu — dan mengapa ini penting untuk keputusan keuangan.</p>
+                        <h4 class="font-display text-base text-charcoal mb-2">Apa Itu Inflasi?</h4>
+                        <p class="text-sm text-charcoal/70 mb-6 leading-relaxed">Inflasi adalah kenaikan harga barang dan jasa secara umum dan berkelanjutan dalam jangka waktu tertentu. Daya beli uang Anda menurun seiring waktu — Rp 100.000 hari ini tidak bisa membeli barang sebanyak Rp 100.000 sepuluh tahun lalu.</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                            <div class="bg-deficit/5 border border-deficit/10 rounded-xl p-4">
+                                <span class="w-7 h-7 rounded-full bg-deficit/10 flex items-center justify-center mb-2"><i data-lucide="trending-down" class="w-3.5 h-3.5 text-deficit"></i></span>
+                                <span class="font-semibold text-sm block mb-1">Rp 1.000.000 Hari Ini</span>
+                                <span class="text-xs text-charcoal/60">Bernilai ~Rp 971.300 tahun depan jika hanya disimpan tanpa bunga (kehilangan ~Rp 28.700).</span>
+                            </div>
+                            <div class="bg-deficit/5 border border-deficit/10 rounded-xl p-4">
+                                <span class="w-7 h-7 rounded-full bg-charcoal/10 flex items-center justify-center mb-2"><i data-lucide="hourglass" class="w-3.5 h-3.5 text-charcoal"></i></span>
+                                <span class="font-semibold text-sm block mb-1">Dalam 10 Tahun</span>
+                                <span class="text-xs text-charcoal/60">Rp 1 juta hanya bernilai ~Rp 750.000 (daya beli berkurang 25%). Dalam 20 tahun: ~Rp 562.000.</span>
+                            </div>
+                        </div>
+                        <h4 class="font-display text-base text-charcoal mb-3">Jenis-Jenis Inflasi</h4>
+                        <ul class="text-sm text-charcoal/70 space-y-2 mb-6 list-disc list-inside">
+                            <li><strong>Demand-Pull Inflation</strong> — Permintaan melebihi penawaran. Contoh: harga tiket pesawat naik saat liburan.</li>
+                            <li><strong>Cost-Push Inflation</strong> — Biaya produksi naik sehingga harga jual ikut naik.</li>
+                            <li><strong>Built-In Inflation</strong> — Ekspektasi inflasi menjadi self-fulfilling.</li>
+                        </ul>
+                        <h4 class="font-display text-base text-charcoal mb-2">Apa Itu Deflasi?</h4>
+                        <p class="text-sm text-charcoal/70 mb-4 leading-relaxed">Deflasi adalah kebalikan inflasi — penurunan harga barang dan jasa secara umum. Meski terdengar positif, deflasi berkepanjangan justru berbahaya:</p>
+                        <ul class="text-sm text-charcoal/70 space-y-1 mb-6 list-disc list-inside"><li>Konsumen menunda pembelian</li><li>Pendapatan perusahaan menurun → PHK</li><li>Ekonomi bisa masuk spiral deflasi</li></ul>
+                        <div class="bg-bullion/10 border border-bullion/20 rounded-xl p-4 mb-6">
+                            <p class="text-sm text-charcoal/80 flex items-start gap-2">
+                                <i data-lucide="bar-chart-2" class="w-4 h-4 text-bullion shrink-0 mt-0.5"></i>
+                                <span><strong>Data Indonesia:</strong> BI menargetkan inflasi pada rentang 2.5% ± 1% per tahun. Inflasi terlalu tinggi (>6%) maupun terlalu rendah (<1%) sama-sama tidak sehat.</span>
+                            </p>
+                        </div>
+                        <h4 class="font-display text-base text-charcoal mb-3">Strategi Melawan Inflasi</h4>
+                        <ul class="text-sm text-charcoal/70 space-y-1 list-disc list-inside"><li>Jangan hanya menabung di bawah bantal</li><li>Investasikan minimal setara inflasi — cari return >3% p.a.</li><li>Diversifikasi aset</li><li>Tingkatkan penghasilan</li></ul>
+                    </div>
+                </details>
+
+                <!-- CARD 3 -->
+                <details class="group bg-white border border-charcoal/[0.06] rounded-2xl overflow-hidden" data-aos="fade-up">
+                    <summary class="flex items-center gap-4 p-6 cursor-pointer select-none hover:bg-charcoal/[0.02] transition-colors">
+                        <span class="w-8 h-8 rounded-full bg-bullion/10 flex items-center justify-center shrink-0"><i data-lucide="calculator" class="w-4 h-4 text-bullion"></i></span>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-lg text-charcoal">Buat Anggaran Pertama Anda</h3>
+                            <p class="text-sm text-charcoal/50 mt-0.5 truncate">Gunakan aturan 50/30/20: 50% kebutuhan, 30% keinginan, 20% tabungan & investasi.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-charcoal/30 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-8 pt-2 border-t border-charcoal/[0.04]">
+                        <p class="text-sm text-charcoal/60 mb-6 italic">Metode 50/30/20 dan cara praktis mengelola cash flow agar penghasilan tidak habis sia-sia.</p>
+                        <h4 class="font-display text-base text-charcoal mb-3">Aturan 50/30/20</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+                            <div class="bg-surplus/5 border border-surplus/10 rounded-xl p-4 text-center"><span class="font-display text-2xl text-surplus block">50%</span><span class="font-semibold text-sm block mb-1">Kebutuhan</span><span class="text-xs text-charcoal/60">Sewa, makanan, transportasi, listrik, internet, asuransi</span></div>
+                            <div class="bg-bullion/5 border border-bullion/10 rounded-xl p-4 text-center"><span class="font-display text-2xl text-bullion block">30%</span><span class="font-semibold text-sm block mb-1">Keinginan</span><span class="text-xs text-charcoal/60">Hiburan, makan di luar, fashion, hobi, streaming</span></div>
+                            <div class="bg-charcoal/5 border border-charcoal/10 rounded-xl p-4 text-center"><span class="font-display text-2xl text-charcoal block">20%</span><span class="font-semibold text-sm block mb-1">Tabungan</span><span class="text-xs text-charcoal/60">Dana darurat, reksadana, saham, deposito, bayar utang</span></div>
+                        </div>
+                        <h4 class="font-display text-base text-charcoal mb-3">Langkah Praktis</h4>
+                        <ol class="text-sm text-charcoal/70 space-y-1 mb-6 list-decimal list-inside"><li>Catat semua pemasukan</li><li>Lacak pengeluaran selama 1 bulan</li><li>Kategorikan: kebutuhan, keinginan, atau tabungan</li><li>Evaluasi pengeluaran keinginan yang bisa dikurangi</li><li>Buat target mendekati rasio 50/30/20</li><li>Review bulanan</li></ol>
+                        <h4 class="font-display text-base text-charcoal mb-3">Kebutuhan vs Keinginan</h4>
+                        <div class="overflow-x-auto mb-6"><table class="w-full text-sm"><thead><tr class="border-b border-charcoal/10"><th class="text-left py-2 font-semibold text-charcoal">Kebutuhan</th><th class="text-left py-2 font-semibold text-charcoal">Keinginan</th></tr></thead><tbody class="text-charcoal/70"><tr class="border-b border-charcoal/[0.04]"><td class="py-2">Makan sehari-hari</td><td class="py-2">Makan di restoran mahal</td></tr><tr class="border-b border-charcoal/[0.04]"><td class="py-2">Transportasi ke kantor</td><td class="py-2">Beli mobil baru padahal ada motor</td></tr><tr class="border-b border-charcoal/[0.04]"><td class="py-2">Pakaian dasar</td><td class="py-2">Brand fashion terbaru</td></tr><tr><td class="py-2">Asuransi kesehatan</td><td class="py-2">Langganan streaming 3 platform</td></tr></tbody></table></div>
+                        <div class="bg-bullion/10 border border-bullion/20 rounded-xl p-4">
+                            <p class="text-sm text-charcoal/80 flex items-start gap-2">
+                                <i data-lucide="smartphone" class="w-4 h-4 text-bullion shrink-0 mt-0.5"></i>
+                                <span><strong>Tips:</strong> Gunakan Money Manager, Wallet by BudgetBakers, atau Google Sheets. Yang penting: konsisten mencatat selama minimal 3 bulan.</span>
+                            </p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- CARD 4 -->
+                <details class="group bg-white border border-charcoal/[0.06] rounded-2xl overflow-hidden" data-aos="fade-up">
+                    <summary class="flex items-center gap-4 p-6 cursor-pointer select-none hover:bg-charcoal/[0.02] transition-colors">
+                        <span class="w-8 h-8 rounded-full bg-surplus/10 flex items-center justify-center shrink-0"><i data-lucide="shield" class="w-4 h-4 text-surplus"></i></span>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-lg text-charcoal">Bangun Dana Darurat</h3>
+                            <p class="text-sm text-charcoal/50 mt-0.5 truncate">Target: 3-6 bulan pengeluaran bulanan. Fondasi keamanan finansial Anda.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-charcoal/30 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-8 pt-2 border-t border-charcoal/[0.04]">
+                        <p class="text-sm text-charcoal/60 mb-6 italic">Jaring pengaman keuangan pertama Anda — berapa idealnya dan bagaimana cara membangunnya.</p>
+                        <h4 class="font-display text-base text-charcoal mb-3">Target Dana Darurat Ideal</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+                            <div class="bg-parchment rounded-xl p-4"><span class="font-semibold text-sm block mb-1">Lajang</span><span class="text-xs text-charcoal/60">3–6 bulan pengeluaran. Contoh: Rp 4 jt/bln → Rp 12–24 jt</span></div>
+                            <div class="bg-parchment rounded-xl p-4"><span class="font-semibold text-sm block mb-1">Menikah</span><span class="text-xs text-charcoal/60">6–9 bulan pengeluaran. Tanggung jawab lebih besar = buffer lebih tebal.</span></div>
+                            <div class="bg-parchment rounded-xl p-4"><span class="font-semibold text-sm block mb-1">Punya Anak</span><span class="text-xs text-charcoal/60">9–12 bulan pengeluaran. Semakin banyak tanggungan, semakin besar.</span></div>
+                        </div>
+                        <h4 class="font-display text-base text-charcoal mb-3">Dimana Menyimpan?</h4>
+                        <ul class="text-sm text-charcoal/70 space-y-2 mb-6 list-disc list-inside"><li><strong>Tabungan terpisah</strong> — jangan campur dengan tabungan harian</li><li><strong>Deposito 1-3 bulan</strong> — bunga lebih tinggi, bisa dicairkan saat perlu</li><li><strong>RDPU</strong> — return ~4-5% p.a., cairkan H+1 kerja</li></ul>
+                        <h4 class="font-display text-base text-charcoal mb-3">Strategi Membangun</h4>
+                        <ol class="text-sm text-charcoal/70 space-y-1 mb-6 list-decimal list-inside"><li>Hitung pengeluaran bulanan rata-rata</li><li>Tentukan target (misal 6 × Rp 4 jt = Rp 24 jt)</li><li>Sisihkan 10-20% penghasilan per bulan</li><li>Set auto-transfer ke rekening dana darurat setiap gajian</li><li>Tambahkan bonus/THR ke dana darurat</li></ol>
+                        <div class="bg-deficit/5 border border-deficit/10 rounded-xl p-4">
+                            <p class="text-sm text-charcoal/80 flex items-start gap-2">
+                                <i data-lucide="alert-triangle" class="w-4 h-4 text-deficit shrink-0 mt-0.5"></i>
+                                <span><strong>Aturan Emas:</strong> Dana darurat harus dibangun SEBELUM mulai investasi. Tanpa dana darurat, Anda berisiko forced selling investasi saat butuh uang mendadak.</span>
+                            </p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- CARD 5 -->
+                <details class="group bg-white border border-charcoal/[0.06] rounded-2xl overflow-hidden" data-aos="fade-up">
+                    <summary class="flex items-center gap-4 p-6 cursor-pointer select-none hover:bg-charcoal/[0.02] transition-colors">
+                        <span class="w-8 h-8 rounded-full bg-charcoal/10 flex items-center justify-center shrink-0"><i data-lucide="landmark" class="w-4 h-4 text-charcoal"></i></span>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-lg text-charcoal">Kenali Produk Perbankan</h3>
+                            <p class="text-sm text-charcoal/50 mt-0.5 truncate">Tabungan, deposito, giro — setiap produk punya tujuan berbeda.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-charcoal/30 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-8 pt-2 border-t border-charcoal/[0.04]">
+                        <p class="text-sm text-charcoal/60 mb-6 italic">Tabungan, deposito, dan giro — masing-masing punya tujuan berbeda.</p>
+                        <div class="overflow-x-auto mb-6"><table class="w-full text-sm"><thead><tr class="border-b border-charcoal/10"><th class="text-left py-2 font-semibold">Fitur</th><th class="py-2 font-semibold">Tabungan</th><th class="py-2 font-semibold">Deposito</th><th class="py-2 font-semibold">Giro</th></tr></thead><tbody class="text-charcoal/70 text-xs"><tr class="border-b border-charcoal/[0.04]"><td class="py-2 font-medium">Bunga</td><td class="py-2">0.5–2%</td><td class="py-2">3–5%</td><td class="py-2">0–1%</td></tr><tr class="border-b border-charcoal/[0.04]"><td class="py-2 font-medium">Likuiditas</td><td class="py-2">Sangat tinggi</td><td class="py-2">Terbatas</td><td class="py-2">Sangat tinggi</td></tr><tr class="border-b border-charcoal/[0.04]"><td class="py-2 font-medium">Minimum</td><td class="py-2">Rp 100-500K</td><td class="py-2">Rp 1-10 Jt</td><td class="py-2">Rp 500K-1 Jt</td></tr><tr><td class="py-2 font-medium">Cocok Untuk</td><td class="py-2">Dana harian</td><td class="py-2">Dana darurat</td><td class="py-2">Bisnis</td></tr></tbody></table></div>
+                        <h4 class="font-display text-base text-charcoal mb-3">Produk Digital Modern</h4>
+                        <ul class="text-sm text-charcoal/70 space-y-2 mb-6 list-disc list-inside"><li><strong>Neo Bank</strong> — Jago, Blu, Seabank — bunga hingga 5-6% p.a.</li><li><strong>E-Wallet</strong> — GoPay, OVO, DANA — untuk transaksi harian</li><li><strong>Tabungan Berjangka</strong> — Auto-debit untuk disiplin menabung</li></ul>
+                        <div class="bg-bullion/10 border border-bullion/20 rounded-xl p-4">
+                            <p class="text-sm text-charcoal/80 flex items-start gap-2">
+                                <i data-lucide="lock" class="w-4 h-4 text-bullion shrink-0 mt-0.5"></i>
+                                <span><strong>Jaminan LPS:</strong> Simpanan dijamin hingga Rp 2 Miliar per nasabah per bank. Pastikan bank Anda terdaftar OJK dan peserta LPS.</span>
+                            </p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- CARD 6 -->
+                <details class="group bg-white border border-charcoal/[0.06] rounded-2xl overflow-hidden" data-aos="fade-up">
+                    <summary class="flex items-center gap-4 p-6 cursor-pointer select-none hover:bg-charcoal/[0.02] transition-colors">
+                        <span class="w-8 h-8 rounded-full bg-surplus/10 flex items-center justify-center shrink-0"><i data-lucide="trending-up" class="w-4 h-4 text-surplus"></i></span>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-lg text-charcoal">Dasar-Dasar Investasi</h3>
+                            <p class="text-sm text-charcoal/50 mt-0.5 truncate">Buat uang bekerja untuk Anda. Prinsip: semakin tinggi return, semakin tinggi risiko.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-charcoal/30 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-8 pt-2 border-t border-charcoal/[0.04]">
+                        <p class="text-sm text-charcoal/60 mb-6 italic">Buat uang Anda bekerja — kenali instrumen dari yang paling aman hingga agresif.</p>
+                        <h4 class="font-display text-base text-charcoal mb-3">Piramida Investasi</h4>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center gap-3 bg-surplus/5 border border-surplus/10 rounded-xl p-3"><span class="text-xs font-mono text-surplus font-bold w-6 shrink-0">1</span><div><span class="text-sm font-semibold">RDPU</span><span class="text-xs text-charcoal/60 ml-2">Return 4-5% | Risiko sangat rendah | Modal Rp 10K</span></div></div>
+                            <div class="flex items-center gap-3 bg-surplus/5 border border-surplus/10 rounded-xl p-3"><span class="text-xs font-mono text-surplus font-bold w-6 shrink-0">2</span><div><span class="text-sm font-semibold">Obligasi / SBN</span><span class="text-xs text-charcoal/60 ml-2">Return 5-7% | Risiko rendah | Modal Rp 1 Jt</span></div></div>
+                            <div class="flex items-center gap-3 bg-bullion/5 border border-bullion/10 rounded-xl p-3"><span class="text-xs font-mono text-bullion font-bold w-6 shrink-0">3</span><div><span class="text-sm font-semibold">Reksadana Campuran</span><span class="text-xs text-charcoal/60 ml-2">Return 7-12% | Risiko sedang | Modal Rp 10K</span></div></div>
+                            <div class="flex items-center gap-3 bg-deficit/5 border border-deficit/10 rounded-xl p-3"><span class="text-xs font-mono text-deficit font-bold w-6 shrink-0">4</span><div><span class="text-sm font-semibold">Reksadana Saham</span><span class="text-xs text-charcoal/60 ml-2">Return 10-18% | Risiko tinggi | Modal Rp 10K</span></div></div>
+                            <div class="flex items-center gap-3 bg-deficit/5 border border-deficit/10 rounded-xl p-3"><span class="text-xs font-mono text-deficit font-bold w-6 shrink-0">5</span><div><span class="text-sm font-semibold">Saham Individual</span><span class="text-xs text-charcoal/60 ml-2">Return bervariasi | Risiko tinggi | Modal 1 lot</span></div></div>
+                            <div class="flex items-center gap-3 bg-deficit/5 border border-deficit/10 rounded-xl p-3"><span class="text-xs font-mono text-deficit font-bold w-6 shrink-0">6</span><div><span class="text-sm font-semibold">Kripto</span><span class="text-xs text-charcoal/60 ml-2">Return sangat bervariasi | Risiko sangat tinggi</span></div></div>
+                        </div>
+                        <h4 class="font-display text-base text-charcoal mb-3">Cara Memulai</h4>
+                        <ol class="text-sm text-charcoal/70 space-y-1 mb-6 list-decimal list-inside"><li>Pastikan dana darurat sudah terbangun</li><li>Mulai dari RDPU atau SBN</li><li>Gunakan platform OJK (Bibit, Bareksa, Ajaib, Stockbit)</li><li>Mulai kecil: Rp 100.000/bulan sudah cukup</li><li>Konsisten: DCA lebih baik dari investasi besar sekaligus</li></ol>
+                        <div class="bg-charcoal rounded-xl p-5">
+                            <p class="text-sm text-parchment/80 font-medium mb-1 flex items-center gap-2">
+                                <i data-lucide="target" class="w-4 h-4 text-parchment"></i>
+                                Dollar Cost Averaging (DCA)
+                            </p>
+                            <p class="text-xs text-parchment/60">Investasi rutin dengan jumlah tetap setiap bulan, tanpa peduli harga pasar. Mengurangi risiko membeli di harga puncak.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- CARD 7 -->
+                <details class="group bg-white border border-charcoal/[0.06] rounded-2xl overflow-hidden" data-aos="fade-up">
+                    <summary class="flex items-center gap-4 p-6 cursor-pointer select-none hover:bg-charcoal/[0.02] transition-colors">
+                        <span class="w-8 h-8 rounded-full bg-deficit/10 flex items-center justify-center shrink-0"><i data-lucide="receipt" class="w-4 h-4 text-deficit"></i></span>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-lg text-charcoal">Pahami Pajak & Kewajiban</h3>
+                            <p class="text-sm text-charcoal/50 mt-0.5 truncate">Setiap penghasilan di atas PTKP (Rp 54 juta/tahun) wajib bayar PPh.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-charcoal/30 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-8 pt-2 border-t border-charcoal/[0.04]">
+                        <p class="text-sm text-charcoal/60 mb-6 italic">Setiap penghasilan dan investasi memiliki implikasi pajak.</p>
+                        <h4 class="font-display text-base text-charcoal mb-2">PTKP 2026</h4>
+                        <ul class="text-sm text-charcoal/70 space-y-1 mb-6 list-disc list-inside"><li>WP Pribadi Lajang: Rp 54 juta/tahun</li><li>Menikah: + Rp 4.5 juta</li><li>Per tanggungan (maks 3): + Rp 4.5 juta/orang</li></ul>
+                        <h4 class="font-display text-base text-charcoal mb-3">Tarif PPh Progresif</h4>
+                        <div class="overflow-x-auto mb-6"><table class="w-full text-sm"><thead><tr class="border-b border-charcoal/10"><th class="text-left py-2 font-semibold">Lapisan PKP</th><th class="text-left py-2 font-semibold">Tarif</th></tr></thead><tbody class="text-charcoal/70 text-xs"><tr class="border-b border-charcoal/[0.04]"><td class="py-2">s.d. Rp 60 juta</td><td class="py-2">5%</td></tr><tr class="border-b border-charcoal/[0.04]"><td class="py-2">Rp 60–250 juta</td><td class="py-2">15%</td></tr><tr class="border-b border-charcoal/[0.04]"><td class="py-2">Rp 250–500 juta</td><td class="py-2">25%</td></tr><tr class="border-b border-charcoal/[0.04]"><td class="py-2">Rp 500 juta – 5 M</td><td class="py-2">30%</td></tr><tr><td class="py-2">> Rp 5 miliar</td><td class="py-2">35%</td></tr></tbody></table></div>
+                        <h4 class="font-display text-base text-charcoal mb-3">Pajak pada Investasi</h4>
+                        <ul class="text-sm text-charcoal/70 space-y-1 mb-6 list-disc list-inside"><li><strong>Saham</strong> — 0.1% dari nilai transaksi jual (final)</li><li><strong>Deposito</strong> — 20% dari bunga (final)</li><li><strong>Obligasi/SBN</strong> — 10% dari kupon</li><li><strong>Reksadana</strong> — tidak dikenakan pajak keuntungan</li><li><strong>Properti</strong> — PPh final 2.5% + PBB tahunan</li></ul>
+                        <div class="bg-bullion/10 border border-bullion/20 rounded-xl p-4"><p class="text-sm text-charcoal/80">📅 <strong>Kewajiban Pelaporan:</strong> SPT Tahunan paling lambat 31 Maret (Karyawan) atau 30 April (Wiraswasta) via <strong>djponline.pajak.go.id</strong>.</p></div>
+                    </div>
+                </details>
+
+                <!-- CARD 8 -->
+                <details class="group bg-white border border-charcoal/[0.06] rounded-2xl overflow-hidden" data-aos="fade-up">
+                    <summary class="flex items-center gap-4 p-6 cursor-pointer select-none hover:bg-charcoal/[0.02] transition-colors">
+                        <span class="w-8 h-8 rounded-full bg-bullion/10 flex items-center justify-center shrink-0"><i data-lucide="target" class="w-4 h-4 text-bullion"></i></span>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-lg text-charcoal">Rencana Keuangan Jangka Panjang</h3>
+                            <p class="text-sm text-charcoal/50 mt-0.5 truncate">Compound interest: Rp 500K/bulan × 10% p.a. = ~Rp 380 juta dalam 20 tahun.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-charcoal/30 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-8 pt-2 border-t border-charcoal/[0.04]">
+                        <p class="text-sm text-charcoal/60 mb-6 italic">Compound interest adalah keajaiban ke-8 dunia — lihat bagaimana investasi kecil tumbuh menjadi besar.</p>
+                        <h4 class="font-display text-base text-charcoal mb-3">Simulasi: Investasi Rp 500.000/bulan (return 10% p.a.)</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
+                            <div class="bg-parchment rounded-xl p-4 text-center"><span class="font-display text-lg text-charcoal block">5 Tahun</span><span class="text-xs text-charcoal/60">Modal: Rp 30 jt → Nilai: <strong class="text-surplus">Rp 38.8 jt</strong></span></div>
+                            <div class="bg-parchment rounded-xl p-4 text-center"><span class="font-display text-lg text-charcoal block">10 Tahun</span><span class="text-xs text-charcoal/60">Modal: Rp 60 jt → Nilai: <strong class="text-surplus">Rp 103 jt</strong></span></div>
+                            <div class="bg-surplus/10 border border-surplus/20 rounded-xl p-4 text-center"><span class="font-display text-lg text-surplus block">20 Tahun</span><span class="text-xs text-charcoal/60">Modal: Rp 120 jt → Nilai: <strong class="text-surplus">Rp 380 jt</strong></span></div>
+                        </div>
+                        <h4 class="font-display text-base text-charcoal mb-3">Tujuan Keuangan SMART</h4>
+                        <div class="overflow-x-auto mb-6"><table class="w-full text-sm"><thead><tr class="border-b border-charcoal/10"><th class="text-left py-2 font-semibold">Tujuan</th><th class="py-2 font-semibold">Target</th><th class="py-2 font-semibold">Waktu</th><th class="py-2 font-semibold">Invest/Bln*</th></tr></thead><tbody class="text-charcoal/70 text-xs"><tr class="border-b border-charcoal/[0.04]"><td class="py-2">Dana Darurat</td><td class="py-2">Rp 24 Jt</td><td class="py-2">2 Thn</td><td class="py-2">Rp 1 Jt</td></tr><tr class="border-b border-charcoal/[0.04]"><td class="py-2">DP Rumah</td><td class="py-2">Rp 150 Jt</td><td class="py-2">5 Thn</td><td class="py-2">Rp 2.2 Jt</td></tr><tr class="border-b border-charcoal/[0.04]"><td class="py-2">Dana Pendidikan</td><td class="py-2">Rp 500 Jt</td><td class="py-2">15 Thn</td><td class="py-2">Rp 1.2 Jt</td></tr><tr><td class="py-2">Dana Pensiun</td><td class="py-2">Rp 5 M</td><td class="py-2">25 Thn</td><td class="py-2">Rp 3.7 Jt</td></tr></tbody></table></div>
+                        <div class="bg-charcoal rounded-xl p-5">
+                            <p class="text-sm text-parchment/80 font-medium mb-1 flex items-center gap-2">
+                                <i data-lucide="ruler" class="w-4 h-4 text-parchment"></i>
+                                Rule of 72
+                            </p>
+                            <p class="text-xs text-parchment/60">72 ÷ return (%) = tahun untuk menggandakan uang. Return 10% → 7.2 tahun. Return 6% → 12 tahun.</p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- CARD 9 -->
+                <details class="group bg-white border border-charcoal/[0.06] rounded-2xl overflow-hidden" data-aos="fade-up">
+                    <summary class="flex items-center gap-4 p-6 cursor-pointer select-none hover:bg-charcoal/[0.02] transition-colors">
+                        <span class="w-8 h-8 rounded-full bg-surplus/10 flex items-center justify-center shrink-0"><i data-lucide="heart-pulse" class="w-4 h-4 text-surplus"></i></span>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-lg text-charcoal">Asuransi & Perlindungan Finansial</h3>
+                            <p class="text-sm text-charcoal/50 mt-0.5 truncate">Pahami pentingnya asuransi jiwa dan kesehatan serta perbedaan BPJS dan asuransi swasta.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-charcoal/30 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-8 pt-2 border-t border-charcoal/[0.04]">
+                        <p class="text-sm text-charcoal/60 mb-6 italic">Jaring pengaman kedua — lindungi diri dan keluarga dari risiko keuangan tak terduga.</p>
+                        <h4 class="font-display text-base text-charcoal mb-3">Jenis Asuransi Penting</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                            <div class="bg-parchment rounded-xl p-4"><span class="w-7 h-7 rounded-full bg-surplus/10 flex items-center justify-center mb-2"><i data-lucide="stethoscope" class="w-3.5 h-3.5 text-surplus"></i></span><span class="font-semibold text-sm block mb-1">Asuransi Kesehatan</span><span class="text-xs text-charcoal/60">Paling krusial. Biaya RS swasta bisa Rp 20-50 jt/hari.</span></div>
+                            <div class="bg-parchment rounded-xl p-4"><span class="w-7 h-7 rounded-full bg-charcoal/10 flex items-center justify-center mb-2"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-charcoal"></i></span><span class="font-semibold text-sm block mb-1">Asuransi Jiwa</span><span class="text-xs text-charcoal/60">Penting jika Anda pencari nafkah utama. UP ideal: 10-12x penghasilan tahunan.</span></div>
+                            <div class="bg-parchment rounded-xl p-4"><span class="w-7 h-7 rounded-full bg-bullion/10 flex items-center justify-center mb-2"><i data-lucide="car" class="w-3.5 h-3.5 text-bullion"></i></span><span class="font-semibold text-sm block mb-1">Asuransi Kendaraan</span><span class="text-xs text-charcoal/60">All-risk atau TLO (Total Loss Only).</span></div>
+                            <div class="bg-parchment rounded-xl p-4"><span class="w-7 h-7 rounded-full bg-deficit/10 flex items-center justify-center mb-2"><i data-lucide="home" class="w-3.5 h-3.5 text-deficit"></i></span><span class="font-semibold text-sm block mb-1">Asuransi Properti</span><span class="text-xs text-charcoal/60">Wajib jika rumah masih KPR.</span></div>
+                        </div>
+                        <h4 class="font-display text-base text-charcoal mb-3">BPJS vs Asuransi Swasta</h4>
+                        <div class="overflow-x-auto mb-6"><table class="w-full text-sm"><thead><tr class="border-b border-charcoal/10"><th class="text-left py-2 font-semibold">Fitur</th><th class="py-2 font-semibold">BPJS</th><th class="py-2 font-semibold">Swasta</th></tr></thead><tbody class="text-charcoal/70 text-xs"><tr class="border-b border-charcoal/[0.04]"><td class="py-2">Premi</td><td class="py-2">Rp 35-150K/bln</td><td class="py-2">Rp 300K-3 Jt/bln</td></tr><tr class="border-b border-charcoal/[0.04]"><td class="py-2">RS Rujukan</td><td class="py-2">Faskes bertahap</td><td class="py-2">Langsung RS pilihan</td></tr><tr class="border-b border-charcoal/[0.04]"><td class="py-2">Antrian</td><td class="py-2">Bisa lama</td><td class="py-2">Lebih cepat</td></tr><tr><td class="py-2 font-medium">Saran</td><td class="py-2">WAJIB sebagai fondasi</td><td class="py-2">Tambahan jika mampu</td></tr></tbody></table></div>
+                        <h4 class="font-display text-base text-charcoal mb-3">Tips Memilih</h4>
+                        <ul class="text-sm text-charcoal/70 space-y-1 mb-6 list-disc list-inside"><li>Prioritas: Kesehatan → Jiwa → Kendaraan → Properti</li><li>Hindari unit link untuk pemula</li><li>Cek exclusion polis sebelum tanda tangan</li><li>Premi total idealnya 5-10% dari penghasilan</li></ul>
+                        <div class="bg-deficit/5 border border-deficit/10 rounded-xl p-4">
+                            <p class="text-sm text-charcoal/80 flex items-start gap-2">
+                                <i data-lucide="alert-triangle" class="w-4 h-4 text-deficit shrink-0 mt-0.5"></i>
+                                <span><strong>Urutan Benar:</strong> 1. BPJS → 2. Dana Darurat → 3. Asuransi Jiwa → 4. Asuransi Swasta → 5. Baru investasi.</span>
+                            </p>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- CARD 10 -->
+                <details class="group bg-white border border-charcoal/[0.06] rounded-2xl overflow-hidden" data-aos="fade-up">
+                    <summary class="flex items-center gap-4 p-6 cursor-pointer select-none hover:bg-charcoal/[0.02] transition-colors">
+                        <span class="w-8 h-8 rounded-full bg-charcoal/10 flex items-center justify-center shrink-0"><i data-lucide="lock" class="w-4 h-4 text-charcoal"></i></span>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-display text-lg text-charcoal">Fintech & Keamanan Digital</h3>
+                            <p class="text-sm text-charcoal/50 mt-0.5 truncate">Navigasi era bank digital, e-wallet, QRIS. Pahami risiko pinjol ilegal dan keamanan digital.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-charcoal/30 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </summary>
+                    <div class="px-6 pb-8 pt-2 border-t border-charcoal/[0.04]">
+                        <p class="text-sm text-charcoal/60 mb-6 italic">Mengelola keuangan di era digital — e-wallet, neobank, dan cara tetap aman bertransaksi online.</p>
+                        <h4 class="font-display text-base text-charcoal mb-3">Ekosistem Fintech Indonesia</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                            <div class="bg-parchment rounded-xl p-4"><span class="w-7 h-7 rounded-full bg-surplus/10 flex items-center justify-center mb-2"><i data-lucide="credit-card" class="w-3.5 h-3.5 text-surplus"></i></span><span class="font-semibold text-sm block mb-1">E-Wallet &amp; Pembayaran</span><span class="text-xs text-charcoal/60">GoPay, OVO, DANA, ShopeePay. Transaksi e-money: Rp 472 triliun (2025).</span></div>
+                            <div class="bg-parchment rounded-xl p-4"><span class="w-7 h-7 rounded-full bg-charcoal/10 flex items-center justify-center mb-2"><i data-lucide="building-2" class="w-3.5 h-3.5 text-charcoal"></i></span><span class="font-semibold text-sm block mb-1">Neobank</span><span class="text-xs text-charcoal/60">Jago, Blu, Seabank. Bunga hingga 6% p.a. tanpa biaya admin.</span></div>
+                            <div class="bg-parchment rounded-xl p-4"><span class="w-7 h-7 rounded-full bg-bullion/10 flex items-center justify-center mb-2"><i data-lucide="bar-chart-3" class="w-3.5 h-3.5 text-bullion"></i></span><span class="font-semibold text-sm block mb-1">Investasi Digital</span><span class="text-xs text-charcoal/60">Bibit, Bareksa, Ajaib, Stockbit. Mulai dari Rp 10.000.</span></div>
+                            <div class="bg-parchment rounded-xl p-4"><span class="w-7 h-7 rounded-full bg-deficit/10 flex items-center justify-center mb-2"><i data-lucide="coins" class="w-3.5 h-3.5 text-deficit"></i></span><span class="font-semibold text-sm block mb-1">P2P Lending</span><span class="text-xs text-charcoal/60">Investree, Modalku, Amartha. Return 10-18% p.a.</span></div>
+                        </div>
+                        <h4 class="font-display text-base text-charcoal mb-3 flex items-center gap-2">
+                            <i data-lucide="alert-triangle" class="w-4 h-4 text-deficit"></i>
+                            Risiko Pinjol
+                        </h4>
+                        <h4 class="font-display text-base text-charcoal mb-3">5 Aturan Emas Keamanan Digital</h4>
+                        <ol class="text-sm text-charcoal/70 space-y-1 mb-6 list-decimal list-inside"><li>Aktifkan 2FA di semua akun keuangan</li><li>Jangan share OTP ke siapapun</li><li>Gunakan PIN/biometrik berbeda tiap aplikasi</li><li>Cek berkala riwayat transaksi</li><li>Hanya unduh dari Play Store/App Store resmi</li></ol>
+                        <div class="bg-charcoal rounded-xl p-5">
+                            <p class="text-sm text-parchment/80 font-medium mb-1 flex items-center gap-2">
+                                <i data-lucide="lock" class="w-4 h-4 text-parchment"></i>
+                                Cek Legalitas Fintech
+                            </p>
+                            <p class="text-xs text-parchment/60">Kunjungi ojk.go.id → menu "Fintech" → cari nama perusahaan. Jika tidak ada dalam daftar, JANGAN GUNAKAN.</p>
+                        </div>
+                    </div>
+                </details>
+
             </div>
 
-            <!-- Navigation Between Topics -->
-            <div class="mt-24 pt-12 border-t border-slate-100/50 flex flex-col sm:flex-row gap-6 justify-between items-stretch">
-                <a id="prev-topic" href="#" class="flex-1 p-8 rounded-[32px] border border-slate-100 hover:border-emerald-200/50 hover:bg-soft-pemula transition-all duration-500 group invisible relative overflow-hidden">
-                    <div class="absolute top-0 left-0 w-1 h-full bg-emerald-500/0 group-hover:bg-emerald-500 transition-all duration-500"></div>
-                    <span class="flex items-center gap-2 text-[9px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3">
-                        <i data-lucide="chevron-left" class="w-3 h-3 transition-transform group-hover:-translate-x-1"></i>
-                        Sebelumnya
-                    </span>
-                    <span class="block font-serif text-xl text-slate-800 font-bold group-hover:text-brand-green transition-colors" id="prev-topic-title">Judul Materi</span>
-                </a>
-                <a id="next-topic" href="#" class="flex-1 p-8 rounded-[32px] border border-slate-100 hover:border-emerald-200/50 hover:bg-soft-pemula transition-all duration-500 group invisible text-right relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-1 h-full bg-emerald-500/0 group-hover:bg-emerald-500 transition-all duration-500"></div>
-                    <span class="flex items-center justify-end gap-2 text-[9px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3">
-                        Selanjutnya
-                        <i data-lucide="chevron-right" class="w-3 h-3 transition-transform group-hover:translate-x-1"></i>
-                    </span>
-                    <span class="block font-serif text-xl text-slate-800 font-bold group-hover:text-brand-green transition-colors" id="next-topic-title">Judul Materi</span>
+            <!-- Back to Edukasi -->
+            <div class="mt-12 text-center">
+                <a href="/src/pages/edukasi.html" class="inline-flex items-center gap-2 text-sm font-semibold text-charcoal hover:text-charcoal/60 transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                    Kembali ke Pusat Edukasi
                 </a>
             </div>
-            <div class="page-buffer"></div>
-        </div>
+        </section>
+
     </main>
 
     <div id="footer-root"></div>
-
-    <script type="module" src="/src/js/materi-pemula.js"></script>
+    <script type="module" src="/src/main.js"></script>
 </body>
 </html>
