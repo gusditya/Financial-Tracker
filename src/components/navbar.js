@@ -1,4 +1,4 @@
-import { createIcons, Menu, X, ChevronDown, ArrowRight } from 'lucide';
+import { createIcons, Menu, X } from 'lucide';
 
 // Simple active state check
 const currentPath = window.location.pathname;
@@ -7,20 +7,20 @@ const isActive = (path) => {
   return currentPath.includes(path) && path !== '/';
 };
 
-const navItems = [
+const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'Konten', path: '#', hasDropdown: true },
+  { name: 'Data', path: '/src/pages/content.html' },
+  { name: 'Edukasi', path: '/src/pages/edukasi.html' },
+  { name: 'Tools', path: '/src/pages/tools.html' },
   { name: 'About', path: '/src/pages/about.html' },
-  { name: 'Kontak', path: '/src/pages/contact.html' },
 ];
 
-const dropdownItems = [
+const moreLinks = [
   { name: 'Data OJK & Literasi', path: '/src/pages/data-ojk.html' },
   { name: 'Peta Krisis Ekonomi', path: '/src/pages/krisis.html' },
-  { name: 'Edukasi: Pemula & Mahasiswa', path: '/src/pages/edukasi.html' },
-  { name: 'Tools: Kalkulator & Konverter', path: '/src/pages/tools.html' },
   { name: 'Glosarium A-Z', path: '/src/pages/glosarium.html' },
-  { name: 'Tokoh Ekonomi Indonesia', path: '/src/pages/tokoh.html' },
+  { name: 'Tokoh Ekonomi', path: '/src/pages/tokoh.html' },
+  { name: 'Hubungi Kami', path: '/src/pages/contact.html' },
 ];
 
 export function initNavbar() {
@@ -28,125 +28,134 @@ export function initNavbar() {
   if (!navbarContainer) return;
 
   navbarContainer.innerHTML = `
-    <nav id="main-nav" class="fixed top-0 inset-x-0 h-16 z-50 flex items-center justify-between px-4 sm:px-6 lg:px-8 transition-all duration-300 bg-parchment/0">
-      <a href="/" class="font-display font-semibold text-charcoal text-xl tracking-tight z-50">REALIGN</a>
+    <header class="fixed top-0 inset-x-0 z-50 flex justify-center pointer-events-none pt-4 px-4">
+      <nav id="main-nav" class="pointer-events-auto flex items-center gap-1 h-12 px-2 bg-white/70 backdrop-blur-xl border border-charcoal/[0.06] rounded-full shadow-[0_2px_20px_rgba(0,0,0,0.06)] transition-all duration-500 max-w-3xl w-full">
+        
+        <!-- Logo -->
+        <a href="/" class="font-display font-semibold text-charcoal text-[15px] tracking-tight pl-3 pr-4 shrink-0">REALIGN</a>
+        
+        <!-- Desktop Nav Links (centered) -->
+        <div class="hidden md:flex items-center gap-0.5 flex-1 justify-center">
+          ${navLinks.map(item => `
+            <a href="${item.path}" class="relative px-3.5 py-1.5 text-[13px] font-medium rounded-full transition-all duration-200 ${isActive(item.path) ? 'bg-charcoal text-white' : 'text-charcoal/60 hover:text-charcoal hover:bg-charcoal/[0.04]'}">${item.name}</a>
+          `).join('')}
+          
+          <!-- More dropdown -->
+          <div class="relative" id="more-dropdown-wrapper">
+            <button id="more-dropdown-btn" class="px-3.5 py-1.5 text-[13px] font-medium rounded-full text-charcoal/60 hover:text-charcoal hover:bg-charcoal/[0.04] transition-all duration-200 flex items-center gap-1">
+              More <svg class="w-3 h-3 opacity-40 transition-transform duration-200" id="more-dropdown-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="more-dropdown-panel" class="absolute top-full right-0 mt-2 w-56 bg-white/95 backdrop-blur-xl border border-charcoal/[0.06] rounded-2xl shadow-xl opacity-0 translate-y-1 pointer-events-none transition-all duration-200 overflow-hidden py-1.5">
+              ${moreLinks.map(link => `
+                <a href="${link.path}" class="block px-4 py-2 text-[13px] font-medium text-charcoal/70 hover:text-charcoal hover:bg-charcoal/[0.03] transition-colors ${isActive(link.path) ? 'text-charcoal bg-charcoal/[0.04]' : ''}">${link.name}</a>
+              `).join('')}
+            </div>
+          </div>
+        </div>
 
-      <div class="hidden md:flex items-center gap-8">
-        ${navItems.map(item => {
-          if (item.hasDropdown) {
-            return `
-              <div class="relative group h-16 flex items-center cursor-pointer">
-                <span class="font-sans text-sm font-medium flex items-center gap-1 transition-colors ${currentPath.includes('/src/pages/') || currentPath.includes('content.html') ? 'text-charcoal border-b-2 border-bullion' : 'text-charcoal/70 hover:text-charcoal'}">
-                  ${item.name} <i data-lucide="chevron-down" class="w-3 h-3 opacity-40 group-hover:rotate-180 transition-transform duration-300"></i>
-                </span>
-                <div class="absolute top-[calc(100%-8px)] left-0 w-72 bg-white border border-charcoal/5 rounded-[24px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-500 overflow-hidden p-2">
-                  <div class="flex flex-col">
-                    <div class="px-4 py-3 border-b border-charcoal/5 mb-1">
-                      <p class="text-[10px] font-bold text-mist uppercase tracking-widest">Eksplorasi Data</p>
-                    </div>
-                    ${dropdownItems.map(drop => `
-                      <a href="${drop.path}" class="flex items-center gap-3 px-4 py-3 hover:bg-parchment/50 rounded-xl font-sans text-sm text-charcoal/80 hover:text-charcoal transition-all ${isActive(drop.path) ? 'bg-parchment font-semibold text-charcoal' : ''}">
-                        <span class="w-1.5 h-1.5 rounded-full bg-bullion/40"></span>
-                        ${drop.name}
-                      </a>
-                    `).join('')}
-                    <div class="mt-2 p-2 bg-charcoal/5 rounded-xl">
-                      <a href="/src/pages/content.html" class="flex items-center justify-between px-3 py-2 font-sans text-xs text-surplus font-bold hover:translate-x-1 transition-transform">
-                        Data Utama REALIGN <span>&rarr;</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            `;
-          }
-          return `
-            <a href="${item.path}" class="font-sans text-sm font-medium transition-colors h-16 flex items-center ${isActive(item.path) ? 'text-charcoal border-b-2 border-bullion' : 'text-charcoal/70 hover:text-charcoal'}">
-              ${item.name}
-            </a>
-          `;
-        }).join('')}
-      </div>
-
-      <div class="flex items-center gap-4 z-50">
-        <a href="/src/pages/content.html" class="hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-parchment bg-charcoal rounded-full hover:bg-deficit transition-colors shadow-sm cursor-pointer border border-transparent">
-          Mulai Eksplorasi &rarr;
+        <!-- CTA Button -->
+        <a href="/src/pages/content.html" class="hidden md:inline-flex items-center justify-center px-4 py-1.5 text-[13px] font-semibold text-white bg-charcoal rounded-full hover:bg-charcoal/80 transition-colors shrink-0 ml-auto">
+          Eksplorasi
         </a>
-        <button id="mobile-menu-btn" class="md:hidden p-2 text-charcoal focus:outline-none">
-          <i data-lucide="menu" id="menu-icon"></i>
+        
+        <!-- Mobile Toggle -->
+        <button id="mobile-menu-btn" class="md:hidden ml-auto p-2 text-charcoal/70 hover:text-charcoal focus:outline-none shrink-0">
+          <i data-lucide="menu" id="menu-icon" class="w-5 h-5"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile Fullscreen Drawer -->
+    <div id="mobile-drawer" class="fixed inset-0 bg-white z-[60] transform translate-x-full transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] md:hidden overflow-y-auto">
+      <div class="flex items-center justify-between px-6 pt-6 pb-4 border-b border-charcoal/[0.06]">
+        <a href="/" class="font-display font-semibold text-charcoal text-lg tracking-tight">REALIGN</a>
+        <button id="mobile-close-btn" class="p-2 text-charcoal/60 hover:text-charcoal">
+          <i data-lucide="x" class="w-5 h-5"></i>
         </button>
       </div>
-
-      <div id="mobile-drawer" class="fixed inset-0 bg-parchment z-40 transform translate-x-full transition-transform duration-300 md:hidden overflow-y-auto pt-20 px-6 pb-6">
-        <div class="flex flex-col gap-6 text-lg">
-          ${navItems.map(item => {
-            if (item.hasDropdown) {
-              return `
-                <div class="flex flex-col gap-3">
-                  <div class="font-sans font-semibold text-charcoal border-b border-charcoal/10 pb-2">Konten Data</div>
-                  <div class="flex flex-col pl-4 gap-3 text-base">
-                    ${dropdownItems.map(drop => `
-                      <a href="${drop.path}" class="${isActive(drop.path) ? 'text-bullion font-medium' : 'text-charcoal/70'}">${drop.name}</a>
-                    `).join('')}
-                    <a href="/src/pages/content.html" class="text-surplus font-medium mt-2">✨ Data Utama REALIGN</a>
-                  </div>
-                </div>
-              `;
-            }
-            return `
-            <a href="${item.path}" class="font-sans ${isActive(item.path) ? 'font-semibold text-bullion' : 'font-medium text-charcoal/80'}">${item.name}</a>
-            `;
-          }).join('')}
-          <a href="/src/pages/content.html" class="inline-flex w-full mt-4 justify-center items-center px-5 py-3 text-base font-medium text-parchment bg-charcoal rounded-full active:bg-deficit transition-colors shadow-sm">
-            Mulai Eksplorasi &rarr;
-          </a>
-        </div>
+      <div class="flex flex-col px-6 py-6 gap-1">
+        ${[...navLinks, ...moreLinks].map(item => `
+          <a href="${item.path}" class="py-3 text-[15px] font-medium border-b border-charcoal/[0.04] transition-colors ${isActive(item.path) ? 'text-charcoal' : 'text-charcoal/50 hover:text-charcoal'}">${item.name}</a>
+        `).join('')}
+        <a href="/src/pages/content.html" class="mt-6 flex items-center justify-center py-3.5 text-[14px] font-semibold text-white bg-charcoal rounded-full hover:bg-charcoal/80 transition-colors">
+          Mulai Eksplorasi
+        </a>
       </div>
-    </nav>
-    <div id="scroll-progress-bar" class="fixed top-0 left-0 h-[2px] bg-bullion z-[60] w-0 transition-all duration-75"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress-bar" class="fixed top-0 left-0 h-[2px] bg-charcoal z-[70] w-0 transition-all duration-75"></div>
   `;
 
   // Initialize Lucide Icons
-  createIcons({
-    icons: { Menu, X, ChevronDown, ArrowRight }
-  });
+  createIcons({ icons: { Menu, X } });
 
   // Event Listeners
-  const navElement = document.getElementById('main-nav');
   const mobileBtn = document.getElementById('mobile-menu-btn');
   const mobileDrawer = document.getElementById('mobile-drawer');
-  const menuIcon = document.getElementById('menu-icon');
+  const mobileCloseBtn = document.getElementById('mobile-close-btn');
   const scrollProgressBar = document.getElementById('scroll-progress-bar');
-
+  
   let isMenuOpen = false;
 
-  mobileBtn.addEventListener('click', () => {
+  const toggleMenu = () => {
     isMenuOpen = !isMenuOpen;
     if (isMenuOpen) {
       mobileDrawer.classList.remove('translate-x-full');
-      menuIcon.setAttribute('data-lucide', 'x');
       document.body.style.overflow = 'hidden';
     } else {
       mobileDrawer.classList.add('translate-x-full');
-      menuIcon.setAttribute('data-lucide', 'menu');
       document.body.style.overflow = '';
     }
-    // Re-run createIcons for the mobile toggle
-    createIcons({ icons: { Menu, X } });
+  };
+
+  mobileBtn.addEventListener('click', toggleMenu);
+  mobileCloseBtn.addEventListener('click', toggleMenu);
+
+  // Close drawer on link click
+  mobileDrawer.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (isMenuOpen) toggleMenu();
+    });
   });
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 80) {
-      navElement.classList.add('bg-parchment/90', 'backdrop-blur-md', 'border-b', 'border-charcoal/10');
-      navElement.classList.remove('bg-parchment/0');
-    } else {
-      navElement.classList.remove('bg-parchment/90', 'backdrop-blur-md', 'border-b', 'border-charcoal/10');
-      navElement.classList.add('bg-parchment/0');
-    }
-
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrollPercent = (scrollTop / scrollHeight) * 100;
     scrollProgressBar.style.width = scrollPercent + '%';
   });
+
+  // More dropdown toggle
+  const moreBtn = document.getElementById('more-dropdown-btn');
+  const morePanel = document.getElementById('more-dropdown-panel');
+  const moreChevron = document.getElementById('more-dropdown-chevron');
+  let isMoreOpen = false;
+
+  const toggleMore = () => {
+    isMoreOpen = !isMoreOpen;
+    if (isMoreOpen) {
+      morePanel.classList.remove('opacity-0', 'translate-y-1', 'pointer-events-none');
+      morePanel.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      if (moreChevron) moreChevron.style.transform = 'rotate(180deg)';
+    } else {
+      morePanel.classList.add('opacity-0', 'translate-y-1', 'pointer-events-none');
+      morePanel.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      if (moreChevron) moreChevron.style.transform = '';
+    }
+  };
+
+  if (moreBtn && morePanel) {
+    moreBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMore();
+    });
+
+    document.addEventListener('click', (e) => {
+      if (isMoreOpen && !morePanel.contains(e.target) && !moreBtn.contains(e.target)) {
+        toggleMore();
+      }
+    });
+  }
 }
+

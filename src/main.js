@@ -354,11 +354,11 @@ document.addEventListener('DOMContentLoaded', () => {
           resultDisplay.textContent = tahun > 99 ? '99+' : tahun;
           // Set color based on severity
           if (tahun > 15) {
-            resultDisplay.className = "font-serif text-[5rem] leading-none text-deficit transition-all duration-300";
+            resultDisplay.className = "font-display font-medium text-6xl sm:text-7xl leading-none text-deficit transition-all duration-300";
           } else if (tahun > 5) {
-            resultDisplay.className = "font-serif text-[5rem] leading-none text-bullion transition-all duration-300";
+            resultDisplay.className = "font-display font-medium text-6xl sm:text-7xl leading-none text-bullion transition-all duration-300";
           } else {
-            resultDisplay.className = "font-serif text-[5rem] leading-none text-surplus transition-all duration-300";
+            resultDisplay.className = "font-display font-medium text-6xl sm:text-7xl leading-none text-surplus transition-all duration-300";
           }
         }
       };
@@ -376,14 +376,14 @@ document.addEventListener('DOMContentLoaded', () => {
         kamuLabel.textContent = (tahun > 99 ? '99+' : tahun) + ' thn';
         
         if (tahun > 15) {
-          kamuBar.className = "absolute left-0 top-0 bottom-0 bg-deficit rounded-r-lg transition-all duration-700 ease-out";
-          kamuLabel.className = "w-12 text-left text-xs font-bold text-deficit transition-colors duration-300";
+          kamuBar.className = "absolute left-0 top-0 bottom-0 bg-deficit rounded-full transition-all duration-700 ease-out";
+          kamuLabel.className = "w-12 text-left text-xs font-bold text-deficit shrink-0 transition-colors duration-300";
         } else if (tahun > 5) {
-          kamuBar.className = "absolute left-0 top-0 bottom-0 bg-bullion rounded-r-lg transition-all duration-700 ease-out";
-          kamuLabel.className = "w-12 text-left text-xs font-bold text-bullion transition-colors duration-300";
+          kamuBar.className = "absolute left-0 top-0 bottom-0 bg-bullion rounded-full transition-all duration-700 ease-out";
+          kamuLabel.className = "w-12 text-left text-xs font-bold text-bullion shrink-0 transition-colors duration-300";
         } else {
-          kamuBar.className = "absolute left-0 top-0 bottom-0 bg-surplus rounded-r-lg transition-all duration-700 ease-out";
-          kamuLabel.className = "w-12 text-left text-xs font-bold text-surplus transition-colors duration-300";
+          kamuBar.className = "absolute left-0 top-0 bottom-0 bg-surplus rounded-full transition-all duration-700 ease-out";
+          kamuLabel.className = "w-12 text-left text-xs font-bold text-surplus shrink-0 transition-colors duration-300";
         }
       }
     };
@@ -436,9 +436,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressBar = document.getElementById('quiz-progress-bar');
     
     // Result elements
-    const resTagline = document.getElementById('quiz-result-tagline');
+    const resTitle = document.getElementById('quiz-result-title');
     const resDesc = document.getElementById('quiz-result-desc');
-    const resAction = document.getElementById('quiz-result-action');
     const restartBtn = document.getElementById('quiz-restart');
 
     const renderQuestion = () => {
@@ -458,7 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         qData.options.forEach(opt => {
           const btn = document.createElement('button');
-          btn.className = "w-full text-left bg-white/5 hover:bg-white/10 border border-white/20 rounded-xl p-4 md:p-5 font-sans text-parchment transition-all duration-200";
+          btn.className = "w-full text-left bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 rounded-xl py-4 px-5 font-sans text-sm text-parchment/90 transition-all duration-200 hover:border-white/20";
           btn.textContent = opt.text;
           btn.onclick = () => handleAnswer(opt.type);
           optionsContainer.appendChild(btn);
@@ -496,32 +495,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const outcome = quizData.results[outcomeType];
       
-      const resCard = document.getElementById('quiz-result-card');
-      const resIcon = document.getElementById('quiz-result-icon');
-      
-      // Set Colors and Icons based on outcome
+      // Set Colors based on outcome
       if (outcomeType === 'survivor') {
-        resCard.className = "p-8 md:p-10 rounded-2xl border-l-[6px] shadow-lg mb-6 flex flex-col items-center text-center transition-all relative border-deficit bg-[#FCEBEB]";
-        resTagline.className = "font-serif text-3xl md:text-4xl text-deficit mb-4";
-        resIcon.className = "w-16 h-16 rounded-full flex items-center justify-center mb-6 bg-deficit/10 text-deficit";
-        resIcon.innerHTML = `<i data-lucide="alert-triangle" class="w-8 h-8"></i>`;
+        resTitle.className = "font-display text-3xl md:text-4xl text-deficit mb-4";
       } else if (outcomeType === 'aware') {
-        resCard.className = "p-8 md:p-10 rounded-2xl border-l-[6px] shadow-lg mb-6 flex flex-col items-center text-center transition-all relative border-bullion bg-[#FAEEDA]";
-        resTagline.className = "font-serif text-3xl md:text-4xl text-bullion mb-4";
-        resIcon.className = "w-16 h-16 rounded-full flex items-center justify-center mb-6 bg-bullion/10 text-bullion";
-        resIcon.innerHTML = `<i data-lucide="compass" class="w-8 h-8"></i>`;
+        resTitle.className = "font-display text-3xl md:text-4xl text-bullion mb-4";
       } else if (outcomeType === 'builder') {
-        resCard.className = "p-8 md:p-10 rounded-2xl border-l-[6px] shadow-lg mb-6 flex flex-col items-center text-center transition-all relative border-surplus bg-[#EAF3DE]";
-        resTagline.className = "font-serif text-3xl md:text-4xl text-surplus mb-4";
-        resIcon.className = "w-16 h-16 rounded-full flex items-center justify-center mb-6 bg-surplus/10 text-surplus";
-        resIcon.innerHTML = `<i data-lucide="trending-up" class="w-8 h-8"></i>`;
+        resTitle.className = "font-display text-3xl md:text-4xl text-surplus mb-4";
       }
 
-      resTagline.textContent = outcome.tagline;
-      resDesc.textContent = outcome.desc;
-      resAction.textContent = outcome.action;
-      
-      createIcons({ icons }); // Re-init icons for the newly injected icon
+      // Fade-in effect logic for visibility
+      setTimeout(() => {
+        resultArea.classList.remove('opacity-0');
+      }, 50);
+
+      resTitle.textContent = outcome.tagline;
+      resDesc.innerHTML = `${outcome.desc}<br><br><span class="block px-6 py-5 bg-[#252522] border border-parchment/10 rounded-2xl mt-6 font-mono text-sm tracking-widest leading-relaxed text-parchment/90 text-left shadow-inner"><span class="text-bullion block mb-3 uppercase tracking-widest font-bold">Protokol Sistem:</span>${outcome.action}</span>`;
 
       // Share Button Logic
       const shareBtn = document.getElementById('quiz-share-btn');

@@ -1,62 +1,61 @@
-export default 
-{
+export default {
   "questions": [
     {
-      "q": "Berapa % gaji yang ditabung tiap bulan?",
+      "q": "Jika KPR ditolak karena cicilan pokok >30% gaji UMP, apa manuver realistismu?",
       "options": [
-        { "text": "< 10%", "type": "A" },
-        { "text": "10–20%", "type": "B" },
-        { "text": "> 20%", "type": "C" }
+        { "text": "Pasrah ngontrak seumur hidup, nikmati hari ini", "type": "A" },
+        { "text": "Cari KPR tenor 35 tahun meski bunga mencekik", "type": "B" },
+        { "text": "Arbitrase income: Cari penghasilan global/freelance di luar UMP", "type": "C" }
       ]
     },
     {
-      "q": "Punya dana darurat 3x pengeluaran?",
+      "q": "Berapa banyak 'pajak tak terlihat' yang mengkremasi gajimu bulan ini?",
       "options": [
-        { "text": "Belum sama sekali", "type": "A" },
-        { "text": "Sedang membangun", "type": "B" },
-        { "text": "Sudah ada", "type": "C" }
+        { "text": "Hanya potongan wajar, sisanya buat lifestyle Paylater", "type": "A" },
+        { "text": "Sandwich Gen & BPJS, kerasa berat tapi ya sudahlah", "type": "B" },
+        { "text": "Tapera, PPN 12%, Sandwich Gen, dan depresiasi daya beli", "type": "C" }
       ]
     },
     {
-      "q": "Pernah investasi (reksa dana, saham)?",
+      "q": "Apakah kamu percaya ijazah sarjana (S1) masih mutlak menjamin mobilitas kelas otomatis?",
       "options": [
-        { "text": "Belum pernah", "type": "A" },
-        { "text": "Tahu tapi belum mulai", "type": "B" },
-        { "text": "Sudah aktif", "type": "C" }
+        { "text": "Pasti, aku akan terus sebar CV biarpun nihil", "type": "A" },
+        { "text": "Mulai skeptis, kompetisi pelamar makin absurd", "type": "B" },
+        { "text": "Ilusi yang mati. Industri butuh hard-skill terukur, bukan sekadar gelar", "type": "C" }
       ]
     },
     {
-      "q": "Tahu inflasi Indonesia bulan ini?",
+      "q": "Skenario Resesi: Inflasi 8%, harga sembako melejit. Dimana benteng daruratmu?",
       "options": [
-        { "text": "Tidak tahu", "type": "A" },
-        { "text": "Kira-kira tahu", "type": "B" },
-        { "text": "Tahu + dampaknya", "type": "C" }
+        { "text": "Nggak ada, ludes buat nongkrong dan langganan SVOD", "type": "A" },
+        { "text": "Di rekening bank standar yang habis dimakan admin bulanan", "type": "B" },
+        { "text": "Di reksa dana likuid (RDPU) / SBN / instrumen lindung nilai", "type": "C" }
       ]
     },
     {
-      "q": "Punya target finansial 5 tahun?",
+      "q": "Secara struktural makroekonomi, siapa yang seharusnya kamu andalkan untuk masa tuamu?",
       "options": [
-        { "text": "Tidak kepikiran", "type": "A" },
-        { "text": "Punya tapi belum konkret", "type": "B" },
-        { "text": "Punya + dijalankan", "type": "C" }
+        { "text": "Pemerintah lewat skema bansos dan pensiun negara", "type": "A" },
+        { "text": "Perusahaan tempatku bekerja lewat JHT reguler", "type": "B" },
+        { "text": "Hanya diri sendiri. Sistem saat ini sudah didesain defisit", "type": "C" }
       ]
     }
   ],
   "results": {
     "survivor": {
-      "tagline": "Financial Survivor",
-      "desc": "Kamu bertahan — tapi arus lebih kencang dari lajumu. Mayoritas Gen Z Indonesia ada di sini. Bukan karena malas, tapi karena sistemnya memang berat.",
-      "action": "Mulai dana darurat Rp500rb/bulan. Lihat section 'Now What?'"
+      "tagline": "Realitas Pahit: Kamu Sedang Ditenggelamkan Sistem",
+      "desc": "Terjebak dalam ilusi meritokrasi lama. Mengandalkan gaji acuan wilayah regional di era inflasi absolut ini sama dengan bunuh diri finansial perlahan. Jika kamu tidak memutus siklus konsumsi reaktif dan jerat utang konsumtif gaya hidup hari ini, ledakan krisis demografi berikutnya bermotensi menghapus hak alamiahmu untuk sekadar memiliki tempat berteduh.",
+      "action": "LANGKAH DARURAT: Hentikan bias kepasrahan bahwa keajaiban negara akan menolongmu. Potong pengeluaran non-esensial dan mulailah operasi akumulasi rasio dana darurat sebesar 10% dari kas masuk tanpa kecuali."
     },
     "aware": {
-      "tagline": "Aware but Stuck",
-      "desc": "Kamu paham — tapi belum menemukan jalan. Kamu tahu masalahnya. Yang kurang bukan pengetahuan, tapi satu langkah pertama.",
-      "action": "Coba kalkulator DP. Satu langkah kecil mengalahkan nol langkah."
+      "tagline": "Tersadar oleh Fakta, Tapi Lumpuh oleh Analisis",
+      "desc": "Kamu melihat badai sistemik yang mendekat. Kamu mengkalkulasi jelas bahwa eksponensial harga properti mustahil disalip dengan kenaikan konstan UMP tahunan. Analisis logismu sudah tajam, tapi rantai masalahnya ada pada kelumpuhan eksekusi. Kamu condong ke arah 'doom-scrolling' keputusasaan makroekonomi tanpa membangun artileri perahu penyelamat.",
+      "action": "LANGKAH TAKTIS: Kecerdasan tanpa agresi pasar adalah liabilitas. Transmisikan kecemasanmu menjadi amunisi: putus rantai lumpuh analitikmu dengan mengeksekusi instrumen Reksadana likuid hari ini juga."
     },
     "builder": {
-      "tagline": "Building Forward",
-      "desc": "Kamu di jalur yang benar — di sistem yang tidak adil. Kamu sudah melakukan yang benar. Tapi 50% Gen Z lain belum sampai di sini.",
-      "action": "Bagikan REALIGN. Karena literasi keuangan bukan kompetisi solo."
+      "tagline": "Anomali Statistik: Pembangkang Finansial Ekstrem",
+      "desc": "Kesadaran finansial kelas predator. Kamu telah menyadari sepenuhnya bahwa permainannya memiliki cacat (rigged), sehingga kamu menolak tunduk pada skenario default mereka. Kamu memperkuat benteng permodalanmu sendiri secara berlapis, mengeksploitasi celah ekonomi gig lintas negara untuk menghindari represi upah lokal, dan memahami sepenuhnya esensi hedging investasi pelindung nilai aset.",
+      "action": "LANGKAH EKSPANSI: Dominasi momentum ini lebih jauh. Terus lipatgandakan sirkulasi stream income globalmu sembari mengakumulasi aset diskon tinggi di tengah krisis. Berikan pencerahan analitik ini ke sekelilingmu."
     }
   }
-}
+};

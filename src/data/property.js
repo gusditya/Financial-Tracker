@@ -1,43 +1,41 @@
-export default 
-[
-  {
-    "kota": "Jakarta",
-    "harga": 700000000,
-    "dp20pct": 140000000
-  },
-  {
-    "kota": "Surabaya",
-    "harga": 450000000,
-    "dp20pct": 90000000
-  },
-  {
-    "kota": "Bandung",
-    "harga": 400000000,
-    "dp20pct": 80000000
-  },
-  {
-    "kota": "Yogyakarta",
-    "harga": 380000000,
-    "dp20pct": 76000000
-  },
-  {
-    "kota": "Semarang",
-    "harga": 350000000,
-    "dp20pct": 70000000
-  },
-  {
-    "kota": "Medan",
-    "harga": 350000000,
-    "dp20pct": 70000000
-  },
-  {
-    "kota": "Makassar",
-    "harga": 320000000,
-    "dp20pct": 64000000
-  },
-  {
-    "kota": "Palembang",
-    "harga": 300000000,
-    "dp20pct": 60000000
-  }
-]
+export default [
+  { "kota": "Aceh (Banda Aceh)", "harga": 350000000, "dp20pct": 70000000 },
+  { "kota": "Sumatera Utara (Medan)", "harga": 450000000, "dp20pct": 90000000 },
+  { "kota": "Sumatera Barat (Padang)", "harga": 380000000, "dp20pct": 76000000 },
+  { "kota": "Riau (Pekanbaru)", "harga": 400000000, "dp20pct": 80000000 },
+  { "kota": "Jambi (Jambi)", "harga": 340000000, "dp20pct": 68000000 },
+  { "kota": "Sumatera Selatan (Palembang)", "harga": 380000000, "dp20pct": 76000000 },
+  { "kota": "Bengkulu (Bengkulu)", "harga": 320000000, "dp20pct": 64000000 },
+  { "kota": "Lampung (Bandar Lampung)", "harga": 350000000, "dp20pct": 70000000 },
+  { "kota": "Kepulauan Bangka Belitung", "harga": 360000000, "dp20pct": 72000000 },
+  { "kota": "Kepulauan Riau (Batam)", "harga": 480000000, "dp20pct": 96000000 },
+  { "kota": "DKI Jakarta (Pusat Kota)", "harga": 1200000000, "dp20pct": 240000000 },
+  { "kota": "DKI Jakarta (Pinggiran/Bodetabek)", "harga": 650000000, "dp20pct": 130000000 },
+  { "kota": "Jawa Barat (Bandung)", "harga": 550000000, "dp20pct": 110000000 },
+  { "kota": "Jawa Tengah (Semarang)", "harga": 400000000, "dp20pct": 80000000 },
+  { "kota": "DI Yogyakarta", "harga": 500000000, "dp20pct": 100000000 },
+  { "kota": "Jawa Timur (Surabaya)", "harga": 600000000, "dp20pct": 120000000 },
+  { "kota": "Banten (Tangerang)", "harga": 700000000, "dp20pct": 140000000 },
+  { "kota": "Bali (Denpasar/Badung)", "harga": 850000000, "dp20pct": 170000000 },
+  { "kota": "Nusa Tenggara Barat (Mataram)", "harga": 350000000, "dp20pct": 70000000 },
+  { "kota": "Nusa Tenggara Timur (Kupang)", "harga": 380000000, "dp20pct": 76000000 },
+  { "kota": "Kalimantan Barat (Pontianak)", "harga": 380000000, "dp20pct": 76000000 },
+  { "kota": "Kalimantan Tengah (Palangka Raya)", "harga": 360000000, "dp20pct": 72000000 },
+  { "kota": "Kalimantan Selatan (Banjarmasin)", "harga": 420000000, "dp20pct": 84000000 },
+  { "kota": "Kalimantan Timur (Balikpapan/IKN)", "harga": 750000000, "dp20pct": 150000000 },
+  { "kota": "Kalimantan Utara (Tanjung Selor)", "harga": 400000000, "dp20pct": 80000000 },
+  { "kota": "Sulawesi Utara (Manado)", "harga": 450000000, "dp20pct": 90000000 },
+  { "kota": "Sulawesi Tengah (Palu)", "harga": 380000000, "dp20pct": 76000000 },
+  { "kota": "Sulawesi Selatan (Makassar)", "harga": 500000000, "dp20pct": 100000000 },
+  { "kota": "Sulawesi Tenggara (Kendari)", "harga": 380000000, "dp20pct": 76000000 },
+  { "kota": "Gorontalo (Gorontalo)", "harga": 350000000, "dp20pct": 70000000 },
+  { "kota": "Sulawesi Barat (Mamuju)", "harga": 330000000, "dp20pct": 66000000 },
+  { "kota": "Maluku (Ambon)", "harga": 420000000, "dp20pct": 84000000 },
+  { "kota": "Maluku Utara (Ternate/Sofifi)", "harga": 450000000, "dp20pct": 90000000 },
+  { "kota": "Papua (Jayapura)", "harga": 650000000, "dp20pct": 130000000 },
+  { "kota": "Papua Barat (Manokwari)", "harga": 600000000, "dp20pct": 120000000 },
+  { "kota": "Papua Selatan (Merauke)", "harga": 550000000, "dp20pct": 110000000 },
+  { "kota": "Papua Tengah (Timika)", "harga": 700000000, "dp20pct": 140000000 },
+  { "kota": "Papua Pegunungan (Wamena)", "harga": 800000000, "dp20pct": 160000000 },
+  { "kota": "Papua Barat Daya (Sorong)", "harga": 600000000, "dp20pct": 120000000 }
+];
