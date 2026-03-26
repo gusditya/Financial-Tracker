@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { createIcons, Menu, X } from 'lucide';
-=======
 import { createIcons, Menu, X, ChevronDown, ArrowRight } from 'lucide';
->>>>>>> 704946e (Update materi)
 
 // Simple active state check
 const currentPath = window.location.pathname;
@@ -33,36 +29,16 @@ export function initNavbar() {
 
   navbarContainer.innerHTML = `
     <nav id="main-nav" class="fixed top-0 inset-x-0 h-16 z-50 flex items-center justify-between px-4 sm:px-6 lg:px-8 transition-all duration-300 bg-parchment/0">
-      <!-- Logo -->
       <a href="/" class="font-display font-semibold text-charcoal text-xl tracking-tight z-50">REALIGN</a>
-      
-      <!-- Desktop Menu -->
+
       <div class="hidden md:flex items-center gap-8">
         ${navItems.map(item => {
           if (item.hasDropdown) {
             return `
               <div class="relative group h-16 flex items-center cursor-pointer">
-<<<<<<< HEAD
-                <span class="font-sans text-sm font-medium transition-colors ${currentPath.includes('/src/pages/') || currentPath.includes('content.html') ? 'text-charcoal border-b-2 border-bullion' : 'text-charcoal/70 hover:text-charcoal'}">
-                  ${item.name} <span class="text-xs ml-1 opacity-50">▼</span>
-                </span>
-                <!-- Dropdown Menu -->
-                <div class="absolute top-16 left-0 w-64 bg-white border border-charcoal/10 rounded-xl shadow-xl opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 overflow-hidden">
-                  <div class="py-2">
-                    ${dropdownItems.map(drop => `
-                      <a href="${drop.path}" class="block px-4 py-2 hover:bg-parchment font-sans text-sm text-charcoal/80 hover:text-charcoal transition-colors ${isActive(drop.path) ? 'bg-parchment font-semibold text-charcoal' : ''}">
-                        ${drop.name}
-                      </a>
-                    `).join('')}
-                    <div class="border-t border-charcoal/5 my-1"></div>
-                    <a href="/src/pages/content.html" class="block px-4 py-2 hover:bg-parchment font-sans text-sm text-surplus font-semibold hover:text-surplus transition-colors">
-                      Data Utama REALIGN &rarr;
-                    </a>
-=======
                 <span class="font-sans text-sm font-medium flex items-center gap-1 transition-colors ${currentPath.includes('/src/pages/') || currentPath.includes('content.html') ? 'text-charcoal border-b-2 border-bullion' : 'text-charcoal/70 hover:text-charcoal'}">
                   ${item.name} <i data-lucide="chevron-down" class="w-3 h-3 opacity-40 group-hover:rotate-180 transition-transform duration-300"></i>
                 </span>
-                <!-- Dropdown Menu -->
                 <div class="absolute top-[calc(100%-8px)] left-0 w-72 bg-white border border-charcoal/5 rounded-[24px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-500 overflow-hidden p-2">
                   <div class="flex flex-col">
                     <div class="px-4 py-3 border-b border-charcoal/5 mb-1">
@@ -79,7 +55,6 @@ export function initNavbar() {
                         Data Utama REALIGN <span>&rarr;</span>
                       </a>
                     </div>
->>>>>>> 704946e (Update materi)
                   </div>
                 </div>
               </div>
@@ -93,7 +68,6 @@ export function initNavbar() {
         }).join('')}
       </div>
 
-      <!-- CTA & Mobile Toggle -->
       <div class="flex items-center gap-4 z-50">
         <a href="/src/pages/content.html" class="hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-parchment bg-charcoal rounded-full hover:bg-deficit transition-colors shadow-sm cursor-pointer border border-transparent">
           Mulai Eksplorasi &rarr;
@@ -103,7 +77,6 @@ export function initNavbar() {
         </button>
       </div>
 
-      <!-- Mobile Drawer -->
       <div id="mobile-drawer" class="fixed inset-0 bg-parchment z-40 transform translate-x-full transition-transform duration-300 md:hidden overflow-y-auto pt-20 px-6 pb-6">
         <div class="flex flex-col gap-6 text-lg">
           ${navItems.map(item => {
@@ -135,11 +108,7 @@ export function initNavbar() {
 
   // Initialize Lucide Icons
   createIcons({
-<<<<<<< HEAD
-    icons: { Menu, X }
-=======
     icons: { Menu, X, ChevronDown, ArrowRight }
->>>>>>> 704946e (Update materi)
   });
 
   // Event Listeners
@@ -148,7 +117,7 @@ export function initNavbar() {
   const mobileDrawer = document.getElementById('mobile-drawer');
   const menuIcon = document.getElementById('menu-icon');
   const scrollProgressBar = document.getElementById('scroll-progress-bar');
-  
+
   let isMenuOpen = false;
 
   mobileBtn.addEventListener('click', () => {
@@ -156,12 +125,13 @@ export function initNavbar() {
     if (isMenuOpen) {
       mobileDrawer.classList.remove('translate-x-full');
       menuIcon.setAttribute('data-lucide', 'x');
-      document.body.style.overflow = 'hidden'; // lock scroll
+      document.body.style.overflow = 'hidden';
     } else {
       mobileDrawer.classList.add('translate-x-full');
       menuIcon.setAttribute('data-lucide', 'menu');
-      document.body.style.overflow = ''; // unlock scroll
+      document.body.style.overflow = '';
     }
+    // Re-run createIcons for the mobile toggle
     createIcons({ icons: { Menu, X } });
   });
 
@@ -174,7 +144,6 @@ export function initNavbar() {
       navElement.classList.add('bg-parchment/0');
     }
 
-    // Calculate Scroll Progress
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrollPercent = (scrollTop / scrollHeight) * 100;
